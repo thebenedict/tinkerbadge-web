@@ -116,3 +116,10 @@ body{min-width:0} a{color:inherit;text-underline-offset:4px} a:hover{color:#5277
 }
 
 @layer components { .placement-note{color:#4b5d52} }
+
+/* Keep the approved wordmark legible beside the navigation at every breakpoint. */
+@layer components {
+  .brand-logo{display:block;width:216px;height:auto}
+  @media(max-width:760px){.brand-logo{width:168px}}
+  @media(max-width:420px){.brand-logo{width:clamp(116px,35vw,146px)}}
+}

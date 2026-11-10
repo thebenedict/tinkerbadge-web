@@ -10,6 +10,7 @@ import {loadFeatures,featurePreview} from './features.mjs';
 import {placementNote} from './placement.mjs';
 import {landingReadme,projectPresentation} from './presentation.mjs';
 import {interactionExamples} from './interactions.mjs';
+import {loadBranding,faviconLinks} from './branding.mjs';
 
 const ROOT=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const PUBLIC=path.resolve(ROOT,process.env.VIEWER_PUBLIC??'public'),FINAL=path.resolve(ROOT,process.env.VIEWER_DIST??'dist');
@@ -23,6 +24,7 @@ const presentation=projectPresentation(JSON.parse(await fs.readFile(path.join(RO
 const featureSets=new Map(),featureHashes={};
 for(const variant of manifest.variants){const features=await loadFeatures({root:ROOT,publicDir:PUBLIC,manifest,variant});if(features){featureSets.set(variant.id,features);for(const file of features.files){await fs.mkdir(path.dirname(path.join(OUT,file)),{recursive:true});await fs.copyFile(path.join(PUBLIC,file),path.join(OUT,file));featureHashes[file]=crypto.createHash('sha256').update(await fs.readFile(path.join(PUBLIC,file))).digest('hex');}}}
 await fs.mkdir(path.join(OUT,'assets'),{recursive:true});
+const branding=await loadBranding({root:ROOT,out:OUT,projectName:project.name});
 const snapshotDir=`data/snapshots/${manifest.snapshot.id}`;
 await fs.cp(path.join(PUBLIC,snapshotDir),path.join(OUT,snapshotDir),{recursive:true});
 await fs.copyFile(path.join(PUBLIC,'data/manifest.json'),path.join(OUT,'data/manifest.json'));
@@ -55,7 +57,7 @@ function nav(route,variant,view) {
 }
 function header(route,variant,view) {
   const logo=project.name.replace(/\s+/g,'').toLowerCase();
-  return `<a class="skip" href="#main">Skip to content</a><header class="site-header"><a href="${url(route,'index.html')}" class="brand" aria-label="${esc(project.name)} home"><span class="brand-mark" aria-hidden="true">✳</span><span>${esc(logo)}</span></a>${variant?nav(route,variant,view):''}</header>`;
+  return `<a class="skip" href="#main">Skip to content</a><header class="site-header"><a href="${url(route,'index.html')}" class="brand" aria-label="${esc(project.name)} home">${branding?`<img class="brand-logo" src="${url(route,branding.files['wordmark.png'])}" width="720" height="151" alt="Tinkerbadge">`:`<span class="brand-mark" aria-hidden="true">✳</span><span>${esc(logo)}</span>`}</a>${variant?nav(route,variant,view):''}</header>`;
 }
 function nativeDownload(route) {
   return `<div class="viewer-native-download"><a class="native-link" href="${url(route,manifest.nativeArchiveUrl)}" download>Download KiCad project ${icon()}</a></div>`;
@@ -71,7 +73,7 @@ async function markdown(text,sourceRel,route) {
 }
 function shell({route,variant,view='overview',content,config,title}) {
   const data=config?`<script id="page-config" type="application/json">${JSON.stringify(config).replace(/</g,'\\u003c')}</script><script type="module" src="${url(route,entries[view])}"></script>`:'';
-  return `<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="${esc(project.description??'Explore native KiCad project files and exports.')} "><meta name="robots" content="noindex"><meta name="referrer" content="no-referrer"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'"><title>${esc(title)} · ${esc(project.name)}</title><link rel="icon" href="${url(route,'assets/favicon.svg')}" type="image/svg+xml"><link rel="stylesheet" href="${url(route,cssName)}"></head><body>${header(route,variant,view)}<div class="shell">${content}${footer(route)}</div>${data}</body></html>`;
+  return `<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="${esc(project.description??'Explore native KiCad project files and exports.')} "><meta name="robots" content="noindex"><meta name="referrer" content="no-referrer"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'"><title>${esc(title)} · ${esc(project.name)}</title>${faviconLinks(route,branding)}<link rel="stylesheet" href="${url(route,cssName)}"></head><body>${header(route,variant,view)}<div class="shell">${content}${footer(route)}</div>${data}</body></html>`;
 }
 function modelInspector() {
   return `<section id="model-inspector" class="model-inspector" aria-labelledby="component-heading" hidden><div class="inspector-heading"><h2 id="component-heading">Component details</h2><span id="component-count"></span></div><label class="visually-hidden" for="model-component">Component name or reference</label><div class="component-picker"><select id="model-component" disabled><option>Loading components…</option></select><button id="focus-component" type="button" disabled>Focus</button><button id="clear-component" type="button" disabled>Clear</button></div><div id="model-component-details"></div><button id="retry-components" type="button" hidden>Retry details</button><p id="component-status" class="visually-hidden" role="status"></p></section>`;
@@ -139,8 +141,8 @@ for(const sourceRel of allDocs) {
 const licensingRoute='licensing/index.html';
 const hardwareLicenseLink=sourceFiles.has('LICENSE.md')?` <a href="${url(licensingRoute,'docs/LICENSE.html')}">Hardware licensing map</a>.`:'';
 await write(licensingRoute,shell({route:licensingRoute,title:'Licensing',content:`<main id="main" class="docs-shell"><a class="text-link" href="${url(licensingRoute,'index.html')}">← Back to the viewer</a><article class="readme"><h1>Licensing</h1><p>Original viewer software is licensed under Apache-2.0. Original viewer documentation and artwork use CC-BY-4.0. Hardware exports and incorporated third-party material retain their source licenses.${hardwareLicenseLink}</p><ul><li><a href="LICENSE.md">Viewer licensing map</a></li><li><a href="LICENSE">Apache License 2.0</a></li><li><a href="LICENSES/CC-BY-4.0.txt">Creative Commons Attribution 4.0</a></li><li><a href="LICENSES/CERN-OHL-P-2.0.txt">CERN Open Hardware Licence 2, Permissive</a></li><li><a href="LICENSES/CC-BY-SA-4.0.txt">Creative Commons Attribution-ShareAlike 4.0</a></li><li><a href="docs/THIRD_PARTY_NOTICES.md">Viewer third-party notices</a></li></ul><p>License selection does not establish that a hardware design is ready for manufacture. Refer to the source project's review and release status.</p></article></main>`}));
-await fs.writeFile(path.join(OUT,'assets/favicon.svg'),'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="#183b32"/><g stroke="#d9ec9c" stroke-width="5" stroke-linecap="round"><path d="M32 12v40M12 32h40M18 18l28 28M18 46l28-28"/></g></svg>');
-await fs.writeFile(path.join(OUT,'build-info.json'),JSON.stringify({snapshot:manifest.snapshot.id,project:project.name,routes,entryPoints:entries,stylesheet:cssName,featureHashes},null,2));
+if(!branding)await fs.writeFile(path.join(OUT,'assets/favicon.svg'),'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="#183b32"/><g stroke="#d9ec9c" stroke-width="5" stroke-linecap="round"><path d="M32 12v40M12 32h40M18 18l28 28M18 46l28-28"/></g></svg>');
+await fs.writeFile(path.join(OUT,'build-info.json'),JSON.stringify({snapshot:manifest.snapshot.id,project:project.name,routes,entryPoints:entries,stylesheet:cssName,featureHashes,brandingHashes:branding?.hashes??{}},null,2));
 await fs.mkdir(path.dirname(FINAL),{recursive:true});
 const previous=FINAL+'.previous';
 await fs.rm(previous,{recursive:true,force:true});

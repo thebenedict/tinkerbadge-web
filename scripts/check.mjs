@@ -23,6 +23,7 @@ for(const route of info.routes) {
 }
 for(const [file,expected] of Object.entries(manifest.snapshot.outputHashes))if(sha(await fs.readFile(path.join(root,file)))!==expected)errors.push(`Hash mismatch: ${file}`);
 for(const [file,expected] of Object.entries(info.featureHashes??{}))if(sha(await fs.readFile(path.join(root,file)))!==expected)errors.push(`Feature render hash mismatch: ${file}`);
+for(const [file,expected] of Object.entries(info.brandingHashes??{}))if(sha(await fs.readFile(path.join(root,file)))!==expected)errors.push(`Branding hash mismatch: ${file}`);
 for(const variant of manifest.variants) {
   for(const view of availableViews(variant)){const route=`${variant.id}/${view==='overview'?'':view+'/'}index.html`;if(!info.routes.includes(route))errors.push(`Missing available view: ${route}`);}
   const sheets=variant.schematic?.sheets??[],sheetIds=new Set(sheets.map(s=>s.id));sheetCount+=sheets.length;

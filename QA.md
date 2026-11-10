@@ -101,3 +101,11 @@ SW401's source properties still contain an UNASSIGNED footprint-status note and 
 Remaining platform coverage includes physical phones, sustained memory/performance, Safari, Firefox, unusual model structures and repeated child-sheet instances. Current checks do not establish universal KiCad compatibility.
 
 See [publishing setup](docs/publishing.md). The user has approved publication of the finished placement viewer, followed by a routing pass and a second refreshed publication. That publication sequence is complete. Publication of the subsequent “Microcontroller” wording update is also approved. The hosted `release.json` identifies the deployed snapshot and viewer commit.
+
+## Branding refresh, 2026-11-10
+
+The approved name-tag wordmark replaces the placeholder header mark. The matching hardware-badge symbol supplies 16, 32 and 48 px favicons and the 180 px touch icon. Asset URLs are content-hashed, and the builder emits them on every overview, drawing, documentation and licensing page. Other imported project names retain the generic identity.
+
+`npm run check` passed under Node 24.22.2: 102 tests, 29 static pages, all local links, 137 snapshot artifact hashes, six sheet instances, 184 component records, 165 model identities and two assembly accessories. `npm run check:publish -- --snapshot f3881ab9f98e` passed. The hardware snapshot and feature renders are unchanged.
+
+Chrome checks covered the 1710 px desktop viewport and 390 × 844 and 320 × 780 responsive viewports. The wordmark loads at its correct aspect ratio with no header overlap or horizontal overflow. Home, Schematic and PCB navigation, a nested specification page, and browser Back/Forward work. The viewport override was reset. Unchanged 3D interactions and earlier failure fixtures were not repeated for this branding-only update.
