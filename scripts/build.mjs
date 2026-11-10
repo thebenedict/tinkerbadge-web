@@ -57,7 +57,7 @@ function nav(route,variant,view) {
 }
 function header(route,variant,view) {
   const logo=project.name.replace(/\s+/g,'').toLowerCase();
-  return `<a class="skip" href="#main">Skip to content</a><header class="site-header"><a href="${url(route,'index.html')}" class="brand" aria-label="${esc(project.name)} home">${branding?`<img class="brand-logo" src="${url(route,branding.files['wordmark.png'])}" width="720" height="151" alt="Tinkerbadge">`:`<span class="brand-mark" aria-hidden="true">✳</span><span>${esc(logo)}</span>`}</a>${variant?nav(route,variant,view):''}</header>`;
+  return `<a class="skip" href="#main">Skip to content</a><header class="site-header"><a href="${url(route,'index.html')}" class="brand" aria-label="${esc(project.name)} home">${branding?`<img class="brand-logo" src="${url(route,branding.files['wordmark.svg'])}" width="720" height="151" alt="Tinkerbadge">`:`<span class="brand-mark" aria-hidden="true">✳</span><span>${esc(logo)}</span>`}</a>${variant?nav(route,variant,view):''}</header>`;
 }
 function nativeDownload(route) {
   return `<div class="viewer-native-download"><a class="native-link" href="${url(route,manifest.nativeArchiveUrl)}" download>Download KiCad project ${icon()}</a></div>`;

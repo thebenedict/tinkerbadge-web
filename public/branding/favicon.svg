@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <title>Tinkerbadge hardware badge</title>
+  <style>
+    .badge{fill:#20563d;stroke:#c7e2cd;stroke-width:0;paint-order:stroke fill}
+    @media(prefers-color-scheme:dark){.badge{stroke-width:2}}
+  </style>
+  <path class="badge" d="M5 5H25L31 11V23Q31 27 27 27H5Q1 27 1 23V9Q1 5 5 5Z"/>
+  <g fill="#fff">
+    <circle cx="9" cy="11.5" r="1.9"/>
+    <circle cx="16" cy="11.5" r="1.9"/>
+    <circle cx="23" cy="11.5" r="1.9"/>
+    <rect x="4" y="17" width="24" height="5" rx="1.5"/>
+  </g>
+</svg>

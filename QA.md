@@ -109,3 +109,12 @@ The approved name-tag wordmark replaces the placeholder header mark. The matchin
 `npm run check` passed under Node 24.22.2: 102 tests, 29 static pages, all local links, 137 snapshot artifact hashes, six sheet instances, 184 component records, 165 model identities and two assembly accessories. `npm run check:publish -- --snapshot f3881ab9f98e` passed. The hardware snapshot and feature renders are unchanged.
 
 Chrome checks covered the 1710 px desktop viewport and 390 × 844 and 320 × 780 responsive viewports. The wordmark loads at its correct aspect ratio with no header overlap or horizontal overflow. Home, Schematic and PCB navigation, a nested specification page, and browser Back/Forward work. The viewport override was reset. Unchanged 3D interactions and earlier failure fixtures were not repeated for this branding-only update.
+
+
+## Green branding and favicon readability, 2026-11-10
+
+The wordmark preserves the exact approved raster geometry with a color-only sRGB transform to deep green `#20563d`. The favicon is a scalable drawing of the same clipped-corner, three-light hardware-badge motif with a shorter white display and a heavier lower bezel. Dark tabs receive a pale keyline; separate PNG fallbacks cover 16, 32 and 48 px.
+
+`npm run check` passed under Node 24.22.2: 106 tests and the complete 29-page build, link, snapshot-hash and model-identity checks. New tests verify 7.69:1 green/cream contrast, 8.54:1 green/white contrast, dark-keyline contrast, exact embedded wordmark bytes, icon links, and fully opaque lower-bezel pixels at 16 and 32 px.
+
+Chrome visual checks covered the actual cream site background at desktop and 320 px, plus the SVG and PNG favicons at actual 16/32 px sizes on light and dark tab backgrounds. Enlarged pixel views confirmed a clearly visible green lower strip. Home/PCB navigation and Back/Forward work, the logo loads from nested routes, and no horizontal overflow was found. The viewport was reset. The hardware snapshot and viewer functionality are unchanged.
