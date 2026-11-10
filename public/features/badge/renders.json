@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "snapshotId": "9089771cc612",
-  "boardSha256": "ddf824f2a59bc82568bbb03bcb3f89959f2ee12638b380790207739273c1844d",
+  "snapshotId": "2c5ce291da26",
+  "boardSha256": "dafa93e938c3cc8b44d3bd1bc96028d27d44f320e9012c124e3212df88432e70",
   "views": [
     {
       "id": "front",
@@ -9,7 +9,7 @@
       "image": "front.png",
       "width": 1568,
       "height": 1568,
-      "sha256": "77908823f02c0f639066709165d3e56eb3c76994353c1bb5d095a5c7fd295b5d",
+      "sha256": "4276ee616fe2e069c96d4db9c6f159ba07979c62e4371e9a4413e92c6206b9b7",
       "pcbToImage": [
         12.63621882882671,
         0,
@@ -150,7 +150,7 @@
       ],
       "orientationVerification": {
         "method": "asymmetric native left-open shoulder material/transparency probes",
-        "sourceBoardSha256": "ddf824f2a59bc82568bbb03bcb3f89959f2ee12638b380790207739273c1844d",
+        "sourceBoardSha256": "dafa93e938c3cc8b44d3bd1bc96028d27d44f320e9012c124e3212df88432e70",
         "probes": [
           {
             "pcbMm": [
@@ -247,7 +247,7 @@
           "0,0,0",
           "front.kicad_pcb"
         ],
-        "privateCopySha256": "5703cc62a4d7e419d02c4424c5c3ab824058c3930e86b68ec75ccc45e1aaddb1",
+        "privateCopySha256": "190b6436ac273b535ace9bc0bf504730f7ff48ac361613689207bca7256ae58b",
         "sourceModelsVisible": [
           "MECH_PANEL",
           "MECH_BATTERY",
@@ -262,7 +262,7 @@
       "image": "components.png",
       "width": 1568,
       "height": 1568,
-      "sha256": "e51d53fe18db43809d8bfbbc8ba6e4ca6d2b60bf06de02d5eb10276d2a919bbe",
+      "sha256": "f12ff70a18d43d8c517fffd7dd3db9c9cc605ba4f0e78a14e4299d29fe04aae5",
       "pcbToImage": [
         12.63621882882671,
         0,
@@ -403,7 +403,7 @@
       ],
       "orientationVerification": {
         "method": "asymmetric native left-open shoulder material/transparency probes",
-        "sourceBoardSha256": "ddf824f2a59bc82568bbb03bcb3f89959f2ee12638b380790207739273c1844d",
+        "sourceBoardSha256": "dafa93e938c3cc8b44d3bd1bc96028d27d44f320e9012c124e3212df88432e70",
         "probes": [
           {
             "pcbMm": [
@@ -500,7 +500,7 @@
           "0,0,0",
           "components.kicad_pcb"
         ],
-        "privateCopySha256": "ab58d88b934d50b681bfb8d4201b7dd1177f775da0addadcbf1e2d47ecccf314",
+        "privateCopySha256": "03e2d41199a1ead8ce77726c660c51cbee37c9bb64838e6b5ea62695cad1bbfc",
         "sourceModelsVisible": [
           "RES_J502"
         ],
@@ -516,7 +516,7 @@
       "image": "back.png",
       "width": 1568,
       "height": 1568,
-      "sha256": "b93a9821b4a3e9765931e323df686788ed9ad50a6ed78fe5d761bfe9d14b5218",
+      "sha256": "3c7d10bec8b383e3aaae7d77d95a92c9df5ecb4c16ef6a307e76cd12788fb7bc",
       "pcbToImage": [
         -12.63621882882671,
         0,
@@ -657,7 +657,7 @@
       ],
       "orientationVerification": {
         "method": "asymmetric native left-open shoulder material/transparency probes",
-        "sourceBoardSha256": "ddf824f2a59bc82568bbb03bcb3f89959f2ee12638b380790207739273c1844d",
+        "sourceBoardSha256": "dafa93e938c3cc8b44d3bd1bc96028d27d44f320e9012c124e3212df88432e70",
         "probes": [
           {
             "pcbMm": [
@@ -754,7 +754,7 @@
           "0,0,0",
           "back.kicad_pcb"
         ],
-        "privateCopySha256": "5703cc62a4d7e419d02c4424c5c3ab824058c3930e86b68ec75ccc45e1aaddb1",
+        "privateCopySha256": "190b6436ac273b535ace9bc0bf504730f7ff48ac361613689207bca7256ae58b",
         "sourceModelsVisible": [
           "MECH_PANEL",
           "MECH_BATTERY",
@@ -766,9 +766,9 @@
   ],
   "provenance": {
     "source": "Existing frozen native KiCad snapshot; no live hardware reads",
-    "snapshotSource": "data/snapshots/9089771cc612/source/tinkerbadge.kicad_pcb",
+    "snapshotSource": "data/snapshots/2c5ce291da26/source/tinkerbadge.kicad_pcb",
     "generator": "scripts/render_feature_views.py",
-    "generatorSha256": "0fda563577ffb4184b11f7067a120534ec664460cb2a8dbf7c63b41e9fcc2e5a",
+    "generatorSha256": "6a6b4b23ba04391da6fc5e1ac4a5f5e2638557d4fbe048e8e8f37107cbf7ecfb",
     "snapshotUnchanged": true,
     "calibrationDescription": "Native mounting-hole UUIDs and dimensions matched to measured PNG dark circular drill regions; six measured anchors constrain each transform, and asymmetric native-shoulder transparency independently verifies mirroring."
   }

@@ -221,7 +221,8 @@ def board_info(path, resolver=None):
         'components':fps, 'missingModels':missing, 'withoutModel':no_model,
         'modeledFootprints':sum(any(m['resolved'] and not m['hidden'] for m in f['modelSources']) for f in fps),
         'revision':value(child(root,'title_block',[]),'rev','Unspecified'), 'outlineBounds':outline_bounds(root),
-        'trackSegments':len(children(root,'segment')), 'zones':len(children(root,'zone'))}
+        'trackSegments':len(children(root,'segment'))+len(children(root,'arc')), 'vias':len(children(root,'via')),
+        'zones':len(children(root,'zone')), 'copperZones':sum(not child(zone,'keepout') for zone in children(root,'zone'))}
 
 def component_records(variant, board, symbols):
     by_path = {s['schematicPath']:s for s in symbols if s.get('schematicPath')}
@@ -371,6 +372,7 @@ def collect_inputs(source, cfg, resolver):
         for p in sorted(directory.rglob('*')):
             if p.is_file() and (p.suffix.lower() in DIRECTORY_SUFFIXES or p.name in LICENSE_NAMES) and not any(part.startswith('.') for part in p.relative_to(source).parts): add(p)
     for variant in cfg['variants']:
+        for relative in variant.get('routingReview',{}).values():add(source_path(source,relative))
         naming=variant.get('componentNames',{})
         for relative in [naming.get('bomSource'),naming.get('amendmentsSource'),*naming.get('contracts',[])]:
             if relative:add(source_path(source,relative))

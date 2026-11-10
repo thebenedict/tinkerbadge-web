@@ -58,7 +58,7 @@ The schematic and PCB inputs are independent. A schematic-only project gets a sc
 
 To adapt another KiCad project, add a configuration with its real filenames and metadata, export it, run the checks, and review the resulting pages. The current adapter targets KiCad 10's native file and export structures. Unfamiliar hierarchy or model conventions need validation and tests before release.
 
-Interface copy lives in `config/presentation.json` and applies only to its matching `projectName`. It can override the landing product line and omit named README sections from the landing page. The full source README, its document page, and the native download remain unchanged.
+Interface copy lives in `config/presentation.json` and applies only to its matching `projectName`. It can override the landing product line, supply brief example interactions, and omit named README sections from the landing page. The full source README, its document page, and the native download remain unchanged.
 
 ## Views
 
@@ -85,6 +85,8 @@ Accessory metadata names an exact native board-only footprint and source model. 
 Each PCB record keeps its footprint UUID and native schematic instance path. The exporter resolves a root-relative path only against the known schematic root, then checks the reference. It compares values, footprints, BOM fields, and assembly flags. Unplaced symbols and board-only items remain explicit; conflicting properties are reported and details use the PCB values.
 
 The GLB binder verifies KiCad's reference-named assembly parents and adds variant-qualified UUIDs in node extras. `components.json` records source hashes, model hash, metadata, and exact mesh ownership. Ambiguous identities stop binding. Missing bodies are recorded as missing rather than assigned to a nearby part.
+
+For reviewed routing checkpoints, optional `routingReview` inputs identify the checkpoint manifest, native DRC report, exact remaining endpoints, and review document. The exporter binds them to the board hash and validates report counts and endpoint agreement. Their source hashes accompany the PCB-only progress note; inconsistent reports stop export.
 
 The browser validates the index before enabling inspection. Picking follows UUID ancestry from actual mesh hits. The model optimizer merges compatible primitives within each mesh and verifies triangle attributes, winding, materials, names, transforms, and bounds. The original native GLB is included as a download.
 
@@ -122,7 +124,7 @@ See [publishing setup](docs/publishing.md) for release checks and deployment con
 
 ## Current limits
 
-- The badge is an experimental, unrouted placement with unresolved footprints. See the source project's review documents for electrical and mechanical validation.
+- The badge is an incomplete first routing pass with unresolved connections and footprints. See the source project's review documents for electrical and mechanical validation.
 - Component selection marks real model bodies; 2D reference markers mark symbol or footprint origins. Live cross-highlighting between separate open views is future work.
 - The maintained README is rendered from its source, with configured landing-page omissions. Links outside the snapshot allowlist appear as dotted text.
 - Arbitrary STEP assemblies, unusual nested model exports, and unsupported accessory meshes need adapter work and tests.
@@ -136,6 +138,7 @@ See [publishing setup](docs/publishing.md) for release checks and deployment con
 - `scripts/kicad_source.py`: source parsing, hierarchy, models, and metadata
 - `scripts/component_names.py`: BOM and native-description names with provenance
 - `scripts/presentation.mjs`: landing-page README filtering
+- `scripts/interactions.mjs`: static example-interaction lists with decorative sketches
 - `scripts/bind_components.mjs`: component and accessory bindings
 - `scripts/optimize_glb.mjs`: checked per-mesh primitive consolidation
 - `scripts/build.mjs`: static pages and browser bundles

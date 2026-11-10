@@ -31,7 +31,7 @@ The exporter records source-file hashes, output hashes, pipeline hashes, and too
 
 ## GitHub setup
 
-Create the public repositories `thebenedict/tinkerbadge-hardware` and `thebenedict/tinkerbadge-web` after reviewing their source contents. Use `main` for the default branches. In the web repository's **Settings → Pages**, choose **GitHub Actions** as the build/deployment source.
+The public repositories are [tinkerbadge-hardware](https://github.com/thebenedict/tinkerbadge-hardware) and [tinkerbadge-web](https://github.com/thebenedict/tinkerbadge-web), both on `main`. The web repository uses **GitHub Actions** as its Pages build/deployment source.
 
 The snapshot directory is ignored by default so old HARVEST experiments are not added by a broad `git add`. After the publication checks pass, explicitly stage only the active snapshot:
 
@@ -40,11 +40,15 @@ git add public/data/manifest.json
 git add -f public/data/snapshots/REVIEWED_SNAPSHOT_ID/
 ```
 
+When replacing a snapshot, remove the previously tracked snapshot from the Git index with `git rm -r --cached public/data/snapshots/PREVIOUS_SNAPSHOT_ID/` after confirming the new snapshot is complete. The old files stay in the local checkout and Git history; the deployed build includes only the active snapshot.
+
 Push reviewed web source and the active snapshot to `main`. The **Check viewer** workflow runs on pushes and pull requests. Publishing remains manual: open **Actions → Publish GitHub Pages → Run workflow**, select `main`, enter the exact reviewed snapshot identifier, and confirm that the snapshot and native downloads are public.
 
 The build refuses a sample project, an unreviewed snapshot identifier, invalid provenance hashes, unexpected files, or a bundle over 1 GB. It runs the full viewer checks before uploading the artifact. The deployment job has only the Pages and OIDC permissions it needs; checkout does not persist credentials. Only `dist/` is deployed. `release.json` records the web commit and export provenance.
 
-Once enabled and deployed, the default site address is `https://thebenedict.github.io/tinkerbadge-web/`. This address is the planned destination until a successful deployment is verified.
+The verified site is [www.thebenedict.com/tinkerbadge-web](https://www.thebenedict.com/tinkerbadge-web/). The default address, `https://thebenedict.github.io/tinkerbadge-web/`, redirects to the account's existing `www.thebenedict.com` Pages domain. The project's own custom-domain field is empty. No domain purchase or DNS change was needed for the first publication.
+
+After each deployment, verify the successful workflow and the hosted `release.json`, manifest, artifact hashes, downloads and navigation. A successful upload alone does not verify the public site.
 
 ## Add a custom domain later
 

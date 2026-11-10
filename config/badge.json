@@ -6,7 +6,7 @@
     "title": "Tinker Badge hardware viewer",
     "description": "Inspect the badge schematic, PCB layers, component models, and source documentation.",
     "revision": "Development",
-    "status": "Experimental unrouted placement",
+    "status": "Incomplete first routing pass",
     "readme": "README.md",
     "tagline": "An open hardware badge designed for professional networking and built for your experiments."
   },
@@ -15,8 +15,8 @@
     {
       "id": "badge",
       "label": "Badge",
-      "description": "Experimental 110 \u00d7 80 mm front-assembly placement",
-      "status": "Experimental unrouted placement",
+      "description": "110 \u00d7 80 mm front-assembly board, first routing pass",
+      "status": "Incomplete first routing pass",
       "facts": [],
       "instanceProject": "tinkerbadge",
       "files": {
@@ -70,6 +70,12 @@
         ],
         "amendmentsSource": "docs/design/implementation_status.md",
         "allowUniqueMpn": true
+      },
+      "routingReview": {
+        "checkpoint": "exports/pcb-review/first-routing/checkpoint-manifest.json",
+        "drc": "exports/pcb-review/first-routing/drc.json",
+        "remainingConnections": "exports/pcb-review/first-routing/remaining-connections.json",
+        "review": "docs/design/first_routing_pass_review.md"
       }
     }
   ],
@@ -96,7 +102,9 @@
       "docs/design/optical_space_placement_review.md",
       "docs/design/rear_nfc_feasibility.md",
       "docs/design/lower_ir_placement_review.md",
-      "docs/design/shared_passive_optics_review.md"
+      "docs/design/shared_passive_optics_review.md",
+      "docs/design/first_routing_pass_review.md",
+      "docs/design/routing_constraints.json"
     ],
     "directories": [
       "models",
@@ -107,15 +115,22 @@
       "LICENSE"
     ],
     "expectedHashes": {
-      "tinkerbadge.kicad_pcb": "ddf824f2a59bc82568bbb03bcb3f89959f2ee12638b380790207739273c1844d",
-      "docs/design/pcb_placement.json": "390e2f5989174f16abe13154771e41e2234c4309a6a6e8aae49737aff9f8aada",
-      "docs/design/pcb_placement_review.md": "504fb2821c2ee9010186f12b4ef0f17374236fecfce3c9a205fe570b5e2267bc",
+      "tinkerbadge.kicad_pcb": "dafa93e938c3cc8b44d3bd1bc96028d27d44f320e9012c124e3212df88432e70",
+      "docs/design/pcb_placement.json": "dbc9636b7111bfc02e0a270018f75f73230e664a5b932c2d134f91e5eab9448f",
+      "docs/design/pcb_placement_review.md": "43d19a841dfcd2649969a1f6261043c116c2f289ddd928f527e2c7dcff665594",
       "docs/design/lower_ir_placement_review.md": "70facfc6ae02e514d3e2bb2dfdd1c2d6ece0e6129694c911a68f417a0c7c0cc1",
-      "docs/spec.md": "386ca632b47fd898ad5a0d604b3313497de458286a8c1f3f8faac7d8bfe90ea2",
+      "docs/spec.md": "c24b22129c215c209dd2a5f812b6b0231e3ac64867adc7bc52b263409c9b1143",
       "README.md": "d1f679fedc5f793e0d622ffcd84f18e226228146e2a641c2ab2861c8c64c4035",
       "docs/design/shared_passive_optics_review.md": "27caf519dd366772c4f8ba4b54c26c87ff5537f73eb09216ffc100ef54b5a21c",
-      "docs/design/implementation_status.md": "b02e598d0ccd586ab4f7580b0d8afb737c41af8ec72c04f7553c2acb977b5376",
-      "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4"
+      "docs/design/implementation_status.md": "7be5a7e7a4fd52562c6948846de18d80ae70a9408464430c67ac4cb6cff9c246",
+      "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+      "tinkerbadge.kicad_pro": "1ccd83ba5d61f6923840064d6fe5a6f83db74da29f9d65713d34fe9e23741966",
+      "docs/design/first_routing_pass_review.md": "2955f2f6831b9058e043d1d46ea531f57225c374e096aaeb153fe25e44cc98ad",
+      "docs/design/routing_constraints.json": "5bf13956922291592bbf8aee670f9644211b5b3b87250594149cc955fc0b2d7d",
+      "exports/tinkerbadge.net": "8409e65a237a60fd872eb89a0f4c5aa5caa0808df69a90cfe8a569411a77af59",
+      "exports/pcb-review/first-routing/checkpoint-manifest.json": "94307bb3cc94dc200b56efc7b7c391f451fa012f5ef665d8545159e17b884b33",
+      "exports/pcb-review/first-routing/drc.json": "87bb52953ed1a72273aa034db3188e9e37f93e872e2adba5b2b770919f143104",
+      "exports/pcb-review/first-routing/remaining-connections.json": "a698b33235b7df7d87a34ba1f705fb67b7e656457e1d7fac92a8cad619851073"
     }
   }
 }

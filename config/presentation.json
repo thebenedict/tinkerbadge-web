@@ -3,5 +3,47 @@
   "readmeOmitSections": [
     "Repeat the electrical check"
   ],
-  "tagline": "Open hardware designed with agents, built for professional networking and ready to extend"
+  "tagline": "Open hardware designed with agents, built for professional networking and ready to extend",
+  "exampleInteractions": {
+    "heading": "Example interactions",
+    "context": "Proposed meetup flow",
+    "items": [
+      {
+        "visual": "claim",
+        "title": "Claim your badge",
+        "description": "Arrive at the meetup and scan a QR code to claim your badge."
+      },
+      {
+        "visual": "profile",
+        "title": "Show your profile",
+        "description": "The e-ink display shows your name and affiliation from your AIT profile."
+      },
+      {
+        "visual": "role",
+        "title": "Show your role",
+        "description": "The role bar lights up in your role’s color: speaker, sponsor, organizer or attendee."
+      },
+      {
+        "visual": "interests",
+        "title": "Find shared interests",
+        "description": "Affinity lights along the bottom reflect your interests. Look for similar colors to make helpful connections."
+      },
+      {
+        "visual": "connect",
+        "title": "Keep in touch",
+        "description": "Opt in to BLE and IR conversation detection, or use an intentional badge tap to exchange contact details and keep in touch after the meetup."
+      },
+      {
+        "visual": "return",
+        "title": "Return it or keep it",
+        "description": "Return your badge at the end of the night to check out, or buy your own for experiments. Speakers could receive one as a gift."
+      },
+      {
+        "visual": "make",
+        "title": "Make something new",
+        "description": "Flash custom firmware or connect add-ons through Qwiic or SAO.",
+        "wide": true
+      }
+    ]
+  }
 }

@@ -96,7 +96,14 @@ class RefreshedNativeGeometryTests(unittest.TestCase):
         _,snapshot=load_snapshot();board=snapshot/'source/tinkerbadge.kicad_pcb';before=sha(board);native=sexpr(board.read_text())
         self.assertEqual([round(v,6) for v in outline_bounds(native)],[100,100,110,80])
         edges=[n for n in native if isinstance(n,list) and n[0].startswith('gr_') and child(n,'layer')==['layer','Edge.Cuts']]
-        self.assertEqual(len(edges),11);self.assertEqual(sum(e[0]=='gr_arc' for e in edges),5)
+        self.assertEqual(len(edges),12);self.assertEqual(sum(e[0]=='gr_arc' for e in edges),6)
+        tip=next(e for e in edges if e[0]=='gr_arc' and child(e,'start')==['start','155','102'])
+        self.assertEqual(child(tip,'end'),['end','157','100'])
+        self.assertEqual(child(tip,'mid'),['mid','155.585786','100.585786'])
+        self.assertEqual(len(children(native,'segment')),1258);self.assertEqual(len(children(native,'via')),328)
+        zones=[z for z in children(native,'zone') if not child(z,'keepout')]
+        self.assertEqual([child(z,'layer')[1] for z in zones],['In1.Cu','In2.Cu'])
+        self.assertTrue(all(child(z,'net')==['net','GND'] and len(children(z,'filled_polygon'))==1 for z in zones))
         lines=[{tuple(child(e,'start')[1:]),tuple(child(e,'end')[1:])} for e in edges if e[0]=='gr_line']
         self.assertIn({('104','106.75'),('154.5','106.75')},lines)
         self.assertNotIn({('105','100'),('105','106.25')},lines)
@@ -110,7 +117,7 @@ class RefreshedNativeGeometryTests(unittest.TestCase):
         footprints={prop(f).get('Reference'):f for f in children(native,'footprint')}
         for ref,x in [('D401',160),('D402',180.5),('D403',201)]:
             self.assertEqual([float(n) for n in child(footprints[ref],'at')[1:3]],[x,103])
-        for ref,pose in [('U501',[143.5,170.5,90]),('C501',[143.5,174.75,270]),('C502',[143.5,166.25,90]),('R504',[150.75,172,180]),('U504',[137.75,168.5,180]),('D501',[150,168.5,0])]:
+        for ref,pose in [('U501',[143.5,170.5,90]),('C501',[143.5,174.75,270]),('C502',[143.5,166.25,90]),('R504',[150.75,172,180]),('U504',[137.75,168.5,180]),('D501',[150,168.5,0]),('C202',[118.5,108.8,180]),('C511',[193,154.65,90]),('C512',[193.8,151.3,90]),('R508',[197.925,158.3,270])]:
             at=child(footprints[ref],'at');actual=[float(n) for n in at[1:]]
             actual=actual+[0]*(3-len(actual));actual[2]%=360
             self.assertEqual(actual,pose);self.assertEqual(child(footprints[ref],'layer'),['layer','F.Cu'])

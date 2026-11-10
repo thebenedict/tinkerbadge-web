@@ -30,6 +30,42 @@ def validate_source_pins(hashes, expected):
             raise RuntimeError(f'Invalid pinned source hash: {path}')
         if hashes.get(path)!=digest:raise RuntimeError(f'Pinned source hash mismatch: {path}')
 
+def routing_metadata(config, source, pcb_relative, population):
+    """Read reviewed native report counts only when hashes bind them to this board."""
+    if not config:return None
+    paths={key:config[key] for key in ['checkpoint','drc','remainingConnections','review']}
+    hashes={key:sha(source_path(source,path)) for key,path in paths.items()}
+    checkpoint=json.loads(source_path(source,paths['checkpoint']).read_text())
+    drc=json.loads(source_path(source,paths['drc']).read_text())
+    remaining=json.loads(source_path(source,paths['remainingConnections']).read_text())
+    board_sha=sha(source_path(source,pcb_relative))
+    if checkpoint.get('board_sha256')!=board_sha or checkpoint.get('sources',{}).get(pcb_relative)!=board_sha or remaining.get('board_sha256')!=board_sha:
+        raise RuntimeError('Routing review does not match the frozen board')
+    if drc.get('source')!=Path(pcb_relative).name:raise RuntimeError('Native DRC names a different board')
+    for key in ['drc','remainingConnections']:
+        if checkpoint.get('artifacts',{}).get(paths[key])!=hashes[key]:raise RuntimeError('Routing artifact hash mismatch: '+key)
+    if checkpoint.get('sources',{}).get(paths['review'])!=hashes['review']:raise RuntimeError('Routing review document hash mismatch')
+    for field in ['unconnected_items','schematic_parity','violations']:
+        if not isinstance(drc.get(field),list):raise RuntimeError('Native DRC is missing report arrays')
+    missing=[item for item in drc['schematic_parity'] if item.get('type')=='missing_footprint']
+    counts={'unconnected_item_reports':len(drc['unconnected_items']),'missing_footprint_reports':len(missing),'native_geometric_violations':len(drc['violations'])}
+    if any(type(checkpoint.get('checks',{}).get(key)) is not int or checkpoint['checks'][key]!=value for key,value in counts.items()):
+        raise RuntimeError('Routing checkpoint counts disagree with native DRC')
+    if remaining.get('count')!=counts['unconnected_item_reports'] or remaining.get('unconnected_items')!=drc['unconnected_items'] or remaining.get('missing_footprints')!=missing:
+        raise RuntimeError('Remaining-connection report differs from native DRC')
+    refs=[]
+    for item in missing:
+        match=re.fullmatch(r'Missing footprint ([^ ]+) \(.*\)',item.get('description',''))
+        if not match:raise RuntimeError('Unrecognized native missing-footprint report')
+        refs.append(match[1])
+    if len(set(refs))!=len(refs) or sorted(refs)!=sorted(population['unplacedReferences']):raise RuntimeError('Routing missing footprints disagree with schematic population')
+    added=checkpoint['checks'].get('new_geometric_violations')
+    if type(added) is not int or not 0<=added<=len(drc['violations']):raise RuntimeError('Invalid reviewed new-geometric-violation count')
+    if not isinstance(checkpoint.get('status'),str) or not checkpoint['status']:raise RuntimeError('Routing review status is missing')
+    return {'status':checkpoint['status'],'unconnectedItems':len(drc['unconnected_items']),'missingFootprints':len(missing),
+        'geometricViolations':len(drc['violations']),'newGeometricViolations':added,
+        'source':{'boardSha256':board_sha,**{key+'Path':path for key,path in paths.items()},**{key+'Sha256':digest for key,digest in hashes.items()}}}
+
 def svg_viewbox(path): return [float(x) for x in ET.parse(path).getroot().attrib['viewBox'].split()]
 
 def match_schematic_svgs(sheets, directory):
@@ -215,7 +251,8 @@ def export(args):
             naming=apply_component_names(original.get('componentNames'),copied,symbols,records,info['components'] if info else [])
             if naming:v['componentNaming']=naming
             population=population_info(symbols,records)
-            if pcb and population['unplacedReferences']:
+            routing=routing_metadata(original.get('routingReview'),copied,files.get('pcb'),population) if pcb else None
+            if pcb and population['unplacedReferences'] and not routing:
                 v['warnings'].append(f"{len(population['unplacedReferences'])} schematic components are not placed on this PCB snapshot.")
             unmatched=[c for c in records if c['identityStatus'] not in ['verified','board-only']]
             changed=[c for c in records if c['sourceDifferences']]
@@ -256,7 +293,7 @@ def export(args):
                         'color':COLORS.get(name,'#b196e0'),'defaultVisible':name in ['F.Cu','F.SilkS','Edge.Cuts']})
                 v['pcb']={'layers':layers,'viewBox':viewbox,'widthMm':round(bounds[2],6) if bounds else None,'heightMm':round(bounds[3],6) if bounds else None,'copperLayers':info['copperLayers'],'thicknessMm':info['thicknessMm'],
                     'components':info['components'],'accessories':accessories,'nativeUrl':f'{prefix}/source/{files["pcb"]}',
-                    'outlineBounds':bounds,'trackSegments':info['trackSegments'],'zones':info['zones'],'population':population}
+                    'outlineBounds':bounds,'trackSegments':info['trackSegments'],'vias':info['vias'],'zones':info['zones'],'copperZones':info['copperZones'],'population':population,'routing':routing}
                 v.setdefault('revision',info['revision'])
                 v['downloads'].append({'label':'Native PCB','url':v['pcb']['nativeUrl']})
                 metadata={'pcb':files['pcb'],'pcbSha256':hashes[files['pcb']],

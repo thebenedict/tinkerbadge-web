@@ -43,6 +43,19 @@ class FrozenBundleTests(unittest.TestCase):
                 provenance=component['displayNameSource'];self.assertEqual(provenance['sha256'],sha(self.snapshot/'source'/provenance['sourcePath']))
         self.assertEqual(variant['componentNaming']['namedComponents'],sum(bool(c['displayName']) for c in index['components']))
         for relative,expected in variant['componentNaming']['sources'].items():self.assertEqual(sha(self.snapshot/'source'/relative),expected)
+    def test_routing_counts_match_frozen_native_reports_and_source_geometry(self):
+        variant=self.manifest['variants'][0];pcb=variant['pcb'];routing=pcb['routing'];source=routing['source']
+        self.assertEqual((routing['unconnectedItems'],routing['missingFootprints'],routing['geometricViolations'],routing['newGeometricViolations']),(48,9,5,0))
+        self.assertEqual(routing['missingFootprints'],len(pcb['population']['unplacedReferences']))
+        self.assertEqual((pcb['trackSegments'],pcb['vias'],pcb['copperZones']),(1258,328,2))
+        self.assertEqual(source['boardSha256'],self.manifest['snapshot']['sourceHashes']['tinkerbadge.kicad_pcb'])
+        for key in ['checkpoint','drc','remainingConnections','review']:
+            self.assertEqual(source[key+'Sha256'],sha(self.snapshot/'source'/source[key+'Path']))
+        drc=json.loads((self.snapshot/'source'/source['drcPath']).read_text())
+        self.assertEqual(len(drc['unconnected_items']),routing['unconnectedItems'])
+        self.assertEqual(len(drc['violations']),routing['geometricViolations'])
+        self.assertNotIn('unrouted',self.manifest['project']['status'].lower())
+        self.assertFalse(any('schematic components are not placed' in warning for warning in variant['warnings']))
     def test_configured_review_pins_match_the_published_bundle(self):
         cfg=json.loads((ROOT/'config/badge.json').read_text())
         for path,expected in cfg['snapshot']['expectedHashes'].items():self.assertEqual(self.manifest['snapshot']['sourceHashes'][path],expected)

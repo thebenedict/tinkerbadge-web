@@ -49,6 +49,46 @@ class NativeMetadataTests(unittest.TestCase):
         board['components'].append(second)
         self.assertEqual([c['bom']['quantity'] for c in module.component_records('B',board,symbols)],[1,1])
 
+class RoutingMetadataTests(unittest.TestCase):
+    def setUp(self):
+        self.temp=tempfile.TemporaryDirectory();self.root=pathlib.Path(self.temp.name)
+        self.config={'checkpoint':'checkpoint.json','drc':'drc.json','remainingConnections':'remaining.json','review':'review.md'}
+        (self.root/'board.kicad_pcb').write_text('native board');(self.root/'review.md').write_text('Reviewed incomplete routing')
+        self.missing=[{'type':'missing_footprint','description':'Missing footprint U1 (part)'}]
+        self.drc={'source':'board.kicad_pcb','unconnected_items':[{'type':'unconnected_items','items':[{'uuid':'pad-a'},{'uuid':'pad-b'}]}],'schematic_parity':self.missing,'violations':[{'type':'clearance'}]}
+        self.remaining={'board_sha256':module.sha(self.root/'board.kicad_pcb'),'count':1,'unconnected_items':self.drc['unconnected_items'],'missing_footprints':self.missing}
+        self.checkpoint={'board_sha256':self.remaining['board_sha256'],'status':'Incomplete first routing pass','sources':{'board.kicad_pcb':self.remaining['board_sha256'],'review.md':module.sha(self.root/'review.md')},'checks':{'unconnected_item_reports':1,'missing_footprint_reports':1,'native_geometric_violations':1,'new_geometric_violations':0},'artifacts':{}}
+        self.save()
+    def tearDown(self):self.temp.cleanup()
+    def save(self):
+        for path,data in [('drc.json',self.drc),('remaining.json',self.remaining)]:
+            (self.root/path).write_text(json.dumps(data));self.checkpoint['artifacts'][path]=module.sha(self.root/path)
+        (self.root/'checkpoint.json').write_text(json.dumps(self.checkpoint))
+    def resolve(self):return module.routing_metadata(self.config,self.root,'board.kicad_pcb',{'unplacedReferences':['U1']})
+    def test_native_report_counts_and_provenance_are_bound_to_exact_source(self):
+        result=self.resolve();self.assertEqual(result['unconnectedItems'],1);self.assertEqual(result['missingFootprints'],1)
+        self.assertEqual(result['geometricViolations'],1);self.assertEqual(result['newGeometricViolations'],0)
+        self.assertEqual(result['source']['drcSha256'],module.sha(self.root/'drc.json'))
+        self.assertIsNone(module.routing_metadata(None,self.root,None,{}))
+    def test_stale_board_or_artifact_is_rejected(self):
+        (self.root/'board.kicad_pcb').write_text('changed board')
+        with self.assertRaisesRegex(RuntimeError,'frozen board'):self.resolve()
+        (self.root/'board.kicad_pcb').write_text('native board');(self.root/'drc.json').write_text(json.dumps({**self.drc,'date':'changed'}))
+        with self.assertRaisesRegex(RuntimeError,'artifact hash'):self.resolve()
+    def test_checkpoint_counts_do_not_override_native_results(self):
+        self.checkpoint['checks']['unconnected_item_reports']=48;self.save()
+        with self.assertRaisesRegex(RuntimeError,'counts disagree'):self.resolve()
+    def test_endpoint_or_missing_footprint_disagreement_is_rejected(self):
+        self.remaining['unconnected_items']=[];self.save()
+        with self.assertRaisesRegex(RuntimeError,'differs'):self.resolve()
+        self.remaining['unconnected_items']=self.drc['unconnected_items'];self.save()
+        with self.assertRaisesRegex(RuntimeError,'population'):module.routing_metadata(self.config,self.root,'board.kicad_pcb',{'unplacedReferences':['U2']})
+    def test_changed_review_or_malformed_report_is_rejected(self):
+        (self.root/'review.md').write_text('changed review')
+        with self.assertRaisesRegex(RuntimeError,'document hash'):self.resolve()
+        (self.root/'review.md').write_text('Reviewed incomplete routing');self.drc['violations']=None;self.save()
+        with self.assertRaisesRegex(RuntimeError,'report arrays'):self.resolve()
+
 class HierarchyTests(unittest.TestCase):
     def setUp(self):
         self.temp=tempfile.TemporaryDirectory();self.root=pathlib.Path(self.temp.name)
