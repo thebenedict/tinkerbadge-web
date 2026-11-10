@@ -1,6 +1,6 @@
 # Web viewer checks
 
-Checked on November 10, 2026. The local review build is snapshot `2c5ce291da26`, exported with KiCad 10.0.8 from the checked first routing pass. It runs at **http://127.0.0.1:4173/**. The routed snapshot and homepage examples are prepared together for the second publication.
+Checked on November 10, 2026. The local review build is snapshot `f3881ab9f98e`, exported with KiCad 10.0.8 from the checked first routing pass. It runs at **http://127.0.0.1:4173/**. This update changes U201’s BOM-backed name to “Microcontroller”. Its comparison baseline is published snapshot `2c5ce291da26`.
 
 ## Build and source checks
 
@@ -13,7 +13,7 @@ Checked on November 10, 2026. The local review build is snapshot `2c5ce291da26`,
 - F.Cu, In1.Cu, In2.Cu and B.Cu are present. All eleven exported PCB layers share one viewport.
 - The board is 110 × 80 × 1.6 mm, with the left-open antenna shoulder, R2 convex notch tip, 186 footprints, 1,258 tracks, 328 through vias and two filled inner GND planes. There are 164 front electrical footprints, six rear test points and nine unplaced schematic references.
 - The 3D index has 184 component records and two separate native assembly accessories. Real triangle-raycast tests verify all 165 selectable model identities. Nineteen records have no separate body.
-- Optimization preserves all 533,807 triangles and reduces 24,048 primitive groups to 411. The bound model is 19,298,180 bytes; the component index is 455,836 bytes. Both load on request. The increased size includes routed copper, vias and inner planes.
+- Optimization preserves all 533,807 triangles and reduces 24,048 primitive groups to 411. The bound model is 19,298,180 bytes; the component index is 455,830 bytes. Both load on request. The increased size includes routed copper, vias and inner planes.
 - The native ZIP includes LICENSE, LICENSE.md, all four full SPDX license texts, LICENSES/README.md and third-party notices. Their bytes match the frozen sources. Viewer licenses and dependency notices are included separately in the built site.
 
 The exporter used private copies and did not modify hardware. Historical snapshots are retained locally but excluded from the built site.
@@ -27,6 +27,8 @@ The list is static HTML with a section heading, seven subheadings and decorative
 Final browser checks passed on desktop, 390 px and 320 px. Text contrast is 6.33:1. With a reserved scrollbar, the root width matches the usable viewport at 375 px and 305 px; no horizontal scrolling or clipping remains. The existing 3D model still loads and component picking works. Temporary QA tabs were closed and the original viewport was restored.
 
 ## Shared readable names
+
+U201 is **Microcontroller**, taken directly from the MCU-01 Description cell in the maintained BOM. Its ESP32-S3-WROOM-1-N16R8 part number and “Unlocked ESP32-S3” feature callout are unchanged. Comparing all frozen sources with the published baseline shows only that BOM cell changed; native geometry, materials, component identities and measured callout transforms are preserved. Focused browser checks on `f3881ab9f98e` confirm the name in the 3D picker/details, PCB search/selection, and the processor schematic inspector. [Inspector evidence](docs/qa/microcontroller-name.jpg).
 
 The exporter supplies names for 163 component records and 167 schematic symbols. It uses the BOM Description tables with verified reference-to-BOM contracts and exact current part numbers, plus narrowly allowed embedded descriptions for standard passive symbols. The same name and provenance reach the 3D, PCB and schematic inspectors.
 
@@ -60,7 +62,7 @@ HTTP checks verify the Overview, PCB, schematic, Licensing, full README and nati
 
 ## Browser checks
 
-The current routed snapshot passed Chrome checks at desktop, 390 px and 320 px without horizontal overflow. All three versioned static renders show the new copper and rounded R2 notch tip. The 19.3 MB interactive model loads and remains responsive at the narrow viewport; accessories start off. Focus and an actual canvas click select U504 correctly, and U107/U301/U506 retain their names and part numbers.
+The routed baseline `2c5ce291da26` passed Chrome checks at desktop, 390 px and 320 px without horizontal overflow. All three versioned static renders show the new copper and rounded R2 notch tip. The 19.3 MB interactive model loads and remains responsive at the narrow viewport; accessories start off. Focus and an actual canvas click select U504 correctly, and U107/U301/U506 retain their names and part numbers.
 
 Both inner-layer controls reveal their filled GND planes independently. Back mirrors the drawing left to right and preserves the selected layers. Rear copper is visible. The incomplete-routing status and modest remaining-work note fit at 320 px; the note uses 6.33:1 text contrast, while the homepage retains all seven examples without a count notice. Temporary tabs were closed and the original viewport was restored.
 
@@ -98,4 +100,4 @@ SW401's source properties still contain an UNASSIGNED footprint-status note and 
 
 Remaining platform coverage includes physical phones, sustained memory/performance, Safari, Firefox, unusual model structures and repeated child-sheet instances. Current checks do not establish universal KiCad compatibility.
 
-See [publishing setup](docs/publishing.md). The user has approved publication of the finished placement viewer, followed by a routing pass and a second refreshed publication. The homepage changes are held for that post-routing release; no publication was performed during this UI task.
+See [publishing setup](docs/publishing.md). The user has approved publication of the finished placement viewer, followed by a routing pass and a second refreshed publication. That publication sequence is complete. Publication of the subsequent “Microcontroller” wording update is also approved. The hosted `release.json` identifies the deployed snapshot and viewer commit.

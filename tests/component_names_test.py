@@ -25,6 +25,16 @@ class ComponentNamingTests(unittest.TestCase):
         self.contract([{'ref':'U1','exact_mpn':'SENSOR','bom_id':'SEN-01'}]);self.run_names([s])
         self.assertEqual(s['displayNameSource']['association']['reference'],'U1')
         s['properties']['MPN']='SENSOR-OTHER';self.run_names([s]);self.assertIsNone(s['displayName'])
+    def test_source_description_edit_updates_the_same_verified_part(self):
+        self.contract([{'ref':'U201','mpn':'ESP32-S3-WROOM-1-N16R8','bom_id':'MCU-01'}])
+        self.write('bom.md','| ID | Description | Package |\n|---|---|---|\n| MCU-01 | Main processor module | ESP32-S3-WROOM-1-N16R8 |\n')
+        symbol=self.symbol('U201','ESP32-S3-WROOM-1-N16R8');self.run_names([symbol])
+        old_source=symbol['displayNameSource'];self.assertEqual(symbol['displayName'],'Main processor module')
+        self.write('bom.md',(self.root/'bom.md').read_text().replace('Main processor module','Microcontroller'))
+        self.run_names([symbol]);self.assertEqual(symbol['displayName'],'Microcontroller')
+        self.assertNotEqual(symbol['displayNameSource']['sha256'],old_source['sha256'])
+        self.assertEqual(symbol['displayNameSource']['association'],old_source['association'])
+        self.assertEqual(symbol['properties']['MPN'],'ESP32-S3-WROOM-1-N16R8')
     def test_procurement_tables_and_mpn_substrings_do_not_name_parts(self):
         self.write('bom.md',(self.root/'bom.md').read_text()+'\n| ID | MPN | Stock |\n|---|---|---|\n| SEN-01 | SENSOR | Incorrect label |\n')
         a,b=self.symbol('U1','SENSOR'),self.symbol('U2','SENS');self.run_names([a,b])

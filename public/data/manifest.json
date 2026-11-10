@@ -10,9 +10,9 @@
   },
   "defaultVariant": "badge",
   "snapshot": {
-    "id": "2c5ce291da26",
-    "inputId": "f8a8f7f1f8fe",
-    "createdAt": "2026-11-10T03:28:25Z",
+    "id": "f3881ab9f98e",
+    "inputId": "f63cd7441cba",
+    "createdAt": "2026-11-10T03:48:18Z",
     "sourceCommit": null,
     "sourceHashes": {
       "LICENSE": "eeecc593866fa1c3b80189c7e3dc0ceb77740557fa92f81771f891cc54c579cb",
@@ -52,7 +52,7 @@
       "Tinkerbadge.pretty/USB4105-GF-A_ProjectShells.kicad_mod": "6c6eb2b980c1e4fa504aee622ea9e512db2a0cae43cce9af0c21639c488bfabc",
       "Tinkerbadge.pretty/WS2812C-2020-V6_Reviewed.kicad_mod": "c218fbe6e5d2815a6d8efe5aab3944b413610624c6ec8b2a46be0b8c519e84eb",
       "display.kicad_sch": "db16bbc749addc25f8fa89f2ce085393e6181a420205c603a33f7cc09f12fd87",
-      "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+      "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
       "docs/THIRD_PARTY_NOTICES.md": "633187c6845d17d685d46807756ca5e410d8fe15779df8c6a5cb63961f87e18f",
       "docs/design/compact_one_sided_final_review.md": "3b827fd007e0dae369b571ee55607baba95924369ca9d0fe12ad85b10915152f",
       "docs/design/compact_one_sided_mechanical_review.md": "693ac7efb6e0899c9b8df5cfcb0f196d5abc1b076919ea0d27dd053ac4bd1e70",
@@ -133,143 +133,143 @@
       "_dependencies/models/f8510481c5044113-C_1210_3225Metric.step": "f8510481c5044113cf49b0fa6dd54ddab9224508bd6808e1afab8ef0cefdefc9"
     },
     "outputHashes": {
-      "data/snapshots/2c5ce291da26/badge/board-native.glb": "2a6be06d14b673c1eda89cd8122a2d5bc947576a7dc11d1790b05dfaadd755a1",
-      "data/snapshots/2c5ce291da26/badge/board.glb": "967f7cb377db070a4124a5fb78bf75dab4e7520276ea1a94e558bf7da255bfb5",
-      "data/snapshots/2c5ce291da26/badge/components.json": "ceed9dc254d40df1ae17f75e50f15edf46781ae30cc854cb70c6fdd9058ff8fd",
-      "data/snapshots/2c5ce291da26/badge/layers/B_Cu.svg": "1e3132e198b550179ae79ef1e438c5034294fcebae4d8da9f63ce98673f8ef14",
-      "data/snapshots/2c5ce291da26/badge/layers/B_Fab.svg": "0a4cf1797521d44ef922b3e70f679cbb6f0ff83442a4ef0d45e08c29838d9626",
-      "data/snapshots/2c5ce291da26/badge/layers/B_Mask.svg": "a385e135600cc8bef7ff072cd6e7dbb4d2b2e42c3ea29c1d823b41738dc488cf",
-      "data/snapshots/2c5ce291da26/badge/layers/B_SilkS.svg": "f4924075165e9e038d3c8a4e7fbeac8a4dce73395646cea5e4b55a29f1429a06",
-      "data/snapshots/2c5ce291da26/badge/layers/Edge_Cuts.svg": "36432250fcab3bc5abdc08ca5e3c43a6aac9e681ea012ed7f7bde462ae066eb4",
-      "data/snapshots/2c5ce291da26/badge/layers/F_Cu.svg": "a454ca7004b1faadc2f40704e3b777d4489821d190d6d21f7f467f6eb76713a5",
-      "data/snapshots/2c5ce291da26/badge/layers/F_Fab.svg": "65f4ee241047755b85bf2014a038fe1a764f90dce1bea91e92639a9ba8a7ba55",
-      "data/snapshots/2c5ce291da26/badge/layers/F_Mask.svg": "38a4ba7ac84b54efb6180a686901f8ce385e8d7c39b6e18e43b041a67a0e639c",
-      "data/snapshots/2c5ce291da26/badge/layers/F_SilkS.svg": "a1af793abdc3f4af19f9f161e7406d0b6049c6909a8ca2779d1a28ffff093d1e",
-      "data/snapshots/2c5ce291da26/badge/layers/In1_Cu.svg": "8dfa16360f619d1d74047be7586db094de9819e331e71c7396b9c58b79d2a801",
-      "data/snapshots/2c5ce291da26/badge/layers/In2_Cu.svg": "f7d266c02c2ec0d6d2617749dfb18d9e5113c050777fcdac5b6ecdecfb04b3de",
-      "data/snapshots/2c5ce291da26/badge/poster.png": "3585ac9598260edd725dee3273f31813141450c82a1345b90e91ae45d9c66c69",
-      "data/snapshots/2c5ce291da26/badge/schematic/15aada6a873005eb.svg": "c781001ecca10a662bad77030f98c21769c5f2498035dc3ddfd8d107665e8e3e",
-      "data/snapshots/2c5ce291da26/badge/schematic/34e88d34916c4af9.svg": "17949560f5cab86d4c5486b058e79746132d187437084adbdd1c370e4535433f",
-      "data/snapshots/2c5ce291da26/badge/schematic/8134ddf223e03a2b.svg": "d873a3a29bd9e6a021e598a59f020fed800c97161e867f9039431012cb3fdabf",
-      "data/snapshots/2c5ce291da26/badge/schematic/81c8fb34059608bf.svg": "d6778e098094588a7c22f88b8d3033a6d787726223d0e46f5cf3c5dcf97c6919",
-      "data/snapshots/2c5ce291da26/badge/schematic/865f4a27a299e39b.svg": "ea50abf45902b0f6c0a2812b14e3ec60279de6540b9ca69143558c007ae210de",
-      "data/snapshots/2c5ce291da26/badge/schematic/f78e42c5695562fd.svg": "2d45b505c59c21f82c6a58f15213cc1e7afcb793ce0ed3d5df8b883fe6463b86",
-      "data/snapshots/2c5ce291da26/badge/schematic.pdf": "cfd7c28db20880f38067958e9389ea67c0c2ab8b99a01fbffb97c020f410e5e7",
-      "data/snapshots/2c5ce291da26/native-design.zip": "a8f30237d759b08dfb218a6eadc03ed36f19225534b3446d443474804404b906",
-      "data/snapshots/2c5ce291da26/source/LICENSE": "eeecc593866fa1c3b80189c7e3dc0ceb77740557fa92f81771f891cc54c579cb",
-      "data/snapshots/2c5ce291da26/source/LICENSE.md": "a0344daaf9ac2a36dbb9093b2533695a149af8a9115465ec1646a710f97aedef",
-      "data/snapshots/2c5ce291da26/source/LICENSES/Apache-2.0.txt": "074e6e32c86a4c0ef8b3ed25b721ca23aca83df277cd88106ef7177c354615ff",
-      "data/snapshots/2c5ce291da26/source/LICENSES/CC-BY-4.0.txt": "d557539df68e771cc1eedcc91d13f70fca930e508d11eedcafa4b15db49e3744",
-      "data/snapshots/2c5ce291da26/source/LICENSES/CC-BY-SA-4.0.txt": "cde7883b9050a1104f4ac19a1572aafd6e5d7323b68351aaf51fbf4beba54966",
-      "data/snapshots/2c5ce291da26/source/LICENSES/CERN-OHL-P-2.0.txt": "eeecc593866fa1c3b80189c7e3dc0ceb77740557fa92f81771f891cc54c579cb",
-      "data/snapshots/2c5ce291da26/source/LICENSES/README.md": "f8a171787718db379e83c0915498072f71f9a45f5ac32faeb76ad5996c962b92",
-      "data/snapshots/2c5ce291da26/source/README.md": "d1f679fedc5f793e0d622ffcd84f18e226228146e2a641c2ab2861c8c64c4035",
-      "data/snapshots/2c5ce291da26/source/Tinkerbadge.pretty/BH1730FVC_WSOF6.kicad_mod": "6351d09a8d496431e3f72950a7aa1ab48668a1f268227726ef3c075db028c7a6",
-      "data/snapshots/2c5ce291da26/source/Tinkerbadge.pretty/BQ24074RGTR_Reviewed.kicad_mod": "183807e26beb1a5099b0fa636f887be583d7843de45b1ca956ac82f9a7fe5260",
-      "data/snapshots/2c5ce291da26/source/Tinkerbadge.pretty/HSMF-C165.kicad_mod": "0acf2ebd509f5fa1ac51ddd27e609cf3f7672486eda42cc8a60e558a964b200d",
-      "data/snapshots/2c5ce291da26/source/Tinkerbadge.pretty/IR67-21C_TR8.kicad_mod": "669cd066610b7853315045ac2e06625dd131ac128eb0aabe9688d1aba823f930",
-      "data/snapshots/2c5ce291da26/source/Tinkerbadge.pretty/IRM-H638T_Reviewed.kicad_mod": "0864bc3785524a5fbc906ea72ea89e19ef2ea92daf12d1d358b67039e11b6063",
-      "data/snapshots/2c5ce291da26/source/Tinkerbadge.pretty/JST_SH_SM04B_ProjectTabs.kicad_mod": "e64745900f944d009492fab9b12a2ba4c4ea30431a49330d0e1bf83257304558",
-      "data/snapshots/2c5ce291da26/source/Tinkerbadge.pretty/NT3H2111W0FHKH_XQFN8.kicad_mod": "c921a2eacb3fa641f30e7a92ea19194b1b6943d076a889da2fa830cb34c6bdf2",
-      "data/snapshots/2c5ce291da26/source/Tinkerbadge.pretty/Review_Battery_Allowance.kicad_mod": "b79a6000487262b4ed7aa027efaeab3e9ea4fb996bc23c8707c5f44f96bac645",
-      "data/snapshots/2c5ce291da26/source/Tinkerbadge.pretty/Review_Battery_Connector.kicad_mod": "70303a71081c815a2df7f22bcafdf9da014a1609bbab02a4789d74b7e1ffb965",
-      "data/snapshots/2c5ce291da26/source/Tinkerbadge.pretty/Review_Cord_Hole_3p2.kicad_mod": "3f8fb3abc3821f1c12fd16886ec2f9715bff17862cc9e8294dae26d022310ab9",
-      "data/snapshots/2c5ce291da26/source/Tinkerbadge.pretty/Review_Dock_Contacts.kicad_mod": "009fddd4a64bae37c1c4ce09fef7739ec599e64623cb90a5b5ee729c51dff8f5",
-      "data/snapshots/2c5ce291da26/source/Tinkerbadge.pretty/Review_ESD_Package.kicad_mod": "d9906d44b7476f642399481b430002a244dda9b1dd3a33b41cc692e7e537db28",
-      "data/snapshots/2c5ce291da26/source/Tinkerbadge.pretty/Review_Flex_Mating.kicad_mod": "c9b2c4d332364cf36b3c8288ba6cda9f5b1503c3a64352345a0261418f77d436",
-      "data/snapshots/2c5ce291da26/source/Tinkerbadge.pretty/Review_Inductor_5x5.kicad_mod": "cd5dd00c97a5a3c4df4660219358ced9d1494dd20e8b7491a6d3fcf59b084c67",
-      "data/snapshots/2c5ce291da26/source/Tinkerbadge.pretty/Review_Inductor_6x6.kicad_mod": "b6ff1c562e59bb831ad4d84ab636647c84dc56aaff8f9ad9e73aa33f61c6c139",
-      "data/snapshots/2c5ce291da26/source/Tinkerbadge.pretty/Review_NFC_18x13.kicad_mod": "bb8e9b6b6033695785f533b41e849968fac38727f4580addfeb687e14aefb83f",
-      "data/snapshots/2c5ce291da26/source/Tinkerbadge.pretty/Review_NFC_Area.kicad_mod": "3b552aa8aa17940487337f051ab3d967e1bf4a8fb94d41f3866481c153d57b65",
-      "data/snapshots/2c5ce291da26/source/Tinkerbadge.pretty/Review_Panel_93.3x54.9.kicad_mod": "301883b845385c010417dd4b50a092511787917bc994900a7a20ece895071844",
-      "data/snapshots/2c5ce291da26/source/Tinkerbadge.pretty/Review_Panel_Raised_4p5.kicad_mod": "c92649b93b1c58ff4c0071f03e6e50bee4f965382bd8e6241013b9ff4e5a6f69",
-      "data/snapshots/2c5ce291da26/source/Tinkerbadge.pretty/Review_SAO_12.7x7.kicad_mod": "bfc421faf899cb5b527c27413d711a624b5bf35017acc9aa4af4bf55d43574db",
-      "data/snapshots/2c5ce291da26/source/Tinkerbadge.pretty/Review_SAO_Front_Tail_Reserve.kicad_mod": "1c67bffaf2582cdcaa96dc960eb1c204704a1d229acda36fb2ad73ff1abc9d9d",
-      "data/snapshots/2c5ce291da26/source/Tinkerbadge.pretty/SKSCLBE010.kicad_mod": "d7d195335d2923ec63b2ebd0faeb92e00e9ff43b965cf526004bfd511e84fa68",
-      "data/snapshots/2c5ce291da26/source/Tinkerbadge.pretty/SMF6.0A.kicad_mod": "52ad8ca8ba432f7d758198941537f37e4e8a8ecfa78f8f123f39d58c0020471c",
-      "data/snapshots/2c5ce291da26/source/Tinkerbadge.pretty/TPS2121RUXR_Reviewed.kicad_mod": "d220a06a114923d44146b3e92914def3d7f61e4f423b7b7a44f42a55bf76e76c",
-      "data/snapshots/2c5ce291da26/source/Tinkerbadge.pretty/TPS63802_DLA0010A.kicad_mod": "63dde13fde406a1cc8a5d77213088e71ba5ca52fb4d7a9f06833b721b2526107",
-      "data/snapshots/2c5ce291da26/source/Tinkerbadge.pretty/TPS63802_DLA0010A_Reviewed.kicad_mod": "8cc7eabdb367fb830a77a550854e1ad0f8a2ff0564a3c8f20d2929e61226d448",
-      "data/snapshots/2c5ce291da26/source/Tinkerbadge.pretty/USB4105-GF-A_ProjectShells.kicad_mod": "6c6eb2b980c1e4fa504aee622ea9e512db2a0cae43cce9af0c21639c488bfabc",
-      "data/snapshots/2c5ce291da26/source/Tinkerbadge.pretty/WS2812C-2020-V6_Reviewed.kicad_mod": "c218fbe6e5d2815a6d8efe5aab3944b413610624c6ec8b2a46be0b8c519e84eb",
-      "data/snapshots/2c5ce291da26/source/_dependencies/models/03e44c4b2b727b8d-C_0402_1005Metric.step": "03e44c4b2b727b8d4b6b1fd598cbd12dd5e614f1dfeefa96a92a07e3a3b312a2",
-      "data/snapshots/2c5ce291da26/source/_dependencies/models/11e948c72c90e2b6-C_1206_3216Metric.step": "11e948c72c90e2b6322436b72745f40ff4e8ba0da64fb2a0df943dfa61e89c1a",
-      "data/snapshots/2c5ce291da26/source/_dependencies/models/1875571c326d0d9e-R_0603_1608Metric.step": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861",
-      "data/snapshots/2c5ce291da26/source/_dependencies/models/3e35bb7ba7d030d8-ESP32-S3-WROOM-1.step": "3e35bb7ba7d030d88855fcf968398c8670934c7dca08b4e30b2c578bc1e13954",
-      "data/snapshots/2c5ce291da26/source/_dependencies/models/3ee5786aae561909-TSSOP-14_4.4x5mm_P0.65mm.step": "3ee5786aae56190997aa793ba3cfc003fd616782770e29719b4562f012982245",
-      "data/snapshots/2c5ce291da26/source/_dependencies/models/4857b3dc717675bf-C_0603_1608Metric.step": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1",
-      "data/snapshots/2c5ce291da26/source/_dependencies/models/4b0f89a75d3758ad-JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal.step": "4b0f89a75d3758add0041ca9e5ded3a780c23ef4e3e99bcc398b41177dff5d0f",
-      "data/snapshots/2c5ce291da26/source/_dependencies/models/5e6c16287491528f-LGA-12_2x2mm_P0.5mm.step": "5e6c16287491528f89c09590e0d5dace14debf478226f74b45504eb906119145",
-      "data/snapshots/2c5ce291da26/source/_dependencies/models/6338ce740fa231c2-USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal.step": "6338ce740fa231c2d3dcc6384e0576994a47240a312a21413cb85d76990a69a0",
-      "data/snapshots/2c5ce291da26/source/_dependencies/models/6ad5e98224d02a42-TSSOP-16_4.4x5mm_P0.65mm.step": "6ad5e98224d02a427d9a6b929a28dbc158b9925fba5adec12db05079f1016948",
-      "data/snapshots/2c5ce291da26/source/_dependencies/models/91507e5af4251cb4-R_0402_1005Metric.step": "91507e5af4251cb4ef38e04889c9b98da29904432bd83786bba13ae9b605eacb",
-      "data/snapshots/2c5ce291da26/source/_dependencies/models/97339947f3a71964-TSSOP-20_4.4x6.5mm_P0.65mm.step": "97339947f3a7196470ec2f1d9f9b92bb2fc2ab66ad53be0cf105192585ef3c9a",
-      "data/snapshots/2c5ce291da26/source/_dependencies/models/975744dfb68222ac-D_SMF.step": "975744dfb68222ac12c4526a1d1a96cde7f8c71c46bcd23a886ac44532259021",
-      "data/snapshots/2c5ce291da26/source/_dependencies/models/9a669c1a2f1ea25b-C_0805_2012Metric.step": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c",
-      "data/snapshots/2c5ce291da26/source/_dependencies/models/acbf75a28fe41aa9-SOT-323_SC-70.step": "acbf75a28fe41aa90efb38cd2b78220968d6eb6ebae1625dfd532dbeb268fece",
-      "data/snapshots/2c5ce291da26/source/_dependencies/models/b3dc4065573abc72-D_SOD-123.step": "b3dc4065573abc72e3d5b4cca0e908f72a24205a41b6284b1f75ccacbe99adf8",
-      "data/snapshots/2c5ce291da26/source/_dependencies/models/c9fe686b4d1b5692-SOT-23-6.step": "c9fe686b4d1b56927a41fa84a9bc1efb61d8a45a123a3db43bcaa05c2891d635",
-      "data/snapshots/2c5ce291da26/source/_dependencies/models/dd5d1711204e1d8d-SOT-23.step": "dd5d1711204e1d8d26cd11490923bd84340820baa69538c385a4300ec2539bc0",
-      "data/snapshots/2c5ce291da26/source/_dependencies/models/ded342cdb394fb45-R_0805_2012Metric.step": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2",
-      "data/snapshots/2c5ce291da26/source/_dependencies/models/f8510481c5044113-C_1210_3225Metric.step": "f8510481c5044113cf49b0fa6dd54ddab9224508bd6808e1afab8ef0cefdefc9",
-      "data/snapshots/2c5ce291da26/source/display.kicad_sch": "db16bbc749addc25f8fa89f2ce085393e6181a420205c603a33f7cc09f12fd87",
-      "data/snapshots/2c5ce291da26/source/docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
-      "data/snapshots/2c5ce291da26/source/docs/THIRD_PARTY_NOTICES.md": "633187c6845d17d685d46807756ca5e410d8fe15779df8c6a5cb63961f87e18f",
-      "data/snapshots/2c5ce291da26/source/docs/design/compact_one_sided_final_review.md": "3b827fd007e0dae369b571ee55607baba95924369ca9d0fe12ad85b10915152f",
-      "data/snapshots/2c5ce291da26/source/docs/design/compact_one_sided_mechanical_review.md": "693ac7efb6e0899c9b8df5cfcb0f196d5abc1b076919ea0d27dd053ac4bd1e70",
-      "data/snapshots/2c5ce291da26/source/docs/design/display_contract.json": "5637f5153512fbd0b6c09f2443de585b489ec08fbeca15db035c08ad3192e751",
-      "data/snapshots/2c5ce291da26/source/docs/design/first_routing_pass_review.md": "2955f2f6831b9058e043d1d46ea531f57225c374e096aaeb153fe25e44cc98ad",
-      "data/snapshots/2c5ce291da26/source/docs/design/implementation_status.md": "7be5a7e7a4fd52562c6948846de18d80ae70a9408464430c67ac4cb6cff9c246",
-      "data/snapshots/2c5ce291da26/source/docs/design/left_open_antenna_final_review.md": "433c6ebf581053bdec3d5a617429b497a4abfe7f897da4af6b32226e1040c971",
-      "data/snapshots/2c5ce291da26/source/docs/design/lower_ir_placement_review.md": "70facfc6ae02e514d3e2bb2dfdd1c2d6ece0e6129694c911a68f417a0c7c0cc1",
-      "data/snapshots/2c5ce291da26/source/docs/design/mcu_contract.json": "c9603c23ce6b0a902d29ba0c00a2ccd5c10c8b32814e0eff10f720ad48c01a19",
-      "data/snapshots/2c5ce291da26/source/docs/design/optical_space_placement_review.md": "e6b460c7602ceb2eb4572d2329f75db2a616c0e621b4724f37223cd0337ab396",
-      "data/snapshots/2c5ce291da26/source/docs/design/organized_top_row_final_review.md": "42cbee685a452fa13b091148bf8cd1a643ff63466952ddc8f1b96b69f9ca9496",
-      "data/snapshots/2c5ce291da26/source/docs/design/outlined_blocks_review.md": "3b7c7b5ebd58e3d2ab762a9567661729ee9b95463698b12de4d704a10de02f08",
-      "data/snapshots/2c5ce291da26/source/docs/design/pcb_final_footprint_review.md": "373cda408508948779f98bbc1687fa3dc92d0dd9f12ef5c9d1ea842191269360",
-      "data/snapshots/2c5ce291da26/source/docs/design/pcb_mechanical_placement_review.md": "a91dfbed510353ad2bbc594e40c0b860d991de86def196565a47c5a285d1fc40",
-      "data/snapshots/2c5ce291da26/source/docs/design/pcb_placement.json": "dbc9636b7111bfc02e0a270018f75f73230e664a5b932c2d134f91e5eab9448f",
-      "data/snapshots/2c5ce291da26/source/docs/design/pcb_placement_review.md": "43d19a841dfcd2649969a1f6261043c116c2f289ddd928f527e2c7dcff665594",
-      "data/snapshots/2c5ce291da26/source/docs/design/peripherals_contract.json": "bf17801ba20faf75c2ebf9397775481088ea8324d2c13fd03e331c1a61d70baa",
-      "data/snapshots/2c5ce291da26/source/docs/design/power_contract.json": "d0c07c4384fcc2e27e75f0c2513a098adbb45087955312c334982ff7b09b5f64",
-      "data/snapshots/2c5ce291da26/source/docs/design/rear_nfc_feasibility.md": "232d0e276dd1cde6067ade8d89579a875db6c652886bf03a9d14fb242a3e7a35",
-      "data/snapshots/2c5ce291da26/source/docs/design/routing_constraints.json": "5bf13956922291592bbf8aee670f9644211b5b3b87250594149cc955fc0b2d7d",
-      "data/snapshots/2c5ce291da26/source/docs/design/shared_passive_optics_review.md": "27caf519dd366772c4f8ba4b54c26c87ff5537f73eb09216ffc100ef54b5a21c",
-      "data/snapshots/2c5ce291da26/source/docs/design/spread_groups_placement_review.md": "b890f9bc1782bf7bbd83001dd3df729eb2c1eb56dc7d6cf9daa2e86c0c95fd64",
-      "data/snapshots/2c5ce291da26/source/docs/design/top_role_placement_review.md": "c0ce1f0b25ef9078eb15d3ec9a457fdba5b1485b2a968ac6cdfc885808637a8f",
-      "data/snapshots/2c5ce291da26/source/docs/design/verification.md": "b8425337b7e6276c3f18fdab8b24df9aa71560112aae3fd5a88afb8131baa5f8",
-      "data/snapshots/2c5ce291da26/source/docs/pinouts.md": "2b728619d0ed1582c7ea64c9cb47e53367ed8ef7a9d161bfe0b446ecf9cac83c",
-      "data/snapshots/2c5ce291da26/source/docs/spec.md": "c24b22129c215c209dd2a5f812b6b0231e3ac64867adc7bc52b263409c9b1143",
-      "data/snapshots/2c5ce291da26/source/exports/pcb-review/first-routing/checkpoint-manifest.json": "94307bb3cc94dc200b56efc7b7c391f451fa012f5ef665d8545159e17b884b33",
-      "data/snapshots/2c5ce291da26/source/exports/pcb-review/first-routing/drc.json": "87bb52953ed1a72273aa034db3188e9e37f93e872e2adba5b2b770919f143104",
-      "data/snapshots/2c5ce291da26/source/exports/pcb-review/first-routing/remaining-connections.json": "a698b33235b7df7d87a34ba1f705fb67b7e656457e1d7fac92a8cad619851073",
-      "data/snapshots/2c5ce291da26/source/exports/tinkerbadge.net": "8409e65a237a60fd872eb89a0f4c5aa5caa0808df69a90cfe8a569411a77af59",
-      "data/snapshots/2c5ce291da26/source/fp-lib-table": "9f1b52b68663c701e8fbfa899a34c55cdf57899de84fbf87a376b6a2a4203165",
-      "data/snapshots/2c5ce291da26/source/lighting.kicad_sch": "509790622c78d3492a310b05d10a094fc69e8a7e339ed88278e5eca4ff11954b",
-      "data/snapshots/2c5ce291da26/source/mcu.kicad_sch": "319f463d5210825fd0dffbcc0e4c0d112360b40b8b8c1febb08d0668fef0bd5f",
-      "data/snapshots/2c5ce291da26/source/models/BH1730FVC_WSOF6_visual.wrl": "6c0bced5697be9994bbf32f42f056f300dc4dc0f489bded314046a22c0543ca6",
-      "data/snapshots/2c5ce291da26/source/models/BQ24074RGTR_Reviewed_visual.wrl": "df63822ae2c09a45f33bcfda6fd0ab6938df70c2a7bf62faba13732467b39d65",
-      "data/snapshots/2c5ce291da26/source/models/HSMF-C165_envelope.wrl": "b5f9023bed8f722cf2ce3a5e44e3d3151d0472cd2111f6a9190c683bc28639c4",
-      "data/snapshots/2c5ce291da26/source/models/IR67-21C_TR8_visual.wrl": "c90f7a784c0cd57be32f21edf2dbb146bafc94ad2e2c6e9bf618f1bc8097753e",
-      "data/snapshots/2c5ce291da26/source/models/IRM-H638T_Reviewed_visual.wrl": "1d2dad763657427f6b6b9112d5d1b5fbe053da3fad493ec4ff690c8e86a5e88d",
-      "data/snapshots/2c5ce291da26/source/models/NT3H2111W0FHKH_XQFN8_visual.wrl": "34cb584a005cbf3637ad20e112c30916a0ffe738e0663db2d6eeffde7bff4383",
-      "data/snapshots/2c5ce291da26/source/models/Review_Battery_Allowance.wrl": "06e719ae26f2734dacb3796b22f148ce1482e8373bf4077c5dc67454e104e9c9",
-      "data/snapshots/2c5ce291da26/source/models/Review_Panel_93.3x54.9.wrl": "c91d56bd39c086ae94bf352f220ae8675f2344af3feb2ead4c49b2ec8496ac27",
-      "data/snapshots/2c5ce291da26/source/models/Review_SAO_12.7x7.wrl": "9508f65a90daf599e64c6f76e5814c71dec94de9d03919fa3d856728c1310f8c",
-      "data/snapshots/2c5ce291da26/source/models/SKSCLBE010_visual.wrl": "5f1d21d7a6da888fa16ac270cdcb4da96bbfa766a4b9b49ce56bae4f5a8c9ba2",
-      "data/snapshots/2c5ce291da26/source/models/TPS2121RUXR_Reviewed_visual.wrl": "4d86fa44cb0ba78381b6cff8bba5b452a69bfe7113b67add2bbbc3df64020ea8",
-      "data/snapshots/2c5ce291da26/source/models/TPS63802_DLA0010A_Reviewed_visual.wrl": "114938b160421224845368488f2daa372ef58cbd23c4fd11a296b4c6a7323d39",
-      "data/snapshots/2c5ce291da26/source/models/TPS63802_DLA0010A_envelope.wrl": "f03671f37ad94a50528a3620992390e3c6a16a0e8c12b015eef4f66682fea3e5",
-      "data/snapshots/2c5ce291da26/source/models/WS2812C-2020-V6_Reviewed_visual.wrl": "49f6a62d71a6924d2ebb9f8e9079638660a765575aafb51adde41669640d9275",
-      "data/snapshots/2c5ce291da26/source/peripheral_symbols.kicad_sym": "974e0e31709ff0cff331f92d5fb97d274619057ba4793437c8808ee3e9dc3138",
-      "data/snapshots/2c5ce291da26/source/peripherals.kicad_sch": "69290f4844f23a0fea38036bad9efacada4abbaa8ff7cbf6334d35f83656ed2a",
-      "data/snapshots/2c5ce291da26/source/power.kicad_sch": "ec36b3754881096dc69e9bafa2168dde9945222dc4f554e08f53b9977a1873ca",
-      "data/snapshots/2c5ce291da26/source/power_symbols.kicad_sym": "b486d4bd338bc0ad1079db7796dc91832527bd2b5ba9e774a866476a2127228f",
-      "data/snapshots/2c5ce291da26/source/sym-lib-table": "f4bda66157588820a47131cccb4eb31be3c38b8b7634124a361b9c01ccad6c30",
-      "data/snapshots/2c5ce291da26/source/tinkerbadge.kicad_pcb": "dafa93e938c3cc8b44d3bd1bc96028d27d44f320e9012c124e3212df88432e70",
-      "data/snapshots/2c5ce291da26/source/tinkerbadge.kicad_pro": "1ccd83ba5d61f6923840064d6fe5a6f83db74da29f9d65713d34fe9e23741966",
-      "data/snapshots/2c5ce291da26/source/tinkerbadge.kicad_sch": "b0674aee63fcf567cd0c53f1ea582e1218c4a79851f0198947e7a77c12474069",
-      "data/snapshots/2c5ce291da26/source/tinkerbadge.kicad_sym": "73a3ac93504f269fc70324da2d4d03a7038b0c76afb81570c4e0b5fe493f4fa1"
+      "data/snapshots/f3881ab9f98e/badge/board-native.glb": "e808c525f7388dfcc5b12fb834c3030df9922837612b08ae753f0a2b5cf661d3",
+      "data/snapshots/f3881ab9f98e/badge/board.glb": "16664930fb9bd7fc88260e63cb1166928d7a3317ea029a80cb3bd2bd7f4b1768",
+      "data/snapshots/f3881ab9f98e/badge/components.json": "73dba02d09d02f893a5ee0e757c8380ce792209e3bc52e2210ed8922f4c60044",
+      "data/snapshots/f3881ab9f98e/badge/layers/B_Cu.svg": "1c17bdf84644f692dad1ed2ec16f29456be98186c6f9f6eb9dfc3cd1c85e47dc",
+      "data/snapshots/f3881ab9f98e/badge/layers/B_Fab.svg": "80af28025c4617a9f6b7703a0ea1373220f63fee0c1c405b147f87b3c1b124d4",
+      "data/snapshots/f3881ab9f98e/badge/layers/B_Mask.svg": "1decad86f37b0e1bae024f0b2742e723fa467ec60c9d99af597afd8ea11a58bd",
+      "data/snapshots/f3881ab9f98e/badge/layers/B_SilkS.svg": "e9dda5deb3d64fe633d1fe03ebb0dd86cc4959ddc1c4a0fb6162b7b21d99b0bd",
+      "data/snapshots/f3881ab9f98e/badge/layers/Edge_Cuts.svg": "4479395a235885357cb999f7103a328211ada0e3338da11626e450972ab9841a",
+      "data/snapshots/f3881ab9f98e/badge/layers/F_Cu.svg": "4c219b1e47afd4c8eff351470f3de29918c3edaf89496172ab82a5ea75be5cbf",
+      "data/snapshots/f3881ab9f98e/badge/layers/F_Fab.svg": "ddc7870f65626ffd641b0bd9a42a447f073f5a3b5ac3a682be5909e597febb3e",
+      "data/snapshots/f3881ab9f98e/badge/layers/F_Mask.svg": "f449641c6dcdacfe3d7b20410fde110b4df08086901bbee46d403df43bbd77d4",
+      "data/snapshots/f3881ab9f98e/badge/layers/F_SilkS.svg": "3fa99450219b57f83e10b1c051cb2e8a943c993eeba0a485538c1cdac246352f",
+      "data/snapshots/f3881ab9f98e/badge/layers/In1_Cu.svg": "994f6ca4f2dcd23417c6c8b7b85e274851d25fe28a6bbb35be2880cb587fa8fd",
+      "data/snapshots/f3881ab9f98e/badge/layers/In2_Cu.svg": "398a7ed2e12f129db698bbdaef0e1709c6d077189779f51d581e9345c48e00bd",
+      "data/snapshots/f3881ab9f98e/badge/poster.png": "1ce391ba7b00e4fccc422c49c8d16ef22101200298b3d06e1bc36ebb0d43f274",
+      "data/snapshots/f3881ab9f98e/badge/schematic/15aada6a873005eb.svg": "8bf8d0429c28abce842891808a33ab20346ca75dda429bc5c2aff61e7ecc9714",
+      "data/snapshots/f3881ab9f98e/badge/schematic/34e88d34916c4af9.svg": "dbcb4b02af41442cb6229ad8ca0bd7e921da791ce6d062cca3716a2e67341b4d",
+      "data/snapshots/f3881ab9f98e/badge/schematic/8134ddf223e03a2b.svg": "92ca4cd5cd3655a6cc9da384383361bc5bf29bea66b9b156ca28844ad83d8bed",
+      "data/snapshots/f3881ab9f98e/badge/schematic/81c8fb34059608bf.svg": "1da6d9354a9d9b5a91c1c0966526c0bef63812e7fc2e58d3999958a535beb866",
+      "data/snapshots/f3881ab9f98e/badge/schematic/865f4a27a299e39b.svg": "9fc3041b9c9aaa4c2c031eff57f2da6689a9ec3a6801b12d2ea1c5f761694a27",
+      "data/snapshots/f3881ab9f98e/badge/schematic/f78e42c5695562fd.svg": "092af4af373aa92aa9e9b58eb833f8f4f68326f1769310a1ddde5a75292b3199",
+      "data/snapshots/f3881ab9f98e/badge/schematic.pdf": "939a2d9748a1368dc5ab0cf2a36e39385f5a14cf7bf7db811c40bac366b0317d",
+      "data/snapshots/f3881ab9f98e/native-design.zip": "61f85b12473157fc1285cbccae4c3f20119dac237f53b04663e0d318bff24ced",
+      "data/snapshots/f3881ab9f98e/source/LICENSE": "eeecc593866fa1c3b80189c7e3dc0ceb77740557fa92f81771f891cc54c579cb",
+      "data/snapshots/f3881ab9f98e/source/LICENSE.md": "a0344daaf9ac2a36dbb9093b2533695a149af8a9115465ec1646a710f97aedef",
+      "data/snapshots/f3881ab9f98e/source/LICENSES/Apache-2.0.txt": "074e6e32c86a4c0ef8b3ed25b721ca23aca83df277cd88106ef7177c354615ff",
+      "data/snapshots/f3881ab9f98e/source/LICENSES/CC-BY-4.0.txt": "d557539df68e771cc1eedcc91d13f70fca930e508d11eedcafa4b15db49e3744",
+      "data/snapshots/f3881ab9f98e/source/LICENSES/CC-BY-SA-4.0.txt": "cde7883b9050a1104f4ac19a1572aafd6e5d7323b68351aaf51fbf4beba54966",
+      "data/snapshots/f3881ab9f98e/source/LICENSES/CERN-OHL-P-2.0.txt": "eeecc593866fa1c3b80189c7e3dc0ceb77740557fa92f81771f891cc54c579cb",
+      "data/snapshots/f3881ab9f98e/source/LICENSES/README.md": "f8a171787718db379e83c0915498072f71f9a45f5ac32faeb76ad5996c962b92",
+      "data/snapshots/f3881ab9f98e/source/README.md": "d1f679fedc5f793e0d622ffcd84f18e226228146e2a641c2ab2861c8c64c4035",
+      "data/snapshots/f3881ab9f98e/source/Tinkerbadge.pretty/BH1730FVC_WSOF6.kicad_mod": "6351d09a8d496431e3f72950a7aa1ab48668a1f268227726ef3c075db028c7a6",
+      "data/snapshots/f3881ab9f98e/source/Tinkerbadge.pretty/BQ24074RGTR_Reviewed.kicad_mod": "183807e26beb1a5099b0fa636f887be583d7843de45b1ca956ac82f9a7fe5260",
+      "data/snapshots/f3881ab9f98e/source/Tinkerbadge.pretty/HSMF-C165.kicad_mod": "0acf2ebd509f5fa1ac51ddd27e609cf3f7672486eda42cc8a60e558a964b200d",
+      "data/snapshots/f3881ab9f98e/source/Tinkerbadge.pretty/IR67-21C_TR8.kicad_mod": "669cd066610b7853315045ac2e06625dd131ac128eb0aabe9688d1aba823f930",
+      "data/snapshots/f3881ab9f98e/source/Tinkerbadge.pretty/IRM-H638T_Reviewed.kicad_mod": "0864bc3785524a5fbc906ea72ea89e19ef2ea92daf12d1d358b67039e11b6063",
+      "data/snapshots/f3881ab9f98e/source/Tinkerbadge.pretty/JST_SH_SM04B_ProjectTabs.kicad_mod": "e64745900f944d009492fab9b12a2ba4c4ea30431a49330d0e1bf83257304558",
+      "data/snapshots/f3881ab9f98e/source/Tinkerbadge.pretty/NT3H2111W0FHKH_XQFN8.kicad_mod": "c921a2eacb3fa641f30e7a92ea19194b1b6943d076a889da2fa830cb34c6bdf2",
+      "data/snapshots/f3881ab9f98e/source/Tinkerbadge.pretty/Review_Battery_Allowance.kicad_mod": "b79a6000487262b4ed7aa027efaeab3e9ea4fb996bc23c8707c5f44f96bac645",
+      "data/snapshots/f3881ab9f98e/source/Tinkerbadge.pretty/Review_Battery_Connector.kicad_mod": "70303a71081c815a2df7f22bcafdf9da014a1609bbab02a4789d74b7e1ffb965",
+      "data/snapshots/f3881ab9f98e/source/Tinkerbadge.pretty/Review_Cord_Hole_3p2.kicad_mod": "3f8fb3abc3821f1c12fd16886ec2f9715bff17862cc9e8294dae26d022310ab9",
+      "data/snapshots/f3881ab9f98e/source/Tinkerbadge.pretty/Review_Dock_Contacts.kicad_mod": "009fddd4a64bae37c1c4ce09fef7739ec599e64623cb90a5b5ee729c51dff8f5",
+      "data/snapshots/f3881ab9f98e/source/Tinkerbadge.pretty/Review_ESD_Package.kicad_mod": "d9906d44b7476f642399481b430002a244dda9b1dd3a33b41cc692e7e537db28",
+      "data/snapshots/f3881ab9f98e/source/Tinkerbadge.pretty/Review_Flex_Mating.kicad_mod": "c9b2c4d332364cf36b3c8288ba6cda9f5b1503c3a64352345a0261418f77d436",
+      "data/snapshots/f3881ab9f98e/source/Tinkerbadge.pretty/Review_Inductor_5x5.kicad_mod": "cd5dd00c97a5a3c4df4660219358ced9d1494dd20e8b7491a6d3fcf59b084c67",
+      "data/snapshots/f3881ab9f98e/source/Tinkerbadge.pretty/Review_Inductor_6x6.kicad_mod": "b6ff1c562e59bb831ad4d84ab636647c84dc56aaff8f9ad9e73aa33f61c6c139",
+      "data/snapshots/f3881ab9f98e/source/Tinkerbadge.pretty/Review_NFC_18x13.kicad_mod": "bb8e9b6b6033695785f533b41e849968fac38727f4580addfeb687e14aefb83f",
+      "data/snapshots/f3881ab9f98e/source/Tinkerbadge.pretty/Review_NFC_Area.kicad_mod": "3b552aa8aa17940487337f051ab3d967e1bf4a8fb94d41f3866481c153d57b65",
+      "data/snapshots/f3881ab9f98e/source/Tinkerbadge.pretty/Review_Panel_93.3x54.9.kicad_mod": "301883b845385c010417dd4b50a092511787917bc994900a7a20ece895071844",
+      "data/snapshots/f3881ab9f98e/source/Tinkerbadge.pretty/Review_Panel_Raised_4p5.kicad_mod": "c92649b93b1c58ff4c0071f03e6e50bee4f965382bd8e6241013b9ff4e5a6f69",
+      "data/snapshots/f3881ab9f98e/source/Tinkerbadge.pretty/Review_SAO_12.7x7.kicad_mod": "bfc421faf899cb5b527c27413d711a624b5bf35017acc9aa4af4bf55d43574db",
+      "data/snapshots/f3881ab9f98e/source/Tinkerbadge.pretty/Review_SAO_Front_Tail_Reserve.kicad_mod": "1c67bffaf2582cdcaa96dc960eb1c204704a1d229acda36fb2ad73ff1abc9d9d",
+      "data/snapshots/f3881ab9f98e/source/Tinkerbadge.pretty/SKSCLBE010.kicad_mod": "d7d195335d2923ec63b2ebd0faeb92e00e9ff43b965cf526004bfd511e84fa68",
+      "data/snapshots/f3881ab9f98e/source/Tinkerbadge.pretty/SMF6.0A.kicad_mod": "52ad8ca8ba432f7d758198941537f37e4e8a8ecfa78f8f123f39d58c0020471c",
+      "data/snapshots/f3881ab9f98e/source/Tinkerbadge.pretty/TPS2121RUXR_Reviewed.kicad_mod": "d220a06a114923d44146b3e92914def3d7f61e4f423b7b7a44f42a55bf76e76c",
+      "data/snapshots/f3881ab9f98e/source/Tinkerbadge.pretty/TPS63802_DLA0010A.kicad_mod": "63dde13fde406a1cc8a5d77213088e71ba5ca52fb4d7a9f06833b721b2526107",
+      "data/snapshots/f3881ab9f98e/source/Tinkerbadge.pretty/TPS63802_DLA0010A_Reviewed.kicad_mod": "8cc7eabdb367fb830a77a550854e1ad0f8a2ff0564a3c8f20d2929e61226d448",
+      "data/snapshots/f3881ab9f98e/source/Tinkerbadge.pretty/USB4105-GF-A_ProjectShells.kicad_mod": "6c6eb2b980c1e4fa504aee622ea9e512db2a0cae43cce9af0c21639c488bfabc",
+      "data/snapshots/f3881ab9f98e/source/Tinkerbadge.pretty/WS2812C-2020-V6_Reviewed.kicad_mod": "c218fbe6e5d2815a6d8efe5aab3944b413610624c6ec8b2a46be0b8c519e84eb",
+      "data/snapshots/f3881ab9f98e/source/_dependencies/models/03e44c4b2b727b8d-C_0402_1005Metric.step": "03e44c4b2b727b8d4b6b1fd598cbd12dd5e614f1dfeefa96a92a07e3a3b312a2",
+      "data/snapshots/f3881ab9f98e/source/_dependencies/models/11e948c72c90e2b6-C_1206_3216Metric.step": "11e948c72c90e2b6322436b72745f40ff4e8ba0da64fb2a0df943dfa61e89c1a",
+      "data/snapshots/f3881ab9f98e/source/_dependencies/models/1875571c326d0d9e-R_0603_1608Metric.step": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861",
+      "data/snapshots/f3881ab9f98e/source/_dependencies/models/3e35bb7ba7d030d8-ESP32-S3-WROOM-1.step": "3e35bb7ba7d030d88855fcf968398c8670934c7dca08b4e30b2c578bc1e13954",
+      "data/snapshots/f3881ab9f98e/source/_dependencies/models/3ee5786aae561909-TSSOP-14_4.4x5mm_P0.65mm.step": "3ee5786aae56190997aa793ba3cfc003fd616782770e29719b4562f012982245",
+      "data/snapshots/f3881ab9f98e/source/_dependencies/models/4857b3dc717675bf-C_0603_1608Metric.step": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1",
+      "data/snapshots/f3881ab9f98e/source/_dependencies/models/4b0f89a75d3758ad-JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal.step": "4b0f89a75d3758add0041ca9e5ded3a780c23ef4e3e99bcc398b41177dff5d0f",
+      "data/snapshots/f3881ab9f98e/source/_dependencies/models/5e6c16287491528f-LGA-12_2x2mm_P0.5mm.step": "5e6c16287491528f89c09590e0d5dace14debf478226f74b45504eb906119145",
+      "data/snapshots/f3881ab9f98e/source/_dependencies/models/6338ce740fa231c2-USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal.step": "6338ce740fa231c2d3dcc6384e0576994a47240a312a21413cb85d76990a69a0",
+      "data/snapshots/f3881ab9f98e/source/_dependencies/models/6ad5e98224d02a42-TSSOP-16_4.4x5mm_P0.65mm.step": "6ad5e98224d02a427d9a6b929a28dbc158b9925fba5adec12db05079f1016948",
+      "data/snapshots/f3881ab9f98e/source/_dependencies/models/91507e5af4251cb4-R_0402_1005Metric.step": "91507e5af4251cb4ef38e04889c9b98da29904432bd83786bba13ae9b605eacb",
+      "data/snapshots/f3881ab9f98e/source/_dependencies/models/97339947f3a71964-TSSOP-20_4.4x6.5mm_P0.65mm.step": "97339947f3a7196470ec2f1d9f9b92bb2fc2ab66ad53be0cf105192585ef3c9a",
+      "data/snapshots/f3881ab9f98e/source/_dependencies/models/975744dfb68222ac-D_SMF.step": "975744dfb68222ac12c4526a1d1a96cde7f8c71c46bcd23a886ac44532259021",
+      "data/snapshots/f3881ab9f98e/source/_dependencies/models/9a669c1a2f1ea25b-C_0805_2012Metric.step": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c",
+      "data/snapshots/f3881ab9f98e/source/_dependencies/models/acbf75a28fe41aa9-SOT-323_SC-70.step": "acbf75a28fe41aa90efb38cd2b78220968d6eb6ebae1625dfd532dbeb268fece",
+      "data/snapshots/f3881ab9f98e/source/_dependencies/models/b3dc4065573abc72-D_SOD-123.step": "b3dc4065573abc72e3d5b4cca0e908f72a24205a41b6284b1f75ccacbe99adf8",
+      "data/snapshots/f3881ab9f98e/source/_dependencies/models/c9fe686b4d1b5692-SOT-23-6.step": "c9fe686b4d1b56927a41fa84a9bc1efb61d8a45a123a3db43bcaa05c2891d635",
+      "data/snapshots/f3881ab9f98e/source/_dependencies/models/dd5d1711204e1d8d-SOT-23.step": "dd5d1711204e1d8d26cd11490923bd84340820baa69538c385a4300ec2539bc0",
+      "data/snapshots/f3881ab9f98e/source/_dependencies/models/ded342cdb394fb45-R_0805_2012Metric.step": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2",
+      "data/snapshots/f3881ab9f98e/source/_dependencies/models/f8510481c5044113-C_1210_3225Metric.step": "f8510481c5044113cf49b0fa6dd54ddab9224508bd6808e1afab8ef0cefdefc9",
+      "data/snapshots/f3881ab9f98e/source/display.kicad_sch": "db16bbc749addc25f8fa89f2ce085393e6181a420205c603a33f7cc09f12fd87",
+      "data/snapshots/f3881ab9f98e/source/docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
+      "data/snapshots/f3881ab9f98e/source/docs/THIRD_PARTY_NOTICES.md": "633187c6845d17d685d46807756ca5e410d8fe15779df8c6a5cb63961f87e18f",
+      "data/snapshots/f3881ab9f98e/source/docs/design/compact_one_sided_final_review.md": "3b827fd007e0dae369b571ee55607baba95924369ca9d0fe12ad85b10915152f",
+      "data/snapshots/f3881ab9f98e/source/docs/design/compact_one_sided_mechanical_review.md": "693ac7efb6e0899c9b8df5cfcb0f196d5abc1b076919ea0d27dd053ac4bd1e70",
+      "data/snapshots/f3881ab9f98e/source/docs/design/display_contract.json": "5637f5153512fbd0b6c09f2443de585b489ec08fbeca15db035c08ad3192e751",
+      "data/snapshots/f3881ab9f98e/source/docs/design/first_routing_pass_review.md": "2955f2f6831b9058e043d1d46ea531f57225c374e096aaeb153fe25e44cc98ad",
+      "data/snapshots/f3881ab9f98e/source/docs/design/implementation_status.md": "7be5a7e7a4fd52562c6948846de18d80ae70a9408464430c67ac4cb6cff9c246",
+      "data/snapshots/f3881ab9f98e/source/docs/design/left_open_antenna_final_review.md": "433c6ebf581053bdec3d5a617429b497a4abfe7f897da4af6b32226e1040c971",
+      "data/snapshots/f3881ab9f98e/source/docs/design/lower_ir_placement_review.md": "70facfc6ae02e514d3e2bb2dfdd1c2d6ece0e6129694c911a68f417a0c7c0cc1",
+      "data/snapshots/f3881ab9f98e/source/docs/design/mcu_contract.json": "c9603c23ce6b0a902d29ba0c00a2ccd5c10c8b32814e0eff10f720ad48c01a19",
+      "data/snapshots/f3881ab9f98e/source/docs/design/optical_space_placement_review.md": "e6b460c7602ceb2eb4572d2329f75db2a616c0e621b4724f37223cd0337ab396",
+      "data/snapshots/f3881ab9f98e/source/docs/design/organized_top_row_final_review.md": "42cbee685a452fa13b091148bf8cd1a643ff63466952ddc8f1b96b69f9ca9496",
+      "data/snapshots/f3881ab9f98e/source/docs/design/outlined_blocks_review.md": "3b7c7b5ebd58e3d2ab762a9567661729ee9b95463698b12de4d704a10de02f08",
+      "data/snapshots/f3881ab9f98e/source/docs/design/pcb_final_footprint_review.md": "373cda408508948779f98bbc1687fa3dc92d0dd9f12ef5c9d1ea842191269360",
+      "data/snapshots/f3881ab9f98e/source/docs/design/pcb_mechanical_placement_review.md": "a91dfbed510353ad2bbc594e40c0b860d991de86def196565a47c5a285d1fc40",
+      "data/snapshots/f3881ab9f98e/source/docs/design/pcb_placement.json": "dbc9636b7111bfc02e0a270018f75f73230e664a5b932c2d134f91e5eab9448f",
+      "data/snapshots/f3881ab9f98e/source/docs/design/pcb_placement_review.md": "43d19a841dfcd2649969a1f6261043c116c2f289ddd928f527e2c7dcff665594",
+      "data/snapshots/f3881ab9f98e/source/docs/design/peripherals_contract.json": "bf17801ba20faf75c2ebf9397775481088ea8324d2c13fd03e331c1a61d70baa",
+      "data/snapshots/f3881ab9f98e/source/docs/design/power_contract.json": "d0c07c4384fcc2e27e75f0c2513a098adbb45087955312c334982ff7b09b5f64",
+      "data/snapshots/f3881ab9f98e/source/docs/design/rear_nfc_feasibility.md": "232d0e276dd1cde6067ade8d89579a875db6c652886bf03a9d14fb242a3e7a35",
+      "data/snapshots/f3881ab9f98e/source/docs/design/routing_constraints.json": "5bf13956922291592bbf8aee670f9644211b5b3b87250594149cc955fc0b2d7d",
+      "data/snapshots/f3881ab9f98e/source/docs/design/shared_passive_optics_review.md": "27caf519dd366772c4f8ba4b54c26c87ff5537f73eb09216ffc100ef54b5a21c",
+      "data/snapshots/f3881ab9f98e/source/docs/design/spread_groups_placement_review.md": "b890f9bc1782bf7bbd83001dd3df729eb2c1eb56dc7d6cf9daa2e86c0c95fd64",
+      "data/snapshots/f3881ab9f98e/source/docs/design/top_role_placement_review.md": "c0ce1f0b25ef9078eb15d3ec9a457fdba5b1485b2a968ac6cdfc885808637a8f",
+      "data/snapshots/f3881ab9f98e/source/docs/design/verification.md": "b8425337b7e6276c3f18fdab8b24df9aa71560112aae3fd5a88afb8131baa5f8",
+      "data/snapshots/f3881ab9f98e/source/docs/pinouts.md": "2b728619d0ed1582c7ea64c9cb47e53367ed8ef7a9d161bfe0b446ecf9cac83c",
+      "data/snapshots/f3881ab9f98e/source/docs/spec.md": "c24b22129c215c209dd2a5f812b6b0231e3ac64867adc7bc52b263409c9b1143",
+      "data/snapshots/f3881ab9f98e/source/exports/pcb-review/first-routing/checkpoint-manifest.json": "94307bb3cc94dc200b56efc7b7c391f451fa012f5ef665d8545159e17b884b33",
+      "data/snapshots/f3881ab9f98e/source/exports/pcb-review/first-routing/drc.json": "87bb52953ed1a72273aa034db3188e9e37f93e872e2adba5b2b770919f143104",
+      "data/snapshots/f3881ab9f98e/source/exports/pcb-review/first-routing/remaining-connections.json": "a698b33235b7df7d87a34ba1f705fb67b7e656457e1d7fac92a8cad619851073",
+      "data/snapshots/f3881ab9f98e/source/exports/tinkerbadge.net": "8409e65a237a60fd872eb89a0f4c5aa5caa0808df69a90cfe8a569411a77af59",
+      "data/snapshots/f3881ab9f98e/source/fp-lib-table": "9f1b52b68663c701e8fbfa899a34c55cdf57899de84fbf87a376b6a2a4203165",
+      "data/snapshots/f3881ab9f98e/source/lighting.kicad_sch": "509790622c78d3492a310b05d10a094fc69e8a7e339ed88278e5eca4ff11954b",
+      "data/snapshots/f3881ab9f98e/source/mcu.kicad_sch": "319f463d5210825fd0dffbcc0e4c0d112360b40b8b8c1febb08d0668fef0bd5f",
+      "data/snapshots/f3881ab9f98e/source/models/BH1730FVC_WSOF6_visual.wrl": "6c0bced5697be9994bbf32f42f056f300dc4dc0f489bded314046a22c0543ca6",
+      "data/snapshots/f3881ab9f98e/source/models/BQ24074RGTR_Reviewed_visual.wrl": "df63822ae2c09a45f33bcfda6fd0ab6938df70c2a7bf62faba13732467b39d65",
+      "data/snapshots/f3881ab9f98e/source/models/HSMF-C165_envelope.wrl": "b5f9023bed8f722cf2ce3a5e44e3d3151d0472cd2111f6a9190c683bc28639c4",
+      "data/snapshots/f3881ab9f98e/source/models/IR67-21C_TR8_visual.wrl": "c90f7a784c0cd57be32f21edf2dbb146bafc94ad2e2c6e9bf618f1bc8097753e",
+      "data/snapshots/f3881ab9f98e/source/models/IRM-H638T_Reviewed_visual.wrl": "1d2dad763657427f6b6b9112d5d1b5fbe053da3fad493ec4ff690c8e86a5e88d",
+      "data/snapshots/f3881ab9f98e/source/models/NT3H2111W0FHKH_XQFN8_visual.wrl": "34cb584a005cbf3637ad20e112c30916a0ffe738e0663db2d6eeffde7bff4383",
+      "data/snapshots/f3881ab9f98e/source/models/Review_Battery_Allowance.wrl": "06e719ae26f2734dacb3796b22f148ce1482e8373bf4077c5dc67454e104e9c9",
+      "data/snapshots/f3881ab9f98e/source/models/Review_Panel_93.3x54.9.wrl": "c91d56bd39c086ae94bf352f220ae8675f2344af3feb2ead4c49b2ec8496ac27",
+      "data/snapshots/f3881ab9f98e/source/models/Review_SAO_12.7x7.wrl": "9508f65a90daf599e64c6f76e5814c71dec94de9d03919fa3d856728c1310f8c",
+      "data/snapshots/f3881ab9f98e/source/models/SKSCLBE010_visual.wrl": "5f1d21d7a6da888fa16ac270cdcb4da96bbfa766a4b9b49ce56bae4f5a8c9ba2",
+      "data/snapshots/f3881ab9f98e/source/models/TPS2121RUXR_Reviewed_visual.wrl": "4d86fa44cb0ba78381b6cff8bba5b452a69bfe7113b67add2bbbc3df64020ea8",
+      "data/snapshots/f3881ab9f98e/source/models/TPS63802_DLA0010A_Reviewed_visual.wrl": "114938b160421224845368488f2daa372ef58cbd23c4fd11a296b4c6a7323d39",
+      "data/snapshots/f3881ab9f98e/source/models/TPS63802_DLA0010A_envelope.wrl": "f03671f37ad94a50528a3620992390e3c6a16a0e8c12b015eef4f66682fea3e5",
+      "data/snapshots/f3881ab9f98e/source/models/WS2812C-2020-V6_Reviewed_visual.wrl": "49f6a62d71a6924d2ebb9f8e9079638660a765575aafb51adde41669640d9275",
+      "data/snapshots/f3881ab9f98e/source/peripheral_symbols.kicad_sym": "974e0e31709ff0cff331f92d5fb97d274619057ba4793437c8808ee3e9dc3138",
+      "data/snapshots/f3881ab9f98e/source/peripherals.kicad_sch": "69290f4844f23a0fea38036bad9efacada4abbaa8ff7cbf6334d35f83656ed2a",
+      "data/snapshots/f3881ab9f98e/source/power.kicad_sch": "ec36b3754881096dc69e9bafa2168dde9945222dc4f554e08f53b9977a1873ca",
+      "data/snapshots/f3881ab9f98e/source/power_symbols.kicad_sym": "b486d4bd338bc0ad1079db7796dc91832527bd2b5ba9e774a866476a2127228f",
+      "data/snapshots/f3881ab9f98e/source/sym-lib-table": "f4bda66157588820a47131cccb4eb31be3c38b8b7634124a361b9c01ccad6c30",
+      "data/snapshots/f3881ab9f98e/source/tinkerbadge.kicad_pcb": "dafa93e938c3cc8b44d3bd1bc96028d27d44f320e9012c124e3212df88432e70",
+      "data/snapshots/f3881ab9f98e/source/tinkerbadge.kicad_pro": "1ccd83ba5d61f6923840064d6fe5a6f83db74da29f9d65713d34fe9e23741966",
+      "data/snapshots/f3881ab9f98e/source/tinkerbadge.kicad_sch": "b0674aee63fcf567cd0c53f1ea582e1218c4a79851f0198947e7a77c12474069",
+      "data/snapshots/f3881ab9f98e/source/tinkerbadge.kicad_sym": "73a3ac93504f269fc70324da2d4d03a7038b0c76afb81570c4e0b5fe493f4fa1"
     },
     "toolVersions": {
       "kicad": "10.0.8",
@@ -449,77 +449,77 @@
           {
             "id": "F.Cu",
             "name": "F.Cu",
-            "url": "data/snapshots/2c5ce291da26/badge/layers/F_Cu.svg",
+            "url": "data/snapshots/f3881ab9f98e/badge/layers/F_Cu.svg",
             "color": "#df6f5a",
             "defaultVisible": true
           },
           {
             "id": "In1.Cu",
             "name": "In1.Cu",
-            "url": "data/snapshots/2c5ce291da26/badge/layers/In1_Cu.svg",
+            "url": "data/snapshots/f3881ab9f98e/badge/layers/In1_Cu.svg",
             "color": "#b196e0",
             "defaultVisible": false
           },
           {
             "id": "In2.Cu",
             "name": "In2.Cu",
-            "url": "data/snapshots/2c5ce291da26/badge/layers/In2_Cu.svg",
+            "url": "data/snapshots/f3881ab9f98e/badge/layers/In2_Cu.svg",
             "color": "#b196e0",
             "defaultVisible": false
           },
           {
             "id": "B.Cu",
             "name": "B.Cu",
-            "url": "data/snapshots/2c5ce291da26/badge/layers/B_Cu.svg",
+            "url": "data/snapshots/f3881ab9f98e/badge/layers/B_Cu.svg",
             "color": "#6599de",
             "defaultVisible": false
           },
           {
             "id": "F.SilkS",
             "name": "F.SilkS",
-            "url": "data/snapshots/2c5ce291da26/badge/layers/F_SilkS.svg",
+            "url": "data/snapshots/f3881ab9f98e/badge/layers/F_SilkS.svg",
             "color": "#f5e9cd",
             "defaultVisible": true
           },
           {
             "id": "B.SilkS",
             "name": "B.SilkS",
-            "url": "data/snapshots/2c5ce291da26/badge/layers/B_SilkS.svg",
+            "url": "data/snapshots/f3881ab9f98e/badge/layers/B_SilkS.svg",
             "color": "#b5d8eb",
             "defaultVisible": false
           },
           {
             "id": "F.Mask",
             "name": "F.Mask",
-            "url": "data/snapshots/2c5ce291da26/badge/layers/F_Mask.svg",
+            "url": "data/snapshots/f3881ab9f98e/badge/layers/F_Mask.svg",
             "color": "#a16bc8",
             "defaultVisible": false
           },
           {
             "id": "B.Mask",
             "name": "B.Mask",
-            "url": "data/snapshots/2c5ce291da26/badge/layers/B_Mask.svg",
+            "url": "data/snapshots/f3881ab9f98e/badge/layers/B_Mask.svg",
             "color": "#7287b4",
             "defaultVisible": false
           },
           {
             "id": "F.Fab",
             "name": "F.Fab",
-            "url": "data/snapshots/2c5ce291da26/badge/layers/F_Fab.svg",
+            "url": "data/snapshots/f3881ab9f98e/badge/layers/F_Fab.svg",
             "color": "#aebbb9",
             "defaultVisible": false
           },
           {
             "id": "B.Fab",
             "name": "B.Fab",
-            "url": "data/snapshots/2c5ce291da26/badge/layers/B_Fab.svg",
+            "url": "data/snapshots/f3881ab9f98e/badge/layers/B_Fab.svg",
             "color": "#7f9795",
             "defaultVisible": false
           },
           {
             "id": "Edge.Cuts",
             "name": "Edge.Cuts",
-            "url": "data/snapshots/2c5ce291da26/badge/layers/Edge_Cuts.svg",
+            "url": "data/snapshots/f3881ab9f98e/badge/layers/Edge_Cuts.svg",
             "color": "#d4d984",
             "defaultVisible": true
           }
@@ -896,7 +896,7 @@
             "displayNameSource": {
               "kind": "bom-contract",
               "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-              "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+              "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
               "tableRowId": "UI-02",
               "line": 143,
               "matchedField": "MPN",
@@ -1507,7 +1507,7 @@
             "displayNameSource": {
               "kind": "bom-current-amendment",
               "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-              "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+              "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
               "tableRowId": "PWR-04",
               "line": 45,
               "matchedField": "MPN",
@@ -1885,7 +1885,7 @@
             "displayNameSource": {
               "kind": "bom-contract",
               "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-              "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+              "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
               "tableRowId": "SEN-01",
               "line": 160,
               "matchedField": "MPN",
@@ -2096,7 +2096,7 @@
             "displayNameSource": {
               "kind": "bom-current-amendment",
               "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-              "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+              "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
               "tableRowId": "PWR-14",
               "line": 55,
               "matchedField": "MPN",
@@ -2270,11 +2270,11 @@
               "Contract": "docs/design/mcu_contract.json",
               "MPN": "ESP32-S3-WROOM-1-N16R8"
             },
-            "displayName": "Main processor module",
+            "displayName": "Microcontroller",
             "displayNameSource": {
               "kind": "bom-contract",
               "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-              "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+              "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
               "tableRowId": "MCU-01",
               "line": 114,
               "matchedField": "MPN",
@@ -2416,7 +2416,7 @@
             "displayNameSource": {
               "kind": "bom-contract",
               "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-              "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+              "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
               "tableRowId": "IR-01",
               "line": 186,
               "matchedField": "MPN",
@@ -2560,7 +2560,7 @@
             "displayNameSource": {
               "kind": "bom-contract",
               "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-              "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+              "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
               "tableRowId": "UI-02",
               "line": 143,
               "matchedField": "MPN",
@@ -3396,7 +3396,7 @@
             "displayNameSource": {
               "kind": "bom-contract",
               "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-              "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+              "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
               "tableRowId": "DISP-05",
               "line": 128,
               "matchedField": "MPN",
@@ -3558,7 +3558,7 @@
             "displayNameSource": {
               "kind": "bom-contract",
               "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-              "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+              "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
               "tableRowId": "DISP-05",
               "line": 128,
               "matchedField": "MPN",
@@ -3709,7 +3709,7 @@
             "displayNameSource": {
               "kind": "bom-contract",
               "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-              "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+              "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
               "tableRowId": "NFC-01",
               "line": 170,
               "matchedField": "MPN",
@@ -3854,7 +3854,7 @@
             "displayNameSource": {
               "kind": "bom-unique-current-mpn",
               "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-              "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+              "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
               "tableRowId": "PWR-06",
               "line": 47,
               "matchedField": "MPN",
@@ -3935,7 +3935,7 @@
             "displayNameSource": {
               "kind": "bom-contract",
               "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-              "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+              "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
               "tableRowId": "EXP-06",
               "line": 203,
               "matchedField": "MPN",
@@ -4503,7 +4503,7 @@
             "displayNameSource": {
               "kind": "bom-contract",
               "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-              "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+              "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
               "tableRowId": "IR-03",
               "line": 188,
               "matchedField": "MPN",
@@ -4583,7 +4583,7 @@
             "displayNameSource": {
               "kind": "bom-contract",
               "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-              "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+              "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
               "tableRowId": "UI-03",
               "line": 144,
               "matchedField": "MPN",
@@ -5069,7 +5069,7 @@
             "displayNameSource": {
               "kind": "bom-contract",
               "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-              "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+              "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
               "tableRowId": "UI-02",
               "line": 143,
               "matchedField": "MPN",
@@ -5347,7 +5347,7 @@
             "displayNameSource": {
               "kind": "bom-contract",
               "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-              "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+              "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
               "tableRowId": "EXP-01",
               "line": 198,
               "matchedField": "MPN",
@@ -5561,7 +5561,7 @@
             "displayNameSource": {
               "kind": "bom-contract",
               "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-              "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+              "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
               "tableRowId": "UI-02",
               "line": 143,
               "matchedField": "MPN",
@@ -5983,7 +5983,7 @@
             "displayNameSource": {
               "kind": "bom-unique-current-mpn",
               "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-              "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+              "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
               "tableRowId": "PWR-05",
               "line": 46,
               "matchedField": "MPN",
@@ -6051,7 +6051,7 @@
             "displayNameSource": {
               "kind": "bom-contract",
               "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-              "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+              "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
               "tableRowId": "DISP-04",
               "line": 127,
               "matchedField": "MPN",
@@ -6534,7 +6534,7 @@
             "displayNameSource": {
               "kind": "bom-current-amendment",
               "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-              "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+              "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
               "tableRowId": "PWR-14",
               "line": 55,
               "matchedField": "MPN",
@@ -7679,7 +7679,7 @@
             "displayNameSource": {
               "kind": "bom-contract",
               "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-              "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+              "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
               "tableRowId": "UI-03",
               "line": 144,
               "matchedField": "MPN",
@@ -8387,7 +8387,7 @@
             "displayNameSource": {
               "kind": "bom-contract",
               "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-              "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+              "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
               "tableRowId": "IR-02",
               "line": 187,
               "matchedField": "MPN",
@@ -8603,7 +8603,7 @@
             "displayNameSource": {
               "kind": "bom-contract",
               "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-              "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+              "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
               "tableRowId": "EXP-03",
               "line": 200,
               "matchedField": "MPN",
@@ -9336,7 +9336,7 @@
             "displayNameSource": {
               "kind": "bom-current-amendment",
               "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-              "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+              "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
               "tableRowId": "PWR-16",
               "line": 56,
               "matchedField": "MPN",
@@ -9914,7 +9914,7 @@
             "displayNameSource": {
               "kind": "bom-contract",
               "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-              "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+              "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
               "tableRowId": "UI-02",
               "line": 143,
               "matchedField": "MPN",
@@ -9992,7 +9992,7 @@
             "displayNameSource": {
               "kind": "bom-contract",
               "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-              "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+              "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
               "tableRowId": "UI-02",
               "line": 143,
               "matchedField": "MPN",
@@ -10065,7 +10065,7 @@
             "displayNameSource": {
               "kind": "bom-contract",
               "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-              "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+              "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
               "tableRowId": "DISP-05",
               "line": 128,
               "matchedField": "MPN",
@@ -10144,7 +10144,7 @@
             "displayNameSource": {
               "kind": "bom-unique-current-mpn",
               "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-              "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+              "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
               "tableRowId": "PWR-01",
               "line": 42,
               "matchedField": "MPN",
@@ -10419,7 +10419,7 @@
             "displayNameSource": {
               "kind": "bom-unique-current-mpn",
               "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-              "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+              "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
               "tableRowId": "PWR-07",
               "line": 48,
               "matchedField": "MPN",
@@ -10556,7 +10556,7 @@
             "displayNameSource": {
               "kind": "bom-contract",
               "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-              "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+              "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
               "tableRowId": "UI-02",
               "line": 143,
               "matchedField": "MPN",
@@ -10828,7 +10828,7 @@
             "displayNameSource": {
               "kind": "bom-contract",
               "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-              "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+              "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
               "tableRowId": "SEN-02",
               "line": 161,
               "matchedField": "MPN",
@@ -11177,7 +11177,7 @@
             "displayNameSource": {
               "kind": "bom-contract",
               "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-              "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+              "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
               "tableRowId": "UI-02",
               "line": 143,
               "matchedField": "MPN",
@@ -11552,7 +11552,7 @@
             "displayNameSource": {
               "kind": "bom-unique-current-mpn",
               "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-              "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+              "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
               "tableRowId": "PWR-03",
               "line": 44,
               "matchedField": "MPN",
@@ -11618,7 +11618,7 @@
             "displayNameSource": {
               "kind": "bom-current-amendment",
               "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-              "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+              "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
               "tableRowId": "PWR-04",
               "line": 45,
               "matchedField": "MPN",
@@ -11830,7 +11830,7 @@
             "displayNameSource": {
               "kind": "bom-contract",
               "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-              "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+              "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
               "tableRowId": "PWR-13",
               "line": 54,
               "matchedField": "MPN",
@@ -12187,7 +12187,7 @@
             "displayNameSource": {
               "kind": "bom-contract",
               "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-              "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+              "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
               "tableRowId": "DISP-06",
               "line": 129,
               "matchedField": "MPN",
@@ -12656,7 +12656,7 @@
             "boxes": []
           }
         ],
-        "nativeUrl": "data/snapshots/2c5ce291da26/source/tinkerbadge.kicad_pcb",
+        "nativeUrl": "data/snapshots/f3881ab9f98e/source/tinkerbadge.kicad_pcb",
         "outlineBounds": [
           99.99999999999888,
           99.99999999999837,
@@ -12714,7 +12714,7 @@
             "displayPath": "/",
             "page": "1",
             "symbols": [],
-            "url": "data/snapshots/2c5ce291da26/badge/schematic/15aada6a873005eb.svg",
+            "url": "data/snapshots/f3881ab9f98e/badge/schematic/15aada6a873005eb.svg",
             "viewBox": [
               0.0,
               0.0,
@@ -12726,7 +12726,7 @@
               "sheetPath": "/",
               "sourceFile": "tinkerbadge.kicad_sch",
               "visibleReferenceCount": 0,
-              "svgSha256": "c781001ecca10a662bad77030f98c21769c5f2498035dc3ddfd8d107665e8e3e"
+              "svgSha256": "8bf8d0429c28abce842891808a33ab20346ca75dda429bc5c2aff61e7ecc9714"
             }
           },
           {
@@ -12767,7 +12767,7 @@
                 "displayNameSource": {
                   "kind": "bom-unique-current-mpn",
                   "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-                  "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+                  "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
                   "tableRowId": "PWR-03",
                   "line": 44,
                   "matchedField": "MPN",
@@ -12803,7 +12803,7 @@
                 "displayNameSource": {
                   "kind": "bom-unique-current-mpn",
                   "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-                  "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+                  "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
                   "tableRowId": "PWR-05",
                   "line": 46,
                   "matchedField": "MPN",
@@ -12840,7 +12840,7 @@
                 "displayNameSource": {
                   "kind": "bom-unique-current-mpn",
                   "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-                  "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+                  "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
                   "tableRowId": "PWR-06",
                   "line": 47,
                   "matchedField": "MPN",
@@ -12876,7 +12876,7 @@
                 "displayNameSource": {
                   "kind": "bom-unique-current-mpn",
                   "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-                  "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+                  "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
                   "tableRowId": "PWR-07",
                   "line": 48,
                   "matchedField": "MPN",
@@ -12912,7 +12912,7 @@
                 "displayNameSource": {
                   "kind": "bom-unique-current-mpn",
                   "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-                  "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+                  "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
                   "tableRowId": "PWR-02",
                   "line": 43,
                   "matchedField": "MPN",
@@ -12948,7 +12948,7 @@
                 "displayNameSource": {
                   "kind": "bom-current-amendment",
                   "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-                  "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+                  "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
                   "tableRowId": "PWR-16",
                   "line": 56,
                   "matchedField": "MPN",
@@ -12993,7 +12993,7 @@
                 "displayNameSource": {
                   "kind": "bom-current-amendment",
                   "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-                  "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+                  "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
                   "tableRowId": "PWR-14",
                   "line": 55,
                   "matchedField": "MPN",
@@ -13038,7 +13038,7 @@
                 "displayNameSource": {
                   "kind": "bom-current-amendment",
                   "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-                  "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+                  "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
                   "tableRowId": "PWR-14",
                   "line": 55,
                   "matchedField": "MPN",
@@ -13111,7 +13111,7 @@
                 "displayNameSource": {
                   "kind": "bom-current-amendment",
                   "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-                  "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+                  "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
                   "tableRowId": "PWR-04",
                   "line": 45,
                   "matchedField": "MPN",
@@ -13156,7 +13156,7 @@
                 "displayNameSource": {
                   "kind": "bom-current-amendment",
                   "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-                  "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+                  "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
                   "tableRowId": "PWR-04",
                   "line": 45,
                   "matchedField": "MPN",
@@ -13201,7 +13201,7 @@
                 "displayNameSource": {
                   "kind": "bom-unique-current-mpn",
                   "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-                  "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+                  "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
                   "tableRowId": "PWR-01",
                   "line": 42,
                   "matchedField": "MPN",
@@ -14871,7 +14871,7 @@
                 }
               }
             ],
-            "url": "data/snapshots/2c5ce291da26/badge/schematic/f78e42c5695562fd.svg",
+            "url": "data/snapshots/f3881ab9f98e/badge/schematic/f78e42c5695562fd.svg",
             "viewBox": [
               0.0,
               0.0,
@@ -14883,7 +14883,7 @@
               "sheetPath": "/01  POWER + CHARGING/",
               "sourceFile": "power.kicad_sch",
               "visibleReferenceCount": 60,
-              "svgSha256": "2d45b505c59c21f82c6a58f15213cc1e7afcb793ce0ed3d5df8b883fe6463b86"
+              "svgSha256": "092af4af373aa92aa9e9b58eb833f8f4f68326f1769310a1ddde5a75292b3199"
             }
           },
           {
@@ -14920,11 +14920,11 @@
                   "Contract": "docs/design/mcu_contract.json",
                   "MPN": "ESP32-S3-WROOM-1-N16R8"
                 },
-                "displayName": "Main processor module",
+                "displayName": "Microcontroller",
                 "displayNameSource": {
                   "kind": "bom-contract",
                   "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-                  "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+                  "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
                   "tableRowId": "MCU-01",
                   "line": 114,
                   "matchedField": "MPN",
@@ -15457,7 +15457,7 @@
                 }
               }
             ],
-            "url": "data/snapshots/2c5ce291da26/badge/schematic/81c8fb34059608bf.svg",
+            "url": "data/snapshots/f3881ab9f98e/badge/schematic/81c8fb34059608bf.svg",
             "viewBox": [
               0.0,
               0.0,
@@ -15469,7 +15469,7 @@
               "sheetPath": "/02  PROCESSOR + RECOVERY/",
               "sourceFile": "mcu.kicad_sch",
               "visibleReferenceCount": 17,
-              "svgSha256": "d6778e098094588a7c22f88b8d3033a6d787726223d0e46f5cf3c5dcf97c6919"
+              "svgSha256": "1da6d9354a9d9b5a91c1c0966526c0bef63812e7fc2e58d3999958a535beb866"
             }
           },
           {
@@ -15539,7 +15539,7 @@
                 "displayNameSource": {
                   "kind": "bom-contract",
                   "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-                  "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+                  "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
                   "tableRowId": "DISP-06",
                   "line": 129,
                   "matchedField": "MPN",
@@ -15582,7 +15582,7 @@
                 "displayNameSource": {
                   "kind": "bom-contract",
                   "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-                  "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+                  "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
                   "tableRowId": "DISP-04",
                   "line": 127,
                   "matchedField": "MPN",
@@ -15661,7 +15661,7 @@
                 "displayNameSource": {
                   "kind": "bom-contract",
                   "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-                  "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+                  "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
                   "tableRowId": "DISP-05",
                   "line": 128,
                   "matchedField": "MPN",
@@ -15704,7 +15704,7 @@
                 "displayNameSource": {
                   "kind": "bom-contract",
                   "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-                  "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+                  "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
                   "tableRowId": "DISP-05",
                   "line": 128,
                   "matchedField": "MPN",
@@ -15747,7 +15747,7 @@
                 "displayNameSource": {
                   "kind": "bom-contract",
                   "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-                  "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+                  "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
                   "tableRowId": "DISP-05",
                   "line": 128,
                   "matchedField": "MPN",
@@ -16482,7 +16482,7 @@
                 }
               }
             ],
-            "url": "data/snapshots/2c5ce291da26/badge/schematic/865f4a27a299e39b.svg",
+            "url": "data/snapshots/f3881ab9f98e/badge/schematic/865f4a27a299e39b.svg",
             "viewBox": [
               0.0,
               0.0,
@@ -16494,7 +16494,7 @@
               "sheetPath": "/03  E-PAPER DISPLAY/",
               "sourceFile": "display.kicad_sch",
               "visibleReferenceCount": 27,
-              "svgSha256": "ea50abf45902b0f6c0a2812b14e3ec60279de6540b9ca69143558c007ae210de"
+              "svgSha256": "9fc3041b9c9aaa4c2c031eff57f2da6689a9ec3a6801b12d2ea1c5f761694a27"
             }
           },
           {
@@ -16538,7 +16538,7 @@
                 "displayNameSource": {
                   "kind": "bom-contract",
                   "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-                  "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+                  "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
                   "tableRowId": "UI-02",
                   "line": 143,
                   "matchedField": "MPN",
@@ -16622,7 +16622,7 @@
                 "displayNameSource": {
                   "kind": "bom-contract",
                   "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-                  "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+                  "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
                   "tableRowId": "UI-02",
                   "line": 143,
                   "matchedField": "MPN",
@@ -16706,7 +16706,7 @@
                 "displayNameSource": {
                   "kind": "bom-contract",
                   "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-                  "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+                  "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
                   "tableRowId": "UI-02",
                   "line": 143,
                   "matchedField": "MPN",
@@ -16790,7 +16790,7 @@
                 "displayNameSource": {
                   "kind": "bom-contract",
                   "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-                  "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+                  "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
                   "tableRowId": "UI-02",
                   "line": 143,
                   "matchedField": "MPN",
@@ -16874,7 +16874,7 @@
                 "displayNameSource": {
                   "kind": "bom-contract",
                   "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-                  "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+                  "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
                   "tableRowId": "UI-02",
                   "line": 143,
                   "matchedField": "MPN",
@@ -16958,7 +16958,7 @@
                 "displayNameSource": {
                   "kind": "bom-contract",
                   "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-                  "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+                  "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
                   "tableRowId": "UI-02",
                   "line": 143,
                   "matchedField": "MPN",
@@ -17042,7 +17042,7 @@
                 "displayNameSource": {
                   "kind": "bom-contract",
                   "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-                  "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+                  "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
                   "tableRowId": "UI-02",
                   "line": 143,
                   "matchedField": "MPN",
@@ -17126,7 +17126,7 @@
                 "displayNameSource": {
                   "kind": "bom-contract",
                   "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-                  "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+                  "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
                   "tableRowId": "UI-02",
                   "line": 143,
                   "matchedField": "MPN",
@@ -17324,7 +17324,7 @@
                 "displayNameSource": {
                   "kind": "bom-contract",
                   "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-                  "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+                  "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
                   "tableRowId": "PWR-13",
                   "line": 54,
                   "matchedField": "MPN",
@@ -17754,7 +17754,7 @@
                 "displayNameSource": {
                   "kind": "bom-contract",
                   "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-                  "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+                  "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
                   "tableRowId": "UI-03",
                   "line": 144,
                   "matchedField": "MPN",
@@ -17804,7 +17804,7 @@
                 "displayNameSource": {
                   "kind": "bom-contract",
                   "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-                  "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+                  "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
                   "tableRowId": "UI-03",
                   "line": 144,
                   "matchedField": "MPN",
@@ -17819,7 +17819,7 @@
                 }
               }
             ],
-            "url": "data/snapshots/2c5ce291da26/badge/schematic/34e88d34916c4af9.svg",
+            "url": "data/snapshots/f3881ab9f98e/badge/schematic/34e88d34916c4af9.svg",
             "viewBox": [
               0.0,
               0.0,
@@ -17831,7 +17831,7 @@
               "sheetPath": "/04  LIGHTING + BUTTONS/",
               "sourceFile": "lighting.kicad_sch",
               "visibleReferenceCount": 32,
-              "svgSha256": "17949560f5cab86d4c5486b058e79746132d187437084adbdd1c370e4535433f"
+              "svgSha256": "dbcb4b02af41442cb6229ad8ca0bd7e921da791ce6d062cca3716a2e67341b4d"
             }
           },
           {
@@ -17875,7 +17875,7 @@
                 "displayNameSource": {
                   "kind": "bom-contract",
                   "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-                  "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+                  "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
                   "tableRowId": "SEN-01",
                   "line": 160,
                   "matchedField": "MPN",
@@ -17921,7 +17921,7 @@
                 "displayNameSource": {
                   "kind": "bom-contract",
                   "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-                  "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+                  "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
                   "tableRowId": "SEN-02",
                   "line": 161,
                   "matchedField": "MPN",
@@ -17967,7 +17967,7 @@
                 "displayNameSource": {
                   "kind": "bom-contract",
                   "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-                  "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+                  "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
                   "tableRowId": "NFC-01",
                   "line": 170,
                   "matchedField": "MPN",
@@ -18462,7 +18462,7 @@
                 "displayNameSource": {
                   "kind": "bom-contract",
                   "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-                  "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+                  "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
                   "tableRowId": "IR-01",
                   "line": 186,
                   "matchedField": "MPN",
@@ -18508,7 +18508,7 @@
                 "displayNameSource": {
                   "kind": "bom-contract",
                   "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-                  "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+                  "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
                   "tableRowId": "IR-02",
                   "line": 187,
                   "matchedField": "MPN",
@@ -18554,7 +18554,7 @@
                 "displayNameSource": {
                   "kind": "bom-contract",
                   "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-                  "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+                  "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
                   "tableRowId": "IR-03",
                   "line": 188,
                   "matchedField": "MPN",
@@ -18828,7 +18828,7 @@
                 "displayNameSource": {
                   "kind": "bom-contract",
                   "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-                  "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+                  "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
                   "tableRowId": "EXP-03",
                   "line": 200,
                   "matchedField": "MPN",
@@ -19140,7 +19140,7 @@
                 "displayNameSource": {
                   "kind": "bom-contract",
                   "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-                  "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+                  "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
                   "tableRowId": "EXP-01",
                   "line": 198,
                   "matchedField": "MPN",
@@ -19186,7 +19186,7 @@
                 "displayNameSource": {
                   "kind": "bom-contract",
                   "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-                  "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+                  "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
                   "tableRowId": "EXP-02",
                   "line": 199,
                   "matchedField": "MPN",
@@ -19308,7 +19308,7 @@
                 "displayNameSource": {
                   "kind": "bom-contract",
                   "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-                  "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+                  "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
                   "tableRowId": "EXP-06",
                   "line": 203,
                   "matchedField": "MPN",
@@ -19551,7 +19551,7 @@
                 }
               }
             ],
-            "url": "data/snapshots/2c5ce291da26/badge/schematic/8134ddf223e03a2b.svg",
+            "url": "data/snapshots/f3881ab9f98e/badge/schematic/8134ddf223e03a2b.svg",
             "viewBox": [
               0.0,
               0.0,
@@ -19563,12 +19563,12 @@
               "sheetPath": "/05  SENSORS + EXPANSION/",
               "sourceFile": "peripherals.kicad_sch",
               "visibleReferenceCount": 43,
-              "svgSha256": "d873a3a29bd9e6a021e598a59f020fed800c97161e867f9039431012cb3fdabf"
+              "svgSha256": "92ca4cd5cd3655a6cc9da384383361bc5bf29bea66b9b156ca28844ad83d8bed"
             }
           }
         ],
-        "pdfUrl": "data/snapshots/2c5ce291da26/badge/schematic.pdf",
-        "nativeUrl": "data/snapshots/2c5ce291da26/source/tinkerbadge.kicad_sch",
+        "pdfUrl": "data/snapshots/f3881ab9f98e/badge/schematic.pdf",
+        "nativeUrl": "data/snapshots/f3881ab9f98e/source/tinkerbadge.kicad_sch",
         "population": {
           "symbols": 179,
           "onBoard": 179,
@@ -19588,8 +19588,8 @@
         }
       },
       "model": {
-        "url": "data/snapshots/2c5ce291da26/badge/board.glb",
-        "posterUrl": "data/snapshots/2c5ce291da26/badge/poster.png",
+        "url": "data/snapshots/f3881ab9f98e/badge/board.glb",
+        "posterUrl": "data/snapshots/f3881ab9f98e/badge/poster.png",
         "posterRendering": {
           "kind": "private-assembly-derivative",
           "visibleReviewReferences": [
@@ -19623,7 +19623,7 @@
           "TP204"
         ],
         "description": "PCB and available component models.",
-        "nativeUrl": "data/snapshots/2c5ce291da26/badge/board-native.glb",
+        "nativeUrl": "data/snapshots/f3881ab9f98e/badge/board-native.glb",
         "optimization": {
           "before": {
             "primitives": 24048,
@@ -19648,17 +19648,17 @@
           ],
           "tool": "@gltf-transform/core 4.2.1"
         },
-        "componentsUrl": "data/snapshots/2c5ce291da26/badge/components.json",
+        "componentsUrl": "data/snapshots/f3881ab9f98e/badge/components.json",
         "componentBinding": {
           "components": 184,
           "modeledComponents": 165,
           "accessories": 2,
           "renderableAccessories": 2,
-          "bindingId": "aadbef4a2bc4c150c2361f9318307e1963193f53261f0f28c64525b4772ad8a8",
+          "bindingId": "62a74d6a84a40202c458951f1a6a84ef6cb99ba479e1e4077c93e461ca9f5547",
           "modelBytes": 19298180
         }
       },
-      "componentsUrl": "data/snapshots/2c5ce291da26/badge/components.json",
+      "componentsUrl": "data/snapshots/f3881ab9f98e/badge/components.json",
       "warnings": [
         "Display glass is 3.5 mm behind the antenna; the 15 mm housing-clearance recommendation is not met and RF qualification remains open.",
         "A rear B.Cu NFC coil is planned, with front and inner-layer clearance retained. No antenna copper, tuning, or routing is implemented.",
@@ -19668,32 +19668,32 @@
       "downloads": [
         {
           "label": "Schematic PDF",
-          "url": "data/snapshots/2c5ce291da26/badge/schematic.pdf"
+          "url": "data/snapshots/f3881ab9f98e/badge/schematic.pdf"
         },
         {
           "label": "Native schematic",
-          "url": "data/snapshots/2c5ce291da26/source/tinkerbadge.kicad_sch"
+          "url": "data/snapshots/f3881ab9f98e/source/tinkerbadge.kicad_sch"
         },
         {
           "label": "Native PCB",
-          "url": "data/snapshots/2c5ce291da26/source/tinkerbadge.kicad_pcb"
+          "url": "data/snapshots/f3881ab9f98e/source/tinkerbadge.kicad_pcb"
         },
         {
           "label": "Component data (JSON)",
-          "url": "data/snapshots/2c5ce291da26/badge/components.json"
+          "url": "data/snapshots/f3881ab9f98e/badge/components.json"
         },
         {
           "label": "3D model (GLB)",
-          "url": "data/snapshots/2c5ce291da26/badge/board.glb"
+          "url": "data/snapshots/f3881ab9f98e/badge/board.glb"
         },
         {
           "label": "Native GLB export",
-          "url": "data/snapshots/2c5ce291da26/badge/board-native.glb"
+          "url": "data/snapshots/f3881ab9f98e/badge/board-native.glb"
         }
       ],
       "componentNaming": {
         "sources": {
-          "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+          "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
           "docs/design/peripherals_contract.json": "bf17801ba20faf75c2ebf9397775481088ea8324d2c13fd03e331c1a61d70baa",
           "docs/design/mcu_contract.json": "c9603c23ce6b0a902d29ba0c00a2ccd5c10c8b32814e0eff10f720ad48c01a19",
           "docs/design/display_contract.json": "5637f5153512fbd0b6c09f2443de585b489ec08fbeca15db035c08ad3192e751",
@@ -19730,11 +19730,11 @@
     }
   ],
   "readme": {
-    "url": "data/snapshots/2c5ce291da26/source/README.md",
+    "url": "data/snapshots/f3881ab9f98e/source/README.md",
     "sourcePath": "README.md"
   },
-  "sourceBase": "data/snapshots/2c5ce291da26/source/",
-  "nativeArchiveUrl": "data/snapshots/2c5ce291da26/native-design.zip",
+  "sourceBase": "data/snapshots/f3881ab9f98e/source/",
+  "nativeArchiveUrl": "data/snapshots/f3881ab9f98e/native-design.zip",
   "warnings": [
     "ERC and DRC were not rerun for this export. See the source review documents for hardware validation.",
     "Review third-party component-model licenses before public redistribution."

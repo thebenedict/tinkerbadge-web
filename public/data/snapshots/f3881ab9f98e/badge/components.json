@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "bindingId": "aadbef4a2bc4c150c2361f9318307e1963193f53261f0f28c64525b4772ad8a8",
+  "bindingId": "62a74d6a84a40202c458951f1a6a84ef6cb99ba479e1e4077c93e461ca9f5547",
   "variant": "badge",
   "source": {
     "pcb": "tinkerbadge.kicad_pcb",
@@ -4485,7 +4485,7 @@
       "displayNameSource": {
         "kind": "bom-current-amendment",
         "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-        "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+        "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
         "tableRowId": "PWR-04",
         "line": 45,
         "matchedField": "MPN",
@@ -4575,7 +4575,7 @@
       "displayNameSource": {
         "kind": "bom-current-amendment",
         "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-        "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+        "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
         "tableRowId": "PWR-04",
         "line": 45,
         "matchedField": "MPN",
@@ -4665,7 +4665,7 @@
       "displayNameSource": {
         "kind": "bom-contract",
         "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-        "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+        "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
         "tableRowId": "DISP-05",
         "line": 128,
         "matchedField": "MPN",
@@ -4753,7 +4753,7 @@
       "displayNameSource": {
         "kind": "bom-contract",
         "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-        "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+        "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
         "tableRowId": "DISP-05",
         "line": 128,
         "matchedField": "MPN",
@@ -4841,7 +4841,7 @@
       "displayNameSource": {
         "kind": "bom-contract",
         "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-        "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+        "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
         "tableRowId": "DISP-05",
         "line": 128,
         "matchedField": "MPN",
@@ -4931,7 +4931,7 @@
       "displayNameSource": {
         "kind": "bom-contract",
         "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-        "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+        "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
         "tableRowId": "UI-02",
         "line": 143,
         "matchedField": "MPN",
@@ -5021,7 +5021,7 @@
       "displayNameSource": {
         "kind": "bom-contract",
         "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-        "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+        "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
         "tableRowId": "UI-02",
         "line": 143,
         "matchedField": "MPN",
@@ -5111,7 +5111,7 @@
       "displayNameSource": {
         "kind": "bom-contract",
         "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-        "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+        "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
         "tableRowId": "UI-02",
         "line": 143,
         "matchedField": "MPN",
@@ -5201,7 +5201,7 @@
       "displayNameSource": {
         "kind": "bom-contract",
         "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-        "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+        "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
         "tableRowId": "UI-02",
         "line": 143,
         "matchedField": "MPN",
@@ -5291,7 +5291,7 @@
       "displayNameSource": {
         "kind": "bom-contract",
         "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-        "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+        "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
         "tableRowId": "UI-02",
         "line": 143,
         "matchedField": "MPN",
@@ -5381,7 +5381,7 @@
       "displayNameSource": {
         "kind": "bom-contract",
         "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-        "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+        "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
         "tableRowId": "UI-02",
         "line": 143,
         "matchedField": "MPN",
@@ -5471,7 +5471,7 @@
       "displayNameSource": {
         "kind": "bom-contract",
         "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-        "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+        "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
         "tableRowId": "UI-02",
         "line": 143,
         "matchedField": "MPN",
@@ -5561,7 +5561,7 @@
       "displayNameSource": {
         "kind": "bom-contract",
         "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-        "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+        "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
         "tableRowId": "UI-02",
         "line": 143,
         "matchedField": "MPN",
@@ -5650,7 +5650,7 @@
       "displayNameSource": {
         "kind": "bom-contract",
         "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-        "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+        "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
         "tableRowId": "PWR-13",
         "line": 54,
         "matchedField": "MPN",
@@ -5738,7 +5738,7 @@
       "displayNameSource": {
         "kind": "bom-contract",
         "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-        "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+        "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
         "tableRowId": "IR-01",
         "line": 186,
         "matchedField": "MPN",
@@ -6060,7 +6060,7 @@
       "displayNameSource": {
         "kind": "bom-unique-current-mpn",
         "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-        "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+        "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
         "tableRowId": "PWR-01",
         "line": 42,
         "matchedField": "MPN",
@@ -6143,7 +6143,7 @@
       "displayNameSource": {
         "kind": "bom-contract",
         "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-        "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+        "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
         "tableRowId": "EXP-01",
         "line": 198,
         "matchedField": "MPN",
@@ -6270,7 +6270,7 @@
       "displayNameSource": {
         "kind": "bom-current-amendment",
         "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-        "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+        "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
         "tableRowId": "PWR-14",
         "line": 55,
         "matchedField": "MPN",
@@ -6361,7 +6361,7 @@
       "displayNameSource": {
         "kind": "bom-current-amendment",
         "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-        "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+        "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
         "tableRowId": "PWR-14",
         "line": 55,
         "matchedField": "MPN",
@@ -6526,7 +6526,7 @@
       "displayNameSource": {
         "kind": "bom-contract",
         "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-        "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+        "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
         "tableRowId": "DISP-04",
         "line": 127,
         "matchedField": "MPN",
@@ -6615,7 +6615,7 @@
       "displayNameSource": {
         "kind": "bom-contract",
         "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-        "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+        "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
         "tableRowId": "IR-02",
         "line": 187,
         "matchedField": "MPN",
@@ -12761,7 +12761,7 @@
       "displayNameSource": {
         "kind": "bom-contract",
         "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-        "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+        "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
         "tableRowId": "UI-03",
         "line": 144,
         "matchedField": "MPN",
@@ -12849,7 +12849,7 @@
       "displayNameSource": {
         "kind": "bom-contract",
         "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-        "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+        "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
         "tableRowId": "UI-03",
         "line": 144,
         "matchedField": "MPN",
@@ -13185,7 +13185,7 @@
       "displayNameSource": {
         "kind": "bom-unique-current-mpn",
         "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-        "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+        "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
         "tableRowId": "PWR-03",
         "line": 44,
         "matchedField": "MPN",
@@ -13277,7 +13277,7 @@
       "displayNameSource": {
         "kind": "bom-unique-current-mpn",
         "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-        "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+        "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
         "tableRowId": "PWR-05",
         "line": 46,
         "matchedField": "MPN",
@@ -13363,7 +13363,7 @@
       "displayNameSource": {
         "kind": "bom-unique-current-mpn",
         "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-        "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+        "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
         "tableRowId": "PWR-06",
         "line": 47,
         "matchedField": "MPN",
@@ -13448,7 +13448,7 @@
       "displayNameSource": {
         "kind": "bom-unique-current-mpn",
         "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-        "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+        "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
         "tableRowId": "PWR-07",
         "line": 48,
         "matchedField": "MPN",
@@ -13537,7 +13537,7 @@
       "displayNameSource": {
         "kind": "bom-current-amendment",
         "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-        "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+        "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
         "tableRowId": "PWR-16",
         "line": 56,
         "matchedField": "MPN",
@@ -13660,11 +13660,11 @@
         "source": "pcb",
         "quantity": 1
       },
-      "displayName": "Main processor module",
+      "displayName": "Microcontroller",
       "displayNameSource": {
         "kind": "bom-contract",
         "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-        "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+        "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
         "tableRowId": "MCU-01",
         "line": 114,
         "matchedField": "MPN",
@@ -13765,7 +13765,7 @@
       "displayNameSource": {
         "kind": "bom-contract",
         "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-        "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+        "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
         "tableRowId": "DISP-06",
         "line": 129,
         "matchedField": "MPN",
@@ -13856,7 +13856,7 @@
       "displayNameSource": {
         "kind": "bom-contract",
         "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-        "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+        "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
         "tableRowId": "SEN-01",
         "line": 160,
         "matchedField": "MPN",
@@ -13948,7 +13948,7 @@
       "displayNameSource": {
         "kind": "bom-contract",
         "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-        "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+        "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
         "tableRowId": "SEN-02",
         "line": 161,
         "matchedField": "MPN",
@@ -14042,7 +14042,7 @@
       "displayNameSource": {
         "kind": "bom-contract",
         "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-        "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+        "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
         "tableRowId": "NFC-01",
         "line": 170,
         "matchedField": "MPN",
@@ -14131,7 +14131,7 @@
       "displayNameSource": {
         "kind": "bom-contract",
         "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-        "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+        "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
         "tableRowId": "IR-03",
         "line": 188,
         "matchedField": "MPN",
@@ -14223,7 +14223,7 @@
       "displayNameSource": {
         "kind": "bom-contract",
         "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-        "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+        "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
         "tableRowId": "EXP-03",
         "line": 200,
         "matchedField": "MPN",
@@ -14322,7 +14322,7 @@
       "displayNameSource": {
         "kind": "bom-contract",
         "sourcePath": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
-        "sha256": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4",
+        "sha256": "738ade5f1ea6a8b1addeb2fb9e3f752e2d78b391509003efa188111dbb1af632",
         "tableRowId": "EXP-06",
         "line": 203,
         "matchedField": "MPN",
@@ -14502,5 +14502,5 @@
     341,
     342
   ],
-  "modelSha256": "967f7cb377db070a4124a5fb78bf75dab4e7520276ea1a94e558bf7da255bfb5"
+  "modelSha256": "16664930fb9bd7fc88260e63cb1166928d7a3317ea029a80cb3bd2bd7f4b1768"
 }

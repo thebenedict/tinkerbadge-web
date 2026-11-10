@@ -31,6 +31,8 @@ class FrozenBundleTests(unittest.TestCase):
             self.assertTrue(components[ref]['displayName'])
             self.assertEqual(components[ref]['displayName'],descriptions[identifier])
             self.assertEqual(components[ref]['displayNameSource']['tableRowId'],identifier)
+        self.assertEqual(components['U201']['displayName'],'Microcontroller')
+        self.assertEqual(components['U201']['displayNameSource']['tableRowId'],'MCU-01')
         self.assertEqual(components['U504']['displayName'],'Infrared receiver')
         self.assertEqual(components['Q501']['displayName'],'Infrared LED driver')
         for ref in ['Q101','Q102','Q103']:self.assertNotEqual(components[ref]['displayName'],'Infrared LED driver')
