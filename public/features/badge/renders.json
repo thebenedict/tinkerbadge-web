@@ -1,0 +1,775 @@
+{
+  "schemaVersion": 1,
+  "snapshotId": "9089771cc612",
+  "boardSha256": "ddf824f2a59bc82568bbb03bcb3f89959f2ee12638b380790207739273c1844d",
+  "views": [
+    {
+      "id": "front",
+      "side": "front",
+      "image": "front.png",
+      "width": 1568,
+      "height": 1568,
+      "sha256": "77908823f02c0f639066709165d3e56eb3c76994353c1bb5d095a5c7fd295b5d",
+      "pcbToImage": [
+        12.63621882882671,
+        0,
+        -1174.8200557013465,
+        0,
+        12.635028371611327,
+        -984.6873528731061
+      ],
+      "maxResidualPx": 0.06601739143530395,
+      "rmsResidualPx": 0.05029744755909624,
+      "anchors": [
+        {
+          "reference": "H1",
+          "uuid": "175b90c8-c734-4448-82cc-c689e8f5f0e9",
+          "pcbMm": [
+            104.0,
+            117.5
+          ],
+          "drillMm": 2.2,
+          "imagePx": [
+            139.35008517887564,
+            499.9054514480409
+          ],
+          "regionAreaPx": 587,
+          "regionBoundsPx": [
+            126,
+            486,
+            27,
+            28
+          ],
+          "residualPx": 0.023276451332871085
+        },
+        {
+          "reference": "H2",
+          "uuid": "28a8a515-87b7-4fb1-8e71-0c2ed68fb232",
+          "pcbMm": [
+            206.0,
+            117.5
+          ],
+          "drillMm": 2.2,
+          "imagePx": [
+            1428.2802385008517,
+            499.90715502555366
+          ],
+          "regionAreaPx": 587,
+          "regionBoundsPx": [
+            1415,
+            486,
+            27,
+            28
+          ],
+          "residualPx": 0.04463900637397824
+        },
+        {
+          "reference": "H3",
+          "uuid": "eedcef48-06b6-450d-861d-ced33272ed03",
+          "pcbMm": [
+            104.0,
+            166.0
+          ],
+          "drillMm": 2.2,
+          "imagePx": [
+            139.40630323679727,
+            1112.743611584327
+          ],
+          "regionAreaPx": 587,
+          "regionBoundsPx": [
+            126,
+            1099,
+            27,
+            27
+          ],
+          "residualPx": 0.06177755073294235
+        },
+        {
+          "reference": "H4",
+          "uuid": "b4a1638e-6f93-462f-8c4b-470873ea468c",
+          "pcbMm": [
+            206.0,
+            166.0
+          ],
+          "drillMm": 2.2,
+          "imagePx": [
+            1428.2589134125637,
+            1112.7156196943972
+          ],
+          "regionAreaPx": 589,
+          "regionBoundsPx": [
+            1415,
+            1099,
+            27,
+            27
+          ],
+          "residualPx": 0.02139685782435692
+        },
+        {
+          "reference": "H5",
+          "uuid": "99e5a9db-0a69-4cbd-b2c0-f6304798099a",
+          "pcbMm": [
+            104.0,
+            112.0
+          ],
+          "drillMm": 3.2,
+          "imagePx": [
+            139.28371907422186,
+            430.44253790901837
+          ],
+          "regionAreaPx": 1253,
+          "regionBoundsPx": [
+            119,
+            410,
+            40,
+            40
+          ],
+          "residualPx": 0.06334017712174063
+        },
+        {
+          "reference": "H6",
+          "uuid": "0582fe9d-6daf-454c-a2a9-c51b875e9afd",
+          "pcbMm": [
+            206.0,
+            112.0
+          ],
+          "drillMm": 3.2,
+          "imagePx": [
+            1428.1839171974523,
+            430.468949044586
+          ],
+          "regionAreaPx": 1256,
+          "regionBoundsPx": [
+            1408,
+            410,
+            40,
+            40
+          ],
+          "residualPx": 0.06601739143530395
+        }
+      ],
+      "orientationVerification": {
+        "method": "asymmetric native left-open shoulder material/transparency probes",
+        "sourceBoardSha256": "ddf824f2a59bc82568bbb03bcb3f89959f2ee12638b380790207739273c1844d",
+        "probes": [
+          {
+            "pcbMm": [
+              102,
+              103
+            ],
+            "material": false,
+            "imagePx": [
+              114.0742648389778,
+              316.72056940286063
+            ],
+            "alphaRange": [
+              0,
+              0
+            ]
+          },
+          {
+            "pcbMm": [
+              110,
+              103
+            ],
+            "material": false,
+            "imagePx": [
+              215.1640154695915,
+              316.72056940286063
+            ],
+            "alphaRange": [
+              0,
+              0
+            ]
+          },
+          {
+            "pcbMm": [
+              200,
+              103
+            ],
+            "material": true,
+            "imagePx": [
+              1352.4237100639953,
+              316.72056940286063
+            ],
+            "alphaRange": [
+              255,
+              255
+            ]
+          }
+        ]
+      },
+      "boardFrameMm": {
+        "outline": [
+          100.0,
+          100.0,
+          110.0,
+          80.0
+        ],
+        "checkedFrame": [
+          100.0,
+          100.0,
+          110.0,
+          80.0
+        ]
+      },
+      "calibration": {
+        "method": "six native circular NPTH mounting-hole dark-region centroids",
+        "maxRgbThreshold": 5,
+        "pixelConvention": "Continuous pixels; pixel centers are integer index + 0.5",
+        "maxAllowedResidualPx": 0.6,
+        "measuredRegions": 6
+      },
+      "render": {
+        "tool": "kicad-cli",
+        "version": "10.0.8",
+        "projection": "orthographic",
+        "side": "top",
+        "args": [
+          "pcb",
+          "render",
+          "--output",
+          "front.png",
+          "--width",
+          "1600",
+          "--height",
+          "1600",
+          "--side",
+          "top",
+          "--background",
+          "transparent",
+          "--quality",
+          "basic",
+          "--use-board-stackup-colors",
+          "--zoom",
+          "0.90",
+          "--rotate",
+          "0,0,0",
+          "front.kicad_pcb"
+        ],
+        "privateCopySha256": "5703cc62a4d7e419d02c4424c5c3ab824058c3930e86b68ec75ccc45e1aaddb1",
+        "sourceModelsVisible": [
+          "MECH_PANEL",
+          "MECH_BATTERY",
+          "RES_J502"
+        ],
+        "sourceModelsOmitted": []
+      }
+    },
+    {
+      "id": "components",
+      "side": "front",
+      "image": "components.png",
+      "width": 1568,
+      "height": 1568,
+      "sha256": "e51d53fe18db43809d8bfbbc8ba6e4ca6d2b60bf06de02d5eb10276d2a919bbe",
+      "pcbToImage": [
+        12.63621882882671,
+        0,
+        -1174.8200557013465,
+        0,
+        12.635028371611327,
+        -984.6873528731061
+      ],
+      "maxResidualPx": 0.06601739143530395,
+      "rmsResidualPx": 0.05029744755909624,
+      "anchors": [
+        {
+          "reference": "H1",
+          "uuid": "175b90c8-c734-4448-82cc-c689e8f5f0e9",
+          "pcbMm": [
+            104.0,
+            117.5
+          ],
+          "drillMm": 2.2,
+          "imagePx": [
+            139.35008517887564,
+            499.9054514480409
+          ],
+          "regionAreaPx": 587,
+          "regionBoundsPx": [
+            126,
+            486,
+            27,
+            28
+          ],
+          "residualPx": 0.023276451332871085
+        },
+        {
+          "reference": "H2",
+          "uuid": "28a8a515-87b7-4fb1-8e71-0c2ed68fb232",
+          "pcbMm": [
+            206.0,
+            117.5
+          ],
+          "drillMm": 2.2,
+          "imagePx": [
+            1428.2802385008517,
+            499.90715502555366
+          ],
+          "regionAreaPx": 587,
+          "regionBoundsPx": [
+            1415,
+            486,
+            27,
+            28
+          ],
+          "residualPx": 0.04463900637397824
+        },
+        {
+          "reference": "H3",
+          "uuid": "eedcef48-06b6-450d-861d-ced33272ed03",
+          "pcbMm": [
+            104.0,
+            166.0
+          ],
+          "drillMm": 2.2,
+          "imagePx": [
+            139.40630323679727,
+            1112.743611584327
+          ],
+          "regionAreaPx": 587,
+          "regionBoundsPx": [
+            126,
+            1099,
+            27,
+            27
+          ],
+          "residualPx": 0.06177755073294235
+        },
+        {
+          "reference": "H4",
+          "uuid": "b4a1638e-6f93-462f-8c4b-470873ea468c",
+          "pcbMm": [
+            206.0,
+            166.0
+          ],
+          "drillMm": 2.2,
+          "imagePx": [
+            1428.2589134125637,
+            1112.7156196943972
+          ],
+          "regionAreaPx": 589,
+          "regionBoundsPx": [
+            1415,
+            1099,
+            27,
+            27
+          ],
+          "residualPx": 0.02139685782435692
+        },
+        {
+          "reference": "H5",
+          "uuid": "99e5a9db-0a69-4cbd-b2c0-f6304798099a",
+          "pcbMm": [
+            104.0,
+            112.0
+          ],
+          "drillMm": 3.2,
+          "imagePx": [
+            139.28371907422186,
+            430.44253790901837
+          ],
+          "regionAreaPx": 1253,
+          "regionBoundsPx": [
+            119,
+            410,
+            40,
+            40
+          ],
+          "residualPx": 0.06334017712174063
+        },
+        {
+          "reference": "H6",
+          "uuid": "0582fe9d-6daf-454c-a2a9-c51b875e9afd",
+          "pcbMm": [
+            206.0,
+            112.0
+          ],
+          "drillMm": 3.2,
+          "imagePx": [
+            1428.1839171974523,
+            430.468949044586
+          ],
+          "regionAreaPx": 1256,
+          "regionBoundsPx": [
+            1408,
+            410,
+            40,
+            40
+          ],
+          "residualPx": 0.06601739143530395
+        }
+      ],
+      "orientationVerification": {
+        "method": "asymmetric native left-open shoulder material/transparency probes",
+        "sourceBoardSha256": "ddf824f2a59bc82568bbb03bcb3f89959f2ee12638b380790207739273c1844d",
+        "probes": [
+          {
+            "pcbMm": [
+              102,
+              103
+            ],
+            "material": false,
+            "imagePx": [
+              114.0742648389778,
+              316.72056940286063
+            ],
+            "alphaRange": [
+              0,
+              0
+            ]
+          },
+          {
+            "pcbMm": [
+              110,
+              103
+            ],
+            "material": false,
+            "imagePx": [
+              215.1640154695915,
+              316.72056940286063
+            ],
+            "alphaRange": [
+              0,
+              0
+            ]
+          },
+          {
+            "pcbMm": [
+              200,
+              103
+            ],
+            "material": true,
+            "imagePx": [
+              1352.4237100639953,
+              316.72056940286063
+            ],
+            "alphaRange": [
+              255,
+              255
+            ]
+          }
+        ]
+      },
+      "boardFrameMm": {
+        "outline": [
+          100.0,
+          100.0,
+          110.0,
+          80.0
+        ],
+        "checkedFrame": [
+          100.0,
+          100.0,
+          110.0,
+          80.0
+        ]
+      },
+      "calibration": {
+        "method": "six native circular NPTH mounting-hole dark-region centroids",
+        "maxRgbThreshold": 5,
+        "pixelConvention": "Continuous pixels; pixel centers are integer index + 0.5",
+        "maxAllowedResidualPx": 0.6,
+        "measuredRegions": 6
+      },
+      "render": {
+        "tool": "kicad-cli",
+        "version": "10.0.8",
+        "projection": "orthographic",
+        "side": "top",
+        "args": [
+          "pcb",
+          "render",
+          "--output",
+          "components.png",
+          "--width",
+          "1600",
+          "--height",
+          "1600",
+          "--side",
+          "top",
+          "--background",
+          "transparent",
+          "--quality",
+          "basic",
+          "--use-board-stackup-colors",
+          "--zoom",
+          "0.90",
+          "--rotate",
+          "0,0,0",
+          "components.kicad_pcb"
+        ],
+        "privateCopySha256": "ab58d88b934d50b681bfb8d4201b7dd1177f775da0addadcbf1e2d47ecccf314",
+        "sourceModelsVisible": [
+          "RES_J502"
+        ],
+        "sourceModelsOmitted": [
+          "MECH_PANEL",
+          "MECH_BATTERY"
+        ]
+      }
+    },
+    {
+      "id": "back",
+      "side": "back",
+      "image": "back.png",
+      "width": 1568,
+      "height": 1568,
+      "sha256": "b93a9821b4a3e9765931e323df686788ed9ad50a6ed78fe5d761bfe9d14b5218",
+      "pcbToImage": [
+        -12.63621882882671,
+        0,
+        2742.4077812349337,
+        0,
+        12.635028371611327,
+        -984.6873528731061
+      ],
+      "maxResidualPx": 0.06601739143569732,
+      "rmsResidualPx": 0.05029744755909624,
+      "anchors": [
+        {
+          "reference": "H1",
+          "uuid": "175b90c8-c734-4448-82cc-c689e8f5f0e9",
+          "pcbMm": [
+            104.0,
+            117.5
+          ],
+          "drillMm": 2.2,
+          "imagePx": [
+            1428.2802385008517,
+            499.90715502555366
+          ],
+          "regionAreaPx": 587,
+          "regionBoundsPx": [
+            1415,
+            486,
+            27,
+            28
+          ],
+          "residualPx": 0.044639006373578746
+        },
+        {
+          "reference": "H2",
+          "uuid": "28a8a515-87b7-4fb1-8e71-0c2ed68fb232",
+          "pcbMm": [
+            206.0,
+            117.5
+          ],
+          "drillMm": 2.2,
+          "imagePx": [
+            139.35008517887564,
+            499.9054514480409
+          ],
+          "regionAreaPx": 587,
+          "regionBoundsPx": [
+            126,
+            486,
+            27,
+            28
+          ],
+          "residualPx": 0.023276451332805
+        },
+        {
+          "reference": "H3",
+          "uuid": "eedcef48-06b6-450d-861d-ced33272ed03",
+          "pcbMm": [
+            104.0,
+            166.0
+          ],
+          "drillMm": 2.2,
+          "imagePx": [
+            1428.2589134125637,
+            1112.7156196943972
+          ],
+          "regionAreaPx": 589,
+          "regionBoundsPx": [
+            1415,
+            1099,
+            27,
+            27
+          ],
+          "residualPx": 0.021396857823976698
+        },
+        {
+          "reference": "H4",
+          "uuid": "b4a1638e-6f93-462f-8c4b-470873ea468c",
+          "pcbMm": [
+            206.0,
+            166.0
+          ],
+          "drillMm": 2.2,
+          "imagePx": [
+            139.40630323679727,
+            1112.743611584327
+          ],
+          "regionAreaPx": 587,
+          "regionBoundsPx": [
+            126,
+            1099,
+            27,
+            27
+          ],
+          "residualPx": 0.06177755073250363
+        },
+        {
+          "reference": "H5",
+          "uuid": "99e5a9db-0a69-4cbd-b2c0-f6304798099a",
+          "pcbMm": [
+            104.0,
+            112.0
+          ],
+          "drillMm": 3.2,
+          "imagePx": [
+            1428.1839171974523,
+            430.468949044586
+          ],
+          "regionAreaPx": 1256,
+          "regionBoundsPx": [
+            1408,
+            410,
+            40,
+            40
+          ],
+          "residualPx": 0.06601739143569732
+        },
+        {
+          "reference": "H6",
+          "uuid": "0582fe9d-6daf-454c-a2a9-c51b875e9afd",
+          "pcbMm": [
+            206.0,
+            112.0
+          ],
+          "drillMm": 3.2,
+          "imagePx": [
+            139.28371907422186,
+            430.44253790901837
+          ],
+          "regionAreaPx": 1253,
+          "regionBoundsPx": [
+            119,
+            410,
+            40,
+            40
+          ],
+          "residualPx": 0.06334017712219282
+        }
+      ],
+      "orientationVerification": {
+        "method": "asymmetric native left-open shoulder material/transparency probes",
+        "sourceBoardSha256": "ddf824f2a59bc82568bbb03bcb3f89959f2ee12638b380790207739273c1844d",
+        "probes": [
+          {
+            "pcbMm": [
+              102,
+              103
+            ],
+            "material": false,
+            "imagePx": [
+              1453.5134606946094,
+              316.72056940286063
+            ],
+            "alphaRange": [
+              0,
+              0
+            ]
+          },
+          {
+            "pcbMm": [
+              110,
+              103
+            ],
+            "material": false,
+            "imagePx": [
+              1352.4237100639957,
+              316.72056940286063
+            ],
+            "alphaRange": [
+              0,
+              0
+            ]
+          },
+          {
+            "pcbMm": [
+              200,
+              103
+            ],
+            "material": true,
+            "imagePx": [
+              215.16401546959196,
+              316.72056940286063
+            ],
+            "alphaRange": [
+              255,
+              255
+            ]
+          }
+        ]
+      },
+      "boardFrameMm": {
+        "outline": [
+          100.0,
+          100.0,
+          110.0,
+          80.0
+        ],
+        "checkedFrame": [
+          100.0,
+          100.0,
+          110.0,
+          80.0
+        ]
+      },
+      "calibration": {
+        "method": "six native circular NPTH mounting-hole dark-region centroids",
+        "maxRgbThreshold": 5,
+        "pixelConvention": "Continuous pixels; pixel centers are integer index + 0.5",
+        "maxAllowedResidualPx": 0.6,
+        "measuredRegions": 6
+      },
+      "render": {
+        "tool": "kicad-cli",
+        "version": "10.0.8",
+        "projection": "orthographic",
+        "side": "bottom",
+        "args": [
+          "pcb",
+          "render",
+          "--output",
+          "back.png",
+          "--width",
+          "1600",
+          "--height",
+          "1600",
+          "--side",
+          "bottom",
+          "--background",
+          "transparent",
+          "--quality",
+          "basic",
+          "--use-board-stackup-colors",
+          "--zoom",
+          "0.90",
+          "--rotate",
+          "0,0,0",
+          "back.kicad_pcb"
+        ],
+        "privateCopySha256": "5703cc62a4d7e419d02c4424c5c3ab824058c3930e86b68ec75ccc45e1aaddb1",
+        "sourceModelsVisible": [
+          "MECH_PANEL",
+          "MECH_BATTERY",
+          "RES_J502"
+        ],
+        "sourceModelsOmitted": []
+      }
+    }
+  ],
+  "provenance": {
+    "source": "Existing frozen native KiCad snapshot; no live hardware reads",
+    "snapshotSource": "data/snapshots/9089771cc612/source/tinkerbadge.kicad_pcb",
+    "generator": "scripts/render_feature_views.py",
+    "generatorSha256": "0fda563577ffb4184b11f7067a120534ec664460cb2a8dbf7c63b41e9fcc2e5a",
+    "snapshotUnchanged": true,
+    "calibrationDescription": "Native mounting-hole UUIDs and dimensions matched to measured PNG dark circular drill regions; six measured anchors constrain each transform, and asymmetric native-shoulder transparency independently verifies mirroring."
+  }
+}

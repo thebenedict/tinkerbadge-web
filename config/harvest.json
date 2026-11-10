@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 2,
+  "source": "../../Documents/harvest",
+  "project": {
+    "name": "HARVEST",
+    "title": "HARVEST hardware viewer",
+    "description": "Compare three energy-harvesting prototypes. Rotate the assembled PCB, inspect the schematic, and view individual layers.",
+    "revision": "1.0",
+    "status": "Working snapshot",
+    "readme": "README.md"
+  },
+  "defaultVariant": "B",
+  "variants": [
+    {
+      "id": "A",
+      "label": "A \u00b7 Direct",
+      "description": "Direct-drive comparison",
+      "facts": [
+        {
+          "label": "Tuning",
+          "value": 82,
+          "unit": "pF"
+        }
+      ],
+      "instanceProject": "orca-A",
+      "files": {
+        "pcb": "hardware/A/orca-A.kicad_pcb",
+        "schematic": "hardware/A/orca-A.kicad_sch",
+        "project": "hardware/A/orca-A.kicad_pro"
+      }
+    },
+    {
+      "id": "B",
+      "label": "B \u00b7 Pulse",
+      "description": "Compact pulsed output",
+      "facts": [
+        {
+          "label": "Tuning",
+          "value": 82,
+          "unit": "pF"
+        }
+      ],
+      "instanceProject": "orca-B",
+      "files": {
+        "pcb": "hardware/B/orca-B.kicad_pcb",
+        "schematic": "hardware/B/orca-B.kicad_sch",
+        "project": "hardware/B/orca-B.kicad_pro"
+      }
+    },
+    {
+      "id": "C",
+      "label": "C \u00b7 Pulse",
+      "description": "Larger antenna, pulsed output",
+      "facts": [
+        {
+          "label": "Tuning",
+          "value": 75,
+          "unit": "pF"
+        }
+      ],
+      "instanceProject": "orca-C",
+      "files": {
+        "pcb": "hardware/C/orca-C.kicad_pcb",
+        "schematic": "hardware/C/orca-C.kicad_sch",
+        "project": "hardware/C/orca-C.kicad_pro"
+      }
+    }
+  ],
+  "snapshot": {
+    "documents": [
+      "README.md",
+      "docs/v0.4-short-edge-probe.md",
+      "docs/routing-review.md",
+      "docs/release-review.md",
+      "docs/v0.2-comparison.md",
+      "production/README.md",
+      "production/probes.svg",
+      "production/pcb-layout.pdf",
+      "tools/README.md",
+      "KICAD-TOOLING.md",
+      "orca-fr4-v0-build-spec.md",
+      "hardware/card-preview/README.md",
+      "hardware/panel/orca-panel.kicad_pro",
+      "hardware/A/library-provenance.json",
+      "hardware/B/library-provenance.json",
+      "hardware/C/library-provenance.json"
+    ],
+    "directories": [
+      "hardware/panel"
+    ],
+    "files": []
+  }
+}

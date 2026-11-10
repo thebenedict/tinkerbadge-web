@@ -1,0 +1,30 @@
+{
+  "name": "tinker-badge-web-viewer",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Static KiCad project viewer for schematics, PCB layers, and 3D assemblies",
+  "scripts": {
+    "export:harvest": "python3 scripts/export_assets.py --config config/harvest.json",
+    "build": "node scripts/build.mjs",
+    "dev": "npm run build && node scripts/serve.mjs",
+    "preview": "node scripts/serve.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "check": "npm run test && npm run build && node scripts/check.mjs",
+    "export:badge": "python3 scripts/export_assets.py --config config/badge.json",
+    "export:project": "python3 scripts/export_assets.py",
+    "check:publish": "node scripts/check-publish.mjs"
+  },
+  "dependencies": {
+    "three": "0.180.0"
+  },
+  "devDependencies": {
+    "@gltf-transform/core": "4.2.1",
+    "esbuild": "0.25.10",
+    "marked": "15.0.12"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "license": "Apache-2.0"
+}

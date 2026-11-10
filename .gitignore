@@ -1,0 +1,13 @@
+node_modules/
+dist/
+.work/
+.DS_Store
+__pycache__/
+
+# Add only a reviewed, active snapshot explicitly; keep local experiments private.
+public/data/snapshots/
+public/data/.staging/
+.env
+.env.*
+*.pem
+*.key

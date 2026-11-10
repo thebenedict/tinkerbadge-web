@@ -1,0 +1,178 @@
+{
+  "schemaVersion": 1,
+  "variantId": "badge",
+  "renders": "features/badge/renders.json",
+  "heading": "Badge features",
+  "views": [
+    {
+      "id": "front",
+      "side": "front",
+      "label": "Front",
+      "description": "Badge with the raised display",
+      "features": [
+        {
+          "id": "processor-front",
+          "title": "Unlocked ESP32-S3",
+          "description": "Program over USB, with accessible boot and reset recovery.",
+          "column": "left",
+          "anchors": [
+            [
+              "U201"
+            ]
+          ],
+          "anchorOffsetMm": [
+            0,
+            -9.75
+          ],
+          "anchorFootprint": "RF_Module:ESP32-S3-WROOM-1",
+          "anchorModelSha256": "3e35bb7ba7d030d88855fcf968398c8670934c7dca08b4e30b2c578bc1e13954",
+          "sourceDocument": "tinkerbadge.kicad_pcb",
+          "anchorNote": "Center of the exposed native antenna section. U201 F.Fab spans x -9..9 and y -12.75..-6.75 mm in this section; the bound native STEP model is pinned."
+        },
+        {
+          "id": "encounters",
+          "title": "IR + Bluetooth",
+          "description": "Detect conversation partners and share credentials",
+          "column": "left",
+          "anchors": [
+            [
+              "U504"
+            ]
+          ]
+        },
+        {
+          "id": "light",
+          "title": "Ambient-light sensor",
+          "description": "Sense room brightness to adjust the badge lighting.",
+          "column": "left",
+          "anchors": [
+            [
+              "U501"
+            ]
+          ]
+        },
+        {
+          "id": "role",
+          "title": "Role color bar",
+          "description": "Color identifies speakers, attendees, organizers, and sponsors.",
+          "column": "right",
+          "anchors": [
+            [
+              "D402"
+            ]
+          ]
+        },
+        {
+          "id": "qwiic",
+          "title": "Qwiic expansion",
+          "description": "Connect I²C sensors and other accessories.",
+          "column": "right",
+          "anchors": [
+            [
+              "J501"
+            ]
+          ]
+        },
+        {
+          "id": "affinity",
+          "title": "Affinity LEDs",
+          "description": "Five color indicators help people find shared interests.",
+          "column": "right",
+          "anchors": [
+            [
+              "D406"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "components",
+      "side": "front",
+      "label": "Components",
+      "description": "Front electronics with the display hidden",
+      "features": [
+        {
+          "id": "processor",
+          "title": "Unlocked ESP32-S3",
+          "description": "Program over USB, with accessible boot and reset recovery.",
+          "column": "left",
+          "anchors": [
+            [
+              "U201"
+            ]
+          ]
+        },
+        {
+          "id": "motion",
+          "title": "Motion sensor",
+          "description": "A three-axis accelerometer measures tilt and movement.",
+          "column": "right",
+          "anchors": [
+            [
+              "U502"
+            ]
+          ]
+        },
+        {
+          "id": "nfc",
+          "title": "NFC phone taps",
+          "description": "Links for authentication and contact sharing. Rear coil layout pending.",
+          "column": "right",
+          "anchors": [
+            [
+              "U503"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "back",
+      "side": "back",
+      "label": "Back",
+      "description": "Rear with the battery allowance, SAO reservation, and planned NFC coil area",
+      "features": [
+        {
+          "id": "sao",
+          "title": "Planned SAO socket",
+          "description": "Space for a badge add-on.",
+          "column": "left",
+          "anchors": [
+            [
+              "RES_J502"
+            ]
+          ],
+          "reservation": true
+        },
+        {
+          "id": "battery",
+          "title": "Rechargeable LiPo battery",
+          "description": "Reserved space for a rechargeable pack. Battery selection is pending.",
+          "column": "right",
+          "anchors": [
+            [
+              "MECH_BATTERY"
+            ]
+          ],
+          "anchorType": "accessory",
+          "reservation": true
+        },
+        {
+          "id": "nfc-antenna",
+          "title": "Planned rear NFC coil",
+          "description": "Tap a phone to share contact links. Coil layout and tuning are pending.",
+          "column": "left",
+          "anchors": [
+            [
+              "MECH_NFC"
+            ]
+          ],
+          "anchorType": "board-region",
+          "reservation": true,
+          "sourceDocument": "docs/design/rear_nfc_feasibility.md"
+        }
+      ]
+    }
+  ]
+}

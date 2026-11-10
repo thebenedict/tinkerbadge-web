@@ -1,0 +1,121 @@
+{
+  "schemaVersion": 2,
+  "source": "../tinkerbadge-hardware",
+  "project": {
+    "name": "Tinker Badge",
+    "title": "Tinker Badge hardware viewer",
+    "description": "Inspect the badge schematic, PCB layers, component models, and source documentation.",
+    "revision": "Development",
+    "status": "Experimental unrouted placement",
+    "readme": "README.md",
+    "tagline": "An open hardware badge designed for professional networking and built for your experiments."
+  },
+  "defaultVariant": "badge",
+  "variants": [
+    {
+      "id": "badge",
+      "label": "Badge",
+      "description": "Experimental 110 \u00d7 80 mm front-assembly placement",
+      "status": "Experimental unrouted placement",
+      "facts": [],
+      "instanceProject": "tinkerbadge",
+      "files": {
+        "schematic": "tinkerbadge.kicad_sch",
+        "pcb": "tinkerbadge.kicad_pcb",
+        "project": "tinkerbadge.kicad_pro"
+      },
+      "accessories": [
+        {
+          "id": "display-panel",
+          "reference": "MECH_PANEL",
+          "label": "Display panel",
+          "description": "Display glass envelope with a 4.5 mm underside above the front PCB. Flex, component heights, and mounting remain unqualified.",
+          "defaultVisible": true
+        },
+        {
+          "id": "battery-allowance",
+          "reference": "MECH_BATTERY",
+          "label": "Battery size allowance",
+          "description": "Reserved 35 \u00d7 55 \u00d7 7 mm pack allowance. The battery, cable, and mounting are not selected.",
+          "defaultVisible": true,
+          "fallback": {
+            "modelSourcePath": "models/Review_Battery_Allowance.wrl",
+            "expectedLayer": "B.Cu"
+          }
+        }
+      ],
+      "assembly": {
+        "toggleLabel": "Show display and battery",
+        "note": "Experimental placement. Battery shown as a size allowance."
+      },
+      "poster": {
+        "includeBoardOnlyReferences": [
+          "MECH_PANEL",
+          "MECH_BATTERY",
+          "RES_J502"
+        ]
+      },
+      "warnings": [
+        "Display glass is 3.5 mm behind the antenna; the 15 mm housing-clearance recommendation is not met and RF qualification remains open.",
+        "A rear B.Cu NFC coil is planned, with front and inner-layer clearance retained. No antenna copper, tuning, or routing is implemented.",
+        "Display flex, component heights, mounting, and production fit remain unqualified."
+      ],
+      "componentNames": {
+        "bomSource": "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
+        "contracts": [
+          "docs/design/peripherals_contract.json",
+          "docs/design/mcu_contract.json",
+          "docs/design/display_contract.json",
+          "docs/design/power_contract.json"
+        ],
+        "amendmentsSource": "docs/design/implementation_status.md",
+        "allowUniqueMpn": true
+      }
+    }
+  ],
+  "snapshot": {
+    "documents": [
+      "docs/spec.md",
+      "docs/pinouts.md",
+      "docs/design/implementation_status.md",
+      "docs/design/verification.md",
+      "docs/design/outlined_blocks_review.md",
+      "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
+      "docs/design/pcb_placement.json",
+      "docs/design/pcb_mechanical_placement_review.md",
+      "docs/design/pcb_final_footprint_review.md",
+      "docs/THIRD_PARTY_NOTICES.md",
+      "docs/design/pcb_placement_review.md",
+      "docs/design/compact_one_sided_final_review.md",
+      "docs/design/compact_one_sided_mechanical_review.md",
+      "docs/design/organized_top_row_final_review.md",
+      "docs/design/top_role_placement_review.md",
+      "docs/design/left_open_antenna_final_review.md",
+      "docs/design/spread_groups_placement_review.md",
+      "LICENSE.md",
+      "docs/design/optical_space_placement_review.md",
+      "docs/design/rear_nfc_feasibility.md",
+      "docs/design/lower_ir_placement_review.md",
+      "docs/design/shared_passive_optics_review.md"
+    ],
+    "directories": [
+      "models",
+      "LICENSES"
+    ],
+    "files": [
+      "exports/tinkerbadge.net",
+      "LICENSE"
+    ],
+    "expectedHashes": {
+      "tinkerbadge.kicad_pcb": "ddf824f2a59bc82568bbb03bcb3f89959f2ee12638b380790207739273c1844d",
+      "docs/design/pcb_placement.json": "390e2f5989174f16abe13154771e41e2234c4309a6a6e8aae49737aff9f8aada",
+      "docs/design/pcb_placement_review.md": "504fb2821c2ee9010186f12b4ef0f17374236fecfce3c9a205fe570b5e2267bc",
+      "docs/design/lower_ir_placement_review.md": "70facfc6ae02e514d3e2bb2dfdd1c2d6ece0e6129694c911a68f417a0c7c0cc1",
+      "docs/spec.md": "386ca632b47fd898ad5a0d604b3313497de458286a8c1f3f8faac7d8bfe90ea2",
+      "README.md": "d1f679fedc5f793e0d622ffcd84f18e226228146e2a641c2ab2861c8c64c4035",
+      "docs/design/shared_passive_optics_review.md": "27caf519dd366772c4f8ba4b54c26c87ff5537f73eb09216ffc100ef54b5a21c",
+      "docs/design/implementation_status.md": "b02e598d0ccd586ab4f7580b0d8afb737c41af8ec72c04f7553c2acb977b5376",
+      "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md": "f81246b9df0b97194446ef0b301f6a44d65526636ff517c8517473deabc5b0e4"
+    }
+  }
+}
