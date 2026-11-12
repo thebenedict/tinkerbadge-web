@@ -27,7 +27,7 @@ npm run check:publish -- --snapshot REVIEWED_SNAPSHOT_ID
 
 Replace `REVIEWED_SNAPSHOT_ID` with the printed identifier. Inspect the rendered pages and the source/native downloads before publishing. The public bundle includes the hardware documents and native files listed by the export configuration. Check third-party redistribution rights, secrets, and local-only references in both source repositories and generated content.
 
-The exporter records source-file hashes, output hashes, pipeline hashes, and tool versions. At present, `sourceCommit` is null; these snapshots identify source contents but do not prove a clean hardware Git commit. Publishing is not a hardware manufacturing-release approval. The viewer preserves the current design status and validation warnings.
+The exporter records source-file hashes, output hashes, pipeline hashes, and tool versions. Badge snapshots require `sourceCommit` and verify every selected source file against that commit. The bound `exports/publication/manifest.json` connects the native electrical checks, manufacturing package and enclosure to the same PCB. Publishing is not a hardware manufacturing-release approval. The viewer preserves the current design status and validation warnings.
 
 ## GitHub setup
 
@@ -68,7 +68,7 @@ The eventual pipeline should start from a hardware commit, use a validated KiCad
 
 Before enabling that flow:
 
-- Record a clean hardware commit in the exporter and verify the exported source hashes against it.
+- Keep the source-commit and publication-chain checks enabled when moving CAD export to CI.
 - Validate the current KiCad 10.0.8 export/render behavior on the selected Linux container, including schematic hierarchy, component models, and licensing notices.
 - Package a snapshot as a versioned artifact with its hardware/web commit IDs and content hashes.
 - Choose a least-privilege cross-repository handoff. A normal repository `GITHUB_TOKEN` cannot dispatch work in another repository. A reusable workflow can keep work in the calling repository; deploying the web repository's Pages site requires a separate, approved delivery design.

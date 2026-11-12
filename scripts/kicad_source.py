@@ -372,6 +372,13 @@ def collect_inputs(source, cfg, resolver):
         for p in sorted(directory.rglob('*')):
             if p.is_file() and (p.suffix.lower() in DIRECTORY_SUFFIXES or p.name in LICENSE_NAMES) and not any(part.startswith('.') for part in p.relative_to(source).parts): add(p)
     for variant in cfg['variants']:
+        publication=variant.get('publicationManifest')
+        if publication:
+            add(source_path(source,publication))
+            report=json.loads(source_path(source,publication).read_text())
+            for name in [*report['source_hashes'],*report['output_hashes']]:add(source_path(source,name))
+            production=json.loads((source/'production/jlcpcb/manifest.json').read_text())
+            for name in [*production['source_hashes'],*production['sha256']]:add(source_path(source,name))
         enclosure=variant.get('enclosure')
         if enclosure:
             directory=source_path(source,enclosure['sourceDirectory'])

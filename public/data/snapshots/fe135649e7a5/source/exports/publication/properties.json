@@ -1,0 +1,17 @@
+{
+  "netlist_sha256": "0ea94d9c978f19d72c2d73ac6bd3b7ddc555e92bb51d4341e06c93f900eb88f9",
+  "checks_by_field": {
+    "MPN": 42,
+    "Footprint": 91,
+    "Value": 54,
+    "lib_id": 23,
+    "NominalValue": 63,
+    "Rating": 63,
+    "VisibleVoltageRating": 35,
+    "Populate": 1
+  },
+  "unassigned_footprints": [],
+  "issues": [],
+  "status": "PASS",
+  "scope": "Only explicitly specified property comparisons. Unassigned footprints and generic passive MPNs remain release gates."
+}

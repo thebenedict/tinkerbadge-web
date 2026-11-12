@@ -1,0 +1,8 @@
+(version 1)
+
+# NFC antenna window (docs/review/design_review_2026-11-11.md, NFC-1).
+# The rule area NFC_WINDOW keeps zone fills out. This rule rejects any track or via
+# inside it that does not belong to the coil feed.
+(rule "NFC window: only the coil feed"
+  (condition "A.intersectsArea('NFC_WINDOW') && A.NetName != '/05  SENSORS + EXPANSION/NFC_LA' && A.NetName != '/05  SENSORS + EXPANSION/NFC_LB'")
+  (constraint disallow track via))

@@ -55,6 +55,11 @@ class FrozenBundleTests(unittest.TestCase):
         self.assertEqual(pcb['population']['placed']+len(pcb['population']['unplacedReferences']),pcb['population']['onBoard'])
         self.assertEqual(variant['enclosure']['board_sha256'],self.manifest['snapshot']['sourceHashes']['tinkerbadge.kicad_pcb'])
         self.assertEqual(any('schematic components are not placed' in w for w in variant['warnings']),bool(pcb['population']['unplacedReferences']))
+    def test_publication_chain_matches_frozen_sources_and_manufacturing(self):
+        from export_assets import publication_metadata
+        result=publication_metadata('exports/publication/manifest.json',self.snapshot/'source','tinkerbadge.kicad_pcb')
+        self.assertEqual(result,self.manifest['variants'][0]['verification'])
+        self.assertRegex(self.manifest['snapshot']['sourceCommit'],r'^[a-f0-9]{40}$')
     def test_configured_review_pins_match_the_published_bundle(self):
         cfg=json.loads((ROOT/'config/badge.json').read_text())
         for path,expected in cfg['snapshot']['expectedHashes'].items():self.assertEqual(self.manifest['snapshot']['sourceHashes'][path],expected)

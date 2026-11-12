@@ -1,6 +1,0 @@
-(sym_lib_table
-  (version 7)
-
-  (lib (name "Tinkerbadge") (type "KiCad") (uri "${KIPRJMOD}/tinkerbadge.kicad_sym") (options "") (descr ""))
-  (lib (name "Tinkerbadge_Power") (type "KiCad") (uri "${KIPRJMOD}/power_symbols.kicad_sym") (options "") (descr ""))
-  (lib (name "Tinkerbadge_Peripherals") (type "KiCad") (uri "${KIPRJMOD}/peripheral_symbols.kicad_sym") (options "") (descr "")))

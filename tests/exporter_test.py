@@ -4,6 +4,41 @@ spec=importlib.util.spec_from_file_location('exporter',pathlib.Path(__file__).pa
 module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module)
 from kicad_source import ModelResolver, collect_inputs, outline_bounds, validate_config, verify_inputs
 
+class SourceCommitTests(unittest.TestCase):
+    def test_selected_inputs_must_match_the_recorded_commit(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root=pathlib.Path(directory)
+            def git(*args):return subprocess.check_output(['git','-C',str(root),*args],stderr=subprocess.DEVNULL,text=True).strip()
+            git('init');(root/'board.kicad_pcb').write_text('reviewed board')
+            git('add','board.kicad_pcb');git('-c','user.name=Test','-c','user.email=test@example.org','commit','-m','fixture')
+            hashes={'board.kicad_pcb':module.sha(root/'board.kicad_pcb')}
+            self.assertEqual(module.committed_source_revision(root,hashes,True),git('rev-parse','HEAD'))
+            (root/'unrelated.txt').write_text('local notes')
+            self.assertEqual(module.committed_source_revision(root,hashes,True),git('rev-parse','HEAD'))
+            (root/'board.kicad_pcb').write_text('uncommitted edit')
+            hashes['board.kicad_pcb']=module.sha(root/'board.kicad_pcb')
+            with self.assertRaisesRegex(RuntimeError,'Uncommitted hardware input'):module.committed_source_revision(root,hashes,True)
+
+class PublicationChainTests(unittest.TestCase):
+    def test_stale_child_sheet_manufacturing_and_failed_checks_are_rejected(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root=pathlib.Path(directory);(root/'production/jlcpcb').mkdir(parents=True)
+            (root/'board.kicad_pcb').write_text('board');(root/'power.kicad_sch').write_text('power')
+            bom=root/'production/jlcpcb/bom.csv';bom.write_text('bom')
+            production={'source_hashes':{'power.kicad_sch':module.sha(root/'power.kicad_sch')},'sha256':{'production/jlcpcb/bom.csv':module.sha(bom)}}
+            prod=root/'production/jlcpcb/manifest.json';prod.write_text(json.dumps(production))
+            report={'board_sha256':module.sha(root/'board.kicad_pcb'),'source_hashes':{'board.kicad_pcb':module.sha(root/'board.kicad_pcb')},'output_hashes':{'production/jlcpcb/manifest.json':module.sha(prod)},'checks':dict.fromkeys(['erc_errors','drc_errors','unconnected_items','schematic_parity'],0),'kicad':'10.0.8','zone_refill':'in-memory'}
+            def save(): (root/'verification.json').write_text(json.dumps(report))
+            def read():return module.publication_metadata('verification.json',root,'board.kicad_pcb')
+            save();self.assertEqual(read()['boardSha256'],report['board_sha256'])
+            (root/'power.kicad_sch').write_text('changed child sheet')
+            with self.assertRaisesRegex(RuntimeError,'Stale manufacturing'):read()
+            (root/'power.kicad_sch').write_text('power');bom.write_text('stale bom')
+            with self.assertRaisesRegex(RuntimeError,'Stale manufacturing'):read()
+            bom.write_text('bom');report['checks']['unconnected_items']=1;save()
+            with self.assertRaisesRegex(RuntimeError,'electrical check failed'):read()
+
+
 class NativeMetadataTests(unittest.TestCase):
     def fixture(self):
         properties={'MPN':'PART','JLCPCB Part #':'C123','Datasheet':'https://example.org/ds'}
@@ -289,7 +324,7 @@ class ExportPipelineTests(unittest.TestCase):
         else: raise AssertionError(command)
         return subprocess.CompletedProcess(command,0,'','')
     def run_export(self,viewer,args,run=None):
-        with patch.object(module,'ROOT',viewer),patch.object(module.subprocess,'check_output',return_value='10.0.8\n'),patch.object(module.subprocess,'run',side_effect=run or self.fake_run):
+        with patch.object(module,'committed_source_revision',return_value=None),patch.object(module,'ROOT',viewer),patch.object(module.subprocess,'check_output',return_value='10.0.8\n'),patch.object(module.subprocess,'run',side_effect=run or self.fake_run):
             return module.export(args)
     def test_schematic_only_pipeline_and_content_addressed_snapshot(self):
         with tempfile.TemporaryDirectory() as d:

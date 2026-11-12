@@ -1,0 +1,32 @@
+{
+ "nfc_window_check": "PASS",
+ "nfc_gerber_check": "PASS",
+ "kicad": "10.0.8",
+ "bom_lines": 60,
+ "placements": 147,
+ "in_bom_not_in_cpl": [],
+ "in_pos_not_in_bom": [],
+ "sha256": {
+  "tinkerbadge.kicad_pcb": "2ab108d4ad09cb5538978bc369583472795cd0d11a55392cd0bc81e5c5f62757",
+  "tinkerbadge.kicad_sch": "82c4ec8b903b1495fb788657a45f1d468827b60ff2d87017a481a7427d7b4752",
+  "tinkerbadge.kicad_pro": "1799d888fa6ff526e7316237d923a7c363f62a13f8ea8af82f507af1cbc14715",
+  "tinkerbadge.kicad_dru": "b65ab288d07495b29b87afb433b9e441aa0cdd0afe1aaad18fec248ac9a576df",
+  "production/jlcpcb/bom-hand-fit.csv": "6742758352e3b2591f03a186673ce1746d8228ae7cd87a9b037cbdcbe201b63b",
+  "production/jlcpcb/bom-jlcpcb.csv": "57779ba0fe382fc17dc0feed632336935060b76b165daf1a3ed436282268e9dc",
+  "production/jlcpcb/cpl-jlcpcb.csv": "362ce62db0a1ab4b260e54e284d4d8c9c3b73817898ae28ca06112072dee5368",
+  "production/jlcpcb/assembly-front.pdf": "3e504868f80dcda180382a293c0b1b23a555404e2d8125bde6684c0f43e7f93c",
+  "production/jlcpcb/assembly-rear.pdf": "f03b540ea73c0778bdf94535a5dc4d512b559a4c84b0f0d98fc00a8edf21399a",
+  "production/jlcpcb/tinkerbadge-gerbers.zip": "ce346401f773a886916f33ca6ed006cb1534f6d960261811217d4724da285752"
+ },
+ "source_hashes": {
+  "tinkerbadge.kicad_pcb": "2ab108d4ad09cb5538978bc369583472795cd0d11a55392cd0bc81e5c5f62757",
+  "tinkerbadge.kicad_pro": "1799d888fa6ff526e7316237d923a7c363f62a13f8ea8af82f507af1cbc14715",
+  "tinkerbadge.kicad_dru": "b65ab288d07495b29b87afb433b9e441aa0cdd0afe1aaad18fec248ac9a576df",
+  "display.kicad_sch": "a0b39008478f4f613bf2c26ec933f116551dc3bf09f1c69b067d039380f32947",
+  "lighting.kicad_sch": "878b4815207a43d461e24e079f7b6445f2a8c25128ec9a6ffca681da8af88ada",
+  "mcu.kicad_sch": "bfb9d97e5f0241bfffdee45c40be92d9f4693fdaea2b82bd5b7af27f2c7c69f8",
+  "peripherals.kicad_sch": "63f2c690969775734f57fa83623c4164a63afae1cce09395fe23f3a07d75e280",
+  "power.kicad_sch": "b585c00a56519e6ce4c0fc7480290a2a6b4606b2fe51669c582181fa9fbc68da",
+  "tinkerbadge.kicad_sch": "82c4ec8b903b1495fb788657a45f1d468827b60ff2d87017a481a7427d7b4752"
+ }
+}

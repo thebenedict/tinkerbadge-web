@@ -118,3 +118,13 @@ The wordmark preserves the exact approved raster geometry with a color-only sRGB
 `npm run check` passed under Node 24.22.2: 106 tests and the complete 29-page build, link, snapshot-hash and model-identity checks. New tests verify 7.69:1 green/cream contrast, 8.54:1 green/white contrast, dark-keyline contrast, exact embedded wordmark bytes, icon links, and fully opaque lower-bezel pixels at 16 and 32 px.
 
 Chrome visual checks covered the actual cream site background at desktop and 320 px, plus the SVG and PNG favicons at actual 16/32 px sizes on light and dark tab backgrounds. Enlarged pixel views confirmed a clearly visible green lower strip. Home/PCB navigation and Back/Forward work, the logo loads from nested routes, and no horizontal overflow was found. The viewport was reset. The hardware snapshot and viewer functionality are unchanged.
+
+## Publication synchronization, 2026-11-12
+
+Snapshot `fe135649e7a5` is bound to hardware commit `c008fbd66279aaab6e9aa45a4aa84bf34f464e05`, PCB SHA-256 `2ab108d4ad09cb5538978bc369583472795cd0d11a55392cd0bc81e5c5f62757`, and enclosure A2. The manufacturing package, enclosure archive, source downloads, schematic/PCB exports, feature renders and enclosure poster all use those inputs.
+
+KiCad 10.0.8 checks recorded with the snapshot: zero ERC errors, zero DRC errors, zero unconnected items and zero schematic-parity findings. One ERC warning and twelve DRC warnings remain. Contract/property checks, NFC board/Gerber checks, CAD geometry checks and native enclosure fit pass. Physical qualification remains open.
+
+`npm run check` passed under Node 18.16.0: 111 tests, 35 pages, all local links, 207 artifact hashes, six sheet instances, 171 component records, 150 model identities checked with triangle raycasts, and two assembly accessories. The Python exporter suite includes 51 tests. Publication checks passed for 285 files / 100,773,972 bytes. Regression cases reject uncommitted selected inputs, stale child schematics, changed manufacturing outputs, failed electrical checks and mismatched enclosure revisions.
+
+Fresh component and assembled enclosure renders were visually inspected. No interactive UI behavior was changed in this synchronization. Browser testing and hosted deployment verification were unavailable because this session could not access local HTTP or GitHub from the terminal. Prior QA sections above describe their historical snapshots.

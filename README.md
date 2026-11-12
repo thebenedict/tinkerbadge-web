@@ -41,7 +41,7 @@ python3 scripts/export_assets.py \
 
 The exporter copies allowlisted native files, local libraries, and referenced models into a private working directory. It runs KiCad against those copies, checks source and dependency hashes again, and promotes the new manifest only after the export completes. Native downloads retain the original source bytes. Logs stay in `.work/`.
 
-Export from a consistent CAD checkpoint. If a sheet, footprint, model, document, or dependency changes during export, the snapshot is rejected. The badge configuration also pins the approved board hash; update that pin only after reviewing a new hardware checkpoint. The pipeline does not refill zones, run ERC/DRC, rebuild source libraries, or modify the hardware project.
+Export from a consistent CAD checkpoint. If a sheet, footprint, model, document, or dependency changes during export, the snapshot is rejected. The badge configuration also pins the approved board hash; update that pin only after reviewing a new hardware checkpoint. Before export, run the hardware repository’s `tools/refresh_publication.py` and commit the resulting snapshot. The web exporter verifies that its selected source files match one hardware commit, and that the manufacturing, electrical and enclosure evidence all match those files. It reads the hardware project without modifying it.
 
 ## Project metadata
 
@@ -124,7 +124,7 @@ See [publishing setup](docs/publishing.md) for release checks and deployment con
 
 ## Current limits
 
-- The badge is an incomplete first routing pass with unresolved connections and footprints. See the source project's review documents for electrical and mechanical validation.
+- PCB revision 0.3 has zero open connections or error-severity ERC/DRC findings in the bound publication evidence. The enclosure is an A2 fit prototype; battery, display, RF and physical qualification remain open.
 - Component selection marks real model bodies; 2D reference markers mark symbol or footprint origins. Live cross-highlighting between separate open views is future work.
 - The maintained README is rendered from its source, with configured landing-page omissions. Links outside the snapshot allowlist appear as dotted text.
 - Arbitrary STEP assemblies, unusual nested model exports, and unsupported accessory meshes need adapter work and tests.
@@ -157,7 +157,7 @@ The badge front page starts with Front, Components, and Back KiCad renders and l
 
 Feature copy and one representative reference per feature live in `config/features/badge.json`. Each label has a single leader. Anchors come from the snapshot’s native PCB coordinates, including the mirrored back view. `public/features/badge/renders.json` records the source snapshot, board hash, render hashes, and calibrated pixel transforms. A build refuses stale renders, missing or wrong-side references, unmarked board-only reservations, or changed image dimensions.
 
-The labels describe proposed interactions. The Components render hides the display to expose front electronics. The Back render includes the battery allowance, SAO reservation, and planned rear NFC area. The NFC leader projects the documented all-layer native reserve; coil layout and tuning remain open. Accessory leaders use their native assembly positions. These presentation exports do not change the source board or interactive assembly.
+The labels describe proposed interactions. The Components render hides the display to expose front electronics. The Back render includes the battery allowance and the routed rear NFC coil. The SAO socket is on the front. NFC tuning remains open. Accessory leaders use their native assembly positions. These presentation exports do not change the source board or interactive assembly.
 
 To regenerate these three presentation images from the reviewed snapshot, run `python3 scripts/render_feature_views.py`, then `npm run check`. The render recipe is intentionally pinned to the reviewed badge source; review its snapshot and source-hash binding when replacing the hardware layout. Calibration uses six native mounting holes. An independent shoulder transparency check verifies front/back orientation; the full outline stays in frame.
 

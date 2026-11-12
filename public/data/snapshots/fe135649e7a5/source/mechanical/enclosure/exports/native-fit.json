@@ -1,0 +1,74 @@
+{
+  "board_sha256": "2ab108d4ad09cb5538978bc369583472795cd0d11a55392cd0bc81e5c5f62757",
+  "kicad_version": "10.0.8",
+  "checked_source_hashes": {
+    "build.py": "438c1681a195a79872d8a4e29073278a8d0aed6cd2c90bc2cbc30db0fd8e0f2f",
+    "parameters.json": "c0f5a0a3ef1924f6539c8af1a02892bbce799427afac40ebc79268e5564eee9e",
+    "interfaces.json": "fb3af2f23da89084d65f39ed1756ba9f8364fccea9ca220ab388402170025caf",
+    "check_native_fit.py": "f2bf8c3819561cf08034f91506de8745e88cf53e9059c2840d32824fd069f6d7"
+  },
+  "status": "pass",
+  "checks": [
+    {
+      "check": "frame_connected_solid",
+      "passed": true,
+      "solids": 1
+    },
+    {
+      "check": "native_pcb_intersections",
+      "passed": true
+    },
+    {
+      "check": "native_outline_lateral_clearance",
+      "tested_mm": 0.59,
+      "passed": true,
+      "intersection_mm3": 0.0
+    },
+    {
+      "check": "selected_body_envelopes",
+      "passed": true,
+      "bodies": [
+        "display_glass",
+        "SAO_body",
+        "SAO_key",
+        "FPC_connector",
+        "IR_receiver_max",
+        "Qwiic_body",
+        "USB_shell_max",
+        "ESP32_module_max",
+        "battery_design_allowance",
+        "SW401_body",
+        "SW401_actuator",
+        "SW402_body",
+        "SW402_actuator",
+        "SW403_body",
+        "SW403_actuator"
+      ],
+      "intersections": []
+    },
+    {
+      "check": "baffle_native_courtyard_screen",
+      "passed": true,
+      "assumed_height_mm": 1.5,
+      "overlaps": []
+    },
+    {
+      "check": "role_to_sao_plate_web",
+      "minimum_design_mm": 1.0,
+      "measured_mm": 1.55,
+      "passed": true
+    },
+    {
+      "check": "battery_rear_nominal_gap",
+      "measured_mm": 1.5,
+      "passed": true
+    }
+  ],
+  "findings": [],
+  "limits": [
+    "Only named body envelopes are checked; this does not replace full component-solid and tolerance checks.",
+    "The 1.5mm courtyard screen reports potential low-wall interference, not manufacturer component heights.",
+    "Nominal battery rear clearance is not a verified swelling or tape allowance.",
+    "Glass support areas, fastener/nut selection, cable and add-on insertion sweeps, optical isolation, RF and the dock remain physical-prototype checks."
+  ]
+}

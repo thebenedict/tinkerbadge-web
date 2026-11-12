@@ -186,6 +186,41 @@ def separate_accessories(variant_id, info, configured, copied):
     return {**info,'components':remaining},records
 
 
+def committed_source_revision(source, hashes, required=False):
+    """Bind every selected source byte to one Git commit, not an arbitrary HEAD."""
+    result=subprocess.run(['git','-C',str(source),'rev-parse','HEAD'],capture_output=True,text=True)
+    if result.returncode:
+        if required:raise RuntimeError('Publication requires committed hardware inputs')
+        return None
+    commit=result.stdout.strip()
+    for relative,expected in hashes.items():
+        blob=subprocess.run(['git','-C',str(source),'show',commit+':'+relative],capture_output=True)
+        if blob.returncode or hashlib.sha256(blob.stdout).hexdigest()!=expected:
+            if required:raise RuntimeError('Uncommitted hardware input: '+relative)
+            return None
+    return commit
+
+
+def publication_metadata(relative, source, board):
+    if not relative:return None
+    report=json.loads(source_path(source,relative).read_text())
+    for field in ['source_hashes','output_hashes']:
+        if not report.get(field):raise RuntimeError('Missing publication '+field)
+        for name,expected in report[field].items():
+            if sha(source_path(source,name))!=expected:raise RuntimeError('Stale publication artifact: '+name)
+    if report['board_sha256']!=sha(source_path(source,board)):
+        raise RuntimeError('Publication evidence belongs to a different PCB')
+    for key in ['erc_errors','drc_errors','unconnected_items','schematic_parity']:
+        if report['checks'][key]!=0:raise RuntimeError('Publication electrical check failed: '+key)
+    production=json.loads((source/'production/jlcpcb/manifest.json').read_text())
+    for field in ['source_hashes','sha256']:
+        for name,expected in production[field].items():
+            if sha(source_path(source,name))!=expected:raise RuntimeError('Stale manufacturing artifact: '+name)
+    return {'manifestPath':relative,'manifestSha256':sha(source_path(source,relative)),
+            'boardSha256':report['board_sha256'],'checks':report['checks'],
+            'kicad':report['kicad'],'zoneRefill':report['zone_refill']}
+
+
 def export(args):
     cfg=json.loads(args.config.read_text()); validate_config(cfg)
     source=(args.source or ROOT/cfg['source']).resolve(); out=args.output.resolve()
@@ -194,11 +229,12 @@ def export(args):
     inputs=collect_inputs(source,cfg,resolver)
     hashes={rel:sha(p) for rel,p in sorted(inputs['files'].items())}
     validate_source_pins(hashes,cfg.get('snapshot',{}).get('expectedHashes',{}))
+    source_commit=committed_source_revision(source,hashes,cfg.get('snapshot',{}).get('requireSourceCommit',False))
     external_hashes={rel:sha(p) for rel,p in sorted(inputs['external'].items())}
     version=subprocess.check_output([args.kicad_cli,'version'],text=True).strip()
     pipeline_files=['scripts/export_assets.py','scripts/kicad_source.py','scripts/component_names.py','scripts/optimize_glb.mjs','scripts/bind_components.mjs','src/component-index.js']
     pipeline_hashes={rel:sha(ROOT/rel) for rel in pipeline_files}
-    recipe={'schema':2,'config':cfg,'inputs':hashes,'externalInputs':external_hashes,'kicad':version,'pipeline':pipeline_hashes}
+    recipe={'schema':2,'config':cfg,'sourceCommit':source_commit,'inputs':hashes,'externalInputs':external_hashes,'kicad':version,'pipeline':pipeline_hashes}
     input_id=digest(recipe)[:12]; prefix=f'data/snapshots/{input_id}'
     if args.skip_existing and (out/'manifest.json').is_file():
         prev=json.loads((out/'manifest.json').read_text())
@@ -338,6 +374,14 @@ def export(args):
                         v['downloads'].extend([{'label':'3D model (GLB)','url':v['model']['url']},{'label':'Native GLB export','url':v['model']['nativeUrl']}])
                         print(f'Indexed {vid}: {bindings["modeledComponents"]} clickable components',flush=True)
                     else: v['warnings'].append('KiCad could not export a 3D model from this PCB snapshot. The schematic and PCB layers remain available.')
+            publication=publication_metadata(original.get('publicationManifest'),public_source,files.get('pcb'))
+            if publication:
+                v['verification']=publication
+                v['downloads'].extend([{'label':label,'url':f'{prefix}/source/{path}'} for label,path in [
+                    ('Electrical verification','exports/publication/manifest.json'),
+                    ('Manufacturing Gerbers','production/jlcpcb/tinkerbadge-gerbers.zip'),
+                    ('Assembly BOM','production/jlcpcb/bom-jlcpcb.csv'),
+                    ('Component placement','production/jlcpcb/cpl-jlcpcb.csv')]])
             if original.get('enclosure'):
                 rel=original['enclosure']['sourceDirectory']
                 metadata=json.loads((copied/rel/'exports/manifest.json').read_text())
@@ -372,6 +416,8 @@ def export(args):
         final_inputs=collect_inputs(source,cfg,resolver)
         if set(final_inputs['files'])!=set(inputs['files']) or set(final_inputs['external'])!=set(inputs['external']):
             raise RuntimeError('Source dependency set changed during export')
+        if committed_source_revision(source,hashes,cfg.get('snapshot',{}).get('requireSourceCommit',False))!=source_commit:
+            raise RuntimeError('Hardware commit changed during export')
         if pipeline_hashes!={rel:sha(ROOT/rel) for rel in pipeline_files}: raise RuntimeError('Export pipeline changed during export')
         relative_outputs={p.relative_to(target).as_posix():sha(p) for p in sorted(target.rglob('*')) if p.is_file()}
         sid=digest({'inputId':input_id,'outputs':relative_outputs})[:12]
@@ -386,7 +432,7 @@ def export(args):
         readme=cfg['project'].get('readme')
         manifest={'schemaVersion':2,'project':{k:v for k,v in cfg['project'].items() if k!='readme'},
             'defaultVariant':cfg['defaultVariant'],'snapshot':{'id':sid,'inputId':input_id,
-                'createdAt':time.strftime('%Y-%m-%dT%H:%M:%SZ',time.gmtime()),'sourceCommit':None,
+                'createdAt':time.strftime('%Y-%m-%dT%H:%M:%SZ',time.gmtime()),'sourceCommit':source_commit,
                 'sourceHashes':hashes,'dependencyHashes':external_hashes,'outputHashes':outputs,
                 'toolVersions':{'kicad':version,'python':sys.version.split()[0],'gltfTransformCore':'4.2.1'},
                 'pipelineHashes':pipeline_hashes,'exporterSha256':sha(__file__)},

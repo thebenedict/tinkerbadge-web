@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "board_sha256": "2ab108d4ad09cb5538978bc369583472795cd0d11a55392cd0bc81e5c5f62757",
+  "kicad": "10.0.8",
+  "zone_refill": "in-memory; native inputs unchanged",
+  "checks": {
+    "erc_errors": 0,
+    "erc_warnings": 1,
+    "drc_errors": 0,
+    "drc_warnings": 12,
+    "unconnected_items": 0,
+    "schematic_parity": 0
+  },
+  "source_hashes": {
+    "tinkerbadge.kicad_pcb": "2ab108d4ad09cb5538978bc369583472795cd0d11a55392cd0bc81e5c5f62757",
+    "tinkerbadge.kicad_pro": "1799d888fa6ff526e7316237d923a7c363f62a13f8ea8af82f507af1cbc14715",
+    "tinkerbadge.kicad_dru": "b65ab288d07495b29b87afb433b9e441aa0cdd0afe1aaad18fec248ac9a576df",
+    "display.kicad_sch": "a0b39008478f4f613bf2c26ec933f116551dc3bf09f1c69b067d039380f32947",
+    "lighting.kicad_sch": "878b4815207a43d461e24e079f7b6445f2a8c25128ec9a6ffca681da8af88ada",
+    "mcu.kicad_sch": "bfb9d97e5f0241bfffdee45c40be92d9f4693fdaea2b82bd5b7af27f2c7c69f8",
+    "peripherals.kicad_sch": "63f2c690969775734f57fa83623c4164a63afae1cce09395fe23f3a07d75e280",
+    "power.kicad_sch": "b585c00a56519e6ce4c0fc7480290a2a6b4606b2fe51669c582181fa9fbc68da",
+    "tinkerbadge.kicad_sch": "82c4ec8b903b1495fb788657a45f1d468827b60ff2d87017a481a7427d7b4752",
+    "docs/design/display_contract.json": "28e5e3a1d4a6817a22b7f1d0ff36575d7b150556576feeb9983340813eacac1c",
+    "docs/design/mcu_contract.json": "bf75aa714bdf92af64b218bed50173db266b1ff69369e4b578d5fc0a8024dfb9",
+    "docs/design/peripherals_contract.json": "c70a5df829e45d9ae6a8c805a3bf5a283ec23016a872653ba5aea9c13680e045",
+    "docs/design/power_contract.json": "04bfea996d7fcd37414161ffb5b13580cc466ca1f46ad121469989ae579ed4fd",
+    "tools/refresh_publication.py": "5d914b66aa4c605b501ecb8b51c8f511b04f80eb877c8eeefd4391bb005d868e",
+    "tools/check_export_chain.py": "c5503022ad74d47d68149f485911554e20f76aa32d50bfd74ba74c7bebbd3e9d",
+    "tools/export_jlc.py": "583355c045d91ac5b06620021d4238886d517b7390368f86981d8460a32b1c74",
+    "tools/check_schematic_contracts.py": "541af2d2b849e4cc1fa3ec1bdb51cc27487ccf0b4569ce39990b8a186413bf26",
+    "tools/check_schematic_properties.py": "8192d8e74c8cd7dd56caf03e1941f82822f4667fdbdfaba3f317e5ca9ee9e669",
+    "tools/check_nfc_window.py": "319c1dc050ae924f0d9f140b961630f72c559cb18bad70087c54d65f15dc7ae1",
+    "tools/check_nfc_gerbers.py": "d287f4647c534cbe54226157dfcf3ec0f10c1b5a3b95628ecbf8f2c121ec36e1"
+  },
+  "output_hashes": {
+    "exports/publication/contracts.json": "8a7e692899ddc4c77d7bc2b93df08830b492c57b3159a3c7eedb5927b967edf2",
+    "exports/publication/drc.json": "335f122a03323dfd7f1165c40bc7117a1fa16a0057aae883cf2d3e740d502115",
+    "exports/publication/erc.json": "6ee0fc2620d873d2adb3e8d0e294d7bc026df4a85516b3fb8cc849978764c665",
+    "exports/publication/properties.json": "67ca06c8c309ec41ca5723baa2d88111198317663c4c60414f9d0028524103af",
+    "exports/publication/tinkerbadge.net": "0ea94d9c978f19d72c2d73ac6bd3b7ddc555e92bb51d4341e06c93f900eb88f9",
+    "production/jlcpcb/manifest.json": "6caa421d77b0a30b996bf286139b7ee9f5ae010349ea3a9841bb0e302b0b2a0e",
+    "mechanical/enclosure/exports/manifest.json": "a0b0836fc633e85ddd8dd602423b32e308c96b74d62bb3738ead1cd0e7e587f6",
+    "mechanical/enclosure/exports/enclosure-cad.zip": "35073a76374cda15ab8ad65615c5c62da2b1a3152c20afe74a3c760821fdc457"
+  }
+}

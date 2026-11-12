@@ -20,6 +20,10 @@ export function validatePublication(manifest,info,expectedSnapshot) {
     if(!hashes||!Object.keys(hashes).length||Object.values(hashes).some(hash=>!SHA256.test(hash)))errors.push(`Missing or invalid ${field}.`);
   }
   if(!manifest.snapshot?.toolVersions?.kicad)errors.push('The KiCad export version is missing.');
+  if(!/^[a-f0-9]{40}$/.test(manifest.snapshot?.sourceCommit??''))errors.push('A verified hardware source commit is required.');
+  const boardHash=manifest.snapshot?.sourceHashes?.['tinkerbadge.kicad_pcb'];
+  const variant=manifest.variants?.[0];
+  if(!SHA256.test(boardHash??'')||variant?.enclosure?.board_sha256!==boardHash||variant?.verification?.boardSha256!==boardHash)errors.push('PCB, enclosure and verification revisions must match.');
   return errors;
 }
 

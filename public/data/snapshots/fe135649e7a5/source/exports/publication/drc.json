@@ -1,0 +1,258 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-11-12T07:09:52",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.8",
+    "schematic_parity": [],
+    "source": "tinkerbadge.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [/01  POWER + CHARGING/VSYS] on B.Cu, length 8.1317 mm",
+                    "pos": {
+                        "x": 173.725,
+                        "y": 128.824999
+                    },
+                    "uuid": "35a46f65-3b72-4d73-8d07-b3869b0af777"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [+3V3] on B.Cu, length 33.5000 mm",
+                    "pos": {
+                        "x": 152.0,
+                        "y": 155.0
+                    },
+                    "uuid": "5216c819-5ac8-4421-97ea-658e10a8b227"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [/04  LIGHTING + BUTTONS/RGB_LINK_3] on F.Cu, length 2.9698 mm",
+                    "pos": {
+                        "x": 197.95,
+                        "y": 122.6
+                    },
+                    "uuid": "d335878f-b8ab-48eb-bc55-a20e43c095f2"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [/05  SENSORS + EXPANSION/ACC_FAULT_N] on F.Cu, length 18.1106 mm",
+                    "pos": {
+                        "x": 176.7479,
+                        "y": 153.627
+                    },
+                    "uuid": "751f4c34-607e-417e-9735-32bb05ef2edf"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [USB_VBUS] on F.Cu, length 2.4250 mm",
+                    "pos": {
+                        "x": 202.645,
+                        "y": 128.4
+                    },
+                    "uuid": "6dfd2b18-ef9b-46bd-bbbc-31a32922d521"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [/04  LIGHTING + BUTTONS/RGB_LINK_6] on F.Cu, length 20.9758 mm",
+                    "pos": {
+                        "x": 159.1055,
+                        "y": 172.8483
+                    },
+                    "uuid": "348ec3cb-9387-4cdd-97bf-523b3342e45a"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Silkscreen clipped by board edge (board setup constraints silk clearance 0.1500 mm; actual 0.1250 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 104.0,
+                        "y": 106.75
+                    },
+                    "uuid": "effd5085-295c-4a52-b38e-eabdec5af78b"
+                },
+                {
+                    "description": "Segment of U201 on F.Silkscreen",
+                    "pos": {
+                        "x": 120.8,
+                        "y": 100.35
+                    },
+                    "uuid": "373e7337-64ae-478c-b0ef-5b9fbeb51c5e"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge (board setup constraints silk clearance 0.1500 mm; actual 0.1250 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 104.0,
+                        "y": 106.75
+                    },
+                    "uuid": "effd5085-295c-4a52-b38e-eabdec5af78b"
+                },
+                {
+                    "description": "Segment of U201 on F.Silkscreen",
+                    "pos": {
+                        "x": 139.2,
+                        "y": 100.35
+                    },
+                    "uuid": "fa12db85-29b6-45a7-b38a-84b928fa9068"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge (board setup constraints silk clearance 0.1500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 104.0,
+                        "y": 106.75
+                    },
+                    "uuid": "effd5085-295c-4a52-b38e-eabdec5af78b"
+                },
+                {
+                    "description": "Polygon of U201 on F.Silkscreen",
+                    "pos": {
+                        "x": 120.8,
+                        "y": 107.225
+                    },
+                    "uuid": "45a5d54c-275f-40be-a386-17a1e818ecc8"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Footprint 'ESP32-S3-WROOM-1' does not match copy in library 'RF_Module'",
+            "items": [
+                {
+                    "description": "Footprint U201",
+                    "pos": {
+                        "x": 130.0,
+                        "y": 113.25
+                    },
+                    "uuid": "1dc4094e-54cc-463d-9940-41b16e50d475"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Silkscreen clearance (board setup constraints silk clearance 0.1500 mm; actual 0.1273 mm)",
+            "items": [
+                {
+                    "description": "Polygon of U105 on F.Silkscreen",
+                    "pos": {
+                        "x": 196.38,
+                        "y": 124.59
+                    },
+                    "uuid": "3212f282-1276-433e-b8c8-4d11e3f3c04e"
+                },
+                {
+                    "description": "Segment of Q101 on F.Silkscreen",
+                    "pos": {
+                        "x": 196.26,
+                        "y": 123.06
+                    },
+                    "uuid": "8129f6f5-9cb8-4f98-bb9d-4f3ee9370251"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance (board setup constraints silk clearance 0.1500 mm; actual 0.1273 mm)",
+            "items": [
+                {
+                    "description": "Polygon of U105 on F.Silkscreen",
+                    "pos": {
+                        "x": 196.38,
+                        "y": 124.59
+                    },
+                    "uuid": "3212f282-1276-433e-b8c8-4d11e3f3c04e"
+                },
+                {
+                    "description": "Segment of Q101 on F.Silkscreen",
+                    "pos": {
+                        "x": 196.26,
+                        "y": 124.06
+                    },
+                    "uuid": "9df59795-013e-417f-85e0-1fbed582094b"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        }
+    ]
+}

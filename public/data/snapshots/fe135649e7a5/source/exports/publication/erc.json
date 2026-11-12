@@ -1,0 +1,86 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-11-12T07:09:45",
+    "ignored_checks": [
+        {
+            "description": "Global label only appears once in the schematic",
+            "key": "single_global_label"
+        },
+        {
+            "description": "Four connection points are joined together",
+            "key": "four_way_junction"
+        },
+        {
+            "description": "SPICE model issue",
+            "key": "simulation_model_issue"
+        },
+        {
+            "description": "Assigned footprint doesn't match footprint filters",
+            "key": "footprint_filter"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.8",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/2cafc24f-5f58-4208-af45-60e1655dc09b",
+            "violations": []
+        },
+        {
+            "path": "/01  POWER + CHARGING/",
+            "uuid_path": "/2cafc24f-5f58-4208-af45-60e1655dc09b/a231488f-1141-4368-bf74-b9220e7b7f64",
+            "violations": []
+        },
+        {
+            "path": "/02  PROCESSOR + RECOVERY/",
+            "uuid_path": "/2cafc24f-5f58-4208-af45-60e1655dc09b/e9401afe-befe-471e-bade-413cab569f27",
+            "violations": []
+        },
+        {
+            "path": "/03  E-PAPER DISPLAY/",
+            "uuid_path": "/2cafc24f-5f58-4208-af45-60e1655dc09b/0070c64a-1509-450f-bdfd-35dfd81e2e07",
+            "violations": []
+        },
+        {
+            "path": "/04  LIGHTING + BUTTONS/",
+            "uuid_path": "/2cafc24f-5f58-4208-af45-60e1655dc09b/5fe598f7-ccee-40ac-b6d4-b849f03753e0",
+            "violations": []
+        },
+        {
+            "path": "/05  SENSORS + EXPANSION/",
+            "uuid_path": "/2cafc24f-5f58-4208-af45-60e1655dc09b/0e7ec69b-1045-4cde-a66e-23960952ec99",
+            "violations": [
+                {
+                    "description": "Pins of type Bidirectional and Power output are connected",
+                    "items": [
+                        {
+                            "description": "Symbol U502 Pin 3 [SDO/SA0, Bidirectional, Line]",
+                            "pos": {
+                                "x": 158.75,
+                                "y": 86.36
+                            },
+                            "uuid": "9aa6c36d-22cf-4c19-bc5c-eb413f838aba"
+                        },
+                        {
+                            "description": "Symbol U103 Pin 6 [VOUT, Power output, Line]",
+                            "pos": {
+                                "x": 77.47,
+                                "y": 182.88
+                            },
+                            "uuid": "fbd47828-bc9e-45c3-85d7-b0d36c63dc35"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                }
+            ]
+        }
+    ],
+    "source": "tinkerbadge.kicad_sch"
+}
