@@ -168,3 +168,7 @@ To regenerate these three presentation images from the reviewed snapshot, run `p
 - Original Tinker Badge hardware in snapshots: **CERN-OHL-P-2.0**.
 
 See [the licensing map](LICENSE.md), [full license texts](LICENSES/README.md), and [third-party notices](docs/THIRD_PARTY_NOTICES.md). Generated assets retain their source licenses; imported projects and dependencies retain their own terms.
+
+## Enclosure viewer
+
+The [enclosure exploration guide](docs/enclosure-viewer.md) describes assembly views, CAD refresh, and validation.

@@ -296,7 +296,7 @@ def export(args):
                     'outlineBounds':bounds,'trackSegments':info['trackSegments'],'vias':info['vias'],'zones':info['zones'],'copperZones':info['copperZones'],'population':population,'routing':routing}
                 v.setdefault('revision',info['revision'])
                 v['downloads'].append({'label':'Native PCB','url':v['pcb']['nativeUrl']})
-                metadata={'pcb':files['pcb'],'pcbSha256':hashes[files['pcb']],
+                metadata={'pcb':files['pcb'],'pcbSha256':hashes[files['pcb']],'pcbThicknessMm':info['thicknessMm'],
                     'schematic':files.get('schematic'),'schematicSha256':hashes.get(files.get('schematic')),
                     'schematicHashes':{s['sourcePath']:hashes[s['sourcePath']] for s in (hierarchy or {}).get('sheets',[])}}
                 component_source=work/f'components-{vid}.json'
@@ -338,6 +338,26 @@ def export(args):
                         v['downloads'].extend([{'label':'3D model (GLB)','url':v['model']['url']},{'label':'Native GLB export','url':v['model']['nativeUrl']}])
                         print(f'Indexed {vid}: {bindings["modeledComponents"]} clickable components',flush=True)
                     else: v['warnings'].append('KiCad could not export a 3D model from this PCB snapshot. The schematic and PCB layers remain available.')
+            if original.get('enclosure'):
+                rel=original['enclosure']['sourceDirectory']
+                metadata=json.loads((copied/rel/'exports/manifest.json').read_text())
+                if metadata['board_sha256']!=hashes[files['pcb']]:raise RuntimeError('Enclosure belongs to a different PCB revision')
+                for name,expected in metadata['output_hashes'].items():
+                    if sha(copied/rel/'exports'/name)!=expected:raise RuntimeError('Enclosure output hash mismatch: '+name)
+                for name,expected in metadata['source_hashes'].items():
+                    if sha(copied/rel/name)!=expected:raise RuntimeError('Enclosure source hash mismatch: '+name)
+                index=json.loads((directory/'components.json').read_text())
+                calibration=index.get('boardCalibration')
+                if not calibration:raise RuntimeError('Cannot register enclosure to native board surfaces')
+                if calibration['nominalThicknessMm']!=info['thicknessMm']:raise RuntimeError('Enclosure registration thickness mismatch')
+                base=f'{prefix}/source/{rel}/exports/'
+                v['enclosure']={**metadata,'modelUrl':base+'enclosure.glb','stepUrl':base+'enclosure.step',
+                    'archiveUrl':base+'enclosure-cad.zip','manifestUrl':base+'manifest.json',
+                    'frontDxfUrl':base+'front.dxf','rearDxfUrl':base+'rear.dxf',
+                    'sourceUrl':f'{prefix}/source/{rel}/build.py','frontSurfaceM':calibration['frontY'],
+                    'bytes':(copied/rel/'exports/enclosure.glb').stat().st_size,
+                    'parts':[{**p,'stepUrl':base+p['step'],'stlUrl':base+p['stl']} for p in metadata['parts']]}
+                v['downloads'].extend([{'label':'Enclosure CAD and print files','url':v['enclosure']['archiveUrl']},{'label':'Enclosure assembly (STEP)','url':v['enclosure']['stepUrl']}])
             variants.append(v)
         archive=target/'native-design.zip'
         with zipfile.ZipFile(archive,'w',zipfile.ZIP_DEFLATED) as z:

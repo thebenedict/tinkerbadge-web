@@ -1,0 +1,10 @@
+{
+  "snapshotId": "bf93f73b5ee5",
+  "sources": {
+    "data/snapshots/bf93f73b5ee5/source/mechanical/enclosure/exports/enclosure.glb": "40bc0ab7a14edc6240255d3a27bf870f6bc85c0d2738ed75d21542db1474d31d",
+    "data/snapshots/bf93f73b5ee5/source//tinkerbadge.kicad_pcb": "7b6ea0e61d1b97d6fb4b8665112096e6f28ca91348ab3617c9fafc7cb11dd688"
+  },
+  "sha256": "6c00cb349283cbff4214e8102a722ffb472702a9f3de925bff1a7f73899acce0",
+  "renderer": "kicad-cli",
+  "scriptSha256": "49635ca145d95296ac5fe03e2dba2443d15b8c222dff22d2ed8d6303bc59b24b"
+}

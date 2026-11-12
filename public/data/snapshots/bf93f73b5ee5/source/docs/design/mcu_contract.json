@@ -1,0 +1,289 @@
+{
+  "status": "source_review_passed_with_R207_amendment_2026-11-09",
+  "sheet": "mcu.kicad_sch",
+  "source_facts": "docs/components/ESP32-S3-WROOM-1-N16R8.json",
+  "components": [
+    {
+      "ref": "U201",
+      "mpn": "ESP32-S3-WROOM-1-N16R8",
+      "bom_id": "MCU-01",
+      "lib_id": "RF_Module:ESP32-S3-WROOM-1",
+      "footprint": "RF_Module:ESP32-S3-WROOM-1",
+      "value": "ESP32-S3-WROOM-1-N16R8",
+      "pins": {
+        "1": "GND",
+        "2": "+3V3",
+        "3": "MCU_EN",
+        "4": null,
+        "5": "USB_PRESENT_N",
+        "6": "DOCK_PRESENT_N",
+        "7": "MOTION_INT1",
+        "8": "EPD_BUSY",
+        "9": "EXT_SDA",
+        "10": "IR_TX",
+        "11": "IR_RX_N",
+        "12": "I2C_SDA",
+        "13": "MCU_USB_DM",
+        "14": "MCU_USB_DP",
+        "15": null,
+        "16": "STRAP46",
+        "17": "I2C_SCL",
+        "18": "EPD_CS_N",
+        "19": "EPD_MOSI",
+        "20": "EPD_SCK",
+        "21": "EPD_DC",
+        "22": "EPD_RST_N",
+        "23": "RGB_DATA",
+        "24": "SAO_GPIO2",
+        "25": "NFC_FD_N",
+        "26": "STRAP45",
+        "27": "BTN_B_N",
+        "28": null,
+        "29": null,
+        "30": null,
+        "31": "PWR_LED_G",
+        "32": "PWR_LED_R",
+        "33": "EPD_EN",
+        "34": "EXT_SCL",
+        "35": "SAO_GPIO1",
+        "36": "UART_RX",
+        "37": "UART_TX",
+        "38": "BTN_A_N",
+        "39": "BAT_ADC",
+        "40": "GND",
+        "41": "GND"
+      },
+      "pin_fact_file": "docs/components/ESP32-S3-WROOM-1-N16R8.json"
+    },
+    {
+      "ref": "R201",
+      "lib_id": "Device:R",
+      "value": "10k 1%",
+      "pins": {
+        "1": "+3V3",
+        "2": "MCU_EN"
+      },
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    {
+      "ref": "R202",
+      "lib_id": "Device:R",
+      "value": "10k 1%",
+      "pins": {
+        "1": "+3V3",
+        "2": "BTN_B_N"
+      },
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    {
+      "ref": "R203",
+      "lib_id": "Device:R",
+      "value": "10k 1%",
+      "pins": {
+        "1": "STRAP45",
+        "2": "GND"
+      },
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    {
+      "ref": "R204",
+      "lib_id": "Device:R",
+      "value": "10k 1%",
+      "pins": {
+        "1": "STRAP46",
+        "2": "GND"
+      },
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    {
+      "ref": "R205",
+      "lib_id": "Device:R",
+      "value": "22R 1%",
+      "pins": {
+        "1": "USB_DM",
+        "2": "MCU_USB_DM"
+      },
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    {
+      "ref": "R206",
+      "lib_id": "Device:R",
+      "value": "22R 1%",
+      "pins": {
+        "1": "USB_DP",
+        "2": "MCU_USB_DP"
+      },
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    {
+      "ref": "C201",
+      "lib_id": "Device:C",
+      "value": "22uF 10V X5R",
+      "pins": {
+        "1": "+3V3",
+        "2": "GND"
+      },
+      "footprint": "Capacitor_SMD:C_0805_2012Metric"
+    },
+    {
+      "ref": "C202",
+      "lib_id": "Device:C",
+      "value": "100nF 16V X7R",
+      "pins": {
+        "1": "+3V3",
+        "2": "GND"
+      },
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    {
+      "ref": "C203",
+      "lib_id": "Device:C",
+      "value": "1uF 10V X7R",
+      "pins": {
+        "1": "MCU_EN",
+        "2": "GND"
+      },
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    {
+      "ref": "TP201",
+      "lib_id": "Connector:TestPoint",
+      "value": "MCU_EN",
+      "pins": {
+        "1": "MCU_EN"
+      },
+      "footprint": "TestPoint:TestPoint_Pad_D1.0mm"
+    },
+    {
+      "ref": "TP202",
+      "lib_id": "Connector:TestPoint",
+      "value": "BOOT / BTN_B",
+      "pins": {
+        "1": "BTN_B_N"
+      },
+      "footprint": "TestPoint:TestPoint_Pad_D1.0mm"
+    },
+    {
+      "ref": "TP203",
+      "lib_id": "Connector:TestPoint",
+      "value": "+3V3",
+      "pins": {
+        "1": "+3V3"
+      },
+      "footprint": "TestPoint:TestPoint_Pad_D1.0mm"
+    },
+    {
+      "ref": "TP204",
+      "lib_id": "Connector:TestPoint",
+      "value": "GND",
+      "pins": {
+        "1": "GND"
+      },
+      "footprint": "TestPoint:TestPoint_Pad_D1.0mm"
+    },
+    {
+      "ref": "TP205",
+      "lib_id": "Connector:TestPoint",
+      "value": "UART_TX",
+      "pins": {
+        "1": "UART_TX"
+      },
+      "footprint": "TestPoint:TestPoint_Pad_D1.0mm"
+    },
+    {
+      "ref": "TP206",
+      "lib_id": "Connector:TestPoint",
+      "value": "UART_RX",
+      "pins": {
+        "1": "UART_RX"
+      },
+      "footprint": "TestPoint:TestPoint_Pad_D1.0mm"
+    },
+    {
+      "ref": "R207",
+      "lib_id": "Device:R",
+      "value": "100k 1%",
+      "pins": {
+        "1": "EPD_EN",
+        "2": "GND"
+      },
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "source": "TPS22918DBVR.pdf p3 ON must not float; independent source review amendment 2026-11-09"
+    },
+    {
+      "ref": "SW403",
+      "mpn": "SKSCLBE010",
+      "lib_id": "Tinkerbadge_Peripherals:SKSCLBE010",
+      "pins": {
+        "1": "MCU_EN_SW",
+        "2": "MCU_EN_SW",
+        "3": "GND",
+        "4": "GND"
+      },
+      "footprint": "Tinkerbadge:SKSCLBE010",
+      "note": "Recessed reset button. design review 2026-11-11"
+    },
+    {
+      "ref": "R415",
+      "lib_id": "Device:R",
+      "pins": {
+        "1": "MCU_EN_SW",
+        "2": "MCU_EN"
+      },
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "note": "330R limits the C203 discharge current through the switch contact; EN low level about 0.1 V."
+    }
+  ],
+  "gpio": {
+    "1": "BAT_ADC",
+    "2": "BTN_A_N",
+    "4": "NC",
+    "5": "USB_PRESENT_N",
+    "6": "DOCK_PRESENT_N",
+    "7": "MOTION_INT1",
+    "8": "I2C_SDA",
+    "9": "I2C_SCL",
+    "10": "EPD_CS_N",
+    "11": "EPD_MOSI",
+    "12": "EPD_SCK",
+    "13": "EPD_DC",
+    "14": "EPD_RST_N",
+    "15": "EPD_BUSY",
+    "16": "EXT_SDA",
+    "17": "IR_TX",
+    "18": "IR_RX_N",
+    "19": "MCU_USB_DM",
+    "20": "MCU_USB_DP",
+    "21": "RGB_DATA",
+    "38": "PWR_LED_G",
+    "39": "PWR_LED_R",
+    "40": "EPD_EN",
+    "41": "EXT_SCL",
+    "42": "SAO_GPIO1",
+    "43": "UART_TX",
+    "44": "UART_RX",
+    "47": "SAO_GPIO2",
+    "48": "NFC_FD_N",
+    "0": "BTN_B_N",
+    "45": "STRAP45",
+    "46": "STRAP46"
+  },
+  "unused_pins": {
+    "U201": [
+      "4",
+      "15",
+      "28",
+      "29",
+      "30"
+    ]
+  },
+  "notes": [
+    "No external32kHz crystal. Native USB GPIO19/20; UART recovery retained.",
+    "Two user buttons owned bylighting contract; GPIO2 is required active-low deep-sleep wake input.",
+    "GPIO40 EPD_EN may be driven high by USB-OTG download ROM; powering display in recovery is benign. Avoid assigning GPIO40 to switched accessory data.",
+    "Straps GPIO45/46 have10k pulldowns; GPIO0 is BOOT and button B with a 10k pullup (R202) and 100 nF (C412). GPIO3 unconnected.",
+    "External I2C and SAO are separate from onboard bus; prohibit self-powered accessories until isolation is qualified.",
+    "R207 100k grounds EPD_EN during MCU high-impedance states; USB-OTG ROM can still intentionally drive GPIO40 high.",
+    "Button B is GPIO0: hold B through reset (SW403) for ROM download. GPIO4 is unused. EN RC is 10 ms, GPIO0 RC 1 ms, so the strap is high at release unless B is held. design review 2026-11-11"
+  ]
+}

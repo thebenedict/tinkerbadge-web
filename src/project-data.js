@@ -1,5 +1,5 @@
 export function availableViews(variant) {
-  return ['overview', ...(variant.schematic?.sheets?.length ? ['schematic'] : []), ...(variant.pcb?.layers?.length ? ['pcb'] : [])];
+  return ['overview', ...(variant.enclosure ? ['enclosure'] : []), ...(variant.schematic?.sheets?.length ? ['schematic'] : []), ...(variant.pcb?.layers?.length ? ['pcb'] : [])];
 }
 export function schematicCount(variant) {
   return new Set((variant.schematic?.sheets??[]).flatMap(sheet=>sheet.symbols.map(s=>s.reference))).size;

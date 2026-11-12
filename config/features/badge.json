@@ -65,7 +65,7 @@
         {
           "id": "qwiic",
           "title": "Qwiic expansion",
-          "description": "Connect I²C sensors and other accessories.",
+          "description": "Connect I\u00b2C sensors and other accessories.",
           "column": "right",
           "anchors": [
             [
@@ -117,11 +117,22 @@
         {
           "id": "nfc",
           "title": "NFC phone taps",
-          "description": "Links for authentication and contact sharing. Rear coil layout pending.",
+          "description": "Links for authentication and contact sharing. Rear coil tuning is pending.",
           "column": "right",
           "anchors": [
             [
               "U503"
+            ]
+          ]
+        },
+        {
+          "id": "sao",
+          "title": "SAO expansion socket",
+          "description": "Fit a badge add-on above the display.",
+          "column": "left",
+          "anchors": [
+            [
+              "J502"
             ]
           ]
         }
@@ -131,20 +142,8 @@
       "id": "back",
       "side": "back",
       "label": "Back",
-      "description": "Rear with the battery allowance, SAO reservation, and planned NFC coil area",
+      "description": "Rear battery allowance, charging contacts and NFC coil",
       "features": [
-        {
-          "id": "sao",
-          "title": "Planned SAO socket",
-          "description": "Space for a badge add-on.",
-          "column": "left",
-          "anchors": [
-            [
-              "RES_J502"
-            ]
-          ],
-          "reservation": true
-        },
         {
           "id": "battery",
           "title": "Rechargeable LiPo battery",
@@ -160,16 +159,14 @@
         },
         {
           "id": "nfc-antenna",
-          "title": "Planned rear NFC coil",
-          "description": "Tap a phone to share contact links. Coil layout and tuning are pending.",
+          "title": "Rear NFC coil",
+          "description": "Tap a phone to share contact links. Tuning requires an assembled prototype.",
           "column": "left",
           "anchors": [
             [
-              "MECH_NFC"
+              "AE501"
             ]
           ],
-          "anchorType": "board-region",
-          "reservation": true,
           "sourceDocument": "docs/design/rear_nfc_feasibility.md"
         }
       ]

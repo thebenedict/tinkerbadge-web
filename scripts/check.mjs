@@ -5,6 +5,7 @@ import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
 import * as THREE from 'three';
 import {validateComponentIndex,componentIdFromObject} from '../src/component-index.js';
 import {availableViews} from '../src/project-data.js';
+import {attachEnclosure} from '../src/enclosure.js';
 
 const root=path.resolve(process.env.VIEWER_DIST??'dist');
 const info=JSON.parse(await fs.readFile(path.join(root,'build-info.json'),'utf8'));
@@ -53,6 +54,22 @@ for(const variant of manifest.variants) {
   const bytes=await fs.readFile(path.join(root,variant.model.url));
   if(bytes.toString('ascii',0,4)!=='glTF'||bytes.readUInt32LE(4)!==2||bytes.readUInt32LE(8)!==bytes.length){errors.push(`Invalid GLB: ${variant.id}`);continue;}
   const loaded=await new GLTFLoader().parseAsync(bytes.buffer.slice(bytes.byteOffset,bytes.byteOffset+bytes.byteLength),'');
+  if(variant.enclosure){
+    const e=variant.enclosure;
+    if(e.board_sha256!==index.source.pcbSha256)errors.push('Enclosure and PCB revisions differ');
+    const caseBytes=await fs.readFile(path.join(root,e.modelUrl));
+    const caseGltf=await new GLTFLoader().parseAsync(caseBytes.buffer.slice(caseBytes.byteOffset,caseBytes.byteOffset+caseBytes.byteLength),'');
+    if(caseGltf.parser.json.buffers.some(b=>b.uri))errors.push('External enclosure GLB buffer');
+    const holder=new THREE.Group(),assembly=attachEnclosure(holder,caseGltf,e);
+    holder.updateMatrixWorld(true);
+    for(const part of e.parts){
+      const object=assembly.objects.get(part.id),bounds=new THREE.Box3().setFromObject(object);
+      if(!object||bounds.isEmpty())errors.push('Missing enclosure part: '+part.id);
+      for(const kind of ['stepUrl','stlUrl'])await fs.access(path.join(root,part[kind]));
+    }
+    assembly.setMode('board');if(assembly.root.visible)errors.push('Board mode did not hide enclosure');
+    assembly.setMode('exploded');if(!assembly.root.visible)errors.push('Exploded mode hid enclosure');
+  }
   if(loaded.parser.json.buffers.some(buffer=>buffer.uri))errors.push(`External GLB buffer: ${variant.id}`);
   validateComponentIndex(loaded.parser.json,index);
   if(sha(bytes)!==index.modelSha256)errors.push(`Component model hash mismatch: ${variant.id}`);

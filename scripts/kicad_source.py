@@ -4,11 +4,11 @@ import hashlib, json, math, os, re, uuid
 from pathlib import Path
 
 MODEL_SUFFIXES = {'.step', '.stp', '.wrl', '.vrml', '.iges', '.igs'}
-CAD_SUFFIXES = MODEL_SUFFIXES | {'.kicad_sch', '.kicad_pcb', '.kicad_pro', '.kicad_sym', '.kicad_mod', '.kicad_dru', '.kicad_wks', '.net'}
+CAD_SUFFIXES = MODEL_SUFFIXES | {'.kicad_sch', '.kicad_pcb', '.kicad_pro', '.kicad_sym', '.kicad_mod', '.kicad_dru', '.kicad_wks', '.net', '.glb', '.stl', '.dxf', '.zip', '.py'}
 DOCUMENT_SUFFIXES = {'.md', '.json', '.pdf', '.svg', '.txt', '.csv', '.png', '.jpg', '.jpeg', '.webp'}
 TABLES = {'fp-lib-table', 'sym-lib-table'}
 LICENSE_NAMES = {'LICENSE', 'COPYING', 'NOTICE'}
-DIRECTORY_SUFFIXES = CAD_SUFFIXES | {'.md', '.txt'}
+DIRECTORY_SUFFIXES = (CAD_SUFFIXES - {'.py', '.zip', '.glb', '.stl', '.dxf'}) | {'.md', '.txt'}
 BOM_KEYS = ['MPN', 'JLCPCB Part #', 'LCSC', 'Manufacturer', 'Datasheet']
 
 def sha(path): return hashlib.sha256(Path(path).read_bytes()).hexdigest()
@@ -372,6 +372,16 @@ def collect_inputs(source, cfg, resolver):
         for p in sorted(directory.rglob('*')):
             if p.is_file() and (p.suffix.lower() in DIRECTORY_SUFFIXES or p.name in LICENSE_NAMES) and not any(part.startswith('.') for part in p.relative_to(source).parts): add(p)
     for variant in cfg['variants']:
+        enclosure=variant.get('enclosure')
+        if enclosure:
+            directory=source_path(source,enclosure['sourceDirectory'])
+            metadata=json.loads((directory/'exports/manifest.json').read_text())
+            for name in ['manifest.json','enclosure-cad.zip',*metadata['output_hashes']]:
+                if Path(name).name!=name:raise RuntimeError('Invalid enclosure artifact path')
+                add(directory/'exports'/name)
+            for name in [*metadata['source_hashes'],'requirements.txt','README.md']:
+                if Path(name).name!=name:raise RuntimeError('Invalid enclosure source path')
+                add(directory/name)
         for relative in variant.get('routingReview',{}).values():add(source_path(source,relative))
         naming=variant.get('componentNames',{})
         for relative in [naming.get('bomSource'),naming.get('amendmentsSource'),*naming.get('contracts',[])]:

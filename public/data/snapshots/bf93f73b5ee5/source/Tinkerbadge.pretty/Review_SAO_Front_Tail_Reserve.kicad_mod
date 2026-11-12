@@ -1,0 +1,98 @@
+(footprint "Review_SAO_Front_Tail_Reserve"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Rear12.7x7 keyed socket allowance with opposing8x5 front tail keepout. Exact pin/key mapping and holes unassigned;3.2mm tails not modeled.")
+	(property "Reference" "REF**"
+		(at 0 0 0)
+		(layer "Dwgs.User")
+		(hide yes)
+		(uuid "4affedac-5333-4610-9565-d65d2b86ae3a")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Value" "Review_SAO_Front_Tail_Reserve"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "cf833611-7ef5-4b68-839f-4a4aa6ffbe36")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "3d095d26-2618-44c0-b011-0c0f92f66141")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ec4eafc9-d90e-4de3-bc40-14466ea894d4")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr board_only exclude_from_pos_files exclude_from_bom)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -6.35 -3.5)
+		(end 6.35 3.5)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill no)
+		(layer "Dwgs.User")
+		(uuid "27be5046-a724-497b-b700-fd84c0f746d0")
+	)
+	(fp_rect
+		(start -4 -2.5)
+		(end 4 2.5)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "B.CrtYd")
+		(uuid "b62de04b-2ea8-48fe-90fa-67899ee0beb4")
+	)
+	(fp_rect
+		(start -6.65 -3.8)
+		(end 6.65 3.8)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "33e412d3-0744-4f94-ad88-9c04bfe74325")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/models/Review_SAO_12.7x7.wrl"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

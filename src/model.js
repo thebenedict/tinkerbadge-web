@@ -5,11 +5,16 @@ import {RoomEnvironment} from 'three/addons/environments/RoomEnvironment.js';
 import {attachAccessories,setNativeAccessoriesVisible} from './accessories.js';
 import {componentOptionLabel} from './component-labels.js';
 import {validateComponentIndex,componentIdFromObject,isSelectionGesture,componentFromIntersections} from './component-index.js';
+import {isEffectivelyVisible} from './component-index.js';
+import {attachEnclosure} from './enclosure.js';
+import {assemblyMode,explosionFraction} from './enclosure-state.js';
 
 export async function createViewer(host, modelUrl, onContextLost, onSelection = () => {}, signal, options = {}) {
   let renderer, controls, resize, model, gltf, disposed = false, frame = 0;
   let componentIndex=null, selection=null, gesture=null, accessories=null;
   let accessoriesVisible=Boolean(options.accessoriesVisible);
+  let enclosure=null,enclosureError=null,mode=assemblyMode(options.assemblyMode),explosion=1;
+  const accessoryBases=new WeakMap();
   const componentRoots=new Map(), pointers=new Set(), raycaster=new THREE.Raycaster(), pointer=new THREE.Vector2();
   const abort=new AbortController();
   const selectionBox=new THREE.Box3Helper(new THREE.Box3(),0xb26f23);selectionBox.visible=false;selectionBox.material.depthTest=false;selectionBox.renderOrder=100;
@@ -59,14 +64,36 @@ export async function createViewer(host, modelUrl, onContextLost, onSelection = 
     const expected=new Map(index.components.map(c=>[c.id,c]));componentRoots.clear();
     model.traverse(object=>{const id=object.userData?.viewerComponentId;if(!id)return;if(!expected.has(id))throw new Error('Unknown component in loaded model.');if(!componentRoots.has(id))componentRoots.set(id,[]);componentRoots.get(id).push(object);});
     for(const c of index.components)if((componentRoots.get(c.id)?.length??0)!==c.modelNodes.length)throw new Error(`Loaded model binding mismatch: ${c.reference}`);
-    accessories?.dispose();accessories=attachAccessories(model,index,accessoriesVisible);componentIndex=index;selectComponent(null);return index;
+    accessories?.dispose();accessories=attachAccessories(model,index,accessoriesVisible);componentIndex=index;updateAssemblyAccessories();selectComponent(null);return index;
   }
   function selectComponent(id) {
     if(id && !componentIndex?.components.some(c=>c.id===id))return;
+    if(id&&enclosure&&mode!=='board')setAssemblyMode('board');
+    options.onPartSelection?.(null);
     selection=id;selectionBox.visible=false;
     const roots=componentRoots.get(id);
     if(roots?.length){model.updateMatrixWorld(true);selectionBox.box.makeEmpty();for(const root of roots)selectionBox.box.union(new THREE.Box3().setFromObject(root));selectionBox.box.expandByScalar(size*.003);selectionBox.visible=true;}
     onSelection(id);requestRender();
+  }
+  function selectPart(id){
+    const object=enclosure?.objects.get(id);selectionBox.visible=false;
+    if(object){if(mode==='board')setAssemblyMode('assembled');model.updateMatrixWorld(true);selectionBox.box.setFromObject(object).expandByScalar(size*.003);selectionBox.visible=true;}
+    onSelection(null);options.onPartSelection?.(object?id:null);requestRender();
+  }
+  function updateAssemblyAccessories(){
+    if(!options.enclosure)return;
+    model.traverse(object=>{const id=object.userData?.viewerAccessoryId;if(!id)return;
+      if(!accessoryBases.has(object))accessoryBases.set(object,object.position.clone());
+      object.position.copy(accessoryBases.get(object));
+      // Native battery allowance stays fixed until the exploded view is requested.
+      if(id.endsWith('battery-allowance'))object.position.y-=mode==='exploded'?.014*explosion:0;
+      if(id.endsWith('display-panel')&&mode==='exploded')object.position.y+=.018*explosion;
+    });
+  }
+  function setAssemblyMode(value){
+    mode=assemblyMode(value);enclosure?.setMode(mode);
+    accessoriesVisible=mode!=='board';setNativeAccessoriesVisible(model,accessoriesVisible);accessories?.setVisible(accessoriesVisible);
+    updateAssemblyAccessories();selectionBox.visible=false;options.onModeChange?.(mode);requestRender();
   }
   function focusComponent() {
     if(!selectionBox.visible)return;
@@ -83,7 +110,9 @@ export async function createViewer(host, modelUrl, onContextLost, onSelection = 
     camera.updateMatrixWorld(true);model.updateMatrixWorld(true);raycaster.setFromCamera(pointer,camera);
     // Include board geometry as an occluder. A component hidden behind the board
     // must not be selected through it; the highlight is outside this subtree.
-    return componentFromIntersections(raycaster.intersectObject(model,true));
+    const hits=raycaster.intersectObject(model,true).filter(hit=>isEffectivelyVisible(hit.object));
+    const part=hits[0]?.object.userData?.enclosurePartId;
+    return part?'case:'+part:componentFromIntersections(hits);
   }
   function clearHover(){if(!renderer)return;renderer.domElement.style.cursor='grab';renderer.domElement.removeAttribute('title');}
   function startPointer(event) {
@@ -98,11 +127,12 @@ export async function createViewer(host, modelUrl, onContextLost, onSelection = 
     if(event.pointerType==='touch')return;
     const id=pick(event),component=componentIndex?.components.find(c=>c.id===id);
     renderer.domElement.style.cursor=id?'pointer':'grab';
-    if(component)renderer.domElement.title=componentOptionLabel(component);else renderer.domElement.removeAttribute('title');
+    const part=id?.startsWith('case:')?options.enclosure?.parts.find(p=>p.id===id.slice(5)):null;
+    if(component||part)renderer.domElement.title=part?.label??componentOptionLabel(component);else renderer.domElement.removeAttribute('title');
   }
   function endPointer(event) {
     if(gesture)gesture.maxDistance=Math.max(gesture.maxDistance,Math.hypot(event.clientX-gesture.x,event.clientY-gesture.y));
-    if(isSelectionGesture(gesture,event))selectComponent(pick(event));
+    if(isSelectionGesture(gesture,event)){const id=pick(event);if(id?.startsWith('case:'))selectPart(id.slice(5));else selectComponent(id);}
     pointers.delete(event.pointerId);gesture=null;clearHover();
   }
   function cancelPointer(event){pointers.delete(event.pointerId);gesture=null;clearHover();}
@@ -143,6 +173,17 @@ export async function createViewer(host, modelUrl, onContextLost, onSelection = 
     model.traverse(object=>{if(!object.isMesh)return;for(const material of (Array.isArray(object.material)?object.material:[object.material])){if(material.transparent){material.depthWrite=false;material.side=THREE.FrontSide;}}});
     // Apply the current UI choice before the first frame or index request.
     setNativeAccessoriesVisible(model,accessoriesVisible);
+    if(options.enclosure){
+      const caseTimeout=setTimeout(()=>abort.abort(),30000);
+      try{
+        const response=await fetch(options.enclosure.modelUrl,{signal:abort.signal});
+        if(!response.ok)throw new Error('Enclosure model request failed.');
+        const caseGltf=await loader.parseAsync(await response.arrayBuffer(),'');
+        if(disposed){scene.add(caseGltf.scene);disposed=false;dispose();throw new DOMException('Cancelled','AbortError');}
+        enclosure=attachEnclosure(model,caseGltf,options.enclosure);enclosure.setMode(mode);updateAssemblyAccessories();
+      }catch(error){if(disposed)throw error;enclosureError=error.message;mode='board';accessoriesVisible=false;setNativeAccessoriesVisible(model,false);}
+      finally{clearTimeout(caseTimeout);}
+    }
     // KiCad 10 GLB: X/Z are board coordinates and +Y is the front. Rotate to Z-up for inspection.
     model.rotation.x=Math.PI/2;model.updateMatrixWorld(true);
     const bounds=new THREE.Box3().setFromObject(model);const center=bounds.getCenter(new THREE.Vector3());const dimensions=bounds.getSize(new THREE.Vector3());
@@ -167,6 +208,10 @@ export async function createViewer(host, modelUrl, onContextLost, onSelection = 
     resize=new ResizeObserver(()=>{const width=host.clientWidth,height=host.clientHeight;if(!width||!height)return;renderer.setSize(width,height,false);camera.aspect=width/height;camera.updateProjectionMatrix();requestRender();});resize.observe(host);
     document.addEventListener('visibilitychange',visibility);
     renderer.setSize(host.clientWidth,host.clientHeight,false);camera.aspect=host.clientWidth/host.clientHeight;camera.updateProjectionMatrix();setCamera('reset');requestRender();
-    return {dispose,setCamera,setComponentIndex,selectComponent,focusComponent,setAccessoriesVisible(value){accessoriesVisible=Boolean(value);setNativeAccessoriesVisible(model,accessoriesVisible);accessories?.setVisible(accessoriesVisible);requestRender();},getAccessories(){return accessories?.items??[];},stats:()=>({drawCalls:renderer.info.render.calls,triangles:renderer.info.render.triangles,geometries:renderer.info.memory.geometries})};
+    enclosure?.setExplosion(explosion);enclosure?.setMode(mode);updateAssemblyAccessories();requestRender();
+    return {dispose,setCamera,setComponentIndex,selectComponent,focusComponent,selectPart,setAssemblyMode,enclosureError,
+      setExplosion(value){explosion=explosionFraction(value);enclosure?.setExplosion(explosion);updateAssemblyAccessories();selectionBox.visible=false;requestRender();},
+      setPartVisible(id,value){enclosure?.setVisible(id,value);selectionBox.visible=false;requestRender();},
+      setAccessoriesVisible(value){accessoriesVisible=Boolean(value);setNativeAccessoriesVisible(model,accessoriesVisible);accessories?.setVisible(accessoriesVisible);requestRender();},getAccessories(){return accessories?.items??[];},stats:()=>({drawCalls:renderer.info.render.calls,triangles:renderer.info.render.triangles,geometries:renderer.info.memory.geometries})};
   } catch(error) {dispose();throw error;}
 }

@@ -9,7 +9,7 @@ const near=(a,b,tolerance=1e-8)=>Number.isFinite(a)&&Math.abs(a-b)<=tolerance;
 const vector=(value,expected)=>Array.isArray(value)&&value.length===expected.length&&value.every((x,i)=>near(x,expected[i]));
 const zeroTransform=model=>vector(model?.transform?.offsetMm,[0,0,0])&&vector(model?.transform?.rotationDeg,[0,0,0])&&vector(model?.transform?.scale,[1,1,1]);
 
-export function calibrateBoardSurfaces(gltf, components) {
+export function calibrateBoardSurfaces(gltf, components, thicknessMm=null) {
   const root=gltf.nodes?.[gltf.scenes?.[0]?.nodes?.[0]];
   if(!root||root.matrix||!vector(root.translation??[0,0,0],[0,0,0])||!vector(root.rotation??[0,0,0,1],[0,0,0,1])||!vector(root.scale??[1,1,1],[1,1,1]))return null;
   const sides={'F.Cu':[],'B.Cu':[]};
@@ -22,9 +22,10 @@ export function calibrateBoardSurfaces(gltf, components) {
     if(!near(translation[0],component.positionMm?.x*.001)||!near(translation[2],component.positionMm?.y*.001))continue;
     sides[component.layer].push({reference:component.reference,uuid:component.uuid,modelNode:component.modelNodes[0],layer:component.layer,sourcePositionMm:component.positionMm,translation});
   }
-  if(Object.values(sides).some(anchors=>anchors.length<2||anchors.some(anchor=>!near(anchor.translation[1],anchors[0].translation[1],1e-9))))return null;
+  if(Object.entries(sides).some(([side,anchors])=>anchors.length<(side==='B.Cu'&&Number.isFinite(thicknessMm)?1:2)||anchors.some(anchor=>!near(anchor.translation[1],anchors[0].translation[1],1e-9))))return null;
   const frontY=sides['F.Cu'][0].translation[1],backY=sides['B.Cu'][0].translation[1];
   if(frontY<=backY)return null;
+  if(Number.isFinite(thicknessMm)&&!near((frontY-backY)*1000,thicknessMm,.05))return null;
   return {frontY,backY,units:'metres',coordinateSystem:'Native KiCad GLB: X=PCB x, Z=PCB y, Y=front-up',anchors:[...sides['F.Cu'],...sides['B.Cu']]};
 }
 
@@ -36,6 +37,19 @@ export function accessoryFallback(accessory, calibration) {
   const front=accessory.layer==='F.Cu',surfaceY=front?calibration.frontY:calibration.backY;
   const boxes=envelope.boxesMm.map(box=>({center:[(accessory.positionMm.x+box.centerMm[0])*.001,surfaceY+(front?1:-1)*box.centerMm[2]*.001,accessory.positionMm.y*.001],size:[box.sizeMm[0]*.001,box.sizeMm[2]*.001,box.sizeMm[1]*.001],color:box.color,opacity:box.opacity}));
   return {boxes,fallbackStatus:'Source review-envelope boxes placed from native footprint coordinates.',provenance:{kind:'source-vrml-boxes',sourcePath:envelope.sourcePath,sourceSha256:envelope.sourceSha256,sourceUnitsToMm:envelope.sourceUnitsToMm,nativeReference:accessory.reference,nativeUuid:accessory.uuid,positionMm:accessory.positionMm,layer:accessory.layer,calibration}};
+}
+
+export function calibrateEnclosureFront(gltf,components,nominalThicknessMm){
+  const anchors=[];
+  for(const c of components){
+    const models=c.modelSources?.filter(m=>m.resolved&&!m.hidden)??[];
+    if(c.layer!=='F.Cu'||models.length!==1||!zeroTransform(models[0])||c.modelNodes.length!==1)continue;
+    const node=gltf.nodes[c.modelNodes[0]],t=node.translation;
+    if(node.matrix||!vector(node.scale??[1,1,1],[1,1,1])||!t||!near(t[0],c.positionMm.x*.001)||!near(t[2],c.positionMm.y*.001))continue;
+    anchors.push({reference:c.reference,translation:t});
+  }
+  if(anchors.length<3||!Number.isFinite(nominalThicknessMm)||anchors.some(a=>!near(a.translation[1],anchors[0].translation[1],1e-9)))return null;
+  return {frontY:anchors[0].translation[1],nominalThicknessMm,units:'metres',method:'Three or more agreeing zero-offset front component origins; CAD uses native nominal PCB thickness.',anchors};
 }
 
 export function bindComponents(gltf, source, bindingId) {
@@ -61,7 +75,8 @@ export function bindComponents(gltf, source, bindingId) {
     component.meshNodes=[...ownership].filter(([,owner])=>owner===component.id).map(([i])=>i);
     if(component.hasModel&&!component.meshNodes.length)throw new Error(`No geometry for ${component.reference}`);
   }
-  const calibration=index.accessories.some(a=>!a.hasModel&&a.sourceEnvelope)?calibrateBoardSurfaces(output,index.components):null;
+  const calibration=calibrateBoardSurfaces(output,index.components,source.source?.pcbThicknessMm);
+  index.boardCalibration=calibrateEnclosureFront(output,index.components,source.source?.pcbThicknessMm);
   for(const accessory of index.accessories) {
     accessory.meshNodes=[];
     function collect(i){if(ownership.has(i)){if(ownership.get(i)!==null)throw new Error('Accessory overlaps a component identity.');accessory.meshNodes.push(i);}for(const c of output.nodes[i].children??[])collect(c);}

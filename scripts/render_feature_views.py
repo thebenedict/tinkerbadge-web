@@ -14,7 +14,7 @@ from kicad_source import child, children, prop, sexpr, sha, outline_bounds
 from export_assets import immediate_sexpr_spans, make_poster_input
 ROOT=Path(__file__).resolve().parents[1]
 CLI='/Applications/KiCad/KiCad.app/Contents/MacOS/kicad-cli'
-BOARD_SHA='dafa93e938c3cc8b44d3bd1bc96028d27d44f320e9012c124e3212df88432e70'
+BOARD_SHA='7b6ea0e61d1b97d6fb4b8665112096e6f28ca91348ab3617c9fafc7cb11dd688'
 # Checked native outline: left-open shoulder at y106.75, extending to x154.5.
 # These asymmetric probes are clear of source components and mounting drills.
 ORIENTATION_PROBES=[{'pcbMm':[102,103],'material':False},{'pcbMm':[110,103],'material':False},{'pcbMm':[200,103],'material':True}]

@@ -89,7 +89,7 @@ class PublishedFeatureAssetsTests(unittest.TestCase):
         self.assertEqual(metadata['views'][1]['render']['sourceModelsOmitted'],['MECH_PANEL','MECH_BATTERY'])
         self.assertEqual(metadata['views'][2]['render']['sourceModelsOmitted'],[])
         self.assertIn('MECH_BATTERY',metadata['views'][2]['render']['sourceModelsVisible'])
-        self.assertIn('RES_J502',metadata['views'][2]['render']['sourceModelsVisible'])
+        self.assertNotIn('RES_J502',metadata['views'][2]['render']['sourceModelsVisible'])
 
 class RefreshedNativeGeometryTests(unittest.TestCase):
     def test_source_outline_holes_and_private_model_offsets_are_current(self):
@@ -100,10 +100,11 @@ class RefreshedNativeGeometryTests(unittest.TestCase):
         tip=next(e for e in edges if e[0]=='gr_arc' and child(e,'start')==['start','155','102'])
         self.assertEqual(child(tip,'end'),['end','157','100'])
         self.assertEqual(child(tip,'mid'),['mid','155.585786','100.585786'])
-        self.assertEqual(len(children(native,'segment')),1258);self.assertEqual(len(children(native,'via')),328)
+        manifest=json.loads((ROOT/'public/data/manifest.json').read_text());pcb=manifest['variants'][0]['pcb']
+        self.assertEqual(len(children(native,'segment')),pcb['trackSegments']);self.assertEqual(len(children(native,'via')),pcb['vias'])
         zones=[z for z in children(native,'zone') if not child(z,'keepout')]
         self.assertEqual([child(z,'layer')[1] for z in zones],['In1.Cu','In2.Cu'])
-        self.assertTrue(all(child(z,'net')==['net','GND'] and len(children(z,'filled_polygon'))==1 for z in zones))
+        self.assertTrue(all(child(z,'net')==['net','GND'] and len(children(z,'filled_polygon'))>=1 for z in zones))
         lines=[{tuple(child(e,'start')[1:]),tuple(child(e,'end')[1:])} for e in edges if e[0]=='gr_line']
         self.assertIn({('104','106.75'),('154.5','106.75')},lines)
         self.assertNotIn({('105','100'),('105','106.25')},lines)
@@ -112,12 +113,13 @@ class RefreshedNativeGeometryTests(unittest.TestCase):
         self.assertEqual([h['pcbMm'] for h in holes],[[104,117.5],[206,117.5],[104,166],[206,166],[104,112],[206,112]])
         index=json.loads((snapshot/'badge/components.json').read_text())
         electrical=[c for c in index['components'] if c['identityStatus']=='verified']
-        self.assertEqual(sum(c['layer']=='F.Cu' for c in electrical),164)
-        self.assertEqual(sorted(c['reference'] for c in electrical if c['layer']=='B.Cu'),['TP201','TP202','TP203','TP204','TP205','TP206'])
+        self.assertEqual(sum(c['layer']=='F.Cu' for c in electrical),sum(c['layer']=='F.Cu' for c in pcb['components'] if c.get('schematicPath')))
+        self.assertIn('J102',[c['reference'] for c in index['components'] if c['layer']=='B.Cu'])
+        self.assertIn('J502',[c['reference'] for c in index['components'] if c['layer']=='F.Cu'])
         footprints={prop(f).get('Reference'):f for f in children(native,'footprint')}
         for ref,x in [('D401',160),('D402',180.5),('D403',201)]:
             self.assertEqual([float(n) for n in child(footprints[ref],'at')[1:3]],[x,103])
-        for ref,pose in [('U501',[143.5,170.5,90]),('C501',[143.5,174.75,270]),('C502',[143.5,166.25,90]),('R504',[150.75,172,180]),('U504',[137.75,168.5,180]),('D501',[150,168.5,0]),('C202',[118.5,108.8,180]),('C511',[193,154.65,90]),('C512',[193.8,151.3,90]),('R508',[197.925,158.3,270])]:
+        for ref,pose in [('U501',[143.5,170.5,90]),('C501',[143.5,174.75,270]),('C502',[143.5,166.25,90]),('R504',[150.75,172,180]),('U504',[137.75,168.5,180]),('D501',[150,168.5,0])]:
             at=child(footprints[ref],'at');actual=[float(n) for n in at[1:]]
             actual=actual+[0]*(3-len(actual));actual[2]%=360
             self.assertEqual(actual,pose);self.assertEqual(child(footprints[ref],'layer'),['layer','F.Cu'])

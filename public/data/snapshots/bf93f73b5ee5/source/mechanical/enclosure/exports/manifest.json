@@ -1,0 +1,823 @@
+{
+  "schema_version": 1,
+  "revision": "enclosure-a1",
+  "name": "Layered clear enclosure",
+  "status": "Fit prototype",
+  "board_sha256": "7b6ea0e61d1b97d6fb4b8665112096e6f28ca91348ab3617c9fafc7cb11dd688",
+  "datum": "millimetres; x=pcb_x-155; y=140-pcb_y; z=0 front PCB surface; +z toward display",
+  "size_mm": [
+    116,
+    86,
+    19.5
+  ],
+  "parts": [
+    {
+      "id": "support-H1",
+      "label": "Display support H1",
+      "group": "supports",
+      "color": [
+        0.18,
+        0.21,
+        0.22,
+        1
+      ],
+      "explode_mm": [
+        0,
+        0,
+        15
+      ],
+      "description": "Removable post and provisional support shelf; 0.4 mm compliant pad beneath the inactive glass border.",
+      "process": "Printed prototype",
+      "bounds_mm": [
+        [
+          -53.25,
+          20.25,
+          0.0
+        ],
+        [
+          -43.8,
+          24.75,
+          6.4
+        ]
+      ],
+      "volume_mm3": 79.8717,
+      "solids": 1,
+      "step": "support-H1.step",
+      "stl": "support-H1.stl"
+    },
+    {
+      "id": "support-H2",
+      "label": "Display support H2",
+      "group": "supports",
+      "color": [
+        0.18,
+        0.21,
+        0.22,
+        1
+      ],
+      "explode_mm": [
+        0,
+        0,
+        15
+      ],
+      "description": "Removable post and provisional support shelf; 0.4 mm compliant pad beneath the inactive glass border.",
+      "process": "Printed prototype",
+      "bounds_mm": [
+        [
+          45.8,
+          20.25,
+          0.0
+        ],
+        [
+          53.25,
+          24.75,
+          6.4
+        ]
+      ],
+      "volume_mm3": 77.0717,
+      "solids": 1,
+      "step": "support-H2.step",
+      "stl": "support-H2.stl"
+    },
+    {
+      "id": "support-H3",
+      "label": "Display support H3",
+      "group": "supports",
+      "color": [
+        0.18,
+        0.21,
+        0.22,
+        1
+      ],
+      "explode_mm": [
+        0,
+        0,
+        15
+      ],
+      "description": "Removable post and provisional support shelf; 0.4 mm compliant pad beneath the inactive glass border.",
+      "process": "Printed prototype",
+      "bounds_mm": [
+        [
+          -53.25,
+          -28.25,
+          0.0
+        ],
+        [
+          -43.8,
+          -22.7,
+          6.4
+        ]
+      ],
+      "volume_mm3": 90.99045,
+      "solids": 1,
+      "step": "support-H3.step",
+      "stl": "support-H3.stl"
+    },
+    {
+      "id": "support-H4",
+      "label": "Display support H4",
+      "group": "supports",
+      "color": [
+        0.18,
+        0.21,
+        0.22,
+        1
+      ],
+      "explode_mm": [
+        0,
+        0,
+        15
+      ],
+      "description": "Removable post and provisional support shelf; 0.4 mm compliant pad beneath the inactive glass border.",
+      "process": "Printed prototype",
+      "bounds_mm": [
+        [
+          45.8,
+          -28.25,
+          0.0
+        ],
+        [
+          53.25,
+          -22.7,
+          6.4
+        ]
+      ],
+      "volume_mm3": 84.97045,
+      "solids": 1,
+      "step": "support-H4.step",
+      "stl": "support-H4.stl"
+    },
+    {
+      "id": "affinity-1",
+      "label": "Affinity diffuser 1",
+      "group": "diffusers",
+      "color": [
+        0.85,
+        0.91,
+        0.88,
+        0.82
+      ],
+      "explode_mm": [
+        0,
+        0,
+        28
+      ],
+      "description": "Separate frosted insert with a retaining shoulder beneath the clear front plate.",
+      "process": "Frosted insert",
+      "bounds_mm": [
+        [
+          -53.0,
+          -36.3,
+          5.2
+        ],
+        [
+          -41.0,
+          -31.700000000000003,
+          7.9
+        ]
+      ],
+      "volume_mm3": 108.05076,
+      "solids": 1,
+      "step": "affinity-1.step",
+      "stl": "affinity-1.stl"
+    },
+    {
+      "id": "affinity-2",
+      "label": "Affinity diffuser 2",
+      "group": "diffusers",
+      "color": [
+        0.85,
+        0.91,
+        0.88,
+        0.82
+      ],
+      "explode_mm": [
+        0,
+        0,
+        28
+      ],
+      "description": "Separate frosted insert with a retaining shoulder beneath the clear front plate.",
+      "process": "Frosted insert",
+      "bounds_mm": [
+        [
+          -29.5,
+          -36.3,
+          5.2
+        ],
+        [
+          -17.5,
+          -31.700000000000003,
+          7.9
+        ]
+      ],
+      "volume_mm3": 108.05076,
+      "solids": 1,
+      "step": "affinity-2.step",
+      "stl": "affinity-2.stl"
+    },
+    {
+      "id": "affinity-3",
+      "label": "Affinity diffuser 3",
+      "group": "diffusers",
+      "color": [
+        0.85,
+        0.91,
+        0.88,
+        0.82
+      ],
+      "explode_mm": [
+        0,
+        0,
+        28
+      ],
+      "description": "Separate frosted insert with a retaining shoulder beneath the clear front plate.",
+      "process": "Frosted insert",
+      "bounds_mm": [
+        [
+          -6.0,
+          -36.3,
+          5.2
+        ],
+        [
+          6.0,
+          -31.700000000000003,
+          7.9
+        ]
+      ],
+      "volume_mm3": 108.05076,
+      "solids": 1,
+      "step": "affinity-3.step",
+      "stl": "affinity-3.stl"
+    },
+    {
+      "id": "affinity-4",
+      "label": "Affinity diffuser 4",
+      "group": "diffusers",
+      "color": [
+        0.85,
+        0.91,
+        0.88,
+        0.82
+      ],
+      "explode_mm": [
+        0,
+        0,
+        28
+      ],
+      "description": "Separate frosted insert with a retaining shoulder beneath the clear front plate.",
+      "process": "Frosted insert",
+      "bounds_mm": [
+        [
+          17.5,
+          -36.3,
+          5.2
+        ],
+        [
+          29.5,
+          -31.700000000000003,
+          7.9
+        ]
+      ],
+      "volume_mm3": 108.05076,
+      "solids": 1,
+      "step": "affinity-4.step",
+      "stl": "affinity-4.stl"
+    },
+    {
+      "id": "affinity-5",
+      "label": "Affinity diffuser 5",
+      "group": "diffusers",
+      "color": [
+        0.85,
+        0.91,
+        0.88,
+        0.82
+      ],
+      "explode_mm": [
+        0,
+        0,
+        28
+      ],
+      "description": "Separate frosted insert with a retaining shoulder beneath the clear front plate.",
+      "process": "Frosted insert",
+      "bounds_mm": [
+        [
+          41.0,
+          -36.3,
+          5.2
+        ],
+        [
+          53.0,
+          -31.700000000000003,
+          7.9
+        ]
+      ],
+      "volume_mm3": 108.05076,
+      "solids": 1,
+      "step": "affinity-5.step",
+      "stl": "affinity-5.stl"
+    },
+    {
+      "id": "role-left",
+      "label": "Role diffuser, long",
+      "group": "diffusers",
+      "color": [
+        0.85,
+        0.91,
+        0.88,
+        0.82
+      ],
+      "explode_mm": [
+        0,
+        0,
+        28
+      ],
+      "description": "Separate frosted insert with a retaining shoulder beneath the clear front plate.",
+      "process": "Frosted insert",
+      "bounds_mm": [
+        [
+          3.0,
+          34.7,
+          5.2
+        ],
+        [
+          27.5,
+          39.3,
+          7.9
+        ]
+      ],
+      "volume_mm3": 234.55076,
+      "solids": 1,
+      "step": "role-left.step",
+      "stl": "role-left.stl"
+    },
+    {
+      "id": "role-right",
+      "label": "Role diffuser, short",
+      "group": "diffusers",
+      "color": [
+        0.85,
+        0.91,
+        0.88,
+        0.82
+      ],
+      "explode_mm": [
+        0,
+        0,
+        28
+      ],
+      "description": "Separate frosted insert with a retaining shoulder beneath the clear front plate.",
+      "process": "Frosted insert",
+      "bounds_mm": [
+        [
+          44.0,
+          34.7,
+          5.2
+        ],
+        [
+          51.3,
+          39.3,
+          7.9
+        ]
+      ],
+      "volume_mm3": 60.48676,
+      "solids": 1,
+      "step": "role-right.step",
+      "stl": "role-right.stl"
+    },
+    {
+      "id": "optical-baffle",
+      "label": "Sensor light barrier",
+      "group": "optics",
+      "color": [
+        0.1,
+        0.12,
+        0.13,
+        1
+      ],
+      "explode_mm": [
+        0,
+        0,
+        22
+      ],
+      "description": "Separate open apertures for the passive sensors and transmitter; black divider in the reviewed corridor. Optical angle and light leakage need measurement.",
+      "process": "Printed prototype",
+      "bounds_mm": [
+        [
+          -22.0,
+          -36.30000000000005,
+          0.25
+        ],
+        [
+          2.0,
+          -24.499999999999996,
+          6.3999999999999995
+        ]
+      ],
+      "volume_mm3": 94.25731,
+      "solids": 1,
+      "step": "optical-baffle.step",
+      "stl": "optical-baffle.stl"
+    },
+    {
+      "id": "frame",
+      "label": "Stepped perimeter frame",
+      "group": "frame",
+      "color": [
+        0.16,
+        0.2,
+        0.21,
+        1
+      ],
+      "explode_mm": [
+        0,
+        0,
+        0
+      ],
+      "description": "Printed frame with rear PCB supports, left button access, recessed reset, right-side ports and flex relief.",
+      "process": "Printed prototype",
+      "bounds_mm": [
+        [
+          -58.0,
+          -43.0,
+          -10.1
+        ],
+        [
+          58.0,
+          43.0,
+          6.4
+        ]
+      ],
+      "volume_mm3": 15314.65909,
+      "solids": 1,
+      "step": "frame.step",
+      "stl": "frame.stl"
+    },
+    {
+      "id": "front",
+      "label": "Clear front plate",
+      "group": "front",
+      "color": [
+        0.76,
+        0.89,
+        0.91,
+        0.22
+      ],
+      "explode_mm": [
+        0,
+        0,
+        35
+      ],
+      "description": "1.5 mm clear plate with separate diffuser and sensor openings; stepped outline follows the board shoulder.",
+      "process": "Cut clear sheet",
+      "bounds_mm": [
+        [
+          -58.0,
+          -43.0,
+          6.399999999999999
+        ],
+        [
+          58.0,
+          43.0,
+          7.9
+        ]
+      ],
+      "volume_mm3": 13456.5941,
+      "solids": 1,
+      "step": "front.step",
+      "stl": "front.stl"
+    },
+    {
+      "id": "rear",
+      "label": "Clear rear plate",
+      "group": "rear",
+      "color": [
+        0.76,
+        0.89,
+        0.91,
+        0.25
+      ],
+      "explode_mm": [
+        0,
+        0,
+        -28
+      ],
+      "description": "1.5 mm clear plate with aligned cord holes and recessed dock-pad access.",
+      "process": "Cut clear sheet",
+      "bounds_mm": [
+        [
+          -58.0,
+          -43.0,
+          -11.6
+        ],
+        [
+          58.0,
+          43.0,
+          -10.1
+        ]
+      ],
+      "volume_mm3": 14096.37785,
+      "solids": 1,
+      "step": "rear.step",
+      "stl": "rear.stl"
+    },
+    {
+      "id": "battery-guide",
+      "label": "Battery locating rails",
+      "group": "rear",
+      "color": [
+        0.16,
+        0.2,
+        0.21,
+        1
+      ],
+      "explode_mm": [
+        0,
+        0,
+        -28
+      ],
+      "description": "Two removable locating rails; the cell is retained with removable tape. Exact pack, swelling allowance, cable route and thermal coupling remain to qualify.",
+      "process": "Printed prototype",
+      "bounds_mm": [
+        [
+          -20.5,
+          -37.0,
+          -10.1
+        ],
+        [
+          18.5,
+          20.5,
+          -8.6
+        ]
+      ],
+      "volume_mm3": 171.0,
+      "solids": 2,
+      "step": "battery-guide.step",
+      "stl": "battery-guide.stl"
+    },
+    {
+      "id": "screw-H1",
+      "label": "M2 fastener H1",
+      "group": "fasteners",
+      "color": [
+        0.15,
+        0.17,
+        0.18,
+        1
+      ],
+      "explode_mm": [
+        0,
+        0,
+        42
+      ],
+      "description": "M2 clearance envelope. Final length, nut and material selection follow the fit prototype.",
+      "process": "Fastener envelope",
+      "bounds_mm": [
+        [
+          -53.0,
+          20.5,
+          -12.6
+        ],
+        [
+          -49.0,
+          24.5,
+          9.1
+        ]
+      ],
+      "volume_mm3": 79.48229,
+      "solids": 1,
+      "step": "screw-H1.step",
+      "stl": "screw-H1.stl"
+    },
+    {
+      "id": "screw-H2",
+      "label": "M2 fastener H2",
+      "group": "fasteners",
+      "color": [
+        0.15,
+        0.17,
+        0.18,
+        1
+      ],
+      "explode_mm": [
+        0,
+        0,
+        42
+      ],
+      "description": "M2 clearance envelope. Final length, nut and material selection follow the fit prototype.",
+      "process": "Fastener envelope",
+      "bounds_mm": [
+        [
+          49.0,
+          20.5,
+          -12.6
+        ],
+        [
+          53.0,
+          24.5,
+          9.1
+        ]
+      ],
+      "volume_mm3": 79.48229,
+      "solids": 1,
+      "step": "screw-H2.step",
+      "stl": "screw-H2.stl"
+    },
+    {
+      "id": "screw-H3",
+      "label": "M2 fastener H3",
+      "group": "fasteners",
+      "color": [
+        0.15,
+        0.17,
+        0.18,
+        1
+      ],
+      "explode_mm": [
+        0,
+        0,
+        42
+      ],
+      "description": "M2 clearance envelope. Final length, nut and material selection follow the fit prototype.",
+      "process": "Fastener envelope",
+      "bounds_mm": [
+        [
+          -53.0,
+          -28.0,
+          -12.6
+        ],
+        [
+          -49.0,
+          -24.0,
+          9.1
+        ]
+      ],
+      "volume_mm3": 79.48229,
+      "solids": 1,
+      "step": "screw-H3.step",
+      "stl": "screw-H3.stl"
+    },
+    {
+      "id": "screw-H4",
+      "label": "M2 fastener H4",
+      "group": "fasteners",
+      "color": [
+        0.15,
+        0.17,
+        0.18,
+        1
+      ],
+      "explode_mm": [
+        0,
+        0,
+        42
+      ],
+      "description": "M2 clearance envelope. Final length, nut and material selection follow the fit prototype.",
+      "process": "Fastener envelope",
+      "bounds_mm": [
+        [
+          49.0,
+          -28.0,
+          -12.6
+        ],
+        [
+          53.0,
+          -24.0,
+          9.1
+        ]
+      ],
+      "volume_mm3": 79.48229,
+      "solids": 1,
+      "step": "screw-H4.step",
+      "stl": "screw-H4.stl"
+    }
+  ],
+  "parameters": {
+    "revision": "enclosure-a1",
+    "name": "Layered clear enclosure",
+    "outer_outline_mm": [
+      [
+        -54,
+        -43
+      ],
+      [
+        54,
+        -43
+      ],
+      [
+        58,
+        -39
+      ],
+      [
+        58,
+        39
+      ],
+      [
+        54,
+        43
+      ],
+      [
+        -3,
+        43
+      ],
+      [
+        -9.75,
+        36.25
+      ],
+      [
+        -54,
+        36.25
+      ],
+      [
+        -58,
+        32.25
+      ],
+      [
+        -58,
+        -39
+      ]
+    ],
+    "wall_mm": 2.4,
+    "front_z_mm": 6.4,
+    "rear_z_mm": -11.6,
+    "panel_thickness_mm": 1.5,
+    "boss_diameter_mm": 4.5,
+    "fastener_clearance_mm": 2.4,
+    "glass_mm": [
+      93.3,
+      54.9,
+      0.92
+    ],
+    "glass_underside_mm": 4.5,
+    "battery_mm": [
+      35,
+      55,
+      7
+    ],
+    "battery_top_z_mm": -1.6,
+    "mesh_tolerance_mm": 0.06
+  },
+  "checks": "checks.json",
+  "tools": {
+    "build123d": "0.10.0",
+    "cadquery-ocp": "7.8.1.1.post1",
+    "trimesh": "5.2.0"
+  },
+  "source_hashes": {
+    "build.py": "a63083e698c8ad38c59246784c4ea5c87e6000dae850331a945d22455be2812f",
+    "parameters.json": "8f9fd655556a134481f2f20d377dc9a1fc53a308c59d162709a77b850ad53148",
+    "interfaces.json": "88e17855b5c2577932c10f642c97ee1868e0f80000d00900fe2259c98ac1310e",
+    "extract_interfaces.py": "594bf62bc845c7eff79d9b21bd343d5b450d149fe9896042e56c7d66459ae44c",
+    "check_native_fit.py": "f2bf8c3819561cf08034f91506de8745e88cf53e9059c2840d32824fd069f6d7",
+    "README.md": "47676a9af8c297b83e1e880daa10e305db8ae6884e342e16ef5e8b48c78c0a28",
+    "review.md": "c4e7b1a081c926ceeb9ba87e506525b5fb578e1b6e62df34ae8bd3327d082669"
+  },
+  "output_hashes": {
+    "affinity-1.step": "87565c3c26cc9aab02ca076eeffa48185cec76091230429c7615585d319f7bbe",
+    "affinity-1.stl": "8081753949ae7b34f991ba03fd2a5b9efb5e8c785845b828808d0861e8d99e2e",
+    "affinity-2.step": "d134316a5c222125813f4aa25886a7cad2786168900650180fcf4a3b5ef41809",
+    "affinity-2.stl": "71006d74b9436a6fa778ebc2995636901c0a0a1c5991f8e62de57c3f32ce01ee",
+    "affinity-3.step": "fecc066949521535e9a2a65ce71ac173adc55ba81f1b79fc3426a874e088bcd5",
+    "affinity-3.stl": "8a88247c23bca09c62f7289672368d0533640c3b76aad1fa11b83c5880be318d",
+    "affinity-4.step": "e4a0f6723ca230caf04afc2beb87847febea38fd766e08464950a2b0652ae14e",
+    "affinity-4.stl": "ed633c6c2b01db9474bbd0848bf9c070c5ee9e5fb5413887c9cf70aab008b463",
+    "affinity-5.step": "632106d8fcaa8c49708233a571809942ff76630bc9451693b96ee7954b4020b8",
+    "affinity-5.stl": "bedb47ec4ac98f1ebbb6928c0bcaa917b895cc5dd4ea3b8459d945cec92383d4",
+    "battery-guide.step": "53d7b25d35420c22caa4277868085a3f781ef3c96f378c365482274ea135ecb3",
+    "battery-guide.stl": "998b9c16f28f6c39b84fca9701303d4dc5f6b630613279f54d7200a6702eacae",
+    "checks.json": "74577cc27f2aef8fe7881362ee60568fcfba6a54b65937702b7db5a4ea8c3289",
+    "enclosure.glb": "40bc0ab7a14edc6240255d3a27bf870f6bc85c0d2738ed75d21542db1474d31d",
+    "enclosure.step": "66dc76fffd51f84e66d00b55efdd8bf67de6a6bed637ba39bdacd15b37e7e90d",
+    "frame.step": "bfc0805d0e34260f1442c5acc969b54887455e411c3f92db88ea3b3d62a7ea1d",
+    "frame.stl": "0778c18f9fb2025f6fbfb3c898d8bb0e1a9f47d728671e082ef88c882ad4d20f",
+    "front.dxf": "311e1b72338b0922fcf36f58bc119d6d3195587ce10d221b9aac31f6ec05f08a",
+    "front.step": "9e24f00eb291fb6fd37cb9f2d9eb9b96306bb239a3996975a24a0d17dc1ece5d",
+    "front.stl": "25c789d9865d1f31d4913223dac08b9ae032163b020363fe855c3218e7d0a12c",
+    "native-fit.json": "984d6da661a78e5e5ee9c6615630b4bca6323e8400caf57c85adfaa0e867d4b6",
+    "optical-baffle.step": "1c891a0131ee17be3981bbd6b6ddd147455b4db90b0b467143e2c65de1e6b8b9",
+    "optical-baffle.stl": "002ead47c3ba4a8ed3a8ef5be557c5eb36edbe338d27c646aeb58b9060f93c20",
+    "rear.dxf": "b9eb618b48990b2243a11c11c3a3bd70a9e101b3145b0ac203ce7004c97ad3f2",
+    "rear.step": "1248f7bb84a776f336f5b8d1bb1d03958bdcc26c9962e509f47eb42eda1c8230",
+    "rear.stl": "b2e25f9c7e0d9fa319061a9424ec683529d6e7a035efac3f6451b4ca719a240c",
+    "role-left.step": "bfd28fcb003c8170c1ab907e8e96d59e0292794f2b9960823b347e107b337914",
+    "role-left.stl": "004cb04bf34d0e99d84ffd76860f634ebcb213f913d15c3f7a2fa40c4a40985b",
+    "role-right.step": "95435eccbb540684e74b1d4f6ee315402e62156ee27d8e74a3519ee05741fa3b",
+    "role-right.stl": "c17704375c31c46c5aa7c304bb5042851f38749bf6e8704edda313423c0efd04",
+    "screw-H1.step": "5c07f1cb8c6337a4a2c82784f36d0694f51e6d3ef7868b68feb9002d2ba48c2c",
+    "screw-H1.stl": "a124e757e36d7b9d7d79a138ea25f51467c9efb6def740fe6e30fd6a14a65ade",
+    "screw-H2.step": "e28444a2cf4158a423c78f3d1b2025a8c6e950b1750b5669dcea26e89619c777",
+    "screw-H2.stl": "bd0f1e0be1bc9df7eb4140b54f1d2c6ea7cefa692ac8c1039fa087874be8173e",
+    "screw-H3.step": "7cdd2e7cdb7b7e0548486bc5a8f7cf37916e999ca4582c4db71b5e26ff5971d0",
+    "screw-H3.stl": "43145425d859abd848727742931fcf452b5eff7c4274b6678e129f36af82e867",
+    "screw-H4.step": "5238344a6915f1bb5c283ace7dc73cef3fb2d341a264df1ec6dc81693893fd36",
+    "screw-H4.stl": "b997bf2a186d5522dbc2f86c1ec74522e3edb486fab6218ab0377e8ecc7d94f0",
+    "support-H1.step": "899215e65ef7b8ddc694ae56d29c406aa7e5189f991e904642867075988197a8",
+    "support-H1.stl": "a05d7c9875c8e88f7c8904eca8d6c9f6b34406120e23b24d1fce3d2e37052b83",
+    "support-H2.step": "9261572e53e408cc8b3b57b6b754f0407f3163a78c44b5bd7ad5481052b4f20e",
+    "support-H2.stl": "84cb82d63818ddaf29755b2ad0360f2e575578eb89bf3346e10c99773c430de9",
+    "support-H3.step": "a1adf9d8f73eaabccf9c9ffd08f9a196d4ba475259c8e357e07f64cd4610302e",
+    "support-H3.stl": "b07ac68990c2176af27ad6d2259669bd489bc5237f9b583dd30e1915a8fd13c1",
+    "support-H4.step": "f1e62846f66ab20ca7812a1ffc1cf69f543937ce88d78acab582c0cddad7e815",
+    "support-H4.stl": "f76d161b39c2d5a1559f74de2803af31ec3963eb831505ec5db534808851f544"
+  }
+}
