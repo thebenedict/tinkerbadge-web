@@ -1,0 +1,592 @@
+{
+  "status": "Provisional first routing-pass rules; independent source and intrinsic-pad review completed",
+  "source_board_sha256": "ddf824f2a59bc82568bbb03bcb3f89959f2ee12638b380790207739273c1844d",
+  "native_version": "10.0.8",
+  "class_parameters_mm": {
+    "Default": {
+      "track_width": 0.2,
+      "clearance": 0.15,
+      "via_diameter": 0.6,
+      "via_drill": 0.3
+    },
+    "PowerBranch": {
+      "track_width": 0.3,
+      "clearance": 0.2,
+      "via_diameter": 0.6,
+      "via_drill": 0.3
+    },
+    "AnalogSense": {
+      "track_width": 0.2,
+      "clearance": 0.2,
+      "via_diameter": 0.6,
+      "via_drill": 0.3
+    },
+    "EPD_HV": {
+      "track_width": 0.25,
+      "clearance": 0.25,
+      "via_diameter": 0.6,
+      "via_drill": 0.3
+    },
+    "USB_HOLD": {
+      "track_width": 0.2,
+      "clearance": 0.2,
+      "via_diameter": 0.6,
+      "via_drill": 0.3,
+      "diff_pair_width": 0.2,
+      "diff_pair_gap": 0.2,
+      "diff_pair_via_gap": 0.25
+    },
+    "NFC_HOLD": {
+      "track_width": 0.2,
+      "clearance": 0.15,
+      "via_diameter": 0.6,
+      "via_drill": 0.3
+    },
+    "Switching_HOLD": {
+      "track_width": 0.3,
+      "clearance": 0.2,
+      "via_diameter": 0.8,
+      "via_drill": 0.4
+    },
+    "Power_Trunk": {
+      "track_width": 1.0,
+      "clearance": 0.15,
+      "via_diameter": 0.8,
+      "via_drill": 0.4
+    }
+  },
+  "exact_net_class_assignments": {
+    "+3V3": "Power_Trunk",
+    "+3V3_EPD": "Power_Trunk",
+    "/01  POWER + CHARGING/BATT_NTC_OPTIONAL": "AnalogSense",
+    "/01  POWER + CHARGING/BAT_DIV_PRE": "AnalogSense",
+    "/01  POWER + CHARGING/BAT_SENSE_ISOLATED": "AnalogSense",
+    "/01  POWER + CHARGING/CHARGER_EN1": "Default",
+    "/01  POWER + CHARGING/CHARGER_ILIM": "AnalogSense",
+    "/01  POWER + CHARGING/CHARGER_ISET": "AnalogSense",
+    "/01  POWER + CHARGING/CHARGER_TMR": "AnalogSense",
+    "/01  POWER + CHARGING/CHARGE_DISABLE": "Default",
+    "/01  POWER + CHARGING/DOCK_PRESENT_GATE": "Default",
+    "/01  POWER + CHARGING/EPD_CT": "Default",
+    "/01  POWER + CHARGING/EPD_QOD": "Default",
+    "/01  POWER + CHARGING/MUX_ILM": "AnalogSense",
+    "/01  POWER + CHARGING/MUX_OV_DOCK": "AnalogSense",
+    "/01  POWER + CHARGING/MUX_OV_USB": "AnalogSense",
+    "/01  POWER + CHARGING/MUX_PRIORITY_USB": "AnalogSense",
+    "/01  POWER + CHARGING/MUX_SS": "AnalogSense",
+    "/01  POWER + CHARGING/MUX_USB_SELECTED": "Default",
+    "/01  POWER + CHARGING/PRIMARY_FB": "AnalogSense",
+    "/01  POWER + CHARGING/PRIMARY_L1": "Switching_HOLD",
+    "/01  POWER + CHARGING/PRIMARY_L2": "Switching_HOLD",
+    "/01  POWER + CHARGING/USB_CC1": "Default",
+    "/01  POWER + CHARGING/USB_CC2": "Default",
+    "/01  POWER + CHARGING/USB_PRESENT_GATE": "Default",
+    "/01  POWER + CHARGING/VBAT_PROTECTED": "Power_Trunk",
+    "/01  POWER + CHARGING/VEXT_5V": "Power_Trunk",
+    "/01  POWER + CHARGING/VSYS": "Power_Trunk",
+    "/02  PROCESSOR + RECOVERY/BOOT_N": "Default",
+    "/02  PROCESSOR + RECOVERY/MCU_EN": "Default",
+    "/02  PROCESSOR + RECOVERY/MCU_USB_DM": "USB_HOLD",
+    "/02  PROCESSOR + RECOVERY/MCU_USB_DP": "USB_HOLD",
+    "/02  PROCESSOR + RECOVERY/STRAP45": "Default",
+    "/02  PROCESSOR + RECOVERY/STRAP46": "Default",
+    "/02  PROCESSOR + RECOVERY/UART_RX": "Default",
+    "/02  PROCESSOR + RECOVERY/UART_TX": "Default",
+    "/03  E-PAPER DISPLAY/EPD_CS_N_PANEL": "Default",
+    "/03  E-PAPER DISPLAY/EPD_DC_PANEL": "Default",
+    "/03  E-PAPER DISPLAY/EPD_GDR": "Default",
+    "/03  E-PAPER DISPLAY/EPD_MOSI_PANEL": "Default",
+    "/03  E-PAPER DISPLAY/EPD_PUMP": "EPD_HV",
+    "/03  E-PAPER DISPLAY/EPD_RESE": "AnalogSense",
+    "/03  E-PAPER DISPLAY/EPD_RST_N_PANEL": "Default",
+    "/03  E-PAPER DISPLAY/EPD_SCK_PANEL": "Default",
+    "/03  E-PAPER DISPLAY/EPD_SW": "EPD_HV",
+    "/03  E-PAPER DISPLAY/EPD_VCOM": "EPD_HV",
+    "/03  E-PAPER DISPLAY/EPD_VDD_1V8": "Default",
+    "/03  E-PAPER DISPLAY/EPD_VGH": "EPD_HV",
+    "/03  E-PAPER DISPLAY/EPD_VGL": "EPD_HV",
+    "/03  E-PAPER DISPLAY/EPD_VPP": "EPD_HV",
+    "/03  E-PAPER DISPLAY/EPD_VSH1": "EPD_HV",
+    "/03  E-PAPER DISPLAY/EPD_VSH2": "EPD_HV",
+    "/03  E-PAPER DISPLAY/EPD_VSL": "EPD_HV",
+    "/04  LIGHTING + BUTTONS/BTN_A_SW_N": "Default",
+    "/04  LIGHTING + BUTTONS/BTN_B_SW_N": "Default",
+    "/04  LIGHTING + BUTTONS/PWR_GREEN_A": "Default",
+    "/04  LIGHTING + BUTTONS/PWR_RED_A": "Default",
+    "/04  LIGHTING + BUTTONS/RGB_DIN": "Default",
+    "/04  LIGHTING + BUTTONS/RGB_LINK_1": "Default",
+    "/04  LIGHTING + BUTTONS/RGB_LINK_2": "Default",
+    "/04  LIGHTING + BUTTONS/RGB_LINK_3": "Default",
+    "/04  LIGHTING + BUTTONS/RGB_LINK_4": "Default",
+    "/04  LIGHTING + BUTTONS/RGB_LINK_5": "Default",
+    "/04  LIGHTING + BUTTONS/RGB_LINK_6": "Default",
+    "/04  LIGHTING + BUTTONS/RGB_LINK_7": "Default",
+    "/05  SENSORS + EXPANSION/ACC_3V3": "PowerBranch",
+    "/05  SENSORS + EXPANSION/ACC_EN": "Default",
+    "/05  SENSORS + EXPANSION/ACC_FAULT_N": "Default",
+    "/05  SENSORS + EXPANSION/ACC_ILIM": "AnalogSense",
+    "/05  SENSORS + EXPANSION/EXP_UNUSED_P4": "Default",
+    "/05  SENSORS + EXPANSION/EXP_UNUSED_P5": "Default",
+    "/05  SENSORS + EXPANSION/EXP_UNUSED_P6": "Default",
+    "/05  SENSORS + EXPANSION/EXP_UNUSED_P7": "Default",
+    "/05  SENSORS + EXPANSION/IR_GATE": "Default",
+    "/05  SENSORS + EXPANSION/IR_LED_A": "PowerBranch",
+    "/05  SENSORS + EXPANSION/IR_LED_K": "PowerBranch",
+    "/05  SENSORS + EXPANSION/IR_RX_3V3": "PowerBranch",
+    "/05  SENSORS + EXPANSION/NFC_LA": "NFC_HOLD",
+    "/05  SENSORS + EXPANSION/NFC_LB": "NFC_HOLD",
+    "BAT_ADC": "AnalogSense",
+    "BTN_A_N": "Default",
+    "BTN_B_N": "Default",
+    "CHARGER_CHG_N": "Default",
+    "CHARGER_PGOOD_N": "Default",
+    "DOCK_5V": "Power_Trunk",
+    "DOCK_PRESENT_N": "Default",
+    "EPD_BUSY": "Default",
+    "EPD_CS_N": "Default",
+    "EPD_DC": "Default",
+    "EPD_EN": "Default",
+    "EPD_MOSI": "Default",
+    "EPD_RST_N": "Default",
+    "EPD_SCK": "Default",
+    "EXT_SCL": "Default",
+    "EXT_SDA": "Default",
+    "GND": "Default",
+    "I2C_SCL": "Default",
+    "I2C_SDA": "Default",
+    "IR_RX_N": "Default",
+    "IR_TX": "Default",
+    "MOTION_INT1": "Default",
+    "NFC_FD_N": "Default",
+    "PWR_LED_G": "Default",
+    "PWR_LED_R": "Default",
+    "RGB_DATA": "Default",
+    "SAO_GPIO1": "Default",
+    "SAO_GPIO2": "Default",
+    "USB_DM": "USB_HOLD",
+    "USB_DP": "USB_HOLD",
+    "USB_PRESENT_N": "Default",
+    "USB_VBUS": "Power_Trunk"
+  },
+  "suggested_kicad_netclass_patterns": [
+    {
+      "netclass": "Power_Trunk",
+      "pattern": "+3V3"
+    },
+    {
+      "netclass": "Power_Trunk",
+      "pattern": "+3V3_EPD"
+    },
+    {
+      "netclass": "AnalogSense",
+      "pattern": "/01  POWER + CHARGING/BATT_NTC_OPTIONAL"
+    },
+    {
+      "netclass": "AnalogSense",
+      "pattern": "/01  POWER + CHARGING/BAT_DIV_PRE"
+    },
+    {
+      "netclass": "AnalogSense",
+      "pattern": "/01  POWER + CHARGING/BAT_SENSE_ISOLATED"
+    },
+    {
+      "netclass": "AnalogSense",
+      "pattern": "/01  POWER + CHARGING/CHARGER_ILIM"
+    },
+    {
+      "netclass": "AnalogSense",
+      "pattern": "/01  POWER + CHARGING/CHARGER_ISET"
+    },
+    {
+      "netclass": "AnalogSense",
+      "pattern": "/01  POWER + CHARGING/CHARGER_TMR"
+    },
+    {
+      "netclass": "AnalogSense",
+      "pattern": "/01  POWER + CHARGING/MUX_ILM"
+    },
+    {
+      "netclass": "AnalogSense",
+      "pattern": "/01  POWER + CHARGING/MUX_OV_DOCK"
+    },
+    {
+      "netclass": "AnalogSense",
+      "pattern": "/01  POWER + CHARGING/MUX_OV_USB"
+    },
+    {
+      "netclass": "AnalogSense",
+      "pattern": "/01  POWER + CHARGING/MUX_PRIORITY_USB"
+    },
+    {
+      "netclass": "AnalogSense",
+      "pattern": "/01  POWER + CHARGING/MUX_SS"
+    },
+    {
+      "netclass": "AnalogSense",
+      "pattern": "/01  POWER + CHARGING/PRIMARY_FB"
+    },
+    {
+      "netclass": "Switching_HOLD",
+      "pattern": "/01  POWER + CHARGING/PRIMARY_L1"
+    },
+    {
+      "netclass": "Switching_HOLD",
+      "pattern": "/01  POWER + CHARGING/PRIMARY_L2"
+    },
+    {
+      "netclass": "Power_Trunk",
+      "pattern": "/01  POWER + CHARGING/VBAT_PROTECTED"
+    },
+    {
+      "netclass": "Power_Trunk",
+      "pattern": "/01  POWER + CHARGING/VEXT_5V"
+    },
+    {
+      "netclass": "Power_Trunk",
+      "pattern": "/01  POWER + CHARGING/VSYS"
+    },
+    {
+      "netclass": "USB_HOLD",
+      "pattern": "/02  PROCESSOR + RECOVERY/MCU_USB_DM"
+    },
+    {
+      "netclass": "USB_HOLD",
+      "pattern": "/02  PROCESSOR + RECOVERY/MCU_USB_DP"
+    },
+    {
+      "netclass": "EPD_HV",
+      "pattern": "/03  E-PAPER DISPLAY/EPD_PUMP"
+    },
+    {
+      "netclass": "AnalogSense",
+      "pattern": "/03  E-PAPER DISPLAY/EPD_RESE"
+    },
+    {
+      "netclass": "EPD_HV",
+      "pattern": "/03  E-PAPER DISPLAY/EPD_SW"
+    },
+    {
+      "netclass": "EPD_HV",
+      "pattern": "/03  E-PAPER DISPLAY/EPD_VCOM"
+    },
+    {
+      "netclass": "EPD_HV",
+      "pattern": "/03  E-PAPER DISPLAY/EPD_VGH"
+    },
+    {
+      "netclass": "EPD_HV",
+      "pattern": "/03  E-PAPER DISPLAY/EPD_VGL"
+    },
+    {
+      "netclass": "EPD_HV",
+      "pattern": "/03  E-PAPER DISPLAY/EPD_VPP"
+    },
+    {
+      "netclass": "EPD_HV",
+      "pattern": "/03  E-PAPER DISPLAY/EPD_VSH1"
+    },
+    {
+      "netclass": "EPD_HV",
+      "pattern": "/03  E-PAPER DISPLAY/EPD_VSH2"
+    },
+    {
+      "netclass": "EPD_HV",
+      "pattern": "/03  E-PAPER DISPLAY/EPD_VSL"
+    },
+    {
+      "netclass": "PowerBranch",
+      "pattern": "/05  SENSORS + EXPANSION/ACC_3V3"
+    },
+    {
+      "netclass": "AnalogSense",
+      "pattern": "/05  SENSORS + EXPANSION/ACC_ILIM"
+    },
+    {
+      "netclass": "PowerBranch",
+      "pattern": "/05  SENSORS + EXPANSION/IR_LED_A"
+    },
+    {
+      "netclass": "PowerBranch",
+      "pattern": "/05  SENSORS + EXPANSION/IR_LED_K"
+    },
+    {
+      "netclass": "PowerBranch",
+      "pattern": "/05  SENSORS + EXPANSION/IR_RX_3V3"
+    },
+    {
+      "netclass": "NFC_HOLD",
+      "pattern": "/05  SENSORS + EXPANSION/NFC_LA"
+    },
+    {
+      "netclass": "NFC_HOLD",
+      "pattern": "/05  SENSORS + EXPANSION/NFC_LB"
+    },
+    {
+      "netclass": "AnalogSense",
+      "pattern": "BAT_ADC"
+    },
+    {
+      "netclass": "Power_Trunk",
+      "pattern": "DOCK_5V"
+    },
+    {
+      "netclass": "USB_HOLD",
+      "pattern": "USB_DM"
+    },
+    {
+      "netclass": "USB_HOLD",
+      "pattern": "USB_DP"
+    },
+    {
+      "netclass": "Power_Trunk",
+      "pattern": "USB_VBUS"
+    }
+  ],
+  "unconnected_nc_nets_excluded": [
+    "unconnected-(D408-DO-Pad1)",
+    "unconnected-(J101-SBU1-PadA8)",
+    "unconnected-(J101-SBU2-PadB8)",
+    "unconnected-(U102-ITERM-Pad15)",
+    "unconnected-(U103-PG-Pad5)",
+    "unconnected-(U107-D2-Pad6)",
+    "unconnected-(U107-D3-Pad8)",
+    "unconnected-(U107-D4-Pad11)",
+    "unconnected-(U107-S2-Pad5)",
+    "unconnected-(U107-S3-Pad9)",
+    "unconnected-(U107-S4-Pad12)",
+    "unconnected-(U201-IO3-Pad15)",
+    "unconnected-(U201-IO35-Pad28)",
+    "unconnected-(U201-IO36-Pad29)",
+    "unconnected-(U201-IO37-Pad30)",
+    "unconnected-(U301-Y6-Pad13)",
+    "unconnected-(U301-Y7-Pad12)",
+    "unconnected-(U301-Y8-Pad11)",
+    "unconnected-(U501-INT-Pad2)",
+    "unconnected-(U502-INT2-Pad11)",
+    "unconnected-(U503-VOUT-Pad7)",
+    "unconnected-(U506-~{INT}-Pad13)"
+  ],
+  "notes": [
+    "Class names ending HOLD are review warnings only, not enforced routing locks.",
+    "Power trunk widths must be chosen manually at 1.0 mm or wider where practical. Class .60 mm does not establish current rating.",
+    "EPD_RESE has a wide current connection Q301.2 to R301.1 and a separate quiet Kelvin branch to J301.3; do not apply narrow sense geometry to its power-current segment.",
+    "Power/switch pad escapes need short legal neckdowns to actual pad dimensions; do not change validated lands.",
+    "USB numbers are placeholders, not an impedance result. U105 missing; no final USB routing.",
+    "NFC and switching hold nets must not be autorouted. Other nets with unresolved endpoints can be connected among resolved pads only.",
+    "GND remains Default for small fanouts; use planes and explicitly wider power return paths.",
+    "All current and assembly rules remain provisional.",
+    "Preferred Power_Trunk1.0 mm replaces v1Power0.60 mm; Power_Escape andPower_Branch are same-net geometry policies, not simultaneous netclass assignments."
+  ],
+  "supersedes": "netclass-proposal-2026-11-10.json",
+  "geometry_profiles_not_netclasses": {
+    "Power_Escape": {
+      "track_width_mm": [
+        0.15,
+        0.2,
+        0.25,
+        0.3
+      ],
+      "scope": "Short fine-pitch neckdowns only, selected from real pad geometry, widening as soon as clearance permits.",
+      "clearance": "Retain applicable netclass clearance; no automatic relaxation."
+    },
+    "Power_Branch": {
+      "track_width_mm": [
+        0.3,
+        0.4,
+        0.5,
+        0.6
+      ],
+      "scope": "Local lower-current supply links; qualify load/length."
+    },
+    "Power_Trunk": {
+      "preferred_width_mm": 1.0,
+      "scope": "Long main-current paths; broad copper preferred and larger widths allowed."
+    },
+    "Power_Sense_Tap": {
+      "track_width_mm": 0.2,
+      "scope": "Low-current resistor/sense tap on a power-named net, not a main-current path."
+    }
+  },
+  "blocked_all_automatic_routing_nets": [
+    "+3V3",
+    "+3V3_EPD",
+    "/01  POWER + CHARGING/BATT_NTC_OPTIONAL",
+    "/01  POWER + CHARGING/BAT_DIV_PRE",
+    "/01  POWER + CHARGING/BAT_SENSE_ISOLATED",
+    "/01  POWER + CHARGING/CHARGER_ILIM",
+    "/01  POWER + CHARGING/CHARGER_ISET",
+    "/01  POWER + CHARGING/CHARGER_TMR",
+    "/01  POWER + CHARGING/MUX_ILM",
+    "/01  POWER + CHARGING/MUX_OV_DOCK",
+    "/01  POWER + CHARGING/MUX_OV_USB",
+    "/01  POWER + CHARGING/MUX_PRIORITY_USB",
+    "/01  POWER + CHARGING/MUX_SS",
+    "/01  POWER + CHARGING/PRIMARY_FB",
+    "/01  POWER + CHARGING/PRIMARY_L1",
+    "/01  POWER + CHARGING/PRIMARY_L2",
+    "/01  POWER + CHARGING/VBAT_PROTECTED",
+    "/01  POWER + CHARGING/VEXT_5V",
+    "/01  POWER + CHARGING/VSYS",
+    "/02  PROCESSOR + RECOVERY/MCU_USB_DM",
+    "/02  PROCESSOR + RECOVERY/MCU_USB_DP",
+    "/03  E-PAPER DISPLAY/EPD_PUMP",
+    "/03  E-PAPER DISPLAY/EPD_RESE",
+    "/03  E-PAPER DISPLAY/EPD_SW",
+    "/03  E-PAPER DISPLAY/EPD_VCOM",
+    "/03  E-PAPER DISPLAY/EPD_VGH",
+    "/03  E-PAPER DISPLAY/EPD_VGL",
+    "/03  E-PAPER DISPLAY/EPD_VPP",
+    "/03  E-PAPER DISPLAY/EPD_VSH1",
+    "/03  E-PAPER DISPLAY/EPD_VSH2",
+    "/03  E-PAPER DISPLAY/EPD_VSL",
+    "/05  SENSORS + EXPANSION/ACC_3V3",
+    "/05  SENSORS + EXPANSION/ACC_ILIM",
+    "/05  SENSORS + EXPANSION/IR_LED_A",
+    "/05  SENSORS + EXPANSION/IR_LED_K",
+    "/05  SENSORS + EXPANSION/IR_RX_3V3",
+    "/05  SENSORS + EXPANSION/NFC_LA",
+    "/05  SENSORS + EXPANSION/NFC_LB",
+    "BAT_ADC",
+    "DOCK_5V",
+    "USB_DM",
+    "USB_DP",
+    "USB_VBUS",
+    "/03  E-PAPER DISPLAY/EPD_GDR",
+    "GND"
+  ],
+  "additional_manual_review_nets": [
+    "/02  PROCESSOR + RECOVERY/MCU_EN",
+    "/04  LIGHTING + BUTTONS/RGB_LINK_7",
+    "/04  LIGHTING + BUTTONS/RGB_LINK_3"
+  ],
+  "completely_hold_routing_nets": [
+    "/01  POWER + CHARGING/PRIMARY_L1",
+    "/01  POWER + CHARGING/PRIMARY_L2",
+    "/02  PROCESSOR + RECOVERY/MCU_USB_DM",
+    "/02  PROCESSOR + RECOVERY/MCU_USB_DP",
+    "/05  SENSORS + EXPANSION/NFC_LA",
+    "/05  SENSORS + EXPANSION/NFC_LB",
+    "USB_DM",
+    "USB_DP",
+    "/03  E-PAPER DISPLAY/EPD_SW",
+    "/03  E-PAPER DISPLAY/EPD_PUMP"
+  ],
+  "missing_endpoints": {
+    "U105": {
+      "1": "USB_DP",
+      "2": "USB_DM",
+      "3": "GND",
+      "4": "/01  POWER + CHARGING/USB_CC1",
+      "5": "/01  POWER + CHARGING/USB_CC2",
+      "8": "GND"
+    },
+    "J102": {
+      "1": "/01  POWER + CHARGING/VBAT_PROTECTED",
+      "2": "GND"
+    },
+    "J103": {
+      "1": "DOCK_5V",
+      "2": "GND"
+    },
+    "J104": {
+      "1": "/01  POWER + CHARGING/BATT_NTC_OPTIONAL",
+      "2": "GND"
+    },
+    "L101": {
+      "1": "/01  POWER + CHARGING/PRIMARY_L1",
+      "2": "/01  POWER + CHARGING/PRIMARY_L2"
+    },
+    "J301": {
+      "2": "/03  E-PAPER DISPLAY/EPD_GDR",
+      "3": "/03  E-PAPER DISPLAY/EPD_RESE",
+      "5": "/03  E-PAPER DISPLAY/EPD_VSH2",
+      "8": "GND",
+      "9": "EPD_BUSY",
+      "10": "/03  E-PAPER DISPLAY/EPD_RST_N_PANEL",
+      "11": "/03  E-PAPER DISPLAY/EPD_DC_PANEL",
+      "12": "/03  E-PAPER DISPLAY/EPD_CS_N_PANEL",
+      "13": "/03  E-PAPER DISPLAY/EPD_SCK_PANEL",
+      "14": "/03  E-PAPER DISPLAY/EPD_MOSI_PANEL",
+      "15": "+3V3_EPD",
+      "16": "+3V3_EPD",
+      "17": "GND",
+      "18": "/03  E-PAPER DISPLAY/EPD_VDD_1V8",
+      "19": "/03  E-PAPER DISPLAY/EPD_VPP",
+      "20": "/03  E-PAPER DISPLAY/EPD_VSH1",
+      "21": "/03  E-PAPER DISPLAY/EPD_VGH",
+      "22": "/03  E-PAPER DISPLAY/EPD_VSL",
+      "23": "/03  E-PAPER DISPLAY/EPD_VGL",
+      "24": "/03  E-PAPER DISPLAY/EPD_VCOM"
+    },
+    "L301": {
+      "1": "+3V3_EPD",
+      "2": "/03  E-PAPER DISPLAY/EPD_SW"
+    },
+    "AE501": {
+      "1": "/05  SENSORS + EXPANSION/NFC_LA",
+      "2": "/05  SENSORS + EXPANSION/NFC_LB"
+    },
+    "J502": {
+      "1": "/05  SENSORS + EXPANSION/ACC_3V3",
+      "2": "GND",
+      "3": "EXT_SDA",
+      "4": "EXT_SCL",
+      "5": "SAO_GPIO1",
+      "6": "SAO_GPIO2"
+    }
+  },
+  "clearance_review": {
+    "minimum_copper_mm": 0.15,
+    "preferred_power_route_clearance_mm": 0.2,
+    "preferred_NFC_route_clearance_mm": 0.25,
+    "rationale": "U502 source lands have 0.150 mm intrinsic gaps; U503 has 0.230/0.240 mm gaps. Broad class increases must not invalidate verified land patterns. NFC copper remains held."
+  },
+  "stackup": {
+    "provider": "JLCPCB",
+    "design_baseline": "JLC04161H-7628",
+    "source": "https://jlcpcb.com/impedance",
+    "status": "Sourced provisional development baseline; not ordered or impedance qualified",
+    "nominal_finished_thickness_mm": 1.6,
+    "layers": [
+      {
+        "name": "F.Cu",
+        "role": "signals and power",
+        "thickness_mm": 0.035
+      },
+      {
+        "name": "dielectric 1",
+        "material": "FR4 7628 prepreg",
+        "thickness_mm": 0.2104,
+        "epsilon_r": 4.4
+      },
+      {
+        "name": "In1.Cu",
+        "role": "GND reference",
+        "thickness_mm": 0.0152
+      },
+      {
+        "name": "dielectric 2",
+        "material": "FR4 core",
+        "thickness_mm": 1.065,
+        "epsilon_r": 4.6
+      },
+      {
+        "name": "In2.Cu",
+        "role": "GND reference",
+        "thickness_mm": 0.0152
+      },
+      {
+        "name": "dielectric 3",
+        "material": "FR4 7628 prepreg",
+        "thickness_mm": 0.2104,
+        "epsilon_r": 4.4
+      },
+      {
+        "name": "B.Cu",
+        "role": "signals and power; NFC coil held",
+        "thickness_mm": 0.035
+      }
+    ],
+    "published_material_sum_mm": 1.5862
+  }
+}

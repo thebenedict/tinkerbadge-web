@@ -1,0 +1,116 @@
+{
+  "checks": [
+    {
+      "part": "support-H1",
+      "brep_valid": true,
+      "step_roundtrip": true,
+      "stl_watertight": true,
+      "stl_winding_consistent": true
+    },
+    {
+      "part": "support-H2",
+      "brep_valid": true,
+      "step_roundtrip": true,
+      "stl_watertight": true,
+      "stl_winding_consistent": true
+    },
+    {
+      "part": "support-H3",
+      "brep_valid": true,
+      "step_roundtrip": true,
+      "stl_watertight": true,
+      "stl_winding_consistent": true
+    },
+    {
+      "part": "support-H4",
+      "brep_valid": true,
+      "step_roundtrip": true,
+      "stl_watertight": true,
+      "stl_winding_consistent": true
+    },
+    {
+      "part": "optical-baffle",
+      "brep_valid": true,
+      "step_roundtrip": true,
+      "stl_watertight": true,
+      "stl_winding_consistent": true
+    },
+    {
+      "part": "frame",
+      "brep_valid": true,
+      "step_roundtrip": true,
+      "stl_watertight": true,
+      "stl_winding_consistent": true
+    },
+    {
+      "part": "front",
+      "brep_valid": true,
+      "step_roundtrip": true,
+      "stl_watertight": true,
+      "stl_winding_consistent": true
+    },
+    {
+      "part": "rear",
+      "brep_valid": true,
+      "step_roundtrip": true,
+      "stl_watertight": true,
+      "stl_winding_consistent": true
+    },
+    {
+      "part": "battery-guide",
+      "brep_valid": true,
+      "step_roundtrip": true,
+      "stl_watertight": true,
+      "stl_winding_consistent": true
+    },
+    {
+      "part": "screw-H1",
+      "brep_valid": true,
+      "step_roundtrip": true,
+      "stl_watertight": true,
+      "stl_winding_consistent": true
+    },
+    {
+      "part": "screw-H2",
+      "brep_valid": true,
+      "step_roundtrip": true,
+      "stl_watertight": true,
+      "stl_winding_consistent": true
+    },
+    {
+      "part": "screw-H3",
+      "brep_valid": true,
+      "step_roundtrip": true,
+      "stl_watertight": true,
+      "stl_winding_consistent": true
+    },
+    {
+      "part": "screw-H4",
+      "brep_valid": true,
+      "step_roundtrip": true,
+      "stl_watertight": true,
+      "stl_winding_consistent": true
+    },
+    {
+      "check": "glass_to_cover_nominal_mm",
+      "value": 0.98,
+      "passed": true
+    },
+    {
+      "check": "battery_rear_clearance_nominal_mm",
+      "value": 1.5,
+      "passed": true
+    }
+  ],
+  "part_intersections": [],
+  "pending": [
+    "Exact glass support and adhesive zones",
+    "Battery model selection, swelling and thermal coupling",
+    "Full native component solid interference and tolerances",
+    "USB/Qwiic cable and SAO insertion sweeps",
+    "RGB LED visibility, sensor field of view and IR/visible isolation",
+    "RF/NFC through assembled case",
+    "Dock pin stroke, guide and polarity design",
+    "Human visual review and physical fit prototype"
+  ]
+}

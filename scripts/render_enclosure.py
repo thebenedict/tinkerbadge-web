@@ -15,7 +15,6 @@ for name in scene.graph.nodes_geometry:
  pose,key=scene.graph[name];mesh=scene.geometry[key];vertices=trimesh.transform_points(mesh.vertices,pose)*1000/2.54
  part=parts[name];color=[.12,.16,.16];transparency=0
  if part['group']=='front' or name=='rear':color=[.75,.88,.87];transparency=.84
- elif part['group']=='diffusers':color=[.45,.8,.7]
  elif part['group']=='hardware':color=[.7,.72,.72]
  wrl.append('Shape { appearance Appearance { material Material { diffuseColor '+' '.join(map(str,color))+' transparency '+str(transparency)+' } } geometry IndexedFaceSet { coord Coordinate { point [ '+', '.join(' '.join(f'{x:.6f}' for x in v) for v in vertices)+' ] } coordIndex [ '+', '.join(' '.join(map(str,[*f,-1])) for f in mesh.faces)+' ] solid TRUE } }')
 model=work/'enclosure.wrl';model.write_text('\n'.join(wrl));board=work/'front.kicad_pcb';text=board.read_text();at=text.rfind(')');text=text[:at]+'\n(footprint "Enclosure_render" (layer "F.Cu") (at 155 140) (attr smd) (model '+json.dumps(str(model))+' (offset (xyz 0 0 0)) (scale (xyz 1 1 1)) (rotate (xyz 0 0 0))))\n'+text[at:];board.write_text(text)

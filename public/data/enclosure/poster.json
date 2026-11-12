@@ -1,10 +1,10 @@
 {
-  "snapshotId": "bf93f73b5ee5",
+  "snapshotId": "151a46265bed",
   "sources": {
-    "data/snapshots/bf93f73b5ee5/source/mechanical/enclosure/exports/enclosure.glb": "40bc0ab7a14edc6240255d3a27bf870f6bc85c0d2738ed75d21542db1474d31d",
-    "data/snapshots/bf93f73b5ee5/source//tinkerbadge.kicad_pcb": "7b6ea0e61d1b97d6fb4b8665112096e6f28ca91348ab3617c9fafc7cb11dd688"
+    "data/snapshots/151a46265bed/source/mechanical/enclosure/exports/enclosure.glb": "3d4220c977a6dd2878d6fada0114b4fe1c6c467241fac50ceb3455d16eeeb34b",
+    "data/snapshots/151a46265bed/source//tinkerbadge.kicad_pcb": "7b6ea0e61d1b97d6fb4b8665112096e6f28ca91348ab3617c9fafc7cb11dd688"
   },
-  "sha256": "6c00cb349283cbff4214e8102a722ffb472702a9f3de925bff1a7f73899acce0",
+  "sha256": "f290425569381f8033c7c2c4238ccce9086a9010bcd8a5651ce173c98e8a855e",
   "renderer": "kicad-cli",
-  "scriptSha256": "49635ca145d95296ac5fe03e2dba2443d15b8c222dff22d2ed8d6303bc59b24b"
+  "scriptSha256": "f530110ad5fb98b1f9f3eb548becf4ec68121c306e83e41e7bf0d65c57a32057"
 }

@@ -1,0 +1,7981 @@
+(kicad_sch
+	(version 20250610)
+	(generator "konnect")
+	(generator_version "10.0")
+	(uuid "1dd8262d-90eb-4939-af55-ffa3179a5a31")
+	(paper "A3")
+	(lib_symbols
+		(symbol "Tinkerbadge_Peripherals:WS2812C-2020-V6"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "D"
+				(at 0 10.1600 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "WS2812C-2020-V6"
+				(at 0 -10.1600 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/8c7f104c99e52e4adb687ae84e594e95.pdf?productCode=C55109522"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "WS2812C-2020-V6_0_1"
+				(rectangle
+					(start -5.08 7.62)
+					(end 5.08 -7.62)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin input line
+					(at -8.89 0 0)
+					(length 3.81)
+					(name "DI"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 8.89 0 180)
+					(length 3.81)
+					(name "DO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 11.43 270)
+					(length 3.81)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -11.43 90)
+					(length 3.81)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:C"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C"
+				(at 0.635 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0.9652 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Unpolarized capacitor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "C_0_1"
+				(polyline
+					(pts
+						(xy -2.032 0.762)
+						(xy 2.032 0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 -0.762)
+						(xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:R"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Tinkerbadge_Peripherals:HSMF-C165"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "D"
+				(at 0 7.6200 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "HSMF-C165"
+				(at 0 -7.6200 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://docs.broadcom.com/doc/AV02-0584EN"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "HSMF-C165_0_1"
+				(rectangle
+					(start -12.7 5.08)
+					(end 12.7 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin passive line
+					(at -16.51 2.54 0)
+					(length 3.81)
+					(name "A_GREEN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -16.51 -2.54 0)
+					(length 3.81)
+					(name "A_RED"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 16.51 2.54 180)
+					(length 3.81)
+					(name "K_GREEN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 16.51 -2.54 180)
+					(length 3.81)
+					(name "K_RED"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Switch:SW_Push"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "SW"
+				(at 1.27 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "SW_Push"
+				(at 0 -1.524 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Push button switch, generic, two pins"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "switch normally-open pushbutton push-button"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "SW_Push_0_1"
+				(circle
+					(center -2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 1.27)
+						(xy 0 3.048)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 1.27)
+						(xy -2.54 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "power:GND"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "GND_0_1"
+				(polyline
+					(pts
+						(xy 0 0)
+						(xy 0 -1.27)
+						(xy 1.27 -1.27)
+						(xy 0 -2.54)
+						(xy -1.27 -1.27)
+						(xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "power:+3V3"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "+3V3"
+				(at 0 3.556 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+3V3\""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "+3V3_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27)
+						(xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54)
+						(xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0)
+						(xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+3V3_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Tinkerbadge_Peripherals:SKSCLBE010"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "SW"
+				(at 0 6.3500 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "SKSCLBE010"
+				(at 0 -7.6200 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://tech.alpsalpine.com/cms.media/product_spec_sksclbe010_en_f052c78d76.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "SKSCLBE010_0_1"
+				(polyline
+					(pts
+						(xy -2.54 0)
+						(xy -1.524 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 0)
+						(xy 1.524 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 0)
+						(xy -2.54 -5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 0)
+						(xy 2.54 -5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 1.27)
+						(xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 1.27)
+						(xy 0 3.81)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 3.81)
+						(xy 1.27 3.81)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -1.27 0)
+					(radius 0.254)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 1.27 0)
+					(radius 0.254)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -5.08 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -5.08 0)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(junction
+		(at 63.5 55.88)
+		(diameter 0)
+		(uuid "1cffee11-d008-4eb8-996b-159f6ed866ab")
+	)
+	(junction
+		(at 78.74 55.88)
+		(diameter 0)
+		(uuid "c413494c-8a14-4d3f-84c2-15dfc42cc6b4")
+	)
+	(junction
+		(at 106.68 55.88)
+		(diameter 0)
+		(uuid "b1c2f5a4-c570-45cc-946d-9c00a17b09bd")
+	)
+	(junction
+		(at 121.92 55.88)
+		(diameter 0)
+		(uuid "9048d59b-0cda-4f7d-8d72-e9982c946116")
+	)
+	(junction
+		(at 149.86 55.88)
+		(diameter 0)
+		(uuid "e4c4a9fe-7109-464e-bd21-0adff540b490")
+	)
+	(junction
+		(at 165.1 55.88)
+		(diameter 0)
+		(uuid "7e17eca2-8bb2-4a04-9315-e65a127506e2")
+	)
+	(junction
+		(at 193.04 55.88)
+		(diameter 0)
+		(uuid "b9168b72-2aa0-464b-b7c6-2ef34d200db9")
+	)
+	(junction
+		(at 208.28 55.88)
+		(diameter 0)
+		(uuid "4efa7266-6cbe-435d-8ad4-3df35e1df6f4")
+	)
+	(junction
+		(at 236.22 55.88)
+		(diameter 0)
+		(uuid "9872aee5-9251-4ecc-8bff-2993399d1fe0")
+	)
+	(junction
+		(at 251.46 55.88)
+		(diameter 0)
+		(uuid "f826278e-bb55-4646-a5f9-f820e4571fc5")
+	)
+	(junction
+		(at 279.4 55.88)
+		(diameter 0)
+		(uuid "3cb6215d-9510-4ed8-b5f8-57c735e7899b")
+	)
+	(junction
+		(at 294.64 55.88)
+		(diameter 0)
+		(uuid "ee15799e-6c7a-479f-b39f-a132fec69fad")
+	)
+	(junction
+		(at 322.58 55.88)
+		(diameter 0)
+		(uuid "655630ac-1a7c-4810-97d7-3ce9ac1f5fd8")
+	)
+	(junction
+		(at 337.82 55.88)
+		(diameter 0)
+		(uuid "7d0dd7c3-e212-4090-90d1-9dd539ec52a6")
+	)
+	(junction
+		(at 365.76 55.88)
+		(diameter 0)
+		(uuid "b61f65e0-3472-4de7-a1f5-aee759e5664d")
+	)
+	(junction
+		(at 48.26 88.9)
+		(diameter 0)
+		(uuid "b2c69bc9-0733-48c7-aa77-aec278047a60")
+	)
+	(junction
+		(at 50.8 179.07)
+		(diameter 0)
+		(uuid "6d622a51-21b2-4c89-84f1-6b5c326ba4ef")
+	)
+	(junction
+		(at 63.5 184.15)
+		(diameter 0)
+		(uuid "93a4717a-0195-47fe-a7cf-0353abbdcd62")
+	)
+	(junction
+		(at 127 184.15)
+		(diameter 0)
+		(uuid "80beab44-8a21-4ea2-a9b9-c865b230f8f1")
+	)
+	(junction
+		(at 63.5 55.88)
+		(diameter 0)
+		(uuid "a3101fdc-917b-4ba9-8999-14310697ee35")
+	)
+	(junction
+		(at 78.74 55.88)
+		(diameter 0)
+		(uuid "3a8d555d-ccd6-431f-83fd-f29faea12565")
+	)
+	(junction
+		(at 106.68 55.88)
+		(diameter 0)
+		(uuid "833dee59-4d37-460b-abbd-a2db8460ca67")
+	)
+	(junction
+		(at 121.92 55.88)
+		(diameter 0)
+		(uuid "02941d38-791f-48d0-9ea8-8c518d0bb86d")
+	)
+	(junction
+		(at 149.86 55.88)
+		(diameter 0)
+		(uuid "26b3ccfa-c0c3-47a7-ae9d-ef17beb43eed")
+	)
+	(junction
+		(at 165.1 55.88)
+		(diameter 0)
+		(uuid "59140ab7-7a95-42e9-a0d3-f7f629a9bede")
+	)
+	(junction
+		(at 193.04 55.88)
+		(diameter 0)
+		(uuid "fb607a16-2a71-4b19-97e9-ee1cc9caf68e")
+	)
+	(junction
+		(at 208.28 55.88)
+		(diameter 0)
+		(uuid "2a965c89-071a-4765-8d91-1e0ea7d10fed")
+	)
+	(junction
+		(at 236.22 55.88)
+		(diameter 0)
+		(uuid "07c60ec0-a0c3-48d7-8e46-3ae7215cc435")
+	)
+	(junction
+		(at 251.46 55.88)
+		(diameter 0)
+		(uuid "87cdadd2-956d-4150-b864-2c105b3f56a6")
+	)
+	(junction
+		(at 279.4 55.88)
+		(diameter 0)
+		(uuid "a7edab28-ba84-4d14-9ea5-44b268a36408")
+	)
+	(junction
+		(at 294.64 55.88)
+		(diameter 0)
+		(uuid "7e2c1ad0-dcb5-434e-84c1-38d2c876ccd6")
+	)
+	(junction
+		(at 322.58 55.88)
+		(diameter 0)
+		(uuid "35e93ad9-db67-4c47-a0fc-e6b060971511")
+	)
+	(junction
+		(at 337.82 55.88)
+		(diameter 0)
+		(uuid "1de91e20-8b26-4639-9b3b-b4387c640708")
+	)
+	(junction
+		(at 365.76 55.88)
+		(diameter 0)
+		(uuid "0edbfa27-a19c-4bed-b319-2b8f739e8689")
+	)
+	(junction
+		(at 381 55.88)
+		(diameter 0)
+		(uuid "37619f79-fb98-42db-b023-9fec2772d019")
+	)
+	(junction
+		(at 48.26 88.9)
+		(diameter 0)
+		(uuid "8ae92428-07ac-468b-90d0-5ff98745c04c")
+	)
+	(junction
+		(at 50.8 179.07)
+		(diameter 0)
+		(uuid "d2c00c2c-a1e7-41e1-82bf-65645ea3f487")
+	)
+	(junction
+		(at 63.5 184.15)
+		(diameter 0)
+		(uuid "01da2698-46a0-4dc0-8c49-153dbb03f22b")
+	)
+	(junction
+		(at 127 184.15)
+		(diameter 0)
+		(uuid "cb2581f0-8431-434e-8556-40be02ddfe7c")
+	)
+	(junction
+		(at 243.84 177.8)
+		(diameter 0)
+		(uuid "f0a73074-af6a-42f6-8c4a-3a71c51f2c96")
+	)
+	(junction
+		(at 345.44 177.8)
+		(diameter 0)
+		(uuid "1a341a57-9f46-4375-91f8-d8ef7c173c25")
+	)
+	(junction
+		(at 83.82 179.07)
+		(diameter 0)
+		(uuid "9937feca-34d0-4096-ab5b-d0d4bbea9a6e")
+	)
+	(junction
+		(at 83.82 184.15)
+		(diameter 0)
+		(uuid "057eba87-5e67-4cdf-8fcb-7573b86e7872")
+	)
+	(junction
+		(at 205.74 177.8)
+		(diameter 0)
+		(uuid "08c22da2-41f5-4fd7-ad40-11e02d254abb")
+	)
+	(junction
+		(at 185.42 182.88)
+		(diameter 0)
+		(uuid "66a8cb93-624c-4eb3-8387-9cb88e6d2e92")
+	)
+	(junction
+		(at 307.34 177.8)
+		(diameter 0)
+		(uuid "5e6681d6-b1e8-4648-bf0d-1cd606381a70")
+	)
+	(junction
+		(at 287.02 182.88)
+		(diameter 0)
+		(uuid "11f07438-ebed-47c4-aeb7-3df35b465765")
+	)
+	(no_connect
+		(at 374.65 88.9)
+		(uuid "eecd8ed5-b585-41e4-b35f-2ac806914d56")
+	)
+	(wire
+		(pts
+			(xy 25.4 55.88)
+			(xy 381 55.88)
+		)
+		(uuid "5c81cbb2-92fd-4db5-90e9-4a57d5cbb3fb")
+	)
+	(wire
+		(pts
+			(xy 63.5 77.47)
+			(xy 63.5 55.88)
+		)
+		(uuid "663f0a7b-195a-446a-ac21-8dd553c93726")
+	)
+	(wire
+		(pts
+			(xy 78.74 63.5)
+			(xy 78.74 55.88)
+		)
+		(uuid "9d09959d-1997-4d4b-b989-c8e2152829bc")
+	)
+	(wire
+		(pts
+			(xy 78.74 71.12)
+			(xy 78.74 76.2)
+		)
+		(uuid "8ae248d0-5b96-42fd-a426-a30f18473948")
+	)
+	(wire
+		(pts
+			(xy 63.5 100.33)
+			(xy 63.5 105.41)
+		)
+		(uuid "630e4d7b-c635-4e45-8337-5e894c0fe37e")
+	)
+	(wire
+		(pts
+			(xy 72.39 88.9)
+			(xy 97.79 88.9)
+		)
+		(uuid "dc383301-e5e8-45b6-97de-274331d6f4d0")
+	)
+	(wire
+		(pts
+			(xy 106.68 77.47)
+			(xy 106.68 55.88)
+		)
+		(uuid "9eecadc1-d204-419f-9ac8-6259733ba813")
+	)
+	(wire
+		(pts
+			(xy 121.92 63.5)
+			(xy 121.92 55.88)
+		)
+		(uuid "e8106aef-c773-4dd8-874f-402cb553720b")
+	)
+	(wire
+		(pts
+			(xy 121.92 71.12)
+			(xy 121.92 76.2)
+		)
+		(uuid "819fa152-3889-44fa-9c1e-8d8ae171686b")
+	)
+	(wire
+		(pts
+			(xy 106.68 100.33)
+			(xy 106.68 105.41)
+		)
+		(uuid "b6fdf2fc-c9d1-45fa-b64d-40d68ba012df")
+	)
+	(wire
+		(pts
+			(xy 115.57 88.9)
+			(xy 140.97 88.9)
+		)
+		(uuid "e7a0c464-d6d1-444e-a8bd-754409a6b2aa")
+	)
+	(wire
+		(pts
+			(xy 149.86 77.47)
+			(xy 149.86 55.88)
+		)
+		(uuid "c461d225-86d9-4e74-b374-06082b6b831d")
+	)
+	(wire
+		(pts
+			(xy 165.1 63.5)
+			(xy 165.1 55.88)
+		)
+		(uuid "48311777-c9fa-4a96-ab2d-a893ec1774d4")
+	)
+	(wire
+		(pts
+			(xy 165.1 71.12)
+			(xy 165.1 76.2)
+		)
+		(uuid "11881620-cff8-4ca0-95a8-2497214651f4")
+	)
+	(wire
+		(pts
+			(xy 149.86 100.33)
+			(xy 149.86 105.41)
+		)
+		(uuid "23c15aa4-a293-41d3-9cff-9d460cdd0bea")
+	)
+	(wire
+		(pts
+			(xy 158.75 88.9)
+			(xy 184.15 88.9)
+		)
+		(uuid "0495bd9f-05d1-4fa1-ba5e-7bf0fd7d2d26")
+	)
+	(wire
+		(pts
+			(xy 193.04 77.47)
+			(xy 193.04 55.88)
+		)
+		(uuid "4ca32ba2-11e7-48e3-81d4-0607b68c5bf1")
+	)
+	(wire
+		(pts
+			(xy 208.28 63.5)
+			(xy 208.28 55.88)
+		)
+		(uuid "ae1c3fa4-585c-4219-8674-9c795953f50b")
+	)
+	(wire
+		(pts
+			(xy 208.28 71.12)
+			(xy 208.28 76.2)
+		)
+		(uuid "a25fe6f6-ea30-471f-88b7-27a95bee5f84")
+	)
+	(wire
+		(pts
+			(xy 193.04 100.33)
+			(xy 193.04 105.41)
+		)
+		(uuid "1d9e3477-495f-4001-8352-ae80510cbe86")
+	)
+	(wire
+		(pts
+			(xy 201.93 88.9)
+			(xy 227.33 88.9)
+		)
+		(uuid "715c3c9f-7f7f-4fcd-a72b-1bd1e514a23f")
+	)
+	(wire
+		(pts
+			(xy 236.22 77.47)
+			(xy 236.22 55.88)
+		)
+		(uuid "51b82b7c-d948-433d-8095-6aa43c3d287b")
+	)
+	(wire
+		(pts
+			(xy 251.46 63.5)
+			(xy 251.46 55.88)
+		)
+		(uuid "32f4ca71-9038-4083-afce-a4e3ddbe6161")
+	)
+	(wire
+		(pts
+			(xy 251.46 71.12)
+			(xy 251.46 76.2)
+		)
+		(uuid "5532c173-2e06-416b-b107-48a2aab019d5")
+	)
+	(wire
+		(pts
+			(xy 236.22 100.33)
+			(xy 236.22 105.41)
+		)
+		(uuid "3aee9d57-4764-4215-b87b-3afee22532ae")
+	)
+	(wire
+		(pts
+			(xy 245.11 88.9)
+			(xy 270.51 88.9)
+		)
+		(uuid "2da4e519-e85a-43b4-9f30-199d2d7ba046")
+	)
+	(wire
+		(pts
+			(xy 279.4 77.47)
+			(xy 279.4 55.88)
+		)
+		(uuid "60f1bfe7-3cdf-4cf7-94e2-16dddde5a4aa")
+	)
+	(wire
+		(pts
+			(xy 294.64 63.5)
+			(xy 294.64 55.88)
+		)
+		(uuid "1ba14bb4-b6bd-4dfb-97b3-b9ba793ce45d")
+	)
+	(wire
+		(pts
+			(xy 294.64 71.12)
+			(xy 294.64 76.2)
+		)
+		(uuid "a55589fe-f377-439a-8e0a-7adf91370ad7")
+	)
+	(wire
+		(pts
+			(xy 279.4 100.33)
+			(xy 279.4 105.41)
+		)
+		(uuid "caf5d231-bb88-41da-aa62-c961a7a77d55")
+	)
+	(wire
+		(pts
+			(xy 288.29 88.9)
+			(xy 313.69 88.9)
+		)
+		(uuid "7f87f604-b736-46a4-ab1b-58c01c538bed")
+	)
+	(wire
+		(pts
+			(xy 322.58 77.47)
+			(xy 322.58 55.88)
+		)
+		(uuid "13b80889-e705-44fc-969e-6fce4ad0baf5")
+	)
+	(wire
+		(pts
+			(xy 337.82 63.5)
+			(xy 337.82 55.88)
+		)
+		(uuid "8a436677-fafc-484f-b88f-12232414de58")
+	)
+	(wire
+		(pts
+			(xy 337.82 71.12)
+			(xy 337.82 76.2)
+		)
+		(uuid "54adfb24-8b98-4e34-a66b-f9bbaedba8c3")
+	)
+	(wire
+		(pts
+			(xy 322.58 100.33)
+			(xy 322.58 105.41)
+		)
+		(uuid "f43c7b3a-a9af-4225-b139-3ec2faafa8ea")
+	)
+	(wire
+		(pts
+			(xy 331.47 88.9)
+			(xy 356.87 88.9)
+		)
+		(uuid "b5c192c7-1691-4969-bf74-f98138e680c4")
+	)
+	(wire
+		(pts
+			(xy 365.76 77.47)
+			(xy 365.76 55.88)
+		)
+		(uuid "62a1ce60-1be9-44f5-841f-2b321165be5a")
+	)
+	(wire
+		(pts
+			(xy 381 63.5)
+			(xy 381 55.88)
+		)
+		(uuid "caee69aa-b191-4ed0-aba3-6ffe5efaa320")
+	)
+	(wire
+		(pts
+			(xy 381 71.12)
+			(xy 381 76.2)
+		)
+		(uuid "b6cc75a5-aa93-4956-8e94-7df847e4625d")
+	)
+	(wire
+		(pts
+			(xy 365.76 100.33)
+			(xy 365.76 105.41)
+		)
+		(uuid "19290a05-d998-43aa-b133-9237bf2d448c")
+	)
+	(wire
+		(pts
+			(xy 25.4 62.23)
+			(xy 25.4 55.88)
+		)
+		(uuid "4c5c01ce-3487-4ac9-8aa4-b09f98569e54")
+	)
+	(wire
+		(pts
+			(xy 25.4 69.85)
+			(xy 25.4 76.2)
+		)
+		(uuid "f7955eea-7a4f-46a9-bacc-87fbf933491b")
+	)
+	(wire
+		(pts
+			(xy 44.45 88.9)
+			(xy 54.61 88.9)
+		)
+		(uuid "04850830-ccc1-4ae7-aaac-41c55bf9f4c0")
+	)
+	(wire
+		(pts
+			(xy 48.26 100.33)
+			(xy 48.26 88.9)
+		)
+		(uuid "2ea8d025-f244-4985-a035-ea6470b58dbf")
+	)
+	(wire
+		(pts
+			(xy 48.26 107.95)
+			(xy 48.26 115.57)
+		)
+		(uuid "a43a1520-e985-46cf-adaf-130d1774cbe7")
+	)
+	(wire
+		(pts
+			(xy 80.01 179.07)
+			(xy 87.63 179.07)
+		)
+		(uuid "33ed6cf7-7ef7-4f6c-af9d-4b8762782ac3")
+	)
+	(wire
+		(pts
+			(xy 72.39 179.07)
+			(xy 35.56 179.07)
+		)
+		(uuid "bacb19fe-3605-4d88-94fc-ad34ff82bf00")
+	)
+	(wire
+		(pts
+			(xy 50.8 194.31)
+			(xy 50.8 179.07)
+		)
+		(uuid "cd5a7ad7-2050-45e1-aabc-7cf54c37ce0e")
+	)
+	(wire
+		(pts
+			(xy 50.8 201.93)
+			(xy 50.8 220.98)
+		)
+		(uuid "4f950f2a-0105-43d5-b80b-6524c092fa16")
+	)
+	(wire
+		(pts
+			(xy 80.01 184.15)
+			(xy 87.63 184.15)
+		)
+		(uuid "44d7f432-3c76-4ecb-b388-f10acb62005e")
+	)
+	(wire
+		(pts
+			(xy 72.39 184.15)
+			(xy 35.56 184.15)
+		)
+		(uuid "998e3f9d-7395-411f-99e3-8b7f3a3cf867")
+	)
+	(wire
+		(pts
+			(xy 63.5 207.01)
+			(xy 63.5 184.15)
+		)
+		(uuid "fea87f18-65ae-4c03-9574-4fa1fd1de132")
+	)
+	(wire
+		(pts
+			(xy 63.5 214.63)
+			(xy 63.5 220.98)
+		)
+		(uuid "41120574-b18c-4382-ab48-356efb1c4362")
+	)
+	(wire
+		(pts
+			(xy 120.65 179.07)
+			(xy 127 179.07)
+		)
+		(uuid "9a9ed79e-8915-4b7f-aefb-09698fe4ff12")
+	)
+	(wire
+		(pts
+			(xy 127 179.07)
+			(xy 127 201.93)
+		)
+		(uuid "8a729ae0-c53b-4a31-8380-5d76868e2793")
+	)
+	(wire
+		(pts
+			(xy 120.65 184.15)
+			(xy 127 184.15)
+		)
+		(uuid "8632012a-7c0e-449d-8925-f13128d20067")
+	)
+	(wire
+		(pts
+			(xy 200.66 177.8)
+			(xy 217.17 177.8)
+		)
+		(uuid "7f75c4ec-c66f-404d-8ac1-f8e065ae33c5")
+	)
+	(wire
+		(pts
+			(xy 224.79 177.8)
+			(xy 243.84 177.8)
+		)
+		(uuid "290ba631-c0a4-4454-bc1d-43535ae15d4f")
+	)
+	(wire
+		(pts
+			(xy 243.84 177.8)
+			(xy 269.24 177.8)
+		)
+		(uuid "666aa2ab-b1ff-467b-9cc5-86b4bdb7295f")
+	)
+	(wire
+		(pts
+			(xy 243.84 161.29)
+			(xy 243.84 177.8)
+		)
+		(uuid "929a2954-4e27-42f6-9d0e-cfa54f02a028")
+	)
+	(wire
+		(pts
+			(xy 243.84 177.8)
+			(xy 243.84 187.96)
+		)
+		(uuid "a27b8931-1ec4-4426-88aa-1c1013276529")
+	)
+	(wire
+		(pts
+			(xy 243.84 153.67)
+			(xy 243.84 148.59)
+		)
+		(uuid "f8a9e252-f77b-45a9-96a0-b2dac6c597b8")
+	)
+	(wire
+		(pts
+			(xy 243.84 195.58)
+			(xy 243.84 200.66)
+		)
+		(uuid "0134af37-22ed-4522-abd0-fdc45172162a")
+	)
+	(wire
+		(pts
+			(xy 190.5 177.8)
+			(xy 185.42 177.8)
+		)
+		(uuid "0b77b25d-de38-4002-868e-190adbecb7df")
+	)
+	(wire
+		(pts
+			(xy 185.42 177.8)
+			(xy 185.42 200.66)
+		)
+		(uuid "7e19ef0e-1972-4254-b0f7-723821474f71")
+	)
+	(wire
+		(pts
+			(xy 302.26 177.8)
+			(xy 318.77 177.8)
+		)
+		(uuid "0b71afa9-5728-4f5e-90dc-1c4a3072f937")
+	)
+	(wire
+		(pts
+			(xy 326.39 177.8)
+			(xy 345.44 177.8)
+		)
+		(uuid "d8fb4b6c-69ac-4dbb-b1c1-161e5e0a4aca")
+	)
+	(wire
+		(pts
+			(xy 345.44 177.8)
+			(xy 370.84 177.8)
+		)
+		(uuid "cf528a8b-5e76-445d-be92-f709bb0147c7")
+	)
+	(wire
+		(pts
+			(xy 345.44 177.8)
+			(xy 345.44 187.96)
+		)
+		(uuid "cd36c44c-7f5d-455f-9285-bd49010cb88f")
+	)
+	(wire
+		(pts
+			(xy 345.44 195.58)
+			(xy 345.44 200.66)
+		)
+		(uuid "ec478029-94d2-436b-86b1-a2384f5b8404")
+	)
+	(wire
+		(pts
+			(xy 292.1 177.8)
+			(xy 287.02 177.8)
+		)
+		(uuid "625ee39a-798f-4502-8a7e-077234d6c5da")
+	)
+	(wire
+		(pts
+			(xy 287.02 177.8)
+			(xy 287.02 200.66)
+		)
+		(uuid "803b5726-bf72-49e6-8919-0361219df28e")
+	)
+	(wire
+		(pts
+			(xy 36.83 88.9)
+			(xy 31.75 88.9)
+		)
+		(uuid "957ff920-67e0-4e2c-a8e4-157bee566103")
+	)
+	(wire
+		(pts
+			(xy 83.82 179.07)
+			(xy 83.82 160.02)
+		)
+		(uuid "a89b0fd7-83f7-40c8-998b-0b11f545575d")
+	)
+	(wire
+		(pts
+			(xy 83.82 184.15)
+			(xy 83.82 203.2)
+		)
+		(uuid "cbdd15a7-1b1d-4d73-a02a-dfe68c75eed5")
+	)
+	(wire
+		(pts
+			(xy 200.66 182.88)
+			(xy 205.74 182.88)
+		)
+		(uuid "9096f5b6-6428-490d-aa39-48035a6857b0")
+	)
+	(wire
+		(pts
+			(xy 205.74 182.88)
+			(xy 205.74 177.8)
+		)
+		(uuid "26551605-8391-44b7-acc0-c978d1ef7771")
+	)
+	(wire
+		(pts
+			(xy 190.5 182.88)
+			(xy 185.42 182.88)
+		)
+		(uuid "50c17ec1-7765-43d0-90a7-84b26a2a84d8")
+	)
+	(wire
+		(pts
+			(xy 302.26 182.88)
+			(xy 307.34 182.88)
+		)
+		(uuid "3e06e92a-9c61-46ca-b7be-30d9d6fb1cc2")
+	)
+	(wire
+		(pts
+			(xy 307.34 182.88)
+			(xy 307.34 177.8)
+		)
+		(uuid "f9eed204-41eb-4734-9a18-b742c83cddf1")
+	)
+	(wire
+		(pts
+			(xy 292.1 182.88)
+			(xy 287.02 182.88)
+		)
+		(uuid "7d1fea8e-621e-4076-bfcc-0dd992217dda")
+	)
+	(text "04  LIGHTING + BUTTONS"
+		(at 17.78 20.32 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "aabec930-9415-4cae-836f-c36e1f8e8db4")
+	)
+	(text "Addressable RGB Chain"
+		(at 17.78 26.67 0)
+		(effects
+			(font
+				(size 1.52 1.52)
+			)
+			(justify left bottom)
+		)
+		(uuid "8a87c606-e602-4486-9de5-b08c2bb98b2e")
+	)
+	(text "Send black before storage. Respect the system power/current budget in firmware."
+		(at 20.32 38.1 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "43617aaa-2e29-4491-a935-fd188bc6330a")
+	)
+	(text "Independent Green / Red Power Indicator"
+		(at 17.78 132.08 0)
+		(effects
+			(font
+				(size 1.52 1.52)
+			)
+			(justify left bottom)
+		)
+		(uuid "faad98a2-2940-4a28-9f17-1e493f43c796")
+	)
+	(text "User Buttons"
+		(at 175.26 132.08 0)
+		(effects
+			(font
+				(size 1.52 1.52)
+			)
+			(justify left bottom)
+		)
+		(uuid "e8c1eafc-a5c4-4009-96b6-fabf0b5117fe")
+	)
+	(text "A is the retained storage-wake button; B is a normal input."
+		(at 177.8 137.16 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "706989d9-fe90-47ec-8023-1f07eb2a06cb")
+	)
+	(text "Both LED control outputs default low. Current is limited by 2.2k per die."
+		(at 20.32 235 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d7e35b47-c4f5-484b-870c-7e7430d890e1")
+	)
+	(text "100k / 100nF gives about 10 ms debounce; firmware must also debounce."
+		(at 177.8 226.06 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b961c672-d245-4441-8214-b88dfe78360b")
+	)
+	(text "Footprints for the exact LEDs and switch are intentionally blank pending their physical pad audit."
+		(at 20.32 250.19 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f1e7f460-a1d8-43bc-a99a-0c4d84abec3e")
+	)
+	(text "RGB chain: exact WS2812C-2020-V6 on shared nominal +3V3. Below 3.3 V operation is not guaranteed."
+		(at 20.32 33.02 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "595635ad-11f8-46e3-b8ac-f331d37a94fc")
+	)
+	(text "Prototype gate: scope startup, low battery, Wi-Fi and full-white transitions at the LEDs; verify shared peak capacity."
+		(at 20.32 43.18 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d09e0229-75c0-460e-a760-e2519086aed2")
+	)
+	(label "RGB_LINK_1"
+		(at 74.93 88.9 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ff727f15-d154-4c96-84c1-70ebaddeb62d")
+	)
+	(label "RGB_LINK_2"
+		(at 118.11 88.9 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "84903632-124e-4688-9d10-65763459c015")
+	)
+	(label "RGB_LINK_3"
+		(at 161.29 88.9 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0bf2e39f-ac9d-40d9-a13c-18730fb8e751")
+	)
+	(label "RGB_LINK_4"
+		(at 204.47 88.9 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9b62f4af-c357-4e9a-9043-636f1176ab29")
+	)
+	(label "RGB_LINK_5"
+		(at 247.65 88.9 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c58d1cb5-a5f4-4ef0-96ce-c1d1458ea333")
+	)
+	(label "RGB_LINK_6"
+		(at 290.83 88.9 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a0709ac9-c33d-4b41-bca5-b73820aff1c7")
+	)
+	(label "RGB_LINK_7"
+		(at 334.01 88.9 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "37a5720e-75a0-41e0-b81e-420140f912cb")
+	)
+	(label "BTN_A_SW_N"
+		(at 205.74 177.8 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "adc13b02-1d83-42aa-9ce4-437124954440")
+	)
+	(label "BTN_B_SW_N"
+		(at 307.34 177.8 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2191401f-7473-4d13-ba2f-e22ebb2599b4")
+	)
+	(label "RGB_DIN"
+		(at 44.45 88.9 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "48086beb-c097-465b-a3ec-1c7b1f16647c")
+	)
+	(label "PWR_GREEN_A"
+		(at 83.82 160.02 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e9975f97-27e7-4fe6-9079-30df6636b1a0")
+	)
+	(label "PWR_RED_A"
+		(at 83.82 203.2 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "bd3750b1-ffdb-42c9-9f6d-8446e9386e78")
+	)
+	(global_label "PWR_LED_G"
+		(shape bidirectional)
+		(at 35.56 179.07 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "dc7634e3-39b4-421d-82ba-bae82ec74b6a")
+	)
+	(global_label "PWR_LED_R"
+		(shape bidirectional)
+		(at 35.56 184.15 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "56f64f71-fb8a-4e23-bf1b-1ab956662ae5")
+	)
+	(global_label "BTN_A_N"
+		(shape bidirectional)
+		(at 269.24 177.8 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "391899b2-def4-4785-9f92-fdce407f94d6")
+	)
+	(global_label "BTN_B_N"
+		(shape bidirectional)
+		(at 370.84 177.8 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "253c2789-f65e-4d4b-ba64-ae0dae15dc62")
+	)
+	(global_label "RGB_DATA"
+		(shape input)
+		(at 31.75 88.9 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "48397f33-5d28-4063-b24e-22e19374a545")
+	)
+	(text "Alps side push, 2.2 N. Common pairs: 1-2 and 3-4."
+		(at 177.8 215.9 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "67246223-d069-43c9-b295-e3245495c9e0")
+	)
+	(text "Always-on bias and capacitive loading need application qualification."
+		(at 177.8 220.98 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e7019dc4-c2c7-4327-aadc-b1abae8a1098")
+	)
+	(symbol
+		(lib_id "Tinkerbadge_Peripherals:WS2812C-2020-V6")
+		(at 63.5 88.9 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "56cf3313-ea53-4d20-a9ef-bd8fb4c1b639")
+		(property "Reference" "D401"
+			(at 63.5 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812C-2020-V6"
+			(at 63.5 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Tinkerbadge:WS2812C-2020-V6_Reviewed"
+			(at 63.5 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/8c7f104c99e52e4adb687ae84e594e95.pdf?productCode=C55109522"
+			(at 63.5 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 63.5 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Contract" "docs/design/peripherals_contract.json"
+			(at 63.5 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "WS2812C-2020-V6"
+			(at 63.5 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "FootprintStatus" "UNASSIGNED: physical footprint/mating release gate"
+			(at 63.5 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Population" "fitted"
+			(at 63.5 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "2020 four-pad"
+			(at 63.5 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "tinkerbadge"
+				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/5fe598f7-ccee-40ac-b6d4-b849f03753e0"
+					(reference "D401")
+					(unit 1)
+				)
+			)
+		)
+		(property "LCSC" "C55109522"
+			(at 63.5 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 63.5 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 78.74 67.31 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "05d0fb63-5ba2-4cdb-ae5c-e205e26251ce")
+		(property "Reference" "C401"
+			(at 82.55 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n / 10V"
+			(at 82.55 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 78.74 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 78.74 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 78.74 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Contract" "docs/design/peripherals_contract.json"
+			(at 78.74 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "FootprintStatus" "Assigned standard; prototype validation required"
+			(at 78.74 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "CC0603KRX7R9BB104"
+			(at 78.74 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Population" "fitted"
+			(at 78.74 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "100nF 10V X7R"
+			(at 78.74 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "tinkerbadge"
+				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/5fe598f7-ccee-40ac-b6d4-b849f03753e0"
+					(reference "C401")
+					(unit 1)
+				)
+			)
+		)
+		(property "LCSC" "C14663"
+			(at 78.74 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 78.74 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Tinkerbadge_Peripherals:WS2812C-2020-V6")
+		(at 106.68 88.9 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3496a346-eaa6-4948-b7ac-6f576bbf807b")
+		(property "Reference" "D402"
+			(at 106.68 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812C-2020-V6"
+			(at 106.68 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Tinkerbadge:WS2812C-2020-V6_Reviewed"
+			(at 106.68 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/8c7f104c99e52e4adb687ae84e594e95.pdf?productCode=C55109522"
+			(at 106.68 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 106.68 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Contract" "docs/design/peripherals_contract.json"
+			(at 106.68 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "FootprintStatus" "UNASSIGNED: physical footprint/mating release gate"
+			(at 106.68 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "WS2812C-2020-V6"
+			(at 106.68 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Population" "fitted"
+			(at 106.68 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "2020 four-pad"
+			(at 106.68 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "tinkerbadge"
+				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/5fe598f7-ccee-40ac-b6d4-b849f03753e0"
+					(reference "D402")
+					(unit 1)
+				)
+			)
+		)
+		(property "LCSC" "C55109522"
+			(at 106.68 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 106.68 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 121.92 67.31 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b888d261-0a72-4b20-92f2-7f19e6a03490")
+		(property "Reference" "C402"
+			(at 125.73 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n / 10V"
+			(at 125.73 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 121.92 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 121.92 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 121.92 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Contract" "docs/design/peripherals_contract.json"
+			(at 121.92 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "FootprintStatus" "Assigned standard; prototype validation required"
+			(at 121.92 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "CC0603KRX7R9BB104"
+			(at 121.92 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Population" "fitted"
+			(at 121.92 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "100nF 10V X7R"
+			(at 121.92 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "tinkerbadge"
+				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/5fe598f7-ccee-40ac-b6d4-b849f03753e0"
+					(reference "C402")
+					(unit 1)
+				)
+			)
+		)
+		(property "LCSC" "C14663"
+			(at 121.92 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 121.92 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Tinkerbadge_Peripherals:WS2812C-2020-V6")
+		(at 149.86 88.9 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ca2a0006-786f-46cf-a3c7-6156768df6e7")
+		(property "Reference" "D403"
+			(at 149.86 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812C-2020-V6"
+			(at 149.86 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Tinkerbadge:WS2812C-2020-V6_Reviewed"
+			(at 149.86 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/8c7f104c99e52e4adb687ae84e594e95.pdf?productCode=C55109522"
+			(at 149.86 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 149.86 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Contract" "docs/design/peripherals_contract.json"
+			(at 149.86 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "FootprintStatus" "UNASSIGNED: physical footprint/mating release gate"
+			(at 149.86 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "WS2812C-2020-V6"
+			(at 149.86 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Population" "fitted"
+			(at 149.86 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "2020 four-pad"
+			(at 149.86 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "tinkerbadge"
+				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/5fe598f7-ccee-40ac-b6d4-b849f03753e0"
+					(reference "D403")
+					(unit 1)
+				)
+			)
+		)
+		(property "LCSC" "C55109522"
+			(at 149.86 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 149.86 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 165.1 67.31 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0a0a5264-ad6c-4498-a732-e77d13740285")
+		(property "Reference" "C403"
+			(at 168.91 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n / 10V"
+			(at 168.91 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 165.1 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 165.1 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 165.1 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Contract" "docs/design/peripherals_contract.json"
+			(at 165.1 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "FootprintStatus" "Assigned standard; prototype validation required"
+			(at 165.1 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "CC0603KRX7R9BB104"
+			(at 165.1 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Population" "fitted"
+			(at 165.1 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "100nF 10V X7R"
+			(at 165.1 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "tinkerbadge"
+				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/5fe598f7-ccee-40ac-b6d4-b849f03753e0"
+					(reference "C403")
+					(unit 1)
+				)
+			)
+		)
+		(property "LCSC" "C14663"
+			(at 165.1 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 165.1 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Tinkerbadge_Peripherals:WS2812C-2020-V6")
+		(at 193.04 88.9 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9cd7291c-588c-4e0e-8bc9-a433f1317e21")
+		(property "Reference" "D404"
+			(at 193.04 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812C-2020-V6"
+			(at 193.04 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Tinkerbadge:WS2812C-2020-V6_Reviewed"
+			(at 193.04 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/8c7f104c99e52e4adb687ae84e594e95.pdf?productCode=C55109522"
+			(at 193.04 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 193.04 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Contract" "docs/design/peripherals_contract.json"
+			(at 193.04 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "FootprintStatus" "UNASSIGNED: physical footprint/mating release gate"
+			(at 193.04 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "WS2812C-2020-V6"
+			(at 193.04 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Population" "fitted"
+			(at 193.04 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "2020 four-pad"
+			(at 193.04 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "tinkerbadge"
+				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/5fe598f7-ccee-40ac-b6d4-b849f03753e0"
+					(reference "D404")
+					(unit 1)
+				)
+			)
+		)
+		(property "LCSC" "C55109522"
+			(at 193.04 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 193.04 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 208.28 67.31 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9d0631df-6730-42bb-a00b-8e890a27b1a0")
+		(property "Reference" "C404"
+			(at 212.09 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n / 10V"
+			(at 212.09 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 208.28 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 208.28 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 208.28 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Contract" "docs/design/peripherals_contract.json"
+			(at 208.28 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "FootprintStatus" "Assigned standard; prototype validation required"
+			(at 208.28 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "CC0603KRX7R9BB104"
+			(at 208.28 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Population" "fitted"
+			(at 208.28 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "100nF 10V X7R"
+			(at 208.28 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "tinkerbadge"
+				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/5fe598f7-ccee-40ac-b6d4-b849f03753e0"
+					(reference "C404")
+					(unit 1)
+				)
+			)
+		)
+		(property "LCSC" "C14663"
+			(at 208.28 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 208.28 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Tinkerbadge_Peripherals:WS2812C-2020-V6")
+		(at 236.22 88.9 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3fbff24c-e09c-4654-b865-867f328f58ca")
+		(property "Reference" "D405"
+			(at 236.22 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812C-2020-V6"
+			(at 236.22 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Tinkerbadge:WS2812C-2020-V6_Reviewed"
+			(at 236.22 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/8c7f104c99e52e4adb687ae84e594e95.pdf?productCode=C55109522"
+			(at 236.22 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 236.22 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Contract" "docs/design/peripherals_contract.json"
+			(at 236.22 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "FootprintStatus" "UNASSIGNED: physical footprint/mating release gate"
+			(at 236.22 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "WS2812C-2020-V6"
+			(at 236.22 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Population" "fitted"
+			(at 236.22 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "2020 four-pad"
+			(at 236.22 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "tinkerbadge"
+				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/5fe598f7-ccee-40ac-b6d4-b849f03753e0"
+					(reference "D405")
+					(unit 1)
+				)
+			)
+		)
+		(property "LCSC" "C55109522"
+			(at 236.22 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 236.22 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 251.46 67.31 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d0213683-e877-412f-abd0-8a189acd62a7")
+		(property "Reference" "C405"
+			(at 255.27 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n / 10V"
+			(at 255.27 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 251.46 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 251.46 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 251.46 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Contract" "docs/design/peripherals_contract.json"
+			(at 251.46 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "FootprintStatus" "Assigned standard; prototype validation required"
+			(at 251.46 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "CC0603KRX7R9BB104"
+			(at 251.46 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Population" "fitted"
+			(at 251.46 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "100nF 10V X7R"
+			(at 251.46 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "tinkerbadge"
+				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/5fe598f7-ccee-40ac-b6d4-b849f03753e0"
+					(reference "C405")
+					(unit 1)
+				)
+			)
+		)
+		(property "LCSC" "C14663"
+			(at 251.46 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 251.46 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Tinkerbadge_Peripherals:WS2812C-2020-V6")
+		(at 279.4 88.9 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "57b847d1-e438-4340-917b-6a09b8696c49")
+		(property "Reference" "D406"
+			(at 279.4 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812C-2020-V6"
+			(at 279.4 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Tinkerbadge:WS2812C-2020-V6_Reviewed"
+			(at 279.4 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/8c7f104c99e52e4adb687ae84e594e95.pdf?productCode=C55109522"
+			(at 279.4 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 279.4 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Contract" "docs/design/peripherals_contract.json"
+			(at 279.4 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "FootprintStatus" "UNASSIGNED: physical footprint/mating release gate"
+			(at 279.4 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "WS2812C-2020-V6"
+			(at 279.4 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Population" "fitted"
+			(at 279.4 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "2020 four-pad"
+			(at 279.4 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "tinkerbadge"
+				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/5fe598f7-ccee-40ac-b6d4-b849f03753e0"
+					(reference "D406")
+					(unit 1)
+				)
+			)
+		)
+		(property "LCSC" "C55109522"
+			(at 279.4 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 279.4 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 294.64 67.31 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7ed5823b-ebec-49a8-9965-5ac43cda0255")
+		(property "Reference" "C406"
+			(at 298.45 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n / 10V"
+			(at 298.45 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 294.64 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 294.64 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 294.64 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Contract" "docs/design/peripherals_contract.json"
+			(at 294.64 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "FootprintStatus" "Assigned standard; prototype validation required"
+			(at 294.64 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "CC0603KRX7R9BB104"
+			(at 294.64 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Population" "fitted"
+			(at 294.64 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "100nF 10V X7R"
+			(at 294.64 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "tinkerbadge"
+				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/5fe598f7-ccee-40ac-b6d4-b849f03753e0"
+					(reference "C406")
+					(unit 1)
+				)
+			)
+		)
+		(property "LCSC" "C14663"
+			(at 294.64 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 294.64 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Tinkerbadge_Peripherals:WS2812C-2020-V6")
+		(at 322.58 88.9 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "079a81e2-b025-42c3-b524-da3e1e67787b")
+		(property "Reference" "D407"
+			(at 322.58 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812C-2020-V6"
+			(at 322.58 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Tinkerbadge:WS2812C-2020-V6_Reviewed"
+			(at 322.58 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/8c7f104c99e52e4adb687ae84e594e95.pdf?productCode=C55109522"
+			(at 322.58 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 322.58 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Contract" "docs/design/peripherals_contract.json"
+			(at 322.58 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "FootprintStatus" "UNASSIGNED: physical footprint/mating release gate"
+			(at 322.58 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "WS2812C-2020-V6"
+			(at 322.58 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Population" "fitted"
+			(at 322.58 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "2020 four-pad"
+			(at 322.58 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "tinkerbadge"
+				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/5fe598f7-ccee-40ac-b6d4-b849f03753e0"
+					(reference "D407")
+					(unit 1)
+				)
+			)
+		)
+		(property "LCSC" "C55109522"
+			(at 322.58 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 322.58 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 337.82 67.31 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f5290790-4b0b-4460-afcc-21a468ca9223")
+		(property "Reference" "C407"
+			(at 341.63 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n / 10V"
+			(at 341.63 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 337.82 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 337.82 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 337.82 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Contract" "docs/design/peripherals_contract.json"
+			(at 337.82 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "FootprintStatus" "Assigned standard; prototype validation required"
+			(at 337.82 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "CC0603KRX7R9BB104"
+			(at 337.82 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Population" "fitted"
+			(at 337.82 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "100nF 10V X7R"
+			(at 337.82 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "tinkerbadge"
+				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/5fe598f7-ccee-40ac-b6d4-b849f03753e0"
+					(reference "C407")
+					(unit 1)
+				)
+			)
+		)
+		(property "LCSC" "C14663"
+			(at 337.82 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 337.82 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Tinkerbadge_Peripherals:WS2812C-2020-V6")
+		(at 365.76 88.9 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "95d82901-54d6-4e84-ae31-a1456d937b3a")
+		(property "Reference" "D408"
+			(at 365.76 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812C-2020-V6"
+			(at 365.76 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Tinkerbadge:WS2812C-2020-V6_Reviewed"
+			(at 365.76 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/8c7f104c99e52e4adb687ae84e594e95.pdf?productCode=C55109522"
+			(at 365.76 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 365.76 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Contract" "docs/design/peripherals_contract.json"
+			(at 365.76 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "FootprintStatus" "UNASSIGNED: physical footprint/mating release gate"
+			(at 365.76 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "WS2812C-2020-V6"
+			(at 365.76 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Population" "fitted"
+			(at 365.76 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "2020 four-pad"
+			(at 365.76 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "tinkerbadge"
+				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/5fe598f7-ccee-40ac-b6d4-b849f03753e0"
+					(reference "D408")
+					(unit 1)
+				)
+			)
+		)
+		(property "LCSC" "C55109522"
+			(at 365.76 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 365.76 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 381 67.31 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c65ba0cf-5db0-4f3f-8aad-925d8e81c9a7")
+		(property "Reference" "C408"
+			(at 384.81 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n / 10V"
+			(at 384.81 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 381 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 381 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 381 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Contract" "docs/design/peripherals_contract.json"
+			(at 381 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "FootprintStatus" "Assigned standard; prototype validation required"
+			(at 381 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "CC0603KRX7R9BB104"
+			(at 381 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Population" "fitted"
+			(at 381 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "100nF 10V X7R"
+			(at 381 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "tinkerbadge"
+				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/5fe598f7-ccee-40ac-b6d4-b849f03753e0"
+					(reference "C408")
+					(unit 1)
+				)
+			)
+		)
+		(property "LCSC" "C14663"
+			(at 381 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 381 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 25.4 66.04 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "88c2bbba-3f72-4e54-af34-d23a1434378d")
+		(property "Reference" "C409"
+			(at 29.21 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "22u / 10V"
+			(at 29.21 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 25.4 66.04 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 25.4 66.04 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 25.4 66.04 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Contract" "docs/design/peripherals_contract.json"
+			(at 25.4 66.04 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "FootprintStatus" "Assigned standard; prototype validation required"
+			(at 25.4 66.04 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "CL21A226MAQNNNE"
+			(at 25.4 66.04 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Population" "fitted"
+			(at 25.4 66.04 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "22uF 10V X7R"
+			(at 25.4 66.04 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "tinkerbadge"
+				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/5fe598f7-ccee-40ac-b6d4-b849f03753e0"
+					(reference "C409")
+					(unit 1)
+				)
+			)
+		)
+		(property "LCSC" "C45783"
+			(at 25.4 66.04 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 25.4 66.04 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 40.64 88.9 90)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "300dae51-a13c-4db1-88ab-f19fe781fe7f")
+		(property "Reference" "R401"
+			(at 36.83 78.74 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "330"
+			(at 36.83 81.28 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 40.64 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 40.64 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 40.64 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Contract" "docs/design/peripherals_contract.json"
+			(at 40.64 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "FootprintStatus" "Assigned standard; prototype validation required"
+			(at 40.64 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0603WAF3300T5E"
+			(at 40.64 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Population" "fitted"
+			(at 40.64 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "330R 1%"
+			(at 40.64 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "tinkerbadge"
+				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/5fe598f7-ccee-40ac-b6d4-b849f03753e0"
+					(reference "R401")
+					(unit 1)
+				)
+			)
+		)
+		(property "LCSC" "C23138"
+			(at 40.64 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 40.64 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 48.26 104.14 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6d0a897b-8339-4205-9293-a0bf04a5e6ec")
+		(property "Reference" "R402"
+			(at 52.07 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100k"
+			(at 52.07 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 48.26 104.14 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 48.26 104.14 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 48.26 104.14 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Contract" "docs/design/peripherals_contract.json"
+			(at 48.26 104.14 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "FootprintStatus" "Assigned standard; prototype validation required"
+			(at 48.26 104.14 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0603WAF1003T5E"
+			(at 48.26 104.14 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Population" "fitted"
+			(at 48.26 104.14 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "100k 1%"
+			(at 48.26 104.14 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "tinkerbadge"
+				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/5fe598f7-ccee-40ac-b6d4-b849f03753e0"
+					(reference "R402")
+					(unit 1)
+				)
+			)
+		)
+		(property "LCSC" "C25803"
+			(at 48.26 104.14 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 48.26 104.14 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Tinkerbadge_Peripherals:HSMF-C165")
+		(at 104.14 181.61 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c063abba-7db0-422d-8faa-eae02272c963")
+		(property "Reference" "D409"
+			(at 104.14 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "HSMF-C165"
+			(at 104.14 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Tinkerbadge:HSMF-C165"
+			(at 104.14 181.61 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://docs.broadcom.com/doc/AV02-0584EN"
+			(at 104.14 181.61 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 104.14 181.61 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Contract" "docs/design/peripherals_contract.json"
+			(at 104.14 181.61 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "FootprintStatus" "UNASSIGNED: physical footprint/mating release gate"
+			(at 104.14 181.61 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "HSMF-C165"
+			(at 104.14 181.61 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Population" "fitted"
+			(at 104.14 181.61 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "0603 four-pad"
+			(at 104.14 181.61 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "tinkerbadge"
+				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/5fe598f7-ccee-40ac-b6d4-b849f03753e0"
+					(reference "D409")
+					(unit 1)
+				)
+			)
+		)
+		(property "LCSC" "C188726"
+			(at 104.14 181.61 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 104.14 181.61 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 76.2 179.07 90)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "81dd42ef-a9f9-4e53-845f-d2c6696b877d")
+		(property "Reference" "R403"
+			(at 73.66 170.18 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "2.2k"
+			(at 73.66 172.72 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 76.2 179.07 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 76.2 179.07 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 76.2 179.07 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Contract" "docs/design/peripherals_contract.json"
+			(at 76.2 179.07 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "FootprintStatus" "Assigned standard; prototype validation required"
+			(at 76.2 179.07 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0603WAF2201T5E"
+			(at 76.2 179.07 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Population" "fitted"
+			(at 76.2 179.07 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "2.2k 1%"
+			(at 76.2 179.07 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "tinkerbadge"
+				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/5fe598f7-ccee-40ac-b6d4-b849f03753e0"
+					(reference "R403")
+					(unit 1)
+				)
+			)
+		)
+		(property "LCSC" "C4190"
+			(at 76.2 179.07 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 76.2 179.07 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 76.2 184.15 90)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e08f16d3-8a2e-40e3-836d-9531d6187e09")
+		(property "Reference" "R404"
+			(at 73.66 189.23 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "2.2k"
+			(at 73.66 191.77 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 76.2 184.15 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 76.2 184.15 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 76.2 184.15 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Contract" "docs/design/peripherals_contract.json"
+			(at 76.2 184.15 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "FootprintStatus" "Assigned standard; prototype validation required"
+			(at 76.2 184.15 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0603WAF2201T5E"
+			(at 76.2 184.15 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Population" "fitted"
+			(at 76.2 184.15 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "2.2k 1%"
+			(at 76.2 184.15 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "tinkerbadge"
+				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/5fe598f7-ccee-40ac-b6d4-b849f03753e0"
+					(reference "R404")
+					(unit 1)
+				)
+			)
+		)
+		(property "LCSC" "C4190"
+			(at 76.2 184.15 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 76.2 184.15 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 50.8 198.12 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "69261774-a775-4e8a-a82f-274ee79ac06e")
+		(property "Reference" "R405"
+			(at 54.61 196.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100k"
+			(at 54.61 199.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 50.8 198.12 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 50.8 198.12 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 50.8 198.12 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Contract" "docs/design/peripherals_contract.json"
+			(at 50.8 198.12 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "FootprintStatus" "Assigned standard; prototype validation required"
+			(at 50.8 198.12 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0603WAF1003T5E"
+			(at 50.8 198.12 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Population" "fitted"
+			(at 50.8 198.12 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "100k 1%"
+			(at 50.8 198.12 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "tinkerbadge"
+				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/5fe598f7-ccee-40ac-b6d4-b849f03753e0"
+					(reference "R405")
+					(unit 1)
+				)
+			)
+		)
+		(property "LCSC" "C25803"
+			(at 50.8 198.12 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 50.8 198.12 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 63.5 210.82 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d21158cc-c8d2-4980-ab09-1f35ea39b295")
+		(property "Reference" "R406"
+			(at 67.31 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100k"
+			(at 67.31 212.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 63.5 210.82 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 63.5 210.82 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 63.5 210.82 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Contract" "docs/design/peripherals_contract.json"
+			(at 63.5 210.82 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "FootprintStatus" "Assigned standard; prototype validation required"
+			(at 63.5 210.82 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0603WAF1003T5E"
+			(at 63.5 210.82 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Population" "fitted"
+			(at 63.5 210.82 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "100k 1%"
+			(at 63.5 210.82 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "tinkerbadge"
+				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/5fe598f7-ccee-40ac-b6d4-b849f03753e0"
+					(reference "R406")
+					(unit 1)
+				)
+			)
+		)
+		(property "LCSC" "C25803"
+			(at 63.5 210.82 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 63.5 210.82 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 220.98 177.8 90)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6c04787d-dc46-44ef-80f6-951f8c05e769")
+		(property "Reference" "R411"
+			(at 217.17 167.64 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "330"
+			(at 217.17 170.18 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 220.98 177.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 220.98 177.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 220.98 177.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Contract" "docs/design/peripherals_contract.json"
+			(at 220.98 177.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "FootprintStatus" "Assigned standard; prototype validation required"
+			(at 220.98 177.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0603WAF3300T5E"
+			(at 220.98 177.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Population" "fitted"
+			(at 220.98 177.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "330R 1%"
+			(at 220.98 177.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "tinkerbadge"
+				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/5fe598f7-ccee-40ac-b6d4-b849f03753e0"
+					(reference "R411")
+					(unit 1)
+				)
+			)
+		)
+		(property "LCSC" "C23138"
+			(at 220.98 177.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 220.98 177.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 243.84 157.48 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8d1084cb-1fc5-4d51-acfa-8f7fd878e0b9")
+		(property "Reference" "R412"
+			(at 247.65 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100k"
+			(at 247.65 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 243.84 157.48 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 243.84 157.48 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 243.84 157.48 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Contract" "docs/design/peripherals_contract.json"
+			(at 243.84 157.48 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "FootprintStatus" "Assigned standard; prototype validation required"
+			(at 243.84 157.48 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0603WAF1003T5E"
+			(at 243.84 157.48 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Population" "fitted"
+			(at 243.84 157.48 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "100k 1%"
+			(at 243.84 157.48 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "tinkerbadge"
+				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/5fe598f7-ccee-40ac-b6d4-b849f03753e0"
+					(reference "R412")
+					(unit 1)
+				)
+			)
+		)
+		(property "LCSC" "C25803"
+			(at 243.84 157.48 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 243.84 157.48 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 243.84 191.77 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "bb6facfa-6c18-4cc8-89eb-d33400937910")
+		(property "Reference" "C411"
+			(at 247.65 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n / 10V"
+			(at 247.65 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 243.84 191.77 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 243.84 191.77 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 243.84 191.77 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Contract" "docs/design/peripherals_contract.json"
+			(at 243.84 191.77 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "FootprintStatus" "Assigned standard; prototype validation required"
+			(at 243.84 191.77 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "CC0603KRX7R9BB104"
+			(at 243.84 191.77 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Population" "fitted"
+			(at 243.84 191.77 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "100nF 10V X7R"
+			(at 243.84 191.77 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "tinkerbadge"
+				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/5fe598f7-ccee-40ac-b6d4-b849f03753e0"
+					(reference "C411")
+					(unit 1)
+				)
+			)
+		)
+		(property "LCSC" "C14663"
+			(at 243.84 191.77 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 243.84 191.77 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 322.58 177.8 90)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d6ffbe92-4b1f-4cd9-9300-d5477541ef07")
+		(property "Reference" "R413"
+			(at 318.77 167.64 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "330"
+			(at 318.77 170.18 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 322.58 177.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 322.58 177.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 322.58 177.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Contract" "docs/design/peripherals_contract.json"
+			(at 322.58 177.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "FootprintStatus" "Assigned standard; prototype validation required"
+			(at 322.58 177.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0603WAF3300T5E"
+			(at 322.58 177.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Population" "fitted"
+			(at 322.58 177.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "330R 1%"
+			(at 322.58 177.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "tinkerbadge"
+				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/5fe598f7-ccee-40ac-b6d4-b849f03753e0"
+					(reference "R413")
+					(unit 1)
+				)
+			)
+		)
+		(property "LCSC" "C23138"
+			(at 322.58 177.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 322.58 177.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 345.44 191.77 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "29f1b8df-813e-4c12-b886-c5d5e7c35207")
+		(property "Reference" "C412"
+			(at 349.25 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n / 10V"
+			(at 349.25 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 345.44 191.77 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 345.44 191.77 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 345.44 191.77 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Contract" "docs/design/peripherals_contract.json"
+			(at 345.44 191.77 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "FootprintStatus" "Assigned standard; prototype validation required"
+			(at 345.44 191.77 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "CC0603KRX7R9BB104"
+			(at 345.44 191.77 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Population" "fitted"
+			(at 345.44 191.77 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "100nF 10V X7R"
+			(at 345.44 191.77 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "tinkerbadge"
+				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/5fe598f7-ccee-40ac-b6d4-b849f03753e0"
+					(reference "C412")
+					(unit 1)
+				)
+			)
+		)
+		(property "LCSC" "C14663"
+			(at 345.44 191.77 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 345.44 191.77 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 78.74 76.2 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2c3ab8b3-7ed6-4165-8948-4384a625b9f0")
+		(property "Reference" "#PWR001"
+			(at 78.74 82.55 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 78.74 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 78.74 76.2 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 78.74 76.2 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 78.74 76.2 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "tinkerbadge"
+				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/5fe598f7-ccee-40ac-b6d4-b849f03753e0"
+					(reference "#PWR001")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 63.5 105.41 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "387584c3-83fa-401f-bc80-8d0cc3e90f9a")
+		(property "Reference" "#PWR002"
+			(at 63.5 111.76 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 63.5 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 63.5 105.41 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 63.5 105.41 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 63.5 105.41 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "tinkerbadge"
+				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/5fe598f7-ccee-40ac-b6d4-b849f03753e0"
+					(reference "#PWR002")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 121.92 76.2 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f3b75047-3882-4548-a3c3-47a99414879e")
+		(property "Reference" "#PWR003"
+			(at 121.92 82.55 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 121.92 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 121.92 76.2 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 121.92 76.2 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 121.92 76.2 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "tinkerbadge"
+				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/5fe598f7-ccee-40ac-b6d4-b849f03753e0"
+					(reference "#PWR003")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 106.68 105.41 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "59bc407c-aed8-42be-b26b-ea1247d32515")
+		(property "Reference" "#PWR004"
+			(at 106.68 111.76 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 106.68 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 106.68 105.41 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 106.68 105.41 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 106.68 105.41 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "tinkerbadge"
+				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/5fe598f7-ccee-40ac-b6d4-b849f03753e0"
+					(reference "#PWR004")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 165.1 76.2 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6c5b79e1-b360-43ff-ade0-a091de417185")
+		(property "Reference" "#PWR005"
+			(at 165.1 82.55 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 165.1 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 165.1 76.2 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 165.1 76.2 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 165.1 76.2 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "tinkerbadge"
+				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/5fe598f7-ccee-40ac-b6d4-b849f03753e0"
+					(reference "#PWR005")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 149.86 105.41 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e5ad4a6b-6a99-4d44-b2fd-b0e19b1d393c")
+		(property "Reference" "#PWR006"
+			(at 149.86 111.76 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 149.86 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 149.86 105.41 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 149.86 105.41 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 149.86 105.41 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "tinkerbadge"
+				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/5fe598f7-ccee-40ac-b6d4-b849f03753e0"
+					(reference "#PWR006")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 208.28 76.2 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "73cc17bc-fa56-4223-8bcc-fe83f9bcf214")
+		(property "Reference" "#PWR007"
+			(at 208.28 82.55 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 208.28 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 208.28 76.2 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 208.28 76.2 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 208.28 76.2 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "tinkerbadge"
+				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/5fe598f7-ccee-40ac-b6d4-b849f03753e0"
+					(reference "#PWR007")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 193.04 105.41 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1347d609-76fb-495a-9728-94808fc27b39")
+		(property "Reference" "#PWR008"
+			(at 193.04 111.76 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 193.04 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 193.04 105.41 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 193.04 105.41 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 193.04 105.41 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "tinkerbadge"
+				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/5fe598f7-ccee-40ac-b6d4-b849f03753e0"
+					(reference "#PWR008")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 251.46 76.2 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5c42980c-4d98-4985-b273-a6ff91c03651")
+		(property "Reference" "#PWR009"
+			(at 251.46 82.55 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 251.46 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 251.46 76.2 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 251.46 76.2 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 251.46 76.2 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "tinkerbadge"
+				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/5fe598f7-ccee-40ac-b6d4-b849f03753e0"
+					(reference "#PWR009")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 236.22 105.41 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "17e254c2-f980-4b95-81b5-7e789cd2c686")
+		(property "Reference" "#PWR010"
+			(at 236.22 111.76 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 236.22 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 236.22 105.41 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 236.22 105.41 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 236.22 105.41 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "tinkerbadge"
+				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/5fe598f7-ccee-40ac-b6d4-b849f03753e0"
+					(reference "#PWR010")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 294.64 76.2 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2831a7ab-5f50-4e4d-9417-79d4fc144781")
+		(property "Reference" "#PWR011"
+			(at 294.64 82.55 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 294.64 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 294.64 76.2 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 294.64 76.2 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 294.64 76.2 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "tinkerbadge"
+				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/5fe598f7-ccee-40ac-b6d4-b849f03753e0"
+					(reference "#PWR011")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 279.4 105.41 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "bd646a0c-4733-4c6b-94f7-0b893c042cf3")
+		(property "Reference" "#PWR012"
+			(at 279.4 111.76 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 279.4 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 279.4 105.41 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 279.4 105.41 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 279.4 105.41 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "tinkerbadge"
+				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/5fe598f7-ccee-40ac-b6d4-b849f03753e0"
+					(reference "#PWR012")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 337.82 76.2 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "56463f59-43cf-4369-a6c7-bb81512af822")
+		(property "Reference" "#PWR013"
+			(at 337.82 82.55 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 337.82 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 337.82 76.2 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 337.82 76.2 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 337.82 76.2 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "tinkerbadge"
+				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/5fe598f7-ccee-40ac-b6d4-b849f03753e0"
+					(reference "#PWR013")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 322.58 105.41 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4f7d16a6-33f9-4f56-bf53-b5e3cd131358")
+		(property "Reference" "#PWR014"
+			(at 322.58 111.76 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 322.58 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 322.58 105.41 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 322.58 105.41 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 322.58 105.41 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "tinkerbadge"
+				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/5fe598f7-ccee-40ac-b6d4-b849f03753e0"
+					(reference "#PWR014")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 381 76.2 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8217ae0f-bf9c-4258-922b-3b561107ad41")
+		(property "Reference" "#PWR015"
+			(at 381 82.55 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 381 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 381 76.2 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 381 76.2 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 381 76.2 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "tinkerbadge"
+				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/5fe598f7-ccee-40ac-b6d4-b849f03753e0"
+					(reference "#PWR015")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 365.76 105.41 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "55e35f22-5b27-4718-9c91-140cc88b90eb")
+		(property "Reference" "#PWR016"
+			(at 365.76 111.76 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 365.76 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 365.76 105.41 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 365.76 105.41 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 365.76 105.41 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "tinkerbadge"
+				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/5fe598f7-ccee-40ac-b6d4-b849f03753e0"
+					(reference "#PWR016")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 25.4 76.2 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d1d95b9f-04ba-4ea5-ac60-d231394d0065")
+		(property "Reference" "#PWR017"
+			(at 25.4 82.55 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 25.4 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 25.4 76.2 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 25.4 76.2 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 25.4 76.2 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "tinkerbadge"
+				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/5fe598f7-ccee-40ac-b6d4-b849f03753e0"
+					(reference "#PWR017")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 48.26 115.57 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8fbeff60-ea9f-4691-89d6-593e05233721")
+		(property "Reference" "#PWR018"
+			(at 48.26 121.92 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 48.26 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 48.26 115.57 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 48.26 115.57 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 48.26 115.57 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "tinkerbadge"
+				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/5fe598f7-ccee-40ac-b6d4-b849f03753e0"
+					(reference "#PWR018")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 50.8 220.98 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "31154542-7d29-442c-9afb-df462b91cd35")
+		(property "Reference" "#PWR019"
+			(at 50.8 227.33 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 50.8 224.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 50.8 220.98 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 50.8 220.98 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 50.8 220.98 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "tinkerbadge"
+				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/5fe598f7-ccee-40ac-b6d4-b849f03753e0"
+					(reference "#PWR019")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 63.5 220.98 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "49deba6e-1bf9-46d6-81c3-fabfea8738f5")
+		(property "Reference" "#PWR020"
+			(at 63.5 227.33 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 63.5 224.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 63.5 220.98 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 63.5 220.98 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 63.5 220.98 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "tinkerbadge"
+				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/5fe598f7-ccee-40ac-b6d4-b849f03753e0"
+					(reference "#PWR020")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 127 201.93 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3ab572a3-bf5a-4ddd-a559-6224c39edc07")
+		(property "Reference" "#PWR021"
+			(at 127 208.28 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 127 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 127 201.93 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 127 201.93 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 127 201.93 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "tinkerbadge"
+				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/5fe598f7-ccee-40ac-b6d4-b849f03753e0"
+					(reference "#PWR021")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 243.84 148.59 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "05d747da-2556-401e-9f3c-0e8c467276a3")
+		(property "Reference" "#PWR022"
+			(at 243.84 152.4 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 243.84 145.034 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 243.84 148.59 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 243.84 148.59 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 243.84 148.59 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "tinkerbadge"
+				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/5fe598f7-ccee-40ac-b6d4-b849f03753e0"
+					(reference "#PWR022")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 243.84 200.66 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c8c3cf6b-bd98-465d-9d1f-3be5daa16f2a")
+		(property "Reference" "#PWR023"
+			(at 243.84 207.01 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 243.84 204.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 243.84 200.66 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 243.84 200.66 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 243.84 200.66 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "tinkerbadge"
+				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/5fe598f7-ccee-40ac-b6d4-b849f03753e0"
+					(reference "#PWR023")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 185.42 200.66 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c4c28a6e-1ddb-4e23-9637-25318fe1d904")
+		(property "Reference" "#PWR024"
+			(at 185.42 207.01 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 185.42 204.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 185.42 200.66 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 185.42 200.66 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 185.42 200.66 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "tinkerbadge"
+				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/5fe598f7-ccee-40ac-b6d4-b849f03753e0"
+					(reference "#PWR024")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 345.44 200.66 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "55cb10bf-d33d-48ab-b5ff-f8b6a6a67a83")
+		(property "Reference" "#PWR026"
+			(at 345.44 207.01 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 345.44 204.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 345.44 200.66 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 345.44 200.66 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 345.44 200.66 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "tinkerbadge"
+				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/5fe598f7-ccee-40ac-b6d4-b849f03753e0"
+					(reference "#PWR026")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 287.02 200.66 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "fd1be6bb-b96d-458b-8ca3-d0987c5e0f1d")
+		(property "Reference" "#PWR027"
+			(at 287.02 207.01 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 287.02 204.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 287.02 200.66 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 287.02 200.66 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 287.02 200.66 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "tinkerbadge"
+				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/5fe598f7-ccee-40ac-b6d4-b849f03753e0"
+					(reference "#PWR027")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 25.4 55.88 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "eef93690-c6b5-4643-a880-a94f512f7386")
+		(property "Reference" "#PWR028"
+			(at 25.4 59.69 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 25.4 52.324 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 25.4 55.88 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 25.4 55.88 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 25.4 55.88 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "tinkerbadge"
+				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/5fe598f7-ccee-40ac-b6d4-b849f03753e0"
+					(reference "#PWR028")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Tinkerbadge_Peripherals:SKSCLBE010")
+		(at 195.58 177.8 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8b11c169-0545-492f-8e05-2190c2374b08")
+		(property "Reference" "SW401"
+			(at 195.58 207.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SKSCLBE010"
+			(at 195.58 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Tinkerbadge:SKSCLBE010"
+			(at 195.58 177.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://tech.alpsalpine.com/cms.media/product_spec_sksclbe010_en_f052c78d76.pdf"
+			(at 195.58 177.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 195.58 177.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ApplicationStatus" "Prototype candidate: KSC-701p5D11 continuous voltage and A2 capacitive load require qualification"
+			(at 195.58 177.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Contract" "docs/design/peripherals_contract.json"
+			(at 195.58 177.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "FootprintStatus" "UNASSIGNED: exact pads/locating holes/half-mount edge/case fit require physical acceptance"
+			(at 195.58 177.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB" "C115361"
+			(at 195.58 177.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C115361"
+			(at 195.58 177.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "SKSCLBE010"
+			(at 195.58 177.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Alps Alpine"
+			(at 195.58 177.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Population" "fitted"
+			(at 195.58 177.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "12VDC/50mA max;1VDC/10uA min;2.2+/-0.65N;four terminals;side push;guide bosses"
+			(at 195.58 177.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "tinkerbadge"
+				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/5fe598f7-ccee-40ac-b6d4-b849f03753e0"
+					(reference "SW401")
+					(unit 1)
+				)
+			)
+		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 195.58 177.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Tinkerbadge_Peripherals:SKSCLBE010")
+		(at 297.18 177.8 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3c04b2b6-5f10-44cf-b689-20503ea42c09")
+		(property "Reference" "SW402"
+			(at 297.18 207.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SKSCLBE010"
+			(at 297.18 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Tinkerbadge:SKSCLBE010"
+			(at 297.18 177.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://tech.alpsalpine.com/cms.media/product_spec_sksclbe010_en_f052c78d76.pdf"
+			(at 297.18 177.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 297.18 177.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "tinkerbadge"
+				(path "/2cafc24f-5f58-4208-af45-60e1655dc09b/5fe598f7-ccee-40ac-b6d4-b849f03753e0"
+					(reference "SW402")
+					(unit 1)
+				)
+			)
+		)
+		(property "ApplicationStatus" "Prototype candidate: KSC-701p5D11 continuous voltage and A2 capacitive load require qualification"
+			(at 297.18 177.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Contract" "docs/design/peripherals_contract.json"
+			(at 297.18 177.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "FootprintStatus" "UNASSIGNED: exact pads/locating holes/half-mount edge/case fit require physical acceptance"
+			(at 297.18 177.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB" "C115361"
+			(at 297.18 177.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C115361"
+			(at 297.18 177.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "SKSCLBE010"
+			(at 297.18 177.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Alps Alpine"
+			(at 297.18 177.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Population" "fitted"
+			(at 297.18 177.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "12VDC/50mA max;1VDC/10uA min;2.2+/-0.65N;four terminals;side push;guide bosses"
+			(at 297.18 177.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "JLCPCB SMT"
+			(at 297.18 177.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(rectangle
+		(start 17.78 27.94)
+		(end 400.05 124.46)
+		(stroke
+			(width 0.1778)
+			(type dash)
+			(color 230 0 255 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "7e2e7922-439e-5770-9870-99fd55ce678c")
+	)
+	(rectangle
+		(start 17.78 134.62)
+		(end 170.18 238.76)
+		(stroke
+			(width 0.1778)
+			(type dash)
+			(color 230 0 255 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "2d3f56b9-f952-54a4-873d-f6951fd8b159")
+	)
+	(rectangle
+		(start 175.26 134.62)
+		(end 400.05 238.76)
+		(stroke
+			(width 0.1778)
+			(type dash)
+			(color 230 0 255 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "256a4056-8802-56bc-beeb-a463a31e2abd")
+	)
+	(text "BTN_B_N is GPIO0: holding B through a reset enters ROM download. Pull-up R202 is on the processor sheet."
+		(exclude_from_sim no)
+		(at 292.1 200.66 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d695174c-5931-4e76-ab40-f4873f819a1c")
+	)
+)

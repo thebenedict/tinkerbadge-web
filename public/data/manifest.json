@@ -10,9 +10,9 @@
   },
   "defaultVariant": "badge",
   "snapshot": {
-    "id": "bf93f73b5ee5",
-    "inputId": "4ddf6e93e29e",
-    "createdAt": "2026-11-12T01:21:44Z",
+    "id": "151a46265bed",
+    "inputId": "1bd636a4ac1d",
+    "createdAt": "2026-11-12T02:29:26Z",
     "sourceCommit": null,
     "sourceHashes": {
       "LICENSE": "eeecc593866fa1c3b80189c7e3dc0ceb77740557fa92f81771f891cc54c579cb",
@@ -83,66 +83,52 @@
       "docs/design/verification.md": "74650e533abb8a341a345b407fef1d58b0cbde10f6376a56f5b1590f939112c4",
       "docs/pinouts.md": "252c8d851270d8dbd13cfd12ba55dc48a0729733859a2e43b5cc4c4c128b55a7",
       "docs/review/design_review_2026-11-11.md": "3272918b4c2acd4455a4ab03d068fc9ad5fb8e869d487a6ddf1cf59e6cef6366",
-      "docs/spec.md": "6850bfdcc9dedbbabed985a22bcba0d38fc7c46dc8b58e3766689d64e54da669",
+      "docs/spec.md": "6a6bbdeab30f5c0da3a433ea519da60418233a89dcbf6f0c608137928e0d8b7f",
       "fp-lib-table": "9f1b52b68663c701e8fbfa899a34c55cdf57899de84fbf87a376b6a2a4203165",
       "lighting.kicad_sch": "2e2385b5fcc9472119cf8af29c0389abf0b0a0b7f114265440a87d2117b5a525",
       "mcu.kicad_sch": "387a0e62fa7fc6014b827d9876cba0442cd5e2df89de46d974fbaa86a8d73434",
-      "mechanical/enclosure/README.md": "47676a9af8c297b83e1e880daa10e305db8ae6884e342e16ef5e8b48c78c0a28",
-      "mechanical/enclosure/build.py": "a63083e698c8ad38c59246784c4ea5c87e6000dae850331a945d22455be2812f",
+      "mechanical/enclosure/README.md": "eccc31ce9738295a52d31b8ff7b583bf94eb789ab2737bc40a786411c08fd42a",
+      "mechanical/enclosure/build.py": "438c1681a195a79872d8a4e29073278a8d0aed6cd2c90bc2cbc30db0fd8e0f2f",
       "mechanical/enclosure/check_native_fit.py": "f2bf8c3819561cf08034f91506de8745e88cf53e9059c2840d32824fd069f6d7",
-      "mechanical/enclosure/exports/affinity-1.step": "87565c3c26cc9aab02ca076eeffa48185cec76091230429c7615585d319f7bbe",
-      "mechanical/enclosure/exports/affinity-1.stl": "8081753949ae7b34f991ba03fd2a5b9efb5e8c785845b828808d0861e8d99e2e",
-      "mechanical/enclosure/exports/affinity-2.step": "d134316a5c222125813f4aa25886a7cad2786168900650180fcf4a3b5ef41809",
-      "mechanical/enclosure/exports/affinity-2.stl": "71006d74b9436a6fa778ebc2995636901c0a0a1c5991f8e62de57c3f32ce01ee",
-      "mechanical/enclosure/exports/affinity-3.step": "fecc066949521535e9a2a65ce71ac173adc55ba81f1b79fc3426a874e088bcd5",
-      "mechanical/enclosure/exports/affinity-3.stl": "8a88247c23bca09c62f7289672368d0533640c3b76aad1fa11b83c5880be318d",
-      "mechanical/enclosure/exports/affinity-4.step": "e4a0f6723ca230caf04afc2beb87847febea38fd766e08464950a2b0652ae14e",
-      "mechanical/enclosure/exports/affinity-4.stl": "ed633c6c2b01db9474bbd0848bf9c070c5ee9e5fb5413887c9cf70aab008b463",
-      "mechanical/enclosure/exports/affinity-5.step": "632106d8fcaa8c49708233a571809942ff76630bc9451693b96ee7954b4020b8",
-      "mechanical/enclosure/exports/affinity-5.stl": "bedb47ec4ac98f1ebbb6928c0bcaa917b895cc5dd4ea3b8459d945cec92383d4",
-      "mechanical/enclosure/exports/battery-guide.step": "53d7b25d35420c22caa4277868085a3f781ef3c96f378c365482274ea135ecb3",
+      "mechanical/enclosure/exports/battery-guide.step": "317888a52100c8dc4e103d6f494e3ed0c0bfd2e2f52127d1cd068b3d6030f1ba",
       "mechanical/enclosure/exports/battery-guide.stl": "998b9c16f28f6c39b84fca9701303d4dc5f6b630613279f54d7200a6702eacae",
-      "mechanical/enclosure/exports/checks.json": "74577cc27f2aef8fe7881362ee60568fcfba6a54b65937702b7db5a4ea8c3289",
-      "mechanical/enclosure/exports/enclosure-cad.zip": "1240321011ec82b05469debdecf25bd80943739d0c39bcb5d8a1422c3a933a89",
-      "mechanical/enclosure/exports/enclosure.glb": "40bc0ab7a14edc6240255d3a27bf870f6bc85c0d2738ed75d21542db1474d31d",
-      "mechanical/enclosure/exports/enclosure.step": "66dc76fffd51f84e66d00b55efdd8bf67de6a6bed637ba39bdacd15b37e7e90d",
-      "mechanical/enclosure/exports/frame.step": "bfc0805d0e34260f1442c5acc969b54887455e411c3f92db88ea3b3d62a7ea1d",
+      "mechanical/enclosure/exports/checks.json": "61d729ccf6dc82b3d65726771672befdf222ed2aea73fde8f5d485ee17252db0",
+      "mechanical/enclosure/exports/enclosure-cad.zip": "187bf7191b911f51dd9e10a63d19b3fac6abc469dda40e6f71fd71d4ac3f9970",
+      "mechanical/enclosure/exports/enclosure.glb": "3d4220c977a6dd2878d6fada0114b4fe1c6c467241fac50ceb3455d16eeeb34b",
+      "mechanical/enclosure/exports/enclosure.step": "f86e1c24ad0151bc3378d34983babda5851dafa435085b5f72b69bb9b31c32bd",
+      "mechanical/enclosure/exports/frame.step": "a769ad65b0c9a7b11cfd95e0b61cc37b96302cecdbd022ad572a8005346cade6",
       "mechanical/enclosure/exports/frame.stl": "0778c18f9fb2025f6fbfb3c898d8bb0e1a9f47d728671e082ef88c882ad4d20f",
-      "mechanical/enclosure/exports/front.dxf": "311e1b72338b0922fcf36f58bc119d6d3195587ce10d221b9aac31f6ec05f08a",
-      "mechanical/enclosure/exports/front.step": "9e24f00eb291fb6fd37cb9f2d9eb9b96306bb239a3996975a24a0d17dc1ece5d",
+      "mechanical/enclosure/exports/front.dxf": "bbf69b5b407ebb3934d15820dc58f818ef074a6551ce438b2f23c42e6c647301",
+      "mechanical/enclosure/exports/front.step": "182f6f1fe805ff4da85e0e002b706f7733f0b238289344d17dba3dd85570bc37",
       "mechanical/enclosure/exports/front.stl": "25c789d9865d1f31d4913223dac08b9ae032163b020363fe855c3218e7d0a12c",
-      "mechanical/enclosure/exports/manifest.json": "d3ebd0d81da4c74441b7ed9bbe6d4fe892cd28be23a9e5cf7ff252c7dc2f251b",
-      "mechanical/enclosure/exports/native-fit.json": "984d6da661a78e5e5ee9c6615630b4bca6323e8400caf57c85adfaa0e867d4b6",
-      "mechanical/enclosure/exports/optical-baffle.step": "1c891a0131ee17be3981bbd6b6ddd147455b4db90b0b467143e2c65de1e6b8b9",
+      "mechanical/enclosure/exports/manifest.json": "4b6773b68a1e94279b347e8f3ef69d27cad18bf8b9a7f967cf64ae65c3a5fc39",
+      "mechanical/enclosure/exports/native-fit.json": "cc74f0a9a30888089cdd894587bf2ad86975995e8b8c31f407d712f215c29d65",
+      "mechanical/enclosure/exports/optical-baffle.step": "90ba23c3382e403e6b2b291e8d68a33e07ae1cdcc7fa7611a3a25e423e081d6c",
       "mechanical/enclosure/exports/optical-baffle.stl": "002ead47c3ba4a8ed3a8ef5be557c5eb36edbe338d27c646aeb58b9060f93c20",
-      "mechanical/enclosure/exports/rear.dxf": "b9eb618b48990b2243a11c11c3a3bd70a9e101b3145b0ac203ce7004c97ad3f2",
-      "mechanical/enclosure/exports/rear.step": "1248f7bb84a776f336f5b8d1bb1d03958bdcc26c9962e509f47eb42eda1c8230",
+      "mechanical/enclosure/exports/rear.dxf": "0d99db05742321d75e73a1dd71dfc203990585df527611b66c20f978269b6553",
+      "mechanical/enclosure/exports/rear.step": "9628efb13473625dcffbcb62a69c0a132e86b1e43e702c33fc5c688307cb6b67",
       "mechanical/enclosure/exports/rear.stl": "b2e25f9c7e0d9fa319061a9424ec683529d6e7a035efac3f6451b4ca719a240c",
-      "mechanical/enclosure/exports/role-left.step": "bfd28fcb003c8170c1ab907e8e96d59e0292794f2b9960823b347e107b337914",
-      "mechanical/enclosure/exports/role-left.stl": "004cb04bf34d0e99d84ffd76860f634ebcb213f913d15c3f7a2fa40c4a40985b",
-      "mechanical/enclosure/exports/role-right.step": "95435eccbb540684e74b1d4f6ee315402e62156ee27d8e74a3519ee05741fa3b",
-      "mechanical/enclosure/exports/role-right.stl": "c17704375c31c46c5aa7c304bb5042851f38749bf6e8704edda313423c0efd04",
-      "mechanical/enclosure/exports/screw-H1.step": "5c07f1cb8c6337a4a2c82784f36d0694f51e6d3ef7868b68feb9002d2ba48c2c",
+      "mechanical/enclosure/exports/screw-H1.step": "75647733da571049c70976b1f3be47a1f6be78228be9c3c65867d3b2cbd2197d",
       "mechanical/enclosure/exports/screw-H1.stl": "a124e757e36d7b9d7d79a138ea25f51467c9efb6def740fe6e30fd6a14a65ade",
-      "mechanical/enclosure/exports/screw-H2.step": "e28444a2cf4158a423c78f3d1b2025a8c6e950b1750b5669dcea26e89619c777",
+      "mechanical/enclosure/exports/screw-H2.step": "bda7bce59fe212b158eac5b7968e4f986d6b2a15c781c485f40f59780bfd232b",
       "mechanical/enclosure/exports/screw-H2.stl": "bd0f1e0be1bc9df7eb4140b54f1d2c6ea7cefa692ac8c1039fa087874be8173e",
-      "mechanical/enclosure/exports/screw-H3.step": "7cdd2e7cdb7b7e0548486bc5a8f7cf37916e999ca4582c4db71b5e26ff5971d0",
+      "mechanical/enclosure/exports/screw-H3.step": "cce4cac9b94bdc2bf28b54a7cf7b253328af07efce94c6d06b3a3843bca63091",
       "mechanical/enclosure/exports/screw-H3.stl": "43145425d859abd848727742931fcf452b5eff7c4274b6678e129f36af82e867",
-      "mechanical/enclosure/exports/screw-H4.step": "5238344a6915f1bb5c283ace7dc73cef3fb2d341a264df1ec6dc81693893fd36",
+      "mechanical/enclosure/exports/screw-H4.step": "f870fa523e0ec918f45a85b003e62132be55722cd21715406f5e94886ad9f0dc",
       "mechanical/enclosure/exports/screw-H4.stl": "b997bf2a186d5522dbc2f86c1ec74522e3edb486fab6218ab0377e8ecc7d94f0",
-      "mechanical/enclosure/exports/support-H1.step": "899215e65ef7b8ddc694ae56d29c406aa7e5189f991e904642867075988197a8",
+      "mechanical/enclosure/exports/support-H1.step": "32b3535913cd72cd15769c595092b8b404ef01b9858eefdf58c14e90b0dd590b",
       "mechanical/enclosure/exports/support-H1.stl": "a05d7c9875c8e88f7c8904eca8d6c9f6b34406120e23b24d1fce3d2e37052b83",
-      "mechanical/enclosure/exports/support-H2.step": "9261572e53e408cc8b3b57b6b754f0407f3163a78c44b5bd7ad5481052b4f20e",
+      "mechanical/enclosure/exports/support-H2.step": "c4a05457eecca14ef3d2041708f5a18b70341d4b0e6e648714f38469954bd17e",
       "mechanical/enclosure/exports/support-H2.stl": "84cb82d63818ddaf29755b2ad0360f2e575578eb89bf3346e10c99773c430de9",
-      "mechanical/enclosure/exports/support-H3.step": "a1adf9d8f73eaabccf9c9ffd08f9a196d4ba475259c8e357e07f64cd4610302e",
+      "mechanical/enclosure/exports/support-H3.step": "e0a86a1bd0c5702557767edfd2200b562c79e1d02f7c1a2b088a1451e8c2db20",
       "mechanical/enclosure/exports/support-H3.stl": "b07ac68990c2176af27ad6d2259669bd489bc5237f9b583dd30e1915a8fd13c1",
-      "mechanical/enclosure/exports/support-H4.step": "f1e62846f66ab20ca7812a1ffc1cf69f543937ce88d78acab582c0cddad7e815",
+      "mechanical/enclosure/exports/support-H4.step": "8af85f184c592f006cea10e36932d66bfd8af40210c3be246d70e1ca4fe4d884",
       "mechanical/enclosure/exports/support-H4.stl": "f76d161b39c2d5a1559f74de2803af31ec3963eb831505ec5db534808851f544",
       "mechanical/enclosure/extract_interfaces.py": "594bf62bc845c7eff79d9b21bd343d5b450d149fe9896042e56c7d66459ae44c",
       "mechanical/enclosure/interfaces.json": "88e17855b5c2577932c10f642c97ee1868e0f80000d00900fe2259c98ac1310e",
-      "mechanical/enclosure/parameters.json": "8f9fd655556a134481f2f20d377dc9a1fc53a308c59d162709a77b850ad53148",
+      "mechanical/enclosure/parameters.json": "c0f5a0a3ef1924f6539c8af1a02892bbce799427afac40ebc79268e5564eee9e",
       "mechanical/enclosure/requirements.txt": "38d14bf52208f48c7263d11edc081334ed154fd0ab5fd26ffc4f9b9492e348f9",
-      "mechanical/enclosure/review.md": "c4e7b1a081c926ceeb9ba87e506525b5fb578e1b6e62df34ae8bd3327d082669",
+      "mechanical/enclosure/review.md": "83df50701b0bb1d41ff51b4fb2f4be7630ced3dfc0af6bc752ea673374f1559f",
       "models/BH1730FVC_WSOF6_visual.wrl": "6c0bced5697be9994bbf32f42f056f300dc4dc0f489bded314046a22c0543ca6",
       "models/BQ24074RGTR_Reviewed_visual.wrl": "df63822ae2c09a45f33bcfda6fd0ab6938df70c2a7bf62faba13732467b39d65",
       "models/HSMF-C165_envelope.wrl": "b5f9023bed8f722cf2ce3a5e44e3d3151d0472cd2111f6a9190c683bc28639c4",
@@ -194,204 +180,190 @@
       "_dependencies/models/f8510481c5044113-C_1210_3225Metric.step": "f8510481c5044113cf49b0fa6dd54ddab9224508bd6808e1afab8ef0cefdefc9"
     },
     "outputHashes": {
-      "data/snapshots/bf93f73b5ee5/badge/board-native.glb": "d8cd334f130e6f935b9fb579562b6a31c3a64ae099492bd810689e8dfffbca4f",
-      "data/snapshots/bf93f73b5ee5/badge/board.glb": "71181bc3c81e716598fb8a1c9bd05878595c106ef5f6389ecb4e9ba157d4bca2",
-      "data/snapshots/bf93f73b5ee5/badge/components.json": "534e2be53be63ac488d6f1aba5cefbd3e3d21ce363eb8cfe1b5bcfb22529bdfc",
-      "data/snapshots/bf93f73b5ee5/badge/layers/B_Cu.svg": "1c930ce347a157f0dcd5d3dba85fefd3d110c75f1259f8c86aad0e07a70ae487",
-      "data/snapshots/bf93f73b5ee5/badge/layers/B_Fab.svg": "ad2693b2110618c227455a48958a858a36a1b0a00918e10c7295749f932d7e95",
-      "data/snapshots/bf93f73b5ee5/badge/layers/B_Mask.svg": "70fd8d5153f1bd4e1056689f4a9a271e1d5f5a39c14a9f6dff704d08eafd1bef",
-      "data/snapshots/bf93f73b5ee5/badge/layers/B_SilkS.svg": "d95d3de2e3b7b60164011c36dfb73daabead8f2d51679aedf3f56514db9a34ef",
-      "data/snapshots/bf93f73b5ee5/badge/layers/Edge_Cuts.svg": "819bbd7c135d9a4b70446ae4aadc85b38c723f7ef0aed6579bcf3c4b37395d16",
-      "data/snapshots/bf93f73b5ee5/badge/layers/F_Cu.svg": "59bbc14bc15b98cf01099d739f7d13dfdf033e23feb4beac81625dc5ccc84fc6",
-      "data/snapshots/bf93f73b5ee5/badge/layers/F_Fab.svg": "a5c7e2906bf9cf4756e089f788d9896f77f8bfa09e356797bf229b41351c1d98",
-      "data/snapshots/bf93f73b5ee5/badge/layers/F_Mask.svg": "49fbc1080a6a831f43ea8595a9627920bead5c74566a205f55c706f53c85d80f",
-      "data/snapshots/bf93f73b5ee5/badge/layers/F_SilkS.svg": "6cbbdb0f4297d1198589497384b25e3d85f0ed88b426e12fabea2f6823374cec",
-      "data/snapshots/bf93f73b5ee5/badge/layers/In1_Cu.svg": "5d19ab31231dd3d66da0036434fad78b42efd6eefe934fa5050173b24f7cf6c0",
-      "data/snapshots/bf93f73b5ee5/badge/layers/In2_Cu.svg": "4c0122a46c0814c099272f5587bb75a9332348ac82ad83e829bad105510d783c",
-      "data/snapshots/bf93f73b5ee5/badge/poster.png": "dd75258b3beb0d16d4e3524d4306c36646ebdfde93a80290e09907fdaa100d82",
-      "data/snapshots/bf93f73b5ee5/badge/schematic/15aada6a873005eb.svg": "12bf6c1d4b49069493ef46623a5d69a178f0ff2d6f518ad94431bb48bc0d4878",
-      "data/snapshots/bf93f73b5ee5/badge/schematic/34e88d34916c4af9.svg": "5199d418ef2b8b2138bcee12194ea6d18761a5e2cfa92942732f676fdcf5803c",
-      "data/snapshots/bf93f73b5ee5/badge/schematic/8134ddf223e03a2b.svg": "b54541dc8f806713dabc17c9cf72e0bb838d5b0355d1d024d674186d5d82284a",
-      "data/snapshots/bf93f73b5ee5/badge/schematic/81c8fb34059608bf.svg": "e003b507729e6e8d8903a1b992f66e398889f4b5b70c69e539e41c8302f4ffa3",
-      "data/snapshots/bf93f73b5ee5/badge/schematic/865f4a27a299e39b.svg": "b628798e27e4064490c456795704e395b2af878406feb931b7b835e1bf39065a",
-      "data/snapshots/bf93f73b5ee5/badge/schematic/f78e42c5695562fd.svg": "6b6bcd0ed502d3e131fd5093f54973833d7798855610f2849b7dd8e1ef92c2b6",
-      "data/snapshots/bf93f73b5ee5/badge/schematic.pdf": "e33c37b6dee5735704e103ce284697451896f93ea98ce488f6b5dec6e42ef9c5",
-      "data/snapshots/bf93f73b5ee5/native-design.zip": "deb440988493818f452ccb45bde796136f797cecef4929d6caa45af57f5b0435",
-      "data/snapshots/bf93f73b5ee5/source/LICENSE": "eeecc593866fa1c3b80189c7e3dc0ceb77740557fa92f81771f891cc54c579cb",
-      "data/snapshots/bf93f73b5ee5/source/LICENSE.md": "a0344daaf9ac2a36dbb9093b2533695a149af8a9115465ec1646a710f97aedef",
-      "data/snapshots/bf93f73b5ee5/source/LICENSES/Apache-2.0.txt": "074e6e32c86a4c0ef8b3ed25b721ca23aca83df277cd88106ef7177c354615ff",
-      "data/snapshots/bf93f73b5ee5/source/LICENSES/CC-BY-4.0.txt": "d557539df68e771cc1eedcc91d13f70fca930e508d11eedcafa4b15db49e3744",
-      "data/snapshots/bf93f73b5ee5/source/LICENSES/CC-BY-SA-4.0.txt": "cde7883b9050a1104f4ac19a1572aafd6e5d7323b68351aaf51fbf4beba54966",
-      "data/snapshots/bf93f73b5ee5/source/LICENSES/CERN-OHL-P-2.0.txt": "eeecc593866fa1c3b80189c7e3dc0ceb77740557fa92f81771f891cc54c579cb",
-      "data/snapshots/bf93f73b5ee5/source/LICENSES/README.md": "f8a171787718db379e83c0915498072f71f9a45f5ac32faeb76ad5996c962b92",
-      "data/snapshots/bf93f73b5ee5/source/README.md": "a02b76d65244263847c4c480c40efcda97f848cd95e43efb0f644f2a0999618c",
-      "data/snapshots/bf93f73b5ee5/source/Tinkerbadge.pretty/BH1730FVC_WSOF6.kicad_mod": "6351d09a8d496431e3f72950a7aa1ab48668a1f268227726ef3c075db028c7a6",
-      "data/snapshots/bf93f73b5ee5/source/Tinkerbadge.pretty/BQ24074RGTR_Reviewed.kicad_mod": "183807e26beb1a5099b0fa636f887be583d7843de45b1ca956ac82f9a7fe5260",
-      "data/snapshots/bf93f73b5ee5/source/Tinkerbadge.pretty/Dock_Pads_2x_4x6mm.kicad_mod": "95aaa18573154b9bb2102635abb295ebd64995ac05947a28078de1e414f38a9f",
-      "data/snapshots/bf93f73b5ee5/source/Tinkerbadge.pretty/HSMF-C165.kicad_mod": "0acf2ebd509f5fa1ac51ddd27e609cf3f7672486eda42cc8a60e558a964b200d",
-      "data/snapshots/bf93f73b5ee5/source/Tinkerbadge.pretty/Hirose_FH34SRJ-24S-0.5SH_PanelOrder.kicad_mod": "3a5b6fac9e0c0c3e9c0a7728ee82511755ab9151f9e1f6fafac8446820fdbd79",
-      "data/snapshots/bf93f73b5ee5/source/Tinkerbadge.pretty/IR67-21C_TR8.kicad_mod": "669cd066610b7853315045ac2e06625dd131ac128eb0aabe9688d1aba823f930",
-      "data/snapshots/bf93f73b5ee5/source/Tinkerbadge.pretty/IRM-H638T_Reviewed.kicad_mod": "0864bc3785524a5fbc906ea72ea89e19ef2ea92daf12d1d358b67039e11b6063",
-      "data/snapshots/bf93f73b5ee5/source/Tinkerbadge.pretty/JST_SH_SM04B_ProjectTabs.kicad_mod": "e64745900f944d009492fab9b12a2ba4c4ea30431a49330d0e1bf83257304558",
-      "data/snapshots/bf93f73b5ee5/source/Tinkerbadge.pretty/NFC_Coil_Rear_18x13.kicad_mod": "e88991b2173891d2b9c16d72ebee928a6d243ff31502f68e74d0c698b24ae7e7",
-      "data/snapshots/bf93f73b5ee5/source/Tinkerbadge.pretty/NT3H2111W0FHKH_XQFN8.kicad_mod": "c921a2eacb3fa641f30e7a92ea19194b1b6943d076a889da2fa830cb34c6bdf2",
-      "data/snapshots/bf93f73b5ee5/source/Tinkerbadge.pretty/Review_Battery_Allowance.kicad_mod": "b79a6000487262b4ed7aa027efaeab3e9ea4fb996bc23c8707c5f44f96bac645",
-      "data/snapshots/bf93f73b5ee5/source/Tinkerbadge.pretty/Review_Battery_Connector.kicad_mod": "70303a71081c815a2df7f22bcafdf9da014a1609bbab02a4789d74b7e1ffb965",
-      "data/snapshots/bf93f73b5ee5/source/Tinkerbadge.pretty/Review_Cord_Hole_3p2.kicad_mod": "3f8fb3abc3821f1c12fd16886ec2f9715bff17862cc9e8294dae26d022310ab9",
-      "data/snapshots/bf93f73b5ee5/source/Tinkerbadge.pretty/Review_Dock_Contacts.kicad_mod": "009fddd4a64bae37c1c4ce09fef7739ec599e64623cb90a5b5ee729c51dff8f5",
-      "data/snapshots/bf93f73b5ee5/source/Tinkerbadge.pretty/Review_ESD_Package.kicad_mod": "d9906d44b7476f642399481b430002a244dda9b1dd3a33b41cc692e7e537db28",
-      "data/snapshots/bf93f73b5ee5/source/Tinkerbadge.pretty/Review_Flex_Mating.kicad_mod": "c9b2c4d332364cf36b3c8288ba6cda9f5b1503c3a64352345a0261418f77d436",
-      "data/snapshots/bf93f73b5ee5/source/Tinkerbadge.pretty/Review_Inductor_5x5.kicad_mod": "cd5dd00c97a5a3c4df4660219358ced9d1494dd20e8b7491a6d3fcf59b084c67",
-      "data/snapshots/bf93f73b5ee5/source/Tinkerbadge.pretty/Review_Inductor_6x6.kicad_mod": "b6ff1c562e59bb831ad4d84ab636647c84dc56aaff8f9ad9e73aa33f61c6c139",
-      "data/snapshots/bf93f73b5ee5/source/Tinkerbadge.pretty/Review_NFC_18x13.kicad_mod": "bb8e9b6b6033695785f533b41e849968fac38727f4580addfeb687e14aefb83f",
-      "data/snapshots/bf93f73b5ee5/source/Tinkerbadge.pretty/Review_NFC_Area.kicad_mod": "3b552aa8aa17940487337f051ab3d967e1bf4a8fb94d41f3866481c153d57b65",
-      "data/snapshots/bf93f73b5ee5/source/Tinkerbadge.pretty/Review_Panel_93.3x54.9.kicad_mod": "301883b845385c010417dd4b50a092511787917bc994900a7a20ece895071844",
-      "data/snapshots/bf93f73b5ee5/source/Tinkerbadge.pretty/Review_Panel_Raised_4p5.kicad_mod": "c92649b93b1c58ff4c0071f03e6e50bee4f965382bd8e6241013b9ff4e5a6f69",
-      "data/snapshots/bf93f73b5ee5/source/Tinkerbadge.pretty/Review_SAO_12.7x7.kicad_mod": "bfc421faf899cb5b527c27413d711a624b5bf35017acc9aa4af4bf55d43574db",
-      "data/snapshots/bf93f73b5ee5/source/Tinkerbadge.pretty/Review_SAO_Front_Tail_Reserve.kicad_mod": "1c67bffaf2582cdcaa96dc960eb1c204704a1d229acda36fb2ad73ff1abc9d9d",
-      "data/snapshots/bf93f73b5ee5/source/Tinkerbadge.pretty/SAO_Socket_2x03_Front.kicad_mod": "0371021a316aa89833d5f02b2d1b4aebe0be8fcad47da557f122ffd8ab854527",
-      "data/snapshots/bf93f73b5ee5/source/Tinkerbadge.pretty/SKSCLBE010.kicad_mod": "d7d195335d2923ec63b2ebd0faeb92e00e9ff43b965cf526004bfd511e84fa68",
-      "data/snapshots/bf93f73b5ee5/source/Tinkerbadge.pretty/SMF6.0A.kicad_mod": "52ad8ca8ba432f7d758198941537f37e4e8a8ecfa78f8f123f39d58c0020471c",
-      "data/snapshots/bf93f73b5ee5/source/Tinkerbadge.pretty/TPS2121RUXR_Reviewed.kicad_mod": "d220a06a114923d44146b3e92914def3d7f61e4f423b7b7a44f42a55bf76e76c",
-      "data/snapshots/bf93f73b5ee5/source/Tinkerbadge.pretty/TPS63802_DLA0010A.kicad_mod": "63dde13fde406a1cc8a5d77213088e71ba5ca52fb4d7a9f06833b721b2526107",
-      "data/snapshots/bf93f73b5ee5/source/Tinkerbadge.pretty/TPS63802_DLA0010A_Reviewed.kicad_mod": "8cc7eabdb367fb830a77a550854e1ad0f8a2ff0564a3c8f20d2929e61226d448",
-      "data/snapshots/bf93f73b5ee5/source/Tinkerbadge.pretty/USB4105-GF-A_ProjectShells.kicad_mod": "3c94f89df5db71da686dbe0b1ce23cf42224ccab1ecc542a7d5e8e9bcd2db344",
-      "data/snapshots/bf93f73b5ee5/source/Tinkerbadge.pretty/WS2812C-2020-V6_Reviewed.kicad_mod": "c218fbe6e5d2815a6d8efe5aab3944b413610624c6ec8b2a46be0b8c519e84eb",
-      "data/snapshots/bf93f73b5ee5/source/_dependencies/models/03e44c4b2b727b8d-C_0402_1005Metric.step": "03e44c4b2b727b8d4b6b1fd598cbd12dd5e614f1dfeefa96a92a07e3a3b312a2",
-      "data/snapshots/bf93f73b5ee5/source/_dependencies/models/11e948c72c90e2b6-C_1206_3216Metric.step": "11e948c72c90e2b6322436b72745f40ff4e8ba0da64fb2a0df943dfa61e89c1a",
-      "data/snapshots/bf93f73b5ee5/source/_dependencies/models/1875571c326d0d9e-R_0603_1608Metric.step": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861",
-      "data/snapshots/bf93f73b5ee5/source/_dependencies/models/3e35bb7ba7d030d8-ESP32-S3-WROOM-1.step": "3e35bb7ba7d030d88855fcf968398c8670934c7dca08b4e30b2c578bc1e13954",
-      "data/snapshots/bf93f73b5ee5/source/_dependencies/models/4857b3dc717675bf-C_0603_1608Metric.step": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1",
-      "data/snapshots/bf93f73b5ee5/source/_dependencies/models/4acc96eb8a656b2b-L_Changjiang_FNR4020S.step": "4acc96eb8a656b2b762cf4a2fa5d8f535e35a59387d7d5ec6896dbf2261449f4",
-      "data/snapshots/bf93f73b5ee5/source/_dependencies/models/4b0f89a75d3758ad-JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal.step": "4b0f89a75d3758add0041ca9e5ded3a780c23ef4e3e99bcc398b41177dff5d0f",
-      "data/snapshots/bf93f73b5ee5/source/_dependencies/models/5343f72b9fe095ba-JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal.step": "5343f72b9fe095ba999c44c2d42c2045032162dd11066bd4d36865caf3d1fba2",
-      "data/snapshots/bf93f73b5ee5/source/_dependencies/models/5e6c16287491528f-LGA-12_2x2mm_P0.5mm.step": "5e6c16287491528f89c09590e0d5dace14debf478226f74b45504eb906119145",
-      "data/snapshots/bf93f73b5ee5/source/_dependencies/models/6338ce740fa231c2-USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal.step": "6338ce740fa231c2d3dcc6384e0576994a47240a312a21413cb85d76990a69a0",
-      "data/snapshots/bf93f73b5ee5/source/_dependencies/models/664d005edd26f38c-L_Bourns-SRN4018.step": "664d005edd26f38ccb014f9e7f740b5434ad2b3a21b84e35a379819cf1365186",
-      "data/snapshots/bf93f73b5ee5/source/_dependencies/models/6ad5e98224d02a42-TSSOP-16_4.4x5mm_P0.65mm.step": "6ad5e98224d02a427d9a6b929a28dbc158b9925fba5adec12db05079f1016948",
-      "data/snapshots/bf93f73b5ee5/source/_dependencies/models/91507e5af4251cb4-R_0402_1005Metric.step": "91507e5af4251cb4ef38e04889c9b98da29904432bd83786bba13ae9b605eacb",
-      "data/snapshots/bf93f73b5ee5/source/_dependencies/models/975744dfb68222ac-D_SMF.step": "975744dfb68222ac12c4526a1d1a96cde7f8c71c46bcd23a886ac44532259021",
-      "data/snapshots/bf93f73b5ee5/source/_dependencies/models/9a669c1a2f1ea25b-C_0805_2012Metric.step": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c",
-      "data/snapshots/bf93f73b5ee5/source/_dependencies/models/acbf75a28fe41aa9-SOT-323_SC-70.step": "acbf75a28fe41aa90efb38cd2b78220968d6eb6ebae1625dfd532dbeb268fece",
-      "data/snapshots/bf93f73b5ee5/source/_dependencies/models/b3dc4065573abc72-D_SOD-123.step": "b3dc4065573abc72e3d5b4cca0e908f72a24205a41b6284b1f75ccacbe99adf8",
-      "data/snapshots/bf93f73b5ee5/source/_dependencies/models/c9fe686b4d1b5692-SOT-23-6.step": "c9fe686b4d1b56927a41fa84a9bc1efb61d8a45a123a3db43bcaa05c2891d635",
-      "data/snapshots/bf93f73b5ee5/source/_dependencies/models/d9d0628ead2ac2ba-USON-10_2.5x1.0mm_P0.5mm.step": "d9d0628ead2ac2bab888344afbd0ef8b0f5a4ba37641ccc66dcbe300e3a74ac0",
-      "data/snapshots/bf93f73b5ee5/source/_dependencies/models/dd5d1711204e1d8d-SOT-23.step": "dd5d1711204e1d8d26cd11490923bd84340820baa69538c385a4300ec2539bc0",
-      "data/snapshots/bf93f73b5ee5/source/_dependencies/models/ded342cdb394fb45-R_0805_2012Metric.step": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2",
-      "data/snapshots/bf93f73b5ee5/source/_dependencies/models/f8510481c5044113-C_1210_3225Metric.step": "f8510481c5044113cf49b0fa6dd54ddab9224508bd6808e1afab8ef0cefdefc9",
-      "data/snapshots/bf93f73b5ee5/source/display.kicad_sch": "a2d4fd2ac31992a0c6c5d51c013d2ac415c666f7d884a4548455c72507c22698",
-      "data/snapshots/bf93f73b5ee5/source/docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md": "29c4ff2f712b78d62be8d1745319f84b286d76c29712a75e62b152f717557416",
-      "data/snapshots/bf93f73b5ee5/source/docs/THIRD_PARTY_NOTICES.md": "633187c6845d17d685d46807756ca5e410d8fe15779df8c6a5cb63961f87e18f",
-      "data/snapshots/bf93f73b5ee5/source/docs/design/compact_one_sided_final_review.md": "3b827fd007e0dae369b571ee55607baba95924369ca9d0fe12ad85b10915152f",
-      "data/snapshots/bf93f73b5ee5/source/docs/design/compact_one_sided_mechanical_review.md": "693ac7efb6e0899c9b8df5cfcb0f196d5abc1b076919ea0d27dd053ac4bd1e70",
-      "data/snapshots/bf93f73b5ee5/source/docs/design/display_contract.json": "28e5e3a1d4a6817a22b7f1d0ff36575d7b150556576feeb9983340813eacac1c",
-      "data/snapshots/bf93f73b5ee5/source/docs/design/first_routing_pass_review.md": "2955f2f6831b9058e043d1d46ea531f57225c374e096aaeb153fe25e44cc98ad",
-      "data/snapshots/bf93f73b5ee5/source/docs/design/implementation_status.md": "89d74d3a509707a3336501b8f902f8df22dcc15b83c1d675546577a0022e6c81",
-      "data/snapshots/bf93f73b5ee5/source/docs/design/left_open_antenna_final_review.md": "433c6ebf581053bdec3d5a617429b497a4abfe7f897da4af6b32226e1040c971",
-      "data/snapshots/bf93f73b5ee5/source/docs/design/lower_ir_placement_review.md": "70facfc6ae02e514d3e2bb2dfdd1c2d6ece0e6129694c911a68f417a0c7c0cc1",
-      "data/snapshots/bf93f73b5ee5/source/docs/design/mcu_contract.json": "bf75aa714bdf92af64b218bed50173db266b1ff69369e4b578d5fc0a8024dfb9",
-      "data/snapshots/bf93f73b5ee5/source/docs/design/optical_space_placement_review.md": "e6b460c7602ceb2eb4572d2329f75db2a616c0e621b4724f37223cd0337ab396",
-      "data/snapshots/bf93f73b5ee5/source/docs/design/organized_top_row_final_review.md": "42cbee685a452fa13b091148bf8cd1a643ff63466952ddc8f1b96b69f9ca9496",
-      "data/snapshots/bf93f73b5ee5/source/docs/design/outlined_blocks_review.md": "3b7c7b5ebd58e3d2ab762a9567661729ee9b95463698b12de4d704a10de02f08",
-      "data/snapshots/bf93f73b5ee5/source/docs/design/pcb_final_footprint_review.md": "373cda408508948779f98bbc1687fa3dc92d0dd9f12ef5c9d1ea842191269360",
-      "data/snapshots/bf93f73b5ee5/source/docs/design/pcb_mechanical_placement_review.md": "a91dfbed510353ad2bbc594e40c0b860d991de86def196565a47c5a285d1fc40",
-      "data/snapshots/bf93f73b5ee5/source/docs/design/pcb_placement.json": "dbc9636b7111bfc02e0a270018f75f73230e664a5b932c2d134f91e5eab9448f",
-      "data/snapshots/bf93f73b5ee5/source/docs/design/pcb_placement_review.md": "43d19a841dfcd2649969a1f6261043c116c2f289ddd928f527e2c7dcff665594",
-      "data/snapshots/bf93f73b5ee5/source/docs/design/peripherals_contract.json": "c70a5df829e45d9ae6a8c805a3bf5a283ec23016a872653ba5aea9c13680e045",
-      "data/snapshots/bf93f73b5ee5/source/docs/design/power_contract.json": "9492ccfa8d2cdc11266ca5d01313273b38cad349e9df6e7e58bc2e5d3efca1a3",
-      "data/snapshots/bf93f73b5ee5/source/docs/design/rear_nfc_feasibility.md": "232d0e276dd1cde6067ade8d89579a875db6c652886bf03a9d14fb242a3e7a35",
-      "data/snapshots/bf93f73b5ee5/source/docs/design/routing_constraints.json": "5bf13956922291592bbf8aee670f9644211b5b3b87250594149cc955fc0b2d7d",
-      "data/snapshots/bf93f73b5ee5/source/docs/design/shared_passive_optics_review.md": "27caf519dd366772c4f8ba4b54c26c87ff5537f73eb09216ffc100ef54b5a21c",
-      "data/snapshots/bf93f73b5ee5/source/docs/design/spread_groups_placement_review.md": "b890f9bc1782bf7bbd83001dd3df729eb2c1eb56dc7d6cf9daa2e86c0c95fd64",
-      "data/snapshots/bf93f73b5ee5/source/docs/design/top_role_placement_review.md": "c0ce1f0b25ef9078eb15d3ec9a457fdba5b1485b2a968ac6cdfc885808637a8f",
-      "data/snapshots/bf93f73b5ee5/source/docs/design/verification.md": "74650e533abb8a341a345b407fef1d58b0cbde10f6376a56f5b1590f939112c4",
-      "data/snapshots/bf93f73b5ee5/source/docs/pinouts.md": "252c8d851270d8dbd13cfd12ba55dc48a0729733859a2e43b5cc4c4c128b55a7",
-      "data/snapshots/bf93f73b5ee5/source/docs/review/design_review_2026-11-11.md": "3272918b4c2acd4455a4ab03d068fc9ad5fb8e869d487a6ddf1cf59e6cef6366",
-      "data/snapshots/bf93f73b5ee5/source/docs/spec.md": "6850bfdcc9dedbbabed985a22bcba0d38fc7c46dc8b58e3766689d64e54da669",
-      "data/snapshots/bf93f73b5ee5/source/fp-lib-table": "9f1b52b68663c701e8fbfa899a34c55cdf57899de84fbf87a376b6a2a4203165",
-      "data/snapshots/bf93f73b5ee5/source/lighting.kicad_sch": "2e2385b5fcc9472119cf8af29c0389abf0b0a0b7f114265440a87d2117b5a525",
-      "data/snapshots/bf93f73b5ee5/source/mcu.kicad_sch": "387a0e62fa7fc6014b827d9876cba0442cd5e2df89de46d974fbaa86a8d73434",
-      "data/snapshots/bf93f73b5ee5/source/mechanical/enclosure/README.md": "47676a9af8c297b83e1e880daa10e305db8ae6884e342e16ef5e8b48c78c0a28",
-      "data/snapshots/bf93f73b5ee5/source/mechanical/enclosure/build.py": "a63083e698c8ad38c59246784c4ea5c87e6000dae850331a945d22455be2812f",
-      "data/snapshots/bf93f73b5ee5/source/mechanical/enclosure/check_native_fit.py": "f2bf8c3819561cf08034f91506de8745e88cf53e9059c2840d32824fd069f6d7",
-      "data/snapshots/bf93f73b5ee5/source/mechanical/enclosure/exports/affinity-1.step": "87565c3c26cc9aab02ca076eeffa48185cec76091230429c7615585d319f7bbe",
-      "data/snapshots/bf93f73b5ee5/source/mechanical/enclosure/exports/affinity-1.stl": "8081753949ae7b34f991ba03fd2a5b9efb5e8c785845b828808d0861e8d99e2e",
-      "data/snapshots/bf93f73b5ee5/source/mechanical/enclosure/exports/affinity-2.step": "d134316a5c222125813f4aa25886a7cad2786168900650180fcf4a3b5ef41809",
-      "data/snapshots/bf93f73b5ee5/source/mechanical/enclosure/exports/affinity-2.stl": "71006d74b9436a6fa778ebc2995636901c0a0a1c5991f8e62de57c3f32ce01ee",
-      "data/snapshots/bf93f73b5ee5/source/mechanical/enclosure/exports/affinity-3.step": "fecc066949521535e9a2a65ce71ac173adc55ba81f1b79fc3426a874e088bcd5",
-      "data/snapshots/bf93f73b5ee5/source/mechanical/enclosure/exports/affinity-3.stl": "8a88247c23bca09c62f7289672368d0533640c3b76aad1fa11b83c5880be318d",
-      "data/snapshots/bf93f73b5ee5/source/mechanical/enclosure/exports/affinity-4.step": "e4a0f6723ca230caf04afc2beb87847febea38fd766e08464950a2b0652ae14e",
-      "data/snapshots/bf93f73b5ee5/source/mechanical/enclosure/exports/affinity-4.stl": "ed633c6c2b01db9474bbd0848bf9c070c5ee9e5fb5413887c9cf70aab008b463",
-      "data/snapshots/bf93f73b5ee5/source/mechanical/enclosure/exports/affinity-5.step": "632106d8fcaa8c49708233a571809942ff76630bc9451693b96ee7954b4020b8",
-      "data/snapshots/bf93f73b5ee5/source/mechanical/enclosure/exports/affinity-5.stl": "bedb47ec4ac98f1ebbb6928c0bcaa917b895cc5dd4ea3b8459d945cec92383d4",
-      "data/snapshots/bf93f73b5ee5/source/mechanical/enclosure/exports/battery-guide.step": "53d7b25d35420c22caa4277868085a3f781ef3c96f378c365482274ea135ecb3",
-      "data/snapshots/bf93f73b5ee5/source/mechanical/enclosure/exports/battery-guide.stl": "998b9c16f28f6c39b84fca9701303d4dc5f6b630613279f54d7200a6702eacae",
-      "data/snapshots/bf93f73b5ee5/source/mechanical/enclosure/exports/checks.json": "74577cc27f2aef8fe7881362ee60568fcfba6a54b65937702b7db5a4ea8c3289",
-      "data/snapshots/bf93f73b5ee5/source/mechanical/enclosure/exports/enclosure-cad.zip": "1240321011ec82b05469debdecf25bd80943739d0c39bcb5d8a1422c3a933a89",
-      "data/snapshots/bf93f73b5ee5/source/mechanical/enclosure/exports/enclosure.glb": "40bc0ab7a14edc6240255d3a27bf870f6bc85c0d2738ed75d21542db1474d31d",
-      "data/snapshots/bf93f73b5ee5/source/mechanical/enclosure/exports/enclosure.step": "66dc76fffd51f84e66d00b55efdd8bf67de6a6bed637ba39bdacd15b37e7e90d",
-      "data/snapshots/bf93f73b5ee5/source/mechanical/enclosure/exports/frame.step": "bfc0805d0e34260f1442c5acc969b54887455e411c3f92db88ea3b3d62a7ea1d",
-      "data/snapshots/bf93f73b5ee5/source/mechanical/enclosure/exports/frame.stl": "0778c18f9fb2025f6fbfb3c898d8bb0e1a9f47d728671e082ef88c882ad4d20f",
-      "data/snapshots/bf93f73b5ee5/source/mechanical/enclosure/exports/front.dxf": "311e1b72338b0922fcf36f58bc119d6d3195587ce10d221b9aac31f6ec05f08a",
-      "data/snapshots/bf93f73b5ee5/source/mechanical/enclosure/exports/front.step": "9e24f00eb291fb6fd37cb9f2d9eb9b96306bb239a3996975a24a0d17dc1ece5d",
-      "data/snapshots/bf93f73b5ee5/source/mechanical/enclosure/exports/front.stl": "25c789d9865d1f31d4913223dac08b9ae032163b020363fe855c3218e7d0a12c",
-      "data/snapshots/bf93f73b5ee5/source/mechanical/enclosure/exports/manifest.json": "d3ebd0d81da4c74441b7ed9bbe6d4fe892cd28be23a9e5cf7ff252c7dc2f251b",
-      "data/snapshots/bf93f73b5ee5/source/mechanical/enclosure/exports/native-fit.json": "984d6da661a78e5e5ee9c6615630b4bca6323e8400caf57c85adfaa0e867d4b6",
-      "data/snapshots/bf93f73b5ee5/source/mechanical/enclosure/exports/optical-baffle.step": "1c891a0131ee17be3981bbd6b6ddd147455b4db90b0b467143e2c65de1e6b8b9",
-      "data/snapshots/bf93f73b5ee5/source/mechanical/enclosure/exports/optical-baffle.stl": "002ead47c3ba4a8ed3a8ef5be557c5eb36edbe338d27c646aeb58b9060f93c20",
-      "data/snapshots/bf93f73b5ee5/source/mechanical/enclosure/exports/rear.dxf": "b9eb618b48990b2243a11c11c3a3bd70a9e101b3145b0ac203ce7004c97ad3f2",
-      "data/snapshots/bf93f73b5ee5/source/mechanical/enclosure/exports/rear.step": "1248f7bb84a776f336f5b8d1bb1d03958bdcc26c9962e509f47eb42eda1c8230",
-      "data/snapshots/bf93f73b5ee5/source/mechanical/enclosure/exports/rear.stl": "b2e25f9c7e0d9fa319061a9424ec683529d6e7a035efac3f6451b4ca719a240c",
-      "data/snapshots/bf93f73b5ee5/source/mechanical/enclosure/exports/role-left.step": "bfd28fcb003c8170c1ab907e8e96d59e0292794f2b9960823b347e107b337914",
-      "data/snapshots/bf93f73b5ee5/source/mechanical/enclosure/exports/role-left.stl": "004cb04bf34d0e99d84ffd76860f634ebcb213f913d15c3f7a2fa40c4a40985b",
-      "data/snapshots/bf93f73b5ee5/source/mechanical/enclosure/exports/role-right.step": "95435eccbb540684e74b1d4f6ee315402e62156ee27d8e74a3519ee05741fa3b",
-      "data/snapshots/bf93f73b5ee5/source/mechanical/enclosure/exports/role-right.stl": "c17704375c31c46c5aa7c304bb5042851f38749bf6e8704edda313423c0efd04",
-      "data/snapshots/bf93f73b5ee5/source/mechanical/enclosure/exports/screw-H1.step": "5c07f1cb8c6337a4a2c82784f36d0694f51e6d3ef7868b68feb9002d2ba48c2c",
-      "data/snapshots/bf93f73b5ee5/source/mechanical/enclosure/exports/screw-H1.stl": "a124e757e36d7b9d7d79a138ea25f51467c9efb6def740fe6e30fd6a14a65ade",
-      "data/snapshots/bf93f73b5ee5/source/mechanical/enclosure/exports/screw-H2.step": "e28444a2cf4158a423c78f3d1b2025a8c6e950b1750b5669dcea26e89619c777",
-      "data/snapshots/bf93f73b5ee5/source/mechanical/enclosure/exports/screw-H2.stl": "bd0f1e0be1bc9df7eb4140b54f1d2c6ea7cefa692ac8c1039fa087874be8173e",
-      "data/snapshots/bf93f73b5ee5/source/mechanical/enclosure/exports/screw-H3.step": "7cdd2e7cdb7b7e0548486bc5a8f7cf37916e999ca4582c4db71b5e26ff5971d0",
-      "data/snapshots/bf93f73b5ee5/source/mechanical/enclosure/exports/screw-H3.stl": "43145425d859abd848727742931fcf452b5eff7c4274b6678e129f36af82e867",
-      "data/snapshots/bf93f73b5ee5/source/mechanical/enclosure/exports/screw-H4.step": "5238344a6915f1bb5c283ace7dc73cef3fb2d341a264df1ec6dc81693893fd36",
-      "data/snapshots/bf93f73b5ee5/source/mechanical/enclosure/exports/screw-H4.stl": "b997bf2a186d5522dbc2f86c1ec74522e3edb486fab6218ab0377e8ecc7d94f0",
-      "data/snapshots/bf93f73b5ee5/source/mechanical/enclosure/exports/support-H1.step": "899215e65ef7b8ddc694ae56d29c406aa7e5189f991e904642867075988197a8",
-      "data/snapshots/bf93f73b5ee5/source/mechanical/enclosure/exports/support-H1.stl": "a05d7c9875c8e88f7c8904eca8d6c9f6b34406120e23b24d1fce3d2e37052b83",
-      "data/snapshots/bf93f73b5ee5/source/mechanical/enclosure/exports/support-H2.step": "9261572e53e408cc8b3b57b6b754f0407f3163a78c44b5bd7ad5481052b4f20e",
-      "data/snapshots/bf93f73b5ee5/source/mechanical/enclosure/exports/support-H2.stl": "84cb82d63818ddaf29755b2ad0360f2e575578eb89bf3346e10c99773c430de9",
-      "data/snapshots/bf93f73b5ee5/source/mechanical/enclosure/exports/support-H3.step": "a1adf9d8f73eaabccf9c9ffd08f9a196d4ba475259c8e357e07f64cd4610302e",
-      "data/snapshots/bf93f73b5ee5/source/mechanical/enclosure/exports/support-H3.stl": "b07ac68990c2176af27ad6d2259669bd489bc5237f9b583dd30e1915a8fd13c1",
-      "data/snapshots/bf93f73b5ee5/source/mechanical/enclosure/exports/support-H4.step": "f1e62846f66ab20ca7812a1ffc1cf69f543937ce88d78acab582c0cddad7e815",
-      "data/snapshots/bf93f73b5ee5/source/mechanical/enclosure/exports/support-H4.stl": "f76d161b39c2d5a1559f74de2803af31ec3963eb831505ec5db534808851f544",
-      "data/snapshots/bf93f73b5ee5/source/mechanical/enclosure/extract_interfaces.py": "594bf62bc845c7eff79d9b21bd343d5b450d149fe9896042e56c7d66459ae44c",
-      "data/snapshots/bf93f73b5ee5/source/mechanical/enclosure/interfaces.json": "88e17855b5c2577932c10f642c97ee1868e0f80000d00900fe2259c98ac1310e",
-      "data/snapshots/bf93f73b5ee5/source/mechanical/enclosure/parameters.json": "8f9fd655556a134481f2f20d377dc9a1fc53a308c59d162709a77b850ad53148",
-      "data/snapshots/bf93f73b5ee5/source/mechanical/enclosure/requirements.txt": "38d14bf52208f48c7263d11edc081334ed154fd0ab5fd26ffc4f9b9492e348f9",
-      "data/snapshots/bf93f73b5ee5/source/mechanical/enclosure/review.md": "c4e7b1a081c926ceeb9ba87e506525b5fb578e1b6e62df34ae8bd3327d082669",
-      "data/snapshots/bf93f73b5ee5/source/models/BH1730FVC_WSOF6_visual.wrl": "6c0bced5697be9994bbf32f42f056f300dc4dc0f489bded314046a22c0543ca6",
-      "data/snapshots/bf93f73b5ee5/source/models/BQ24074RGTR_Reviewed_visual.wrl": "df63822ae2c09a45f33bcfda6fd0ab6938df70c2a7bf62faba13732467b39d65",
-      "data/snapshots/bf93f73b5ee5/source/models/HSMF-C165_envelope.wrl": "b5f9023bed8f722cf2ce3a5e44e3d3151d0472cd2111f6a9190c683bc28639c4",
-      "data/snapshots/bf93f73b5ee5/source/models/Hirose_FH34SRJ-24S_envelope.wrl": "00171b18b548da8b24e46a8e325283551f0fe737c9689e63662b9c4dbb003591",
-      "data/snapshots/bf93f73b5ee5/source/models/IR67-21C_TR8_visual.wrl": "c90f7a784c0cd57be32f21edf2dbb146bafc94ad2e2c6e9bf618f1bc8097753e",
-      "data/snapshots/bf93f73b5ee5/source/models/IRM-H638T_Reviewed_visual.wrl": "1d2dad763657427f6b6b9112d5d1b5fbe053da3fad493ec4ff690c8e86a5e88d",
-      "data/snapshots/bf93f73b5ee5/source/models/NT3H2111W0FHKH_XQFN8_visual.wrl": "34cb584a005cbf3637ad20e112c30916a0ffe738e0663db2d6eeffde7bff4383",
-      "data/snapshots/bf93f73b5ee5/source/models/Review_Battery_Allowance.wrl": "06e719ae26f2734dacb3796b22f148ce1482e8373bf4077c5dc67454e104e9c9",
-      "data/snapshots/bf93f73b5ee5/source/models/Review_Panel_93.3x54.9.wrl": "c91d56bd39c086ae94bf352f220ae8675f2344af3feb2ead4c49b2ec8496ac27",
-      "data/snapshots/bf93f73b5ee5/source/models/Review_SAO_12.7x7.wrl": "9508f65a90daf599e64c6f76e5814c71dec94de9d03919fa3d856728c1310f8c",
-      "data/snapshots/bf93f73b5ee5/source/models/SAO_SFH11_2x03_envelope.wrl": "40c0310a866624ee02523109398d7cc0129387ca96c6a71de0c29cdf4d820bd5",
-      "data/snapshots/bf93f73b5ee5/source/models/SKSCLBE010_visual.wrl": "5f1d21d7a6da888fa16ac270cdcb4da96bbfa766a4b9b49ce56bae4f5a8c9ba2",
-      "data/snapshots/bf93f73b5ee5/source/models/TPS2121RUXR_Reviewed_visual.wrl": "4d86fa44cb0ba78381b6cff8bba5b452a69bfe7113b67add2bbbc3df64020ea8",
-      "data/snapshots/bf93f73b5ee5/source/models/TPS63802_DLA0010A_Reviewed_visual.wrl": "114938b160421224845368488f2daa372ef58cbd23c4fd11a296b4c6a7323d39",
-      "data/snapshots/bf93f73b5ee5/source/models/TPS63802_DLA0010A_envelope.wrl": "f03671f37ad94a50528a3620992390e3c6a16a0e8c12b015eef4f66682fea3e5",
-      "data/snapshots/bf93f73b5ee5/source/models/WS2812C-2020-V6_Reviewed_visual.wrl": "49f6a62d71a6924d2ebb9f8e9079638660a765575aafb51adde41669640d9275",
-      "data/snapshots/bf93f73b5ee5/source/peripheral_symbols.kicad_sym": "974e0e31709ff0cff331f92d5fb97d274619057ba4793437c8808ee3e9dc3138",
-      "data/snapshots/bf93f73b5ee5/source/peripherals.kicad_sch": "99694fc1ffbfd8a5e0004e3ff96e09edaf56fcd4cf83b04ba3768b064339fd79",
-      "data/snapshots/bf93f73b5ee5/source/power.kicad_sch": "25369a42bf6e081ec2f76f7725420551fc36fba5caddbc77c08d3cd2901f5136",
-      "data/snapshots/bf93f73b5ee5/source/power_symbols.kicad_sym": "b486d4bd338bc0ad1079db7796dc91832527bd2b5ba9e774a866476a2127228f",
-      "data/snapshots/bf93f73b5ee5/source/sym-lib-table": "f4bda66157588820a47131cccb4eb31be3c38b8b7634124a361b9c01ccad6c30",
-      "data/snapshots/bf93f73b5ee5/source/tinkerbadge.kicad_pcb": "7b6ea0e61d1b97d6fb4b8665112096e6f28ca91348ab3617c9fafc7cb11dd688",
-      "data/snapshots/bf93f73b5ee5/source/tinkerbadge.kicad_pro": "1799d888fa6ff526e7316237d923a7c363f62a13f8ea8af82f507af1cbc14715",
-      "data/snapshots/bf93f73b5ee5/source/tinkerbadge.kicad_sch": "82c4ec8b903b1495fb788657a45f1d468827b60ff2d87017a481a7427d7b4752",
-      "data/snapshots/bf93f73b5ee5/source/tinkerbadge.kicad_sym": "73a3ac93504f269fc70324da2d4d03a7038b0c76afb81570c4e0b5fe493f4fa1"
+      "data/snapshots/151a46265bed/badge/board-native.glb": "a0dc59d25fdd312047ae236cc75b118f891379b7bfafe39759b2ac77df54c0c7",
+      "data/snapshots/151a46265bed/badge/board.glb": "53e15026293f03862765d5c5d89cdf2aa2215d379850b008c98e0109e6a85e1f",
+      "data/snapshots/151a46265bed/badge/components.json": "534461ace883832eebb97da0fbde4ee726ea1c2a1007ea36d0247e7d29906951",
+      "data/snapshots/151a46265bed/badge/layers/B_Cu.svg": "648e04869f8112276877bd8548ec53d86e0b903e3973545fbbe82f54e9b0453a",
+      "data/snapshots/151a46265bed/badge/layers/B_Fab.svg": "3b793897461525f4361c1cf41217d4d1eae88d82d43c74a4f95eb81e5e83d639",
+      "data/snapshots/151a46265bed/badge/layers/B_Mask.svg": "a809350b8bde0f971edf3f5a688d3de1db3c2942b021569f7011ff4ea44ec489",
+      "data/snapshots/151a46265bed/badge/layers/B_SilkS.svg": "66155f84e213df37cab3c77aec66df19b95836ff6ff99c8bb67708203e15747f",
+      "data/snapshots/151a46265bed/badge/layers/Edge_Cuts.svg": "7c4a2c07694f8f315ccf50c5d0250ebad9be6c01ea49147701185c9fa5d079a9",
+      "data/snapshots/151a46265bed/badge/layers/F_Cu.svg": "918b784e068351811804373ab2bb03d674f6c07ffc561c3cad61278a542db53e",
+      "data/snapshots/151a46265bed/badge/layers/F_Fab.svg": "3b2316f45e23002550397fd1a551a415d212bccd1c8654452e1d8af42a58f08b",
+      "data/snapshots/151a46265bed/badge/layers/F_Mask.svg": "12ddbb55e8ca6a25bbd90394620c8755881638b09bb4ada78415e9742e1e8977",
+      "data/snapshots/151a46265bed/badge/layers/F_SilkS.svg": "0e42af08311a132cbae8199f988ba4f6d0a556622130beb4a50a9bacf92bf98f",
+      "data/snapshots/151a46265bed/badge/layers/In1_Cu.svg": "6e429a865ddfb1e72517410bb8d47716a5f42796a8cbadeddb6cb53eb5e48924",
+      "data/snapshots/151a46265bed/badge/layers/In2_Cu.svg": "719714c71c2369cea32119cb87a502664ff9833af60789d5414fc868ce13151d",
+      "data/snapshots/151a46265bed/badge/poster.png": "726dfc3c67dd3e4f2952a8354797e173669b95f29b827823577b9d2809f0006f",
+      "data/snapshots/151a46265bed/badge/schematic/15aada6a873005eb.svg": "9e9666dccc060f8533b5d625d1fb8c7362bd8bab2b206615f4586039682dcac0",
+      "data/snapshots/151a46265bed/badge/schematic/34e88d34916c4af9.svg": "dc5b41c41bdd7a1b7538ca1265b3613498098a466e517e888125148b908cba6d",
+      "data/snapshots/151a46265bed/badge/schematic/8134ddf223e03a2b.svg": "9403a6bfb21654252c3862c4d860109b67b3b749983216c9928272d1c71ffc83",
+      "data/snapshots/151a46265bed/badge/schematic/81c8fb34059608bf.svg": "10ab2b522ac082594f39aa04295663647b0a1a68ea48229630e6e916e5dc31bf",
+      "data/snapshots/151a46265bed/badge/schematic/865f4a27a299e39b.svg": "f9bd8faf7ab99fd5974cc4aa2b5f70d7d8a041d3148705538dc309454a7ec24f",
+      "data/snapshots/151a46265bed/badge/schematic/f78e42c5695562fd.svg": "0a742d349d3075ff18bb184ca230b3a6c6a57fb84a2d8da7ffc0e681f4fcaebd",
+      "data/snapshots/151a46265bed/badge/schematic.pdf": "f0fdd82b5094e944b63bd13ceb3e800032c585134386b4b69b0f4e1c0aaf7bba",
+      "data/snapshots/151a46265bed/native-design.zip": "10477a2db63e5e02363ee4418bd6c70ee6ad75c54fa76b329aa2fd1add0c407b",
+      "data/snapshots/151a46265bed/source/LICENSE": "eeecc593866fa1c3b80189c7e3dc0ceb77740557fa92f81771f891cc54c579cb",
+      "data/snapshots/151a46265bed/source/LICENSE.md": "a0344daaf9ac2a36dbb9093b2533695a149af8a9115465ec1646a710f97aedef",
+      "data/snapshots/151a46265bed/source/LICENSES/Apache-2.0.txt": "074e6e32c86a4c0ef8b3ed25b721ca23aca83df277cd88106ef7177c354615ff",
+      "data/snapshots/151a46265bed/source/LICENSES/CC-BY-4.0.txt": "d557539df68e771cc1eedcc91d13f70fca930e508d11eedcafa4b15db49e3744",
+      "data/snapshots/151a46265bed/source/LICENSES/CC-BY-SA-4.0.txt": "cde7883b9050a1104f4ac19a1572aafd6e5d7323b68351aaf51fbf4beba54966",
+      "data/snapshots/151a46265bed/source/LICENSES/CERN-OHL-P-2.0.txt": "eeecc593866fa1c3b80189c7e3dc0ceb77740557fa92f81771f891cc54c579cb",
+      "data/snapshots/151a46265bed/source/LICENSES/README.md": "f8a171787718db379e83c0915498072f71f9a45f5ac32faeb76ad5996c962b92",
+      "data/snapshots/151a46265bed/source/README.md": "a02b76d65244263847c4c480c40efcda97f848cd95e43efb0f644f2a0999618c",
+      "data/snapshots/151a46265bed/source/Tinkerbadge.pretty/BH1730FVC_WSOF6.kicad_mod": "6351d09a8d496431e3f72950a7aa1ab48668a1f268227726ef3c075db028c7a6",
+      "data/snapshots/151a46265bed/source/Tinkerbadge.pretty/BQ24074RGTR_Reviewed.kicad_mod": "183807e26beb1a5099b0fa636f887be583d7843de45b1ca956ac82f9a7fe5260",
+      "data/snapshots/151a46265bed/source/Tinkerbadge.pretty/Dock_Pads_2x_4x6mm.kicad_mod": "95aaa18573154b9bb2102635abb295ebd64995ac05947a28078de1e414f38a9f",
+      "data/snapshots/151a46265bed/source/Tinkerbadge.pretty/HSMF-C165.kicad_mod": "0acf2ebd509f5fa1ac51ddd27e609cf3f7672486eda42cc8a60e558a964b200d",
+      "data/snapshots/151a46265bed/source/Tinkerbadge.pretty/Hirose_FH34SRJ-24S-0.5SH_PanelOrder.kicad_mod": "3a5b6fac9e0c0c3e9c0a7728ee82511755ab9151f9e1f6fafac8446820fdbd79",
+      "data/snapshots/151a46265bed/source/Tinkerbadge.pretty/IR67-21C_TR8.kicad_mod": "669cd066610b7853315045ac2e06625dd131ac128eb0aabe9688d1aba823f930",
+      "data/snapshots/151a46265bed/source/Tinkerbadge.pretty/IRM-H638T_Reviewed.kicad_mod": "0864bc3785524a5fbc906ea72ea89e19ef2ea92daf12d1d358b67039e11b6063",
+      "data/snapshots/151a46265bed/source/Tinkerbadge.pretty/JST_SH_SM04B_ProjectTabs.kicad_mod": "e64745900f944d009492fab9b12a2ba4c4ea30431a49330d0e1bf83257304558",
+      "data/snapshots/151a46265bed/source/Tinkerbadge.pretty/NFC_Coil_Rear_18x13.kicad_mod": "e88991b2173891d2b9c16d72ebee928a6d243ff31502f68e74d0c698b24ae7e7",
+      "data/snapshots/151a46265bed/source/Tinkerbadge.pretty/NT3H2111W0FHKH_XQFN8.kicad_mod": "c921a2eacb3fa641f30e7a92ea19194b1b6943d076a889da2fa830cb34c6bdf2",
+      "data/snapshots/151a46265bed/source/Tinkerbadge.pretty/Review_Battery_Allowance.kicad_mod": "b79a6000487262b4ed7aa027efaeab3e9ea4fb996bc23c8707c5f44f96bac645",
+      "data/snapshots/151a46265bed/source/Tinkerbadge.pretty/Review_Battery_Connector.kicad_mod": "70303a71081c815a2df7f22bcafdf9da014a1609bbab02a4789d74b7e1ffb965",
+      "data/snapshots/151a46265bed/source/Tinkerbadge.pretty/Review_Cord_Hole_3p2.kicad_mod": "3f8fb3abc3821f1c12fd16886ec2f9715bff17862cc9e8294dae26d022310ab9",
+      "data/snapshots/151a46265bed/source/Tinkerbadge.pretty/Review_Dock_Contacts.kicad_mod": "009fddd4a64bae37c1c4ce09fef7739ec599e64623cb90a5b5ee729c51dff8f5",
+      "data/snapshots/151a46265bed/source/Tinkerbadge.pretty/Review_ESD_Package.kicad_mod": "d9906d44b7476f642399481b430002a244dda9b1dd3a33b41cc692e7e537db28",
+      "data/snapshots/151a46265bed/source/Tinkerbadge.pretty/Review_Flex_Mating.kicad_mod": "c9b2c4d332364cf36b3c8288ba6cda9f5b1503c3a64352345a0261418f77d436",
+      "data/snapshots/151a46265bed/source/Tinkerbadge.pretty/Review_Inductor_5x5.kicad_mod": "cd5dd00c97a5a3c4df4660219358ced9d1494dd20e8b7491a6d3fcf59b084c67",
+      "data/snapshots/151a46265bed/source/Tinkerbadge.pretty/Review_Inductor_6x6.kicad_mod": "b6ff1c562e59bb831ad4d84ab636647c84dc56aaff8f9ad9e73aa33f61c6c139",
+      "data/snapshots/151a46265bed/source/Tinkerbadge.pretty/Review_NFC_18x13.kicad_mod": "bb8e9b6b6033695785f533b41e849968fac38727f4580addfeb687e14aefb83f",
+      "data/snapshots/151a46265bed/source/Tinkerbadge.pretty/Review_NFC_Area.kicad_mod": "3b552aa8aa17940487337f051ab3d967e1bf4a8fb94d41f3866481c153d57b65",
+      "data/snapshots/151a46265bed/source/Tinkerbadge.pretty/Review_Panel_93.3x54.9.kicad_mod": "301883b845385c010417dd4b50a092511787917bc994900a7a20ece895071844",
+      "data/snapshots/151a46265bed/source/Tinkerbadge.pretty/Review_Panel_Raised_4p5.kicad_mod": "c92649b93b1c58ff4c0071f03e6e50bee4f965382bd8e6241013b9ff4e5a6f69",
+      "data/snapshots/151a46265bed/source/Tinkerbadge.pretty/Review_SAO_12.7x7.kicad_mod": "bfc421faf899cb5b527c27413d711a624b5bf35017acc9aa4af4bf55d43574db",
+      "data/snapshots/151a46265bed/source/Tinkerbadge.pretty/Review_SAO_Front_Tail_Reserve.kicad_mod": "1c67bffaf2582cdcaa96dc960eb1c204704a1d229acda36fb2ad73ff1abc9d9d",
+      "data/snapshots/151a46265bed/source/Tinkerbadge.pretty/SAO_Socket_2x03_Front.kicad_mod": "0371021a316aa89833d5f02b2d1b4aebe0be8fcad47da557f122ffd8ab854527",
+      "data/snapshots/151a46265bed/source/Tinkerbadge.pretty/SKSCLBE010.kicad_mod": "d7d195335d2923ec63b2ebd0faeb92e00e9ff43b965cf526004bfd511e84fa68",
+      "data/snapshots/151a46265bed/source/Tinkerbadge.pretty/SMF6.0A.kicad_mod": "52ad8ca8ba432f7d758198941537f37e4e8a8ecfa78f8f123f39d58c0020471c",
+      "data/snapshots/151a46265bed/source/Tinkerbadge.pretty/TPS2121RUXR_Reviewed.kicad_mod": "d220a06a114923d44146b3e92914def3d7f61e4f423b7b7a44f42a55bf76e76c",
+      "data/snapshots/151a46265bed/source/Tinkerbadge.pretty/TPS63802_DLA0010A.kicad_mod": "63dde13fde406a1cc8a5d77213088e71ba5ca52fb4d7a9f06833b721b2526107",
+      "data/snapshots/151a46265bed/source/Tinkerbadge.pretty/TPS63802_DLA0010A_Reviewed.kicad_mod": "8cc7eabdb367fb830a77a550854e1ad0f8a2ff0564a3c8f20d2929e61226d448",
+      "data/snapshots/151a46265bed/source/Tinkerbadge.pretty/USB4105-GF-A_ProjectShells.kicad_mod": "3c94f89df5db71da686dbe0b1ce23cf42224ccab1ecc542a7d5e8e9bcd2db344",
+      "data/snapshots/151a46265bed/source/Tinkerbadge.pretty/WS2812C-2020-V6_Reviewed.kicad_mod": "c218fbe6e5d2815a6d8efe5aab3944b413610624c6ec8b2a46be0b8c519e84eb",
+      "data/snapshots/151a46265bed/source/_dependencies/models/03e44c4b2b727b8d-C_0402_1005Metric.step": "03e44c4b2b727b8d4b6b1fd598cbd12dd5e614f1dfeefa96a92a07e3a3b312a2",
+      "data/snapshots/151a46265bed/source/_dependencies/models/11e948c72c90e2b6-C_1206_3216Metric.step": "11e948c72c90e2b6322436b72745f40ff4e8ba0da64fb2a0df943dfa61e89c1a",
+      "data/snapshots/151a46265bed/source/_dependencies/models/1875571c326d0d9e-R_0603_1608Metric.step": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861",
+      "data/snapshots/151a46265bed/source/_dependencies/models/3e35bb7ba7d030d8-ESP32-S3-WROOM-1.step": "3e35bb7ba7d030d88855fcf968398c8670934c7dca08b4e30b2c578bc1e13954",
+      "data/snapshots/151a46265bed/source/_dependencies/models/4857b3dc717675bf-C_0603_1608Metric.step": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1",
+      "data/snapshots/151a46265bed/source/_dependencies/models/4acc96eb8a656b2b-L_Changjiang_FNR4020S.step": "4acc96eb8a656b2b762cf4a2fa5d8f535e35a59387d7d5ec6896dbf2261449f4",
+      "data/snapshots/151a46265bed/source/_dependencies/models/4b0f89a75d3758ad-JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal.step": "4b0f89a75d3758add0041ca9e5ded3a780c23ef4e3e99bcc398b41177dff5d0f",
+      "data/snapshots/151a46265bed/source/_dependencies/models/5343f72b9fe095ba-JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal.step": "5343f72b9fe095ba999c44c2d42c2045032162dd11066bd4d36865caf3d1fba2",
+      "data/snapshots/151a46265bed/source/_dependencies/models/5e6c16287491528f-LGA-12_2x2mm_P0.5mm.step": "5e6c16287491528f89c09590e0d5dace14debf478226f74b45504eb906119145",
+      "data/snapshots/151a46265bed/source/_dependencies/models/6338ce740fa231c2-USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal.step": "6338ce740fa231c2d3dcc6384e0576994a47240a312a21413cb85d76990a69a0",
+      "data/snapshots/151a46265bed/source/_dependencies/models/664d005edd26f38c-L_Bourns-SRN4018.step": "664d005edd26f38ccb014f9e7f740b5434ad2b3a21b84e35a379819cf1365186",
+      "data/snapshots/151a46265bed/source/_dependencies/models/6ad5e98224d02a42-TSSOP-16_4.4x5mm_P0.65mm.step": "6ad5e98224d02a427d9a6b929a28dbc158b9925fba5adec12db05079f1016948",
+      "data/snapshots/151a46265bed/source/_dependencies/models/91507e5af4251cb4-R_0402_1005Metric.step": "91507e5af4251cb4ef38e04889c9b98da29904432bd83786bba13ae9b605eacb",
+      "data/snapshots/151a46265bed/source/_dependencies/models/975744dfb68222ac-D_SMF.step": "975744dfb68222ac12c4526a1d1a96cde7f8c71c46bcd23a886ac44532259021",
+      "data/snapshots/151a46265bed/source/_dependencies/models/9a669c1a2f1ea25b-C_0805_2012Metric.step": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c",
+      "data/snapshots/151a46265bed/source/_dependencies/models/acbf75a28fe41aa9-SOT-323_SC-70.step": "acbf75a28fe41aa90efb38cd2b78220968d6eb6ebae1625dfd532dbeb268fece",
+      "data/snapshots/151a46265bed/source/_dependencies/models/b3dc4065573abc72-D_SOD-123.step": "b3dc4065573abc72e3d5b4cca0e908f72a24205a41b6284b1f75ccacbe99adf8",
+      "data/snapshots/151a46265bed/source/_dependencies/models/c9fe686b4d1b5692-SOT-23-6.step": "c9fe686b4d1b56927a41fa84a9bc1efb61d8a45a123a3db43bcaa05c2891d635",
+      "data/snapshots/151a46265bed/source/_dependencies/models/d9d0628ead2ac2ba-USON-10_2.5x1.0mm_P0.5mm.step": "d9d0628ead2ac2bab888344afbd0ef8b0f5a4ba37641ccc66dcbe300e3a74ac0",
+      "data/snapshots/151a46265bed/source/_dependencies/models/dd5d1711204e1d8d-SOT-23.step": "dd5d1711204e1d8d26cd11490923bd84340820baa69538c385a4300ec2539bc0",
+      "data/snapshots/151a46265bed/source/_dependencies/models/ded342cdb394fb45-R_0805_2012Metric.step": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2",
+      "data/snapshots/151a46265bed/source/_dependencies/models/f8510481c5044113-C_1210_3225Metric.step": "f8510481c5044113cf49b0fa6dd54ddab9224508bd6808e1afab8ef0cefdefc9",
+      "data/snapshots/151a46265bed/source/display.kicad_sch": "a2d4fd2ac31992a0c6c5d51c013d2ac415c666f7d884a4548455c72507c22698",
+      "data/snapshots/151a46265bed/source/docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md": "29c4ff2f712b78d62be8d1745319f84b286d76c29712a75e62b152f717557416",
+      "data/snapshots/151a46265bed/source/docs/THIRD_PARTY_NOTICES.md": "633187c6845d17d685d46807756ca5e410d8fe15779df8c6a5cb63961f87e18f",
+      "data/snapshots/151a46265bed/source/docs/design/compact_one_sided_final_review.md": "3b827fd007e0dae369b571ee55607baba95924369ca9d0fe12ad85b10915152f",
+      "data/snapshots/151a46265bed/source/docs/design/compact_one_sided_mechanical_review.md": "693ac7efb6e0899c9b8df5cfcb0f196d5abc1b076919ea0d27dd053ac4bd1e70",
+      "data/snapshots/151a46265bed/source/docs/design/display_contract.json": "28e5e3a1d4a6817a22b7f1d0ff36575d7b150556576feeb9983340813eacac1c",
+      "data/snapshots/151a46265bed/source/docs/design/first_routing_pass_review.md": "2955f2f6831b9058e043d1d46ea531f57225c374e096aaeb153fe25e44cc98ad",
+      "data/snapshots/151a46265bed/source/docs/design/implementation_status.md": "89d74d3a509707a3336501b8f902f8df22dcc15b83c1d675546577a0022e6c81",
+      "data/snapshots/151a46265bed/source/docs/design/left_open_antenna_final_review.md": "433c6ebf581053bdec3d5a617429b497a4abfe7f897da4af6b32226e1040c971",
+      "data/snapshots/151a46265bed/source/docs/design/lower_ir_placement_review.md": "70facfc6ae02e514d3e2bb2dfdd1c2d6ece0e6129694c911a68f417a0c7c0cc1",
+      "data/snapshots/151a46265bed/source/docs/design/mcu_contract.json": "bf75aa714bdf92af64b218bed50173db266b1ff69369e4b578d5fc0a8024dfb9",
+      "data/snapshots/151a46265bed/source/docs/design/optical_space_placement_review.md": "e6b460c7602ceb2eb4572d2329f75db2a616c0e621b4724f37223cd0337ab396",
+      "data/snapshots/151a46265bed/source/docs/design/organized_top_row_final_review.md": "42cbee685a452fa13b091148bf8cd1a643ff63466952ddc8f1b96b69f9ca9496",
+      "data/snapshots/151a46265bed/source/docs/design/outlined_blocks_review.md": "3b7c7b5ebd58e3d2ab762a9567661729ee9b95463698b12de4d704a10de02f08",
+      "data/snapshots/151a46265bed/source/docs/design/pcb_final_footprint_review.md": "373cda408508948779f98bbc1687fa3dc92d0dd9f12ef5c9d1ea842191269360",
+      "data/snapshots/151a46265bed/source/docs/design/pcb_mechanical_placement_review.md": "a91dfbed510353ad2bbc594e40c0b860d991de86def196565a47c5a285d1fc40",
+      "data/snapshots/151a46265bed/source/docs/design/pcb_placement.json": "dbc9636b7111bfc02e0a270018f75f73230e664a5b932c2d134f91e5eab9448f",
+      "data/snapshots/151a46265bed/source/docs/design/pcb_placement_review.md": "43d19a841dfcd2649969a1f6261043c116c2f289ddd928f527e2c7dcff665594",
+      "data/snapshots/151a46265bed/source/docs/design/peripherals_contract.json": "c70a5df829e45d9ae6a8c805a3bf5a283ec23016a872653ba5aea9c13680e045",
+      "data/snapshots/151a46265bed/source/docs/design/power_contract.json": "9492ccfa8d2cdc11266ca5d01313273b38cad349e9df6e7e58bc2e5d3efca1a3",
+      "data/snapshots/151a46265bed/source/docs/design/rear_nfc_feasibility.md": "232d0e276dd1cde6067ade8d89579a875db6c652886bf03a9d14fb242a3e7a35",
+      "data/snapshots/151a46265bed/source/docs/design/routing_constraints.json": "5bf13956922291592bbf8aee670f9644211b5b3b87250594149cc955fc0b2d7d",
+      "data/snapshots/151a46265bed/source/docs/design/shared_passive_optics_review.md": "27caf519dd366772c4f8ba4b54c26c87ff5537f73eb09216ffc100ef54b5a21c",
+      "data/snapshots/151a46265bed/source/docs/design/spread_groups_placement_review.md": "b890f9bc1782bf7bbd83001dd3df729eb2c1eb56dc7d6cf9daa2e86c0c95fd64",
+      "data/snapshots/151a46265bed/source/docs/design/top_role_placement_review.md": "c0ce1f0b25ef9078eb15d3ec9a457fdba5b1485b2a968ac6cdfc885808637a8f",
+      "data/snapshots/151a46265bed/source/docs/design/verification.md": "74650e533abb8a341a345b407fef1d58b0cbde10f6376a56f5b1590f939112c4",
+      "data/snapshots/151a46265bed/source/docs/pinouts.md": "252c8d851270d8dbd13cfd12ba55dc48a0729733859a2e43b5cc4c4c128b55a7",
+      "data/snapshots/151a46265bed/source/docs/review/design_review_2026-11-11.md": "3272918b4c2acd4455a4ab03d068fc9ad5fb8e869d487a6ddf1cf59e6cef6366",
+      "data/snapshots/151a46265bed/source/docs/spec.md": "6a6bbdeab30f5c0da3a433ea519da60418233a89dcbf6f0c608137928e0d8b7f",
+      "data/snapshots/151a46265bed/source/fp-lib-table": "9f1b52b68663c701e8fbfa899a34c55cdf57899de84fbf87a376b6a2a4203165",
+      "data/snapshots/151a46265bed/source/lighting.kicad_sch": "2e2385b5fcc9472119cf8af29c0389abf0b0a0b7f114265440a87d2117b5a525",
+      "data/snapshots/151a46265bed/source/mcu.kicad_sch": "387a0e62fa7fc6014b827d9876cba0442cd5e2df89de46d974fbaa86a8d73434",
+      "data/snapshots/151a46265bed/source/mechanical/enclosure/README.md": "eccc31ce9738295a52d31b8ff7b583bf94eb789ab2737bc40a786411c08fd42a",
+      "data/snapshots/151a46265bed/source/mechanical/enclosure/build.py": "438c1681a195a79872d8a4e29073278a8d0aed6cd2c90bc2cbc30db0fd8e0f2f",
+      "data/snapshots/151a46265bed/source/mechanical/enclosure/check_native_fit.py": "f2bf8c3819561cf08034f91506de8745e88cf53e9059c2840d32824fd069f6d7",
+      "data/snapshots/151a46265bed/source/mechanical/enclosure/exports/battery-guide.step": "317888a52100c8dc4e103d6f494e3ed0c0bfd2e2f52127d1cd068b3d6030f1ba",
+      "data/snapshots/151a46265bed/source/mechanical/enclosure/exports/battery-guide.stl": "998b9c16f28f6c39b84fca9701303d4dc5f6b630613279f54d7200a6702eacae",
+      "data/snapshots/151a46265bed/source/mechanical/enclosure/exports/checks.json": "61d729ccf6dc82b3d65726771672befdf222ed2aea73fde8f5d485ee17252db0",
+      "data/snapshots/151a46265bed/source/mechanical/enclosure/exports/enclosure-cad.zip": "187bf7191b911f51dd9e10a63d19b3fac6abc469dda40e6f71fd71d4ac3f9970",
+      "data/snapshots/151a46265bed/source/mechanical/enclosure/exports/enclosure.glb": "3d4220c977a6dd2878d6fada0114b4fe1c6c467241fac50ceb3455d16eeeb34b",
+      "data/snapshots/151a46265bed/source/mechanical/enclosure/exports/enclosure.step": "f86e1c24ad0151bc3378d34983babda5851dafa435085b5f72b69bb9b31c32bd",
+      "data/snapshots/151a46265bed/source/mechanical/enclosure/exports/frame.step": "a769ad65b0c9a7b11cfd95e0b61cc37b96302cecdbd022ad572a8005346cade6",
+      "data/snapshots/151a46265bed/source/mechanical/enclosure/exports/frame.stl": "0778c18f9fb2025f6fbfb3c898d8bb0e1a9f47d728671e082ef88c882ad4d20f",
+      "data/snapshots/151a46265bed/source/mechanical/enclosure/exports/front.dxf": "bbf69b5b407ebb3934d15820dc58f818ef074a6551ce438b2f23c42e6c647301",
+      "data/snapshots/151a46265bed/source/mechanical/enclosure/exports/front.step": "182f6f1fe805ff4da85e0e002b706f7733f0b238289344d17dba3dd85570bc37",
+      "data/snapshots/151a46265bed/source/mechanical/enclosure/exports/front.stl": "25c789d9865d1f31d4913223dac08b9ae032163b020363fe855c3218e7d0a12c",
+      "data/snapshots/151a46265bed/source/mechanical/enclosure/exports/manifest.json": "4b6773b68a1e94279b347e8f3ef69d27cad18bf8b9a7f967cf64ae65c3a5fc39",
+      "data/snapshots/151a46265bed/source/mechanical/enclosure/exports/native-fit.json": "cc74f0a9a30888089cdd894587bf2ad86975995e8b8c31f407d712f215c29d65",
+      "data/snapshots/151a46265bed/source/mechanical/enclosure/exports/optical-baffle.step": "90ba23c3382e403e6b2b291e8d68a33e07ae1cdcc7fa7611a3a25e423e081d6c",
+      "data/snapshots/151a46265bed/source/mechanical/enclosure/exports/optical-baffle.stl": "002ead47c3ba4a8ed3a8ef5be557c5eb36edbe338d27c646aeb58b9060f93c20",
+      "data/snapshots/151a46265bed/source/mechanical/enclosure/exports/rear.dxf": "0d99db05742321d75e73a1dd71dfc203990585df527611b66c20f978269b6553",
+      "data/snapshots/151a46265bed/source/mechanical/enclosure/exports/rear.step": "9628efb13473625dcffbcb62a69c0a132e86b1e43e702c33fc5c688307cb6b67",
+      "data/snapshots/151a46265bed/source/mechanical/enclosure/exports/rear.stl": "b2e25f9c7e0d9fa319061a9424ec683529d6e7a035efac3f6451b4ca719a240c",
+      "data/snapshots/151a46265bed/source/mechanical/enclosure/exports/screw-H1.step": "75647733da571049c70976b1f3be47a1f6be78228be9c3c65867d3b2cbd2197d",
+      "data/snapshots/151a46265bed/source/mechanical/enclosure/exports/screw-H1.stl": "a124e757e36d7b9d7d79a138ea25f51467c9efb6def740fe6e30fd6a14a65ade",
+      "data/snapshots/151a46265bed/source/mechanical/enclosure/exports/screw-H2.step": "bda7bce59fe212b158eac5b7968e4f986d6b2a15c781c485f40f59780bfd232b",
+      "data/snapshots/151a46265bed/source/mechanical/enclosure/exports/screw-H2.stl": "bd0f1e0be1bc9df7eb4140b54f1d2c6ea7cefa692ac8c1039fa087874be8173e",
+      "data/snapshots/151a46265bed/source/mechanical/enclosure/exports/screw-H3.step": "cce4cac9b94bdc2bf28b54a7cf7b253328af07efce94c6d06b3a3843bca63091",
+      "data/snapshots/151a46265bed/source/mechanical/enclosure/exports/screw-H3.stl": "43145425d859abd848727742931fcf452b5eff7c4274b6678e129f36af82e867",
+      "data/snapshots/151a46265bed/source/mechanical/enclosure/exports/screw-H4.step": "f870fa523e0ec918f45a85b003e62132be55722cd21715406f5e94886ad9f0dc",
+      "data/snapshots/151a46265bed/source/mechanical/enclosure/exports/screw-H4.stl": "b997bf2a186d5522dbc2f86c1ec74522e3edb486fab6218ab0377e8ecc7d94f0",
+      "data/snapshots/151a46265bed/source/mechanical/enclosure/exports/support-H1.step": "32b3535913cd72cd15769c595092b8b404ef01b9858eefdf58c14e90b0dd590b",
+      "data/snapshots/151a46265bed/source/mechanical/enclosure/exports/support-H1.stl": "a05d7c9875c8e88f7c8904eca8d6c9f6b34406120e23b24d1fce3d2e37052b83",
+      "data/snapshots/151a46265bed/source/mechanical/enclosure/exports/support-H2.step": "c4a05457eecca14ef3d2041708f5a18b70341d4b0e6e648714f38469954bd17e",
+      "data/snapshots/151a46265bed/source/mechanical/enclosure/exports/support-H2.stl": "84cb82d63818ddaf29755b2ad0360f2e575578eb89bf3346e10c99773c430de9",
+      "data/snapshots/151a46265bed/source/mechanical/enclosure/exports/support-H3.step": "e0a86a1bd0c5702557767edfd2200b562c79e1d02f7c1a2b088a1451e8c2db20",
+      "data/snapshots/151a46265bed/source/mechanical/enclosure/exports/support-H3.stl": "b07ac68990c2176af27ad6d2259669bd489bc5237f9b583dd30e1915a8fd13c1",
+      "data/snapshots/151a46265bed/source/mechanical/enclosure/exports/support-H4.step": "8af85f184c592f006cea10e36932d66bfd8af40210c3be246d70e1ca4fe4d884",
+      "data/snapshots/151a46265bed/source/mechanical/enclosure/exports/support-H4.stl": "f76d161b39c2d5a1559f74de2803af31ec3963eb831505ec5db534808851f544",
+      "data/snapshots/151a46265bed/source/mechanical/enclosure/extract_interfaces.py": "594bf62bc845c7eff79d9b21bd343d5b450d149fe9896042e56c7d66459ae44c",
+      "data/snapshots/151a46265bed/source/mechanical/enclosure/interfaces.json": "88e17855b5c2577932c10f642c97ee1868e0f80000d00900fe2259c98ac1310e",
+      "data/snapshots/151a46265bed/source/mechanical/enclosure/parameters.json": "c0f5a0a3ef1924f6539c8af1a02892bbce799427afac40ebc79268e5564eee9e",
+      "data/snapshots/151a46265bed/source/mechanical/enclosure/requirements.txt": "38d14bf52208f48c7263d11edc081334ed154fd0ab5fd26ffc4f9b9492e348f9",
+      "data/snapshots/151a46265bed/source/mechanical/enclosure/review.md": "83df50701b0bb1d41ff51b4fb2f4be7630ced3dfc0af6bc752ea673374f1559f",
+      "data/snapshots/151a46265bed/source/models/BH1730FVC_WSOF6_visual.wrl": "6c0bced5697be9994bbf32f42f056f300dc4dc0f489bded314046a22c0543ca6",
+      "data/snapshots/151a46265bed/source/models/BQ24074RGTR_Reviewed_visual.wrl": "df63822ae2c09a45f33bcfda6fd0ab6938df70c2a7bf62faba13732467b39d65",
+      "data/snapshots/151a46265bed/source/models/HSMF-C165_envelope.wrl": "b5f9023bed8f722cf2ce3a5e44e3d3151d0472cd2111f6a9190c683bc28639c4",
+      "data/snapshots/151a46265bed/source/models/Hirose_FH34SRJ-24S_envelope.wrl": "00171b18b548da8b24e46a8e325283551f0fe737c9689e63662b9c4dbb003591",
+      "data/snapshots/151a46265bed/source/models/IR67-21C_TR8_visual.wrl": "c90f7a784c0cd57be32f21edf2dbb146bafc94ad2e2c6e9bf618f1bc8097753e",
+      "data/snapshots/151a46265bed/source/models/IRM-H638T_Reviewed_visual.wrl": "1d2dad763657427f6b6b9112d5d1b5fbe053da3fad493ec4ff690c8e86a5e88d",
+      "data/snapshots/151a46265bed/source/models/NT3H2111W0FHKH_XQFN8_visual.wrl": "34cb584a005cbf3637ad20e112c30916a0ffe738e0663db2d6eeffde7bff4383",
+      "data/snapshots/151a46265bed/source/models/Review_Battery_Allowance.wrl": "06e719ae26f2734dacb3796b22f148ce1482e8373bf4077c5dc67454e104e9c9",
+      "data/snapshots/151a46265bed/source/models/Review_Panel_93.3x54.9.wrl": "c91d56bd39c086ae94bf352f220ae8675f2344af3feb2ead4c49b2ec8496ac27",
+      "data/snapshots/151a46265bed/source/models/Review_SAO_12.7x7.wrl": "9508f65a90daf599e64c6f76e5814c71dec94de9d03919fa3d856728c1310f8c",
+      "data/snapshots/151a46265bed/source/models/SAO_SFH11_2x03_envelope.wrl": "40c0310a866624ee02523109398d7cc0129387ca96c6a71de0c29cdf4d820bd5",
+      "data/snapshots/151a46265bed/source/models/SKSCLBE010_visual.wrl": "5f1d21d7a6da888fa16ac270cdcb4da96bbfa766a4b9b49ce56bae4f5a8c9ba2",
+      "data/snapshots/151a46265bed/source/models/TPS2121RUXR_Reviewed_visual.wrl": "4d86fa44cb0ba78381b6cff8bba5b452a69bfe7113b67add2bbbc3df64020ea8",
+      "data/snapshots/151a46265bed/source/models/TPS63802_DLA0010A_Reviewed_visual.wrl": "114938b160421224845368488f2daa372ef58cbd23c4fd11a296b4c6a7323d39",
+      "data/snapshots/151a46265bed/source/models/TPS63802_DLA0010A_envelope.wrl": "f03671f37ad94a50528a3620992390e3c6a16a0e8c12b015eef4f66682fea3e5",
+      "data/snapshots/151a46265bed/source/models/WS2812C-2020-V6_Reviewed_visual.wrl": "49f6a62d71a6924d2ebb9f8e9079638660a765575aafb51adde41669640d9275",
+      "data/snapshots/151a46265bed/source/peripheral_symbols.kicad_sym": "974e0e31709ff0cff331f92d5fb97d274619057ba4793437c8808ee3e9dc3138",
+      "data/snapshots/151a46265bed/source/peripherals.kicad_sch": "99694fc1ffbfd8a5e0004e3ff96e09edaf56fcd4cf83b04ba3768b064339fd79",
+      "data/snapshots/151a46265bed/source/power.kicad_sch": "25369a42bf6e081ec2f76f7725420551fc36fba5caddbc77c08d3cd2901f5136",
+      "data/snapshots/151a46265bed/source/power_symbols.kicad_sym": "b486d4bd338bc0ad1079db7796dc91832527bd2b5ba9e774a866476a2127228f",
+      "data/snapshots/151a46265bed/source/sym-lib-table": "f4bda66157588820a47131cccb4eb31be3c38b8b7634124a361b9c01ccad6c30",
+      "data/snapshots/151a46265bed/source/tinkerbadge.kicad_pcb": "7b6ea0e61d1b97d6fb4b8665112096e6f28ca91348ab3617c9fafc7cb11dd688",
+      "data/snapshots/151a46265bed/source/tinkerbadge.kicad_pro": "1799d888fa6ff526e7316237d923a7c363f62a13f8ea8af82f507af1cbc14715",
+      "data/snapshots/151a46265bed/source/tinkerbadge.kicad_sch": "82c4ec8b903b1495fb788657a45f1d468827b60ff2d87017a481a7427d7b4752",
+      "data/snapshots/151a46265bed/source/tinkerbadge.kicad_sym": "73a3ac93504f269fc70324da2d4d03a7038b0c76afb81570c4e0b5fe493f4fa1"
     },
     "toolVersions": {
       "kicad": "10.0.8",
@@ -571,77 +543,77 @@
           {
             "id": "F.Cu",
             "name": "F.Cu",
-            "url": "data/snapshots/bf93f73b5ee5/badge/layers/F_Cu.svg",
+            "url": "data/snapshots/151a46265bed/badge/layers/F_Cu.svg",
             "color": "#df6f5a",
             "defaultVisible": true
           },
           {
             "id": "In1.Cu",
             "name": "In1.Cu",
-            "url": "data/snapshots/bf93f73b5ee5/badge/layers/In1_Cu.svg",
+            "url": "data/snapshots/151a46265bed/badge/layers/In1_Cu.svg",
             "color": "#b196e0",
             "defaultVisible": false
           },
           {
             "id": "In2.Cu",
             "name": "In2.Cu",
-            "url": "data/snapshots/bf93f73b5ee5/badge/layers/In2_Cu.svg",
+            "url": "data/snapshots/151a46265bed/badge/layers/In2_Cu.svg",
             "color": "#b196e0",
             "defaultVisible": false
           },
           {
             "id": "B.Cu",
             "name": "B.Cu",
-            "url": "data/snapshots/bf93f73b5ee5/badge/layers/B_Cu.svg",
+            "url": "data/snapshots/151a46265bed/badge/layers/B_Cu.svg",
             "color": "#6599de",
             "defaultVisible": false
           },
           {
             "id": "F.SilkS",
             "name": "F.SilkS",
-            "url": "data/snapshots/bf93f73b5ee5/badge/layers/F_SilkS.svg",
+            "url": "data/snapshots/151a46265bed/badge/layers/F_SilkS.svg",
             "color": "#f5e9cd",
             "defaultVisible": true
           },
           {
             "id": "B.SilkS",
             "name": "B.SilkS",
-            "url": "data/snapshots/bf93f73b5ee5/badge/layers/B_SilkS.svg",
+            "url": "data/snapshots/151a46265bed/badge/layers/B_SilkS.svg",
             "color": "#b5d8eb",
             "defaultVisible": false
           },
           {
             "id": "F.Mask",
             "name": "F.Mask",
-            "url": "data/snapshots/bf93f73b5ee5/badge/layers/F_Mask.svg",
+            "url": "data/snapshots/151a46265bed/badge/layers/F_Mask.svg",
             "color": "#a16bc8",
             "defaultVisible": false
           },
           {
             "id": "B.Mask",
             "name": "B.Mask",
-            "url": "data/snapshots/bf93f73b5ee5/badge/layers/B_Mask.svg",
+            "url": "data/snapshots/151a46265bed/badge/layers/B_Mask.svg",
             "color": "#7287b4",
             "defaultVisible": false
           },
           {
             "id": "F.Fab",
             "name": "F.Fab",
-            "url": "data/snapshots/bf93f73b5ee5/badge/layers/F_Fab.svg",
+            "url": "data/snapshots/151a46265bed/badge/layers/F_Fab.svg",
             "color": "#aebbb9",
             "defaultVisible": false
           },
           {
             "id": "B.Fab",
             "name": "B.Fab",
-            "url": "data/snapshots/bf93f73b5ee5/badge/layers/B_Fab.svg",
+            "url": "data/snapshots/151a46265bed/badge/layers/B_Fab.svg",
             "color": "#7f9795",
             "defaultVisible": false
           },
           {
             "id": "Edge.Cuts",
             "name": "Edge.Cuts",
-            "url": "data/snapshots/bf93f73b5ee5/badge/layers/Edge_Cuts.svg",
+            "url": "data/snapshots/151a46265bed/badge/layers/Edge_Cuts.svg",
             "color": "#d4d984",
             "defaultVisible": true
           }
@@ -12124,7 +12096,7 @@
             "boxes": []
           }
         ],
-        "nativeUrl": "data/snapshots/bf93f73b5ee5/source/tinkerbadge.kicad_pcb",
+        "nativeUrl": "data/snapshots/151a46265bed/source/tinkerbadge.kicad_pcb",
         "outlineBounds": [
           99.99999999999888,
           99.99999999999837,
@@ -12189,7 +12161,7 @@
             "displayPath": "/",
             "page": "1",
             "symbols": [],
-            "url": "data/snapshots/bf93f73b5ee5/badge/schematic/15aada6a873005eb.svg",
+            "url": "data/snapshots/151a46265bed/badge/schematic/15aada6a873005eb.svg",
             "viewBox": [
               0.0,
               0.0,
@@ -12201,7 +12173,7 @@
               "sheetPath": "/",
               "sourceFile": "tinkerbadge.kicad_sch",
               "visibleReferenceCount": 0,
-              "svgSha256": "12bf6c1d4b49069493ef46623a5d69a178f0ff2d6f518ad94431bb48bc0d4878"
+              "svgSha256": "9e9666dccc060f8533b5d625d1fb8c7362bd8bab2b206615f4586039682dcac0"
             }
           },
           {
@@ -13023,7 +12995,7 @@
                 "displayNameSource": null
               }
             ],
-            "url": "data/snapshots/bf93f73b5ee5/badge/schematic/865f4a27a299e39b.svg",
+            "url": "data/snapshots/151a46265bed/badge/schematic/865f4a27a299e39b.svg",
             "viewBox": [
               0.0,
               0.0,
@@ -13035,7 +13007,7 @@
               "sheetPath": "/03  E-PAPER DISPLAY/",
               "sourceFile": "display.kicad_sch",
               "visibleReferenceCount": 21,
-              "svgSha256": "b628798e27e4064490c456795704e395b2af878406feb931b7b835e1bf39065a"
+              "svgSha256": "f9bd8faf7ab99fd5974cc4aa2b5f70d7d8a041d3148705538dc309454a7ec24f"
             }
           },
           {
@@ -14733,7 +14705,7 @@
                 "displayNameSource": null
               }
             ],
-            "url": "data/snapshots/bf93f73b5ee5/badge/schematic/8134ddf223e03a2b.svg",
+            "url": "data/snapshots/151a46265bed/badge/schematic/8134ddf223e03a2b.svg",
             "viewBox": [
               0.0,
               0.0,
@@ -14745,7 +14717,7 @@
               "sheetPath": "/05  SENSORS + EXPANSION/",
               "sourceFile": "peripherals.kicad_sch",
               "visibleReferenceCount": 41,
-              "svgSha256": "b54541dc8f806713dabc17c9cf72e0bb838d5b0355d1d024d674186d5d82284a"
+              "svgSha256": "9403a6bfb21654252c3862c4d860109b67b3b749983216c9928272d1c71ffc83"
             }
           },
           {
@@ -16092,7 +16064,7 @@
                 }
               }
             ],
-            "url": "data/snapshots/bf93f73b5ee5/badge/schematic/34e88d34916c4af9.svg",
+            "url": "data/snapshots/151a46265bed/badge/schematic/34e88d34916c4af9.svg",
             "viewBox": [
               0.0,
               0.0,
@@ -16104,7 +16076,7 @@
               "sheetPath": "/04  LIGHTING + BUTTONS/",
               "sourceFile": "lighting.kicad_sch",
               "visibleReferenceCount": 31,
-              "svgSha256": "5199d418ef2b8b2138bcee12194ea6d18761a5e2cfa92942732f676fdcf5803c"
+              "svgSha256": "dc5b41c41bdd7a1b7538ca1265b3613498098a466e517e888125148b908cba6d"
             }
           },
           {
@@ -18029,7 +18001,7 @@
                 "displayNameSource": null
               }
             ],
-            "url": "data/snapshots/bf93f73b5ee5/badge/schematic/f78e42c5695562fd.svg",
+            "url": "data/snapshots/151a46265bed/badge/schematic/f78e42c5695562fd.svg",
             "viewBox": [
               0.0,
               0.0,
@@ -18041,7 +18013,7 @@
               "sheetPath": "/01  POWER + CHARGING/",
               "sourceFile": "power.kicad_sch",
               "visibleReferenceCount": 50,
-              "svgSha256": "6b6bcd0ed502d3e131fd5093f54973833d7798855610f2849b7dd8e1ef92c2b6"
+              "svgSha256": "0a742d349d3075ff18bb184ca230b3a6c6a57fb84a2d8da7ffc0e681f4fcaebd"
             }
           },
           {
@@ -18713,7 +18685,7 @@
                 }
               }
             ],
-            "url": "data/snapshots/bf93f73b5ee5/badge/schematic/81c8fb34059608bf.svg",
+            "url": "data/snapshots/151a46265bed/badge/schematic/81c8fb34059608bf.svg",
             "viewBox": [
               0.0,
               0.0,
@@ -18725,12 +18697,12 @@
               "sheetPath": "/02  PROCESSOR + RECOVERY/",
               "sourceFile": "mcu.kicad_sch",
               "visibleReferenceCount": 19,
-              "svgSha256": "e003b507729e6e8d8903a1b992f66e398889f4b5b70c69e539e41c8302f4ffa3"
+              "svgSha256": "10ab2b522ac082594f39aa04295663647b0a1a68ea48229630e6e916e5dc31bf"
             }
           }
         ],
-        "pdfUrl": "data/snapshots/bf93f73b5ee5/badge/schematic.pdf",
-        "nativeUrl": "data/snapshots/bf93f73b5ee5/source/tinkerbadge.kicad_sch",
+        "pdfUrl": "data/snapshots/151a46265bed/badge/schematic.pdf",
+        "nativeUrl": "data/snapshots/151a46265bed/source/tinkerbadge.kicad_sch",
         "population": {
           "symbols": 162,
           "onBoard": 162,
@@ -18774,8 +18746,8 @@
         }
       },
       "model": {
-        "url": "data/snapshots/bf93f73b5ee5/badge/board.glb",
-        "posterUrl": "data/snapshots/bf93f73b5ee5/badge/poster.png",
+        "url": "data/snapshots/151a46265bed/badge/board.glb",
+        "posterUrl": "data/snapshots/151a46265bed/badge/poster.png",
         "posterRendering": {
           "kind": "private-assembly-derivative",
           "visibleReviewReferences": [
@@ -18810,7 +18782,7 @@
           "AE501"
         ],
         "description": "PCB and available component models.",
-        "nativeUrl": "data/snapshots/bf93f73b5ee5/badge/board-native.glb",
+        "nativeUrl": "data/snapshots/151a46265bed/badge/board-native.glb",
         "optimization": {
           "before": {
             "primitives": 32439,
@@ -18835,17 +18807,17 @@
           ],
           "tool": "@gltf-transform/core 4.2.1"
         },
-        "componentsUrl": "data/snapshots/bf93f73b5ee5/badge/components.json",
+        "componentsUrl": "data/snapshots/151a46265bed/badge/components.json",
         "componentBinding": {
           "components": 171,
           "modeledComponents": 150,
           "accessories": 2,
           "renderableAccessories": 2,
-          "bindingId": "8d18a50f3d1d4085e221ca10de1c5f596749bc13e3f823339c91abb2b58f8a89",
+          "bindingId": "3b40739a6aae16bf1febdf59f0b974e3abeb66d7f1a5c606e026726791a58c9a",
           "modelBytes": 26204332
         }
       },
-      "componentsUrl": "data/snapshots/bf93f73b5ee5/badge/components.json",
+      "componentsUrl": "data/snapshots/151a46265bed/badge/components.json",
       "warnings": [
         "Enclosure is a fit prototype; glass support, exact battery, flex and connector insertion require physical checks.",
         "Radio clearance and NFC tuning require assembled testing.",
@@ -18856,35 +18828,35 @@
       "downloads": [
         {
           "label": "Schematic PDF",
-          "url": "data/snapshots/bf93f73b5ee5/badge/schematic.pdf"
+          "url": "data/snapshots/151a46265bed/badge/schematic.pdf"
         },
         {
           "label": "Native schematic",
-          "url": "data/snapshots/bf93f73b5ee5/source/tinkerbadge.kicad_sch"
+          "url": "data/snapshots/151a46265bed/source/tinkerbadge.kicad_sch"
         },
         {
           "label": "Native PCB",
-          "url": "data/snapshots/bf93f73b5ee5/source/tinkerbadge.kicad_pcb"
+          "url": "data/snapshots/151a46265bed/source/tinkerbadge.kicad_pcb"
         },
         {
           "label": "Component data (JSON)",
-          "url": "data/snapshots/bf93f73b5ee5/badge/components.json"
+          "url": "data/snapshots/151a46265bed/badge/components.json"
         },
         {
           "label": "3D model (GLB)",
-          "url": "data/snapshots/bf93f73b5ee5/badge/board.glb"
+          "url": "data/snapshots/151a46265bed/badge/board.glb"
         },
         {
           "label": "Native GLB export",
-          "url": "data/snapshots/bf93f73b5ee5/badge/board-native.glb"
+          "url": "data/snapshots/151a46265bed/badge/board-native.glb"
         },
         {
           "label": "Enclosure CAD and print files",
-          "url": "data/snapshots/bf93f73b5ee5/source/mechanical/enclosure/exports/enclosure-cad.zip"
+          "url": "data/snapshots/151a46265bed/source/mechanical/enclosure/exports/enclosure-cad.zip"
         },
         {
           "label": "Enclosure assembly (STEP)",
-          "url": "data/snapshots/bf93f73b5ee5/source/mechanical/enclosure/exports/enclosure.step"
+          "url": "data/snapshots/151a46265bed/source/mechanical/enclosure/exports/enclosure.step"
         }
       ],
       "componentNaming": {
@@ -18935,7 +18907,7 @@
       "revision": "Unspecified",
       "enclosure": {
         "schema_version": 1,
-        "revision": "enclosure-a1",
+        "revision": "enclosure-a2",
         "name": "Layered clear enclosure",
         "status": "Fit prototype",
         "board_sha256": "7b6ea0e61d1b97d6fb4b8665112096e6f28ca91348ab3617c9fafc7cb11dd688",
@@ -18979,8 +18951,8 @@
             "solids": 1,
             "step": "support-H1.step",
             "stl": "support-H1.stl",
-            "stepUrl": "data/snapshots/bf93f73b5ee5/source/mechanical/enclosure/exports/support-H1.step",
-            "stlUrl": "data/snapshots/bf93f73b5ee5/source/mechanical/enclosure/exports/support-H1.stl"
+            "stepUrl": "data/snapshots/151a46265bed/source/mechanical/enclosure/exports/support-H1.step",
+            "stlUrl": "data/snapshots/151a46265bed/source/mechanical/enclosure/exports/support-H1.stl"
           },
           {
             "id": "support-H2",
@@ -19015,8 +18987,8 @@
             "solids": 1,
             "step": "support-H2.step",
             "stl": "support-H2.stl",
-            "stepUrl": "data/snapshots/bf93f73b5ee5/source/mechanical/enclosure/exports/support-H2.step",
-            "stlUrl": "data/snapshots/bf93f73b5ee5/source/mechanical/enclosure/exports/support-H2.stl"
+            "stepUrl": "data/snapshots/151a46265bed/source/mechanical/enclosure/exports/support-H2.step",
+            "stlUrl": "data/snapshots/151a46265bed/source/mechanical/enclosure/exports/support-H2.stl"
           },
           {
             "id": "support-H3",
@@ -19051,8 +19023,8 @@
             "solids": 1,
             "step": "support-H3.step",
             "stl": "support-H3.stl",
-            "stepUrl": "data/snapshots/bf93f73b5ee5/source/mechanical/enclosure/exports/support-H3.step",
-            "stlUrl": "data/snapshots/bf93f73b5ee5/source/mechanical/enclosure/exports/support-H3.stl"
+            "stepUrl": "data/snapshots/151a46265bed/source/mechanical/enclosure/exports/support-H3.step",
+            "stlUrl": "data/snapshots/151a46265bed/source/mechanical/enclosure/exports/support-H3.stl"
           },
           {
             "id": "support-H4",
@@ -19087,260 +19059,8 @@
             "solids": 1,
             "step": "support-H4.step",
             "stl": "support-H4.stl",
-            "stepUrl": "data/snapshots/bf93f73b5ee5/source/mechanical/enclosure/exports/support-H4.step",
-            "stlUrl": "data/snapshots/bf93f73b5ee5/source/mechanical/enclosure/exports/support-H4.stl"
-          },
-          {
-            "id": "affinity-1",
-            "label": "Affinity diffuser 1",
-            "group": "diffusers",
-            "color": [
-              0.85,
-              0.91,
-              0.88,
-              0.82
-            ],
-            "explode_mm": [
-              0,
-              0,
-              28
-            ],
-            "description": "Separate frosted insert with a retaining shoulder beneath the clear front plate.",
-            "process": "Frosted insert",
-            "bounds_mm": [
-              [
-                -53.0,
-                -36.3,
-                5.2
-              ],
-              [
-                -41.0,
-                -31.700000000000003,
-                7.9
-              ]
-            ],
-            "volume_mm3": 108.05076,
-            "solids": 1,
-            "step": "affinity-1.step",
-            "stl": "affinity-1.stl",
-            "stepUrl": "data/snapshots/bf93f73b5ee5/source/mechanical/enclosure/exports/affinity-1.step",
-            "stlUrl": "data/snapshots/bf93f73b5ee5/source/mechanical/enclosure/exports/affinity-1.stl"
-          },
-          {
-            "id": "affinity-2",
-            "label": "Affinity diffuser 2",
-            "group": "diffusers",
-            "color": [
-              0.85,
-              0.91,
-              0.88,
-              0.82
-            ],
-            "explode_mm": [
-              0,
-              0,
-              28
-            ],
-            "description": "Separate frosted insert with a retaining shoulder beneath the clear front plate.",
-            "process": "Frosted insert",
-            "bounds_mm": [
-              [
-                -29.5,
-                -36.3,
-                5.2
-              ],
-              [
-                -17.5,
-                -31.700000000000003,
-                7.9
-              ]
-            ],
-            "volume_mm3": 108.05076,
-            "solids": 1,
-            "step": "affinity-2.step",
-            "stl": "affinity-2.stl",
-            "stepUrl": "data/snapshots/bf93f73b5ee5/source/mechanical/enclosure/exports/affinity-2.step",
-            "stlUrl": "data/snapshots/bf93f73b5ee5/source/mechanical/enclosure/exports/affinity-2.stl"
-          },
-          {
-            "id": "affinity-3",
-            "label": "Affinity diffuser 3",
-            "group": "diffusers",
-            "color": [
-              0.85,
-              0.91,
-              0.88,
-              0.82
-            ],
-            "explode_mm": [
-              0,
-              0,
-              28
-            ],
-            "description": "Separate frosted insert with a retaining shoulder beneath the clear front plate.",
-            "process": "Frosted insert",
-            "bounds_mm": [
-              [
-                -6.0,
-                -36.3,
-                5.2
-              ],
-              [
-                6.0,
-                -31.700000000000003,
-                7.9
-              ]
-            ],
-            "volume_mm3": 108.05076,
-            "solids": 1,
-            "step": "affinity-3.step",
-            "stl": "affinity-3.stl",
-            "stepUrl": "data/snapshots/bf93f73b5ee5/source/mechanical/enclosure/exports/affinity-3.step",
-            "stlUrl": "data/snapshots/bf93f73b5ee5/source/mechanical/enclosure/exports/affinity-3.stl"
-          },
-          {
-            "id": "affinity-4",
-            "label": "Affinity diffuser 4",
-            "group": "diffusers",
-            "color": [
-              0.85,
-              0.91,
-              0.88,
-              0.82
-            ],
-            "explode_mm": [
-              0,
-              0,
-              28
-            ],
-            "description": "Separate frosted insert with a retaining shoulder beneath the clear front plate.",
-            "process": "Frosted insert",
-            "bounds_mm": [
-              [
-                17.5,
-                -36.3,
-                5.2
-              ],
-              [
-                29.5,
-                -31.700000000000003,
-                7.9
-              ]
-            ],
-            "volume_mm3": 108.05076,
-            "solids": 1,
-            "step": "affinity-4.step",
-            "stl": "affinity-4.stl",
-            "stepUrl": "data/snapshots/bf93f73b5ee5/source/mechanical/enclosure/exports/affinity-4.step",
-            "stlUrl": "data/snapshots/bf93f73b5ee5/source/mechanical/enclosure/exports/affinity-4.stl"
-          },
-          {
-            "id": "affinity-5",
-            "label": "Affinity diffuser 5",
-            "group": "diffusers",
-            "color": [
-              0.85,
-              0.91,
-              0.88,
-              0.82
-            ],
-            "explode_mm": [
-              0,
-              0,
-              28
-            ],
-            "description": "Separate frosted insert with a retaining shoulder beneath the clear front plate.",
-            "process": "Frosted insert",
-            "bounds_mm": [
-              [
-                41.0,
-                -36.3,
-                5.2
-              ],
-              [
-                53.0,
-                -31.700000000000003,
-                7.9
-              ]
-            ],
-            "volume_mm3": 108.05076,
-            "solids": 1,
-            "step": "affinity-5.step",
-            "stl": "affinity-5.stl",
-            "stepUrl": "data/snapshots/bf93f73b5ee5/source/mechanical/enclosure/exports/affinity-5.step",
-            "stlUrl": "data/snapshots/bf93f73b5ee5/source/mechanical/enclosure/exports/affinity-5.stl"
-          },
-          {
-            "id": "role-left",
-            "label": "Role diffuser, long",
-            "group": "diffusers",
-            "color": [
-              0.85,
-              0.91,
-              0.88,
-              0.82
-            ],
-            "explode_mm": [
-              0,
-              0,
-              28
-            ],
-            "description": "Separate frosted insert with a retaining shoulder beneath the clear front plate.",
-            "process": "Frosted insert",
-            "bounds_mm": [
-              [
-                3.0,
-                34.7,
-                5.2
-              ],
-              [
-                27.5,
-                39.3,
-                7.9
-              ]
-            ],
-            "volume_mm3": 234.55076,
-            "solids": 1,
-            "step": "role-left.step",
-            "stl": "role-left.stl",
-            "stepUrl": "data/snapshots/bf93f73b5ee5/source/mechanical/enclosure/exports/role-left.step",
-            "stlUrl": "data/snapshots/bf93f73b5ee5/source/mechanical/enclosure/exports/role-left.stl"
-          },
-          {
-            "id": "role-right",
-            "label": "Role diffuser, short",
-            "group": "diffusers",
-            "color": [
-              0.85,
-              0.91,
-              0.88,
-              0.82
-            ],
-            "explode_mm": [
-              0,
-              0,
-              28
-            ],
-            "description": "Separate frosted insert with a retaining shoulder beneath the clear front plate.",
-            "process": "Frosted insert",
-            "bounds_mm": [
-              [
-                44.0,
-                34.7,
-                5.2
-              ],
-              [
-                51.3,
-                39.3,
-                7.9
-              ]
-            ],
-            "volume_mm3": 60.48676,
-            "solids": 1,
-            "step": "role-right.step",
-            "stl": "role-right.stl",
-            "stepUrl": "data/snapshots/bf93f73b5ee5/source/mechanical/enclosure/exports/role-right.step",
-            "stlUrl": "data/snapshots/bf93f73b5ee5/source/mechanical/enclosure/exports/role-right.stl"
+            "stepUrl": "data/snapshots/151a46265bed/source/mechanical/enclosure/exports/support-H4.step",
+            "stlUrl": "data/snapshots/151a46265bed/source/mechanical/enclosure/exports/support-H4.stl"
           },
           {
             "id": "optical-baffle",
@@ -19375,8 +19095,8 @@
             "solids": 1,
             "step": "optical-baffle.step",
             "stl": "optical-baffle.stl",
-            "stepUrl": "data/snapshots/bf93f73b5ee5/source/mechanical/enclosure/exports/optical-baffle.step",
-            "stlUrl": "data/snapshots/bf93f73b5ee5/source/mechanical/enclosure/exports/optical-baffle.stl"
+            "stepUrl": "data/snapshots/151a46265bed/source/mechanical/enclosure/exports/optical-baffle.step",
+            "stlUrl": "data/snapshots/151a46265bed/source/mechanical/enclosure/exports/optical-baffle.stl"
           },
           {
             "id": "frame",
@@ -19411,8 +19131,8 @@
             "solids": 1,
             "step": "frame.step",
             "stl": "frame.stl",
-            "stepUrl": "data/snapshots/bf93f73b5ee5/source/mechanical/enclosure/exports/frame.step",
-            "stlUrl": "data/snapshots/bf93f73b5ee5/source/mechanical/enclosure/exports/frame.stl"
+            "stepUrl": "data/snapshots/151a46265bed/source/mechanical/enclosure/exports/frame.step",
+            "stlUrl": "data/snapshots/151a46265bed/source/mechanical/enclosure/exports/frame.stl"
           },
           {
             "id": "front",
@@ -19429,7 +19149,7 @@
               0,
               35
             ],
-            "description": "1.5 mm clear plate with separate diffuser and sensor openings; stepped outline follows the board shoulder.",
+            "description": "1.5 mm clear plate with open RGB LED windows and separate sensor apertures; stepped outline follows the board shoulder.",
             "process": "Cut clear sheet",
             "bounds_mm": [
               [
@@ -19447,8 +19167,8 @@
             "solids": 1,
             "step": "front.step",
             "stl": "front.stl",
-            "stepUrl": "data/snapshots/bf93f73b5ee5/source/mechanical/enclosure/exports/front.step",
-            "stlUrl": "data/snapshots/bf93f73b5ee5/source/mechanical/enclosure/exports/front.stl"
+            "stepUrl": "data/snapshots/151a46265bed/source/mechanical/enclosure/exports/front.step",
+            "stlUrl": "data/snapshots/151a46265bed/source/mechanical/enclosure/exports/front.stl"
           },
           {
             "id": "rear",
@@ -19483,8 +19203,8 @@
             "solids": 1,
             "step": "rear.step",
             "stl": "rear.stl",
-            "stepUrl": "data/snapshots/bf93f73b5ee5/source/mechanical/enclosure/exports/rear.step",
-            "stlUrl": "data/snapshots/bf93f73b5ee5/source/mechanical/enclosure/exports/rear.stl"
+            "stepUrl": "data/snapshots/151a46265bed/source/mechanical/enclosure/exports/rear.step",
+            "stlUrl": "data/snapshots/151a46265bed/source/mechanical/enclosure/exports/rear.stl"
           },
           {
             "id": "battery-guide",
@@ -19519,8 +19239,8 @@
             "solids": 2,
             "step": "battery-guide.step",
             "stl": "battery-guide.stl",
-            "stepUrl": "data/snapshots/bf93f73b5ee5/source/mechanical/enclosure/exports/battery-guide.step",
-            "stlUrl": "data/snapshots/bf93f73b5ee5/source/mechanical/enclosure/exports/battery-guide.stl"
+            "stepUrl": "data/snapshots/151a46265bed/source/mechanical/enclosure/exports/battery-guide.step",
+            "stlUrl": "data/snapshots/151a46265bed/source/mechanical/enclosure/exports/battery-guide.stl"
           },
           {
             "id": "screw-H1",
@@ -19555,8 +19275,8 @@
             "solids": 1,
             "step": "screw-H1.step",
             "stl": "screw-H1.stl",
-            "stepUrl": "data/snapshots/bf93f73b5ee5/source/mechanical/enclosure/exports/screw-H1.step",
-            "stlUrl": "data/snapshots/bf93f73b5ee5/source/mechanical/enclosure/exports/screw-H1.stl"
+            "stepUrl": "data/snapshots/151a46265bed/source/mechanical/enclosure/exports/screw-H1.step",
+            "stlUrl": "data/snapshots/151a46265bed/source/mechanical/enclosure/exports/screw-H1.stl"
           },
           {
             "id": "screw-H2",
@@ -19591,8 +19311,8 @@
             "solids": 1,
             "step": "screw-H2.step",
             "stl": "screw-H2.stl",
-            "stepUrl": "data/snapshots/bf93f73b5ee5/source/mechanical/enclosure/exports/screw-H2.step",
-            "stlUrl": "data/snapshots/bf93f73b5ee5/source/mechanical/enclosure/exports/screw-H2.stl"
+            "stepUrl": "data/snapshots/151a46265bed/source/mechanical/enclosure/exports/screw-H2.step",
+            "stlUrl": "data/snapshots/151a46265bed/source/mechanical/enclosure/exports/screw-H2.stl"
           },
           {
             "id": "screw-H3",
@@ -19627,8 +19347,8 @@
             "solids": 1,
             "step": "screw-H3.step",
             "stl": "screw-H3.stl",
-            "stepUrl": "data/snapshots/bf93f73b5ee5/source/mechanical/enclosure/exports/screw-H3.step",
-            "stlUrl": "data/snapshots/bf93f73b5ee5/source/mechanical/enclosure/exports/screw-H3.stl"
+            "stepUrl": "data/snapshots/151a46265bed/source/mechanical/enclosure/exports/screw-H3.step",
+            "stlUrl": "data/snapshots/151a46265bed/source/mechanical/enclosure/exports/screw-H3.stl"
           },
           {
             "id": "screw-H4",
@@ -19663,12 +19383,12 @@
             "solids": 1,
             "step": "screw-H4.step",
             "stl": "screw-H4.stl",
-            "stepUrl": "data/snapshots/bf93f73b5ee5/source/mechanical/enclosure/exports/screw-H4.step",
-            "stlUrl": "data/snapshots/bf93f73b5ee5/source/mechanical/enclosure/exports/screw-H4.stl"
+            "stepUrl": "data/snapshots/151a46265bed/source/mechanical/enclosure/exports/screw-H4.step",
+            "stlUrl": "data/snapshots/151a46265bed/source/mechanical/enclosure/exports/screw-H4.stl"
           }
         ],
         "parameters": {
-          "revision": "enclosure-a1",
+          "revision": "enclosure-a2",
           "name": "Layered clear enclosure",
           "outer_outline_mm": [
             [
@@ -19739,80 +19459,66 @@
           "trimesh": "5.2.0"
         },
         "source_hashes": {
-          "build.py": "a63083e698c8ad38c59246784c4ea5c87e6000dae850331a945d22455be2812f",
-          "parameters.json": "8f9fd655556a134481f2f20d377dc9a1fc53a308c59d162709a77b850ad53148",
+          "build.py": "438c1681a195a79872d8a4e29073278a8d0aed6cd2c90bc2cbc30db0fd8e0f2f",
+          "parameters.json": "c0f5a0a3ef1924f6539c8af1a02892bbce799427afac40ebc79268e5564eee9e",
           "interfaces.json": "88e17855b5c2577932c10f642c97ee1868e0f80000d00900fe2259c98ac1310e",
           "extract_interfaces.py": "594bf62bc845c7eff79d9b21bd343d5b450d149fe9896042e56c7d66459ae44c",
           "check_native_fit.py": "f2bf8c3819561cf08034f91506de8745e88cf53e9059c2840d32824fd069f6d7",
-          "README.md": "47676a9af8c297b83e1e880daa10e305db8ae6884e342e16ef5e8b48c78c0a28",
-          "review.md": "c4e7b1a081c926ceeb9ba87e506525b5fb578e1b6e62df34ae8bd3327d082669"
+          "README.md": "eccc31ce9738295a52d31b8ff7b583bf94eb789ab2737bc40a786411c08fd42a",
+          "review.md": "83df50701b0bb1d41ff51b4fb2f4be7630ced3dfc0af6bc752ea673374f1559f"
         },
         "output_hashes": {
-          "affinity-1.step": "87565c3c26cc9aab02ca076eeffa48185cec76091230429c7615585d319f7bbe",
-          "affinity-1.stl": "8081753949ae7b34f991ba03fd2a5b9efb5e8c785845b828808d0861e8d99e2e",
-          "affinity-2.step": "d134316a5c222125813f4aa25886a7cad2786168900650180fcf4a3b5ef41809",
-          "affinity-2.stl": "71006d74b9436a6fa778ebc2995636901c0a0a1c5991f8e62de57c3f32ce01ee",
-          "affinity-3.step": "fecc066949521535e9a2a65ce71ac173adc55ba81f1b79fc3426a874e088bcd5",
-          "affinity-3.stl": "8a88247c23bca09c62f7289672368d0533640c3b76aad1fa11b83c5880be318d",
-          "affinity-4.step": "e4a0f6723ca230caf04afc2beb87847febea38fd766e08464950a2b0652ae14e",
-          "affinity-4.stl": "ed633c6c2b01db9474bbd0848bf9c070c5ee9e5fb5413887c9cf70aab008b463",
-          "affinity-5.step": "632106d8fcaa8c49708233a571809942ff76630bc9451693b96ee7954b4020b8",
-          "affinity-5.stl": "bedb47ec4ac98f1ebbb6928c0bcaa917b895cc5dd4ea3b8459d945cec92383d4",
-          "battery-guide.step": "53d7b25d35420c22caa4277868085a3f781ef3c96f378c365482274ea135ecb3",
+          "battery-guide.step": "317888a52100c8dc4e103d6f494e3ed0c0bfd2e2f52127d1cd068b3d6030f1ba",
           "battery-guide.stl": "998b9c16f28f6c39b84fca9701303d4dc5f6b630613279f54d7200a6702eacae",
-          "checks.json": "74577cc27f2aef8fe7881362ee60568fcfba6a54b65937702b7db5a4ea8c3289",
-          "enclosure.glb": "40bc0ab7a14edc6240255d3a27bf870f6bc85c0d2738ed75d21542db1474d31d",
-          "enclosure.step": "66dc76fffd51f84e66d00b55efdd8bf67de6a6bed637ba39bdacd15b37e7e90d",
-          "frame.step": "bfc0805d0e34260f1442c5acc969b54887455e411c3f92db88ea3b3d62a7ea1d",
+          "checks.json": "61d729ccf6dc82b3d65726771672befdf222ed2aea73fde8f5d485ee17252db0",
+          "enclosure.glb": "3d4220c977a6dd2878d6fada0114b4fe1c6c467241fac50ceb3455d16eeeb34b",
+          "enclosure.step": "f86e1c24ad0151bc3378d34983babda5851dafa435085b5f72b69bb9b31c32bd",
+          "frame.step": "a769ad65b0c9a7b11cfd95e0b61cc37b96302cecdbd022ad572a8005346cade6",
           "frame.stl": "0778c18f9fb2025f6fbfb3c898d8bb0e1a9f47d728671e082ef88c882ad4d20f",
-          "front.dxf": "311e1b72338b0922fcf36f58bc119d6d3195587ce10d221b9aac31f6ec05f08a",
-          "front.step": "9e24f00eb291fb6fd37cb9f2d9eb9b96306bb239a3996975a24a0d17dc1ece5d",
+          "front.dxf": "bbf69b5b407ebb3934d15820dc58f818ef074a6551ce438b2f23c42e6c647301",
+          "front.step": "182f6f1fe805ff4da85e0e002b706f7733f0b238289344d17dba3dd85570bc37",
           "front.stl": "25c789d9865d1f31d4913223dac08b9ae032163b020363fe855c3218e7d0a12c",
-          "native-fit.json": "984d6da661a78e5e5ee9c6615630b4bca6323e8400caf57c85adfaa0e867d4b6",
-          "optical-baffle.step": "1c891a0131ee17be3981bbd6b6ddd147455b4db90b0b467143e2c65de1e6b8b9",
+          "native-fit.json": "cc74f0a9a30888089cdd894587bf2ad86975995e8b8c31f407d712f215c29d65",
+          "optical-baffle.step": "90ba23c3382e403e6b2b291e8d68a33e07ae1cdcc7fa7611a3a25e423e081d6c",
           "optical-baffle.stl": "002ead47c3ba4a8ed3a8ef5be557c5eb36edbe338d27c646aeb58b9060f93c20",
-          "rear.dxf": "b9eb618b48990b2243a11c11c3a3bd70a9e101b3145b0ac203ce7004c97ad3f2",
-          "rear.step": "1248f7bb84a776f336f5b8d1bb1d03958bdcc26c9962e509f47eb42eda1c8230",
+          "rear.dxf": "0d99db05742321d75e73a1dd71dfc203990585df527611b66c20f978269b6553",
+          "rear.step": "9628efb13473625dcffbcb62a69c0a132e86b1e43e702c33fc5c688307cb6b67",
           "rear.stl": "b2e25f9c7e0d9fa319061a9424ec683529d6e7a035efac3f6451b4ca719a240c",
-          "role-left.step": "bfd28fcb003c8170c1ab907e8e96d59e0292794f2b9960823b347e107b337914",
-          "role-left.stl": "004cb04bf34d0e99d84ffd76860f634ebcb213f913d15c3f7a2fa40c4a40985b",
-          "role-right.step": "95435eccbb540684e74b1d4f6ee315402e62156ee27d8e74a3519ee05741fa3b",
-          "role-right.stl": "c17704375c31c46c5aa7c304bb5042851f38749bf6e8704edda313423c0efd04",
-          "screw-H1.step": "5c07f1cb8c6337a4a2c82784f36d0694f51e6d3ef7868b68feb9002d2ba48c2c",
+          "screw-H1.step": "75647733da571049c70976b1f3be47a1f6be78228be9c3c65867d3b2cbd2197d",
           "screw-H1.stl": "a124e757e36d7b9d7d79a138ea25f51467c9efb6def740fe6e30fd6a14a65ade",
-          "screw-H2.step": "e28444a2cf4158a423c78f3d1b2025a8c6e950b1750b5669dcea26e89619c777",
+          "screw-H2.step": "bda7bce59fe212b158eac5b7968e4f986d6b2a15c781c485f40f59780bfd232b",
           "screw-H2.stl": "bd0f1e0be1bc9df7eb4140b54f1d2c6ea7cefa692ac8c1039fa087874be8173e",
-          "screw-H3.step": "7cdd2e7cdb7b7e0548486bc5a8f7cf37916e999ca4582c4db71b5e26ff5971d0",
+          "screw-H3.step": "cce4cac9b94bdc2bf28b54a7cf7b253328af07efce94c6d06b3a3843bca63091",
           "screw-H3.stl": "43145425d859abd848727742931fcf452b5eff7c4274b6678e129f36af82e867",
-          "screw-H4.step": "5238344a6915f1bb5c283ace7dc73cef3fb2d341a264df1ec6dc81693893fd36",
+          "screw-H4.step": "f870fa523e0ec918f45a85b003e62132be55722cd21715406f5e94886ad9f0dc",
           "screw-H4.stl": "b997bf2a186d5522dbc2f86c1ec74522e3edb486fab6218ab0377e8ecc7d94f0",
-          "support-H1.step": "899215e65ef7b8ddc694ae56d29c406aa7e5189f991e904642867075988197a8",
+          "support-H1.step": "32b3535913cd72cd15769c595092b8b404ef01b9858eefdf58c14e90b0dd590b",
           "support-H1.stl": "a05d7c9875c8e88f7c8904eca8d6c9f6b34406120e23b24d1fce3d2e37052b83",
-          "support-H2.step": "9261572e53e408cc8b3b57b6b754f0407f3163a78c44b5bd7ad5481052b4f20e",
+          "support-H2.step": "c4a05457eecca14ef3d2041708f5a18b70341d4b0e6e648714f38469954bd17e",
           "support-H2.stl": "84cb82d63818ddaf29755b2ad0360f2e575578eb89bf3346e10c99773c430de9",
-          "support-H3.step": "a1adf9d8f73eaabccf9c9ffd08f9a196d4ba475259c8e357e07f64cd4610302e",
+          "support-H3.step": "e0a86a1bd0c5702557767edfd2200b562c79e1d02f7c1a2b088a1451e8c2db20",
           "support-H3.stl": "b07ac68990c2176af27ad6d2259669bd489bc5237f9b583dd30e1915a8fd13c1",
-          "support-H4.step": "f1e62846f66ab20ca7812a1ffc1cf69f543937ce88d78acab582c0cddad7e815",
+          "support-H4.step": "8af85f184c592f006cea10e36932d66bfd8af40210c3be246d70e1ca4fe4d884",
           "support-H4.stl": "f76d161b39c2d5a1559f74de2803af31ec3963eb831505ec5db534808851f544"
         },
-        "modelUrl": "data/snapshots/bf93f73b5ee5/source/mechanical/enclosure/exports/enclosure.glb",
-        "stepUrl": "data/snapshots/bf93f73b5ee5/source/mechanical/enclosure/exports/enclosure.step",
-        "archiveUrl": "data/snapshots/bf93f73b5ee5/source/mechanical/enclosure/exports/enclosure-cad.zip",
-        "manifestUrl": "data/snapshots/bf93f73b5ee5/source/mechanical/enclosure/exports/manifest.json",
-        "frontDxfUrl": "data/snapshots/bf93f73b5ee5/source/mechanical/enclosure/exports/front.dxf",
-        "rearDxfUrl": "data/snapshots/bf93f73b5ee5/source/mechanical/enclosure/exports/rear.dxf",
-        "sourceUrl": "data/snapshots/bf93f73b5ee5/source/mechanical/enclosure/build.py",
+        "modelUrl": "data/snapshots/151a46265bed/source/mechanical/enclosure/exports/enclosure.glb",
+        "stepUrl": "data/snapshots/151a46265bed/source/mechanical/enclosure/exports/enclosure.step",
+        "archiveUrl": "data/snapshots/151a46265bed/source/mechanical/enclosure/exports/enclosure-cad.zip",
+        "manifestUrl": "data/snapshots/151a46265bed/source/mechanical/enclosure/exports/manifest.json",
+        "frontDxfUrl": "data/snapshots/151a46265bed/source/mechanical/enclosure/exports/front.dxf",
+        "rearDxfUrl": "data/snapshots/151a46265bed/source/mechanical/enclosure/exports/rear.dxf",
+        "sourceUrl": "data/snapshots/151a46265bed/source/mechanical/enclosure/build.py",
         "frontSurfaceM": 0.0016011999999999999,
-        "bytes": 378636
+        "bytes": 301404
       }
     }
   ],
   "readme": {
-    "url": "data/snapshots/bf93f73b5ee5/source/README.md",
+    "url": "data/snapshots/151a46265bed/source/README.md",
     "sourcePath": "README.md"
   },
-  "sourceBase": "data/snapshots/bf93f73b5ee5/source/",
-  "nativeArchiveUrl": "data/snapshots/bf93f73b5ee5/native-design.zip",
+  "sourceBase": "data/snapshots/151a46265bed/source/",
+  "nativeArchiveUrl": "data/snapshots/151a46265bed/native-design.zip",
   "warnings": [
     "ERC and DRC were not rerun for this export. See the source review documents for hardware validation.",
     "Review third-party component-model licenses before public redistribution."

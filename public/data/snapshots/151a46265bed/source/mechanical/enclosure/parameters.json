@@ -1,0 +1,65 @@
+{
+  "revision": "enclosure-a2",
+  "name": "Layered clear enclosure",
+  "outer_outline_mm": [
+    [
+      -54,
+      -43
+    ],
+    [
+      54,
+      -43
+    ],
+    [
+      58,
+      -39
+    ],
+    [
+      58,
+      39
+    ],
+    [
+      54,
+      43
+    ],
+    [
+      -3,
+      43
+    ],
+    [
+      -9.75,
+      36.25
+    ],
+    [
+      -54,
+      36.25
+    ],
+    [
+      -58,
+      32.25
+    ],
+    [
+      -58,
+      -39
+    ]
+  ],
+  "wall_mm": 2.4,
+  "front_z_mm": 6.4,
+  "rear_z_mm": -11.6,
+  "panel_thickness_mm": 1.5,
+  "boss_diameter_mm": 4.5,
+  "fastener_clearance_mm": 2.4,
+  "glass_mm": [
+    93.3,
+    54.9,
+    0.92
+  ],
+  "glass_underside_mm": 4.5,
+  "battery_mm": [
+    35,
+    55,
+    7
+  ],
+  "battery_top_z_mm": -1.6,
+  "mesh_tolerance_mm": 0.06
+}

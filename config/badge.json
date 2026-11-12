@@ -113,10 +113,10 @@
     "expectedHashes": {
       "tinkerbadge.kicad_pcb": "7b6ea0e61d1b97d6fb4b8665112096e6f28ca91348ab3617c9fafc7cb11dd688",
       "tinkerbadge.kicad_pro": "1799d888fa6ff526e7316237d923a7c363f62a13f8ea8af82f507af1cbc14715",
-      "docs/spec.md": "6850bfdcc9dedbbabed985a22bcba0d38fc7c46dc8b58e3766689d64e54da669",
+      "docs/spec.md": "6a6bbdeab30f5c0da3a433ea519da60418233a89dcbf6f0c608137928e0d8b7f",
       "docs/design/implementation_status.md": "89d74d3a509707a3336501b8f902f8df22dcc15b83c1d675546577a0022e6c81",
-      "mechanical/enclosure/exports/manifest.json": "d3ebd0d81da4c74441b7ed9bbe6d4fe892cd28be23a9e5cf7ff252c7dc2f251b",
-      "mechanical/enclosure/parameters.json": "8f9fd655556a134481f2f20d377dc9a1fc53a308c59d162709a77b850ad53148"
+      "mechanical/enclosure/exports/manifest.json": "4b6773b68a1e94279b347e8f3ef69d27cad18bf8b9a7f967cf64ae65c3a5fc39",
+      "mechanical/enclosure/parameters.json": "c0f5a0a3ef1924f6539c8af1a02892bbce799427afac40ebc79268e5564eee9e"
     }
   }
 }

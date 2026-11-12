@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "snapshotId": "bf93f73b5ee5",
+  "snapshotId": "151a46265bed",
   "boardSha256": "7b6ea0e61d1b97d6fb4b8665112096e6f28ca91348ab3617c9fafc7cb11dd688",
   "views": [
     {
@@ -9,7 +9,7 @@
       "image": "front.png",
       "width": 1568,
       "height": 1568,
-      "sha256": "f20ea52ab9575ee45c5f81063f07b972e43d73d3fe1750caa9ce94c414557a62",
+      "sha256": "9bfb3b15fa0ab0ea1e70d7cc30cec8c0cebf56510cdf658150589b17ee08be57",
       "pcbToImage": [
         12.63621882882671,
         0,
@@ -247,7 +247,7 @@
           "0,0,0",
           "front.kicad_pcb"
         ],
-        "privateCopySha256": "f4d71372f6f46cb08b6fdaa3b52a05c7a65f590b6f493b9df2a9fb2b44cb3f02",
+        "privateCopySha256": "0ac012bc404cfafaeb645903715d1836406d032e2dcaea5e0a7975b03c6e2a35",
         "sourceModelsVisible": [
           "MECH_PANEL",
           "MECH_BATTERY"
@@ -261,7 +261,7 @@
       "image": "components.png",
       "width": 1568,
       "height": 1568,
-      "sha256": "45a8e8de9a9af5d09f5fb61fe63cfdf3737a81a3a1da20fb6975dfaf74abf07c",
+      "sha256": "14a641bfe1b771dfda841463afccf02ffda4fd0b0e634b0077cc0606b4d5e7fb",
       "pcbToImage": [
         12.63621882882671,
         0,
@@ -499,7 +499,7 @@
           "0,0,0",
           "components.kicad_pcb"
         ],
-        "privateCopySha256": "863cc32d01bb00dabcce575139c5ffdbf63c90ec441d5828940524369c096e47",
+        "privateCopySha256": "ccadedb371398c678107bd384ea0e3e68986484222753531789043baa5089cd1",
         "sourceModelsVisible": [],
         "sourceModelsOmitted": [
           "MECH_PANEL",
@@ -751,7 +751,7 @@
           "0,0,0",
           "back.kicad_pcb"
         ],
-        "privateCopySha256": "f4d71372f6f46cb08b6fdaa3b52a05c7a65f590b6f493b9df2a9fb2b44cb3f02",
+        "privateCopySha256": "0ac012bc404cfafaeb645903715d1836406d032e2dcaea5e0a7975b03c6e2a35",
         "sourceModelsVisible": [
           "MECH_PANEL",
           "MECH_BATTERY"
@@ -762,7 +762,7 @@
   ],
   "provenance": {
     "source": "Existing frozen native KiCad snapshot; no live hardware reads",
-    "snapshotSource": "data/snapshots/bf93f73b5ee5/source/tinkerbadge.kicad_pcb",
+    "snapshotSource": "data/snapshots/151a46265bed/source/tinkerbadge.kicad_pcb",
     "generator": "scripts/render_feature_views.py",
     "generatorSha256": "faf72854dfd3d3eaaf99af9b866fd9b471e7338cc5503e9c8c184244cbbf5402",
     "snapshotUnchanged": true,

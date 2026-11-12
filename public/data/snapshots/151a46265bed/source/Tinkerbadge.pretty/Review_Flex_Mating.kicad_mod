@@ -1,0 +1,76 @@
+(footprint "Review_Flex_Mating"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Unverified FPC mating/fold corridor. Connector/contact side and allowable bend must be proven before routing.")
+	(property "Reference" "REF**"
+		(at 0 0 0)
+		(layer "Dwgs.User")
+		(hide yes)
+		(uuid "dafa50ba-3e3b-4f01-8563-6ec97f1702ea")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Value" "Review_Flex_Mating"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "58e0afb0-7ecd-42b2-854c-ccd3616d2dad")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "457f2a75-2b8c-4072-9b65-cfc4eec22900")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "09442837-b053-4a76-824d-3602438f2bd4")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr board_only exclude_from_pos_files exclude_from_bom)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -7 -9)
+		(end 7 9)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill no)
+		(layer "Dwgs.User")
+		(uuid "0e9225fd-cf98-46e6-9110-759ec98ba363")
+	)
+	(fp_rect
+		(start -7 -9)
+		(end 7 9)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "dba62746-f752-489e-ad1b-f171d51453de")
+	)
+	(embedded_fonts no)
+)
