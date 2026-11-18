@@ -14,7 +14,7 @@ from kicad_source import child, children, prop, sexpr, sha, outline_bounds
 from export_assets import immediate_sexpr_spans, make_poster_input
 ROOT=Path(__file__).resolve().parents[1]
 CLI='/Applications/KiCad/KiCad.app/Contents/MacOS/kicad-cli'
-BOARD_SHA='2ab108d4ad09cb5538978bc369583472795cd0d11a55392cd0bc81e5c5f62757'
+BOARD_SHA='44f608c40e300433a0e9ac7ee12a7b88d5a3f78d628f41213fa0e5182326d3d4'
 # Checked native outline: left-open shoulder at y106.75, extending to x154.5.
 # These asymmetric probes are clear of source components and mounting drills.
 ORIENTATION_PROBES=[{'pcbMm':[102,103],'material':False},{'pcbMm':[110,103],'material':False},{'pcbMm':[200,103],'material':True}]
@@ -159,7 +159,7 @@ def prepare_inputs(snapshot,work):
         return '(model '+json.dumps(str(models[raw].resolve()))
     text=re.sub(r'\(model\s+("(?:\\.|[^"\\])*")',replace,board.read_text())
     (work/'original.kicad_pcb').write_text(text)
-    adjusted=make_poster_input(work/'original.kicad_pcb',work/'front.kicad_pcb',['MECH_PANEL','MECH_BATTERY','RES_J502'])
+    adjusted=make_poster_input(work/'original.kicad_pcb',work/'front.kicad_pcb',['MECH_PANEL','MECH_BATTERY'])
     text=(work/'front.kicad_pcb').read_text()
     (work/'back.kicad_pcb').write_text(text)
     omitted=['MECH_PANEL','MECH_BATTERY'];changes=[];removed=[]

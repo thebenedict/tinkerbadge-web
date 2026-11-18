@@ -126,13 +126,13 @@
           ]
         },
         {
-          "id": "sao",
-          "title": "SAO expansion socket",
-          "description": "Fit a badge add-on above the display.",
+          "id": "gpio-header",
+          "title": "GPIO expansion header",
+          "description": "Solder a 2×5 header or wires for three GPIOs, serial and I²C.",
           "column": "left",
           "anchors": [
             [
-              "J502"
+              "J503"
             ]
           ]
         }

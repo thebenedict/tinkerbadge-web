@@ -57,7 +57,17 @@ controls.forEach(button => button.addEventListener('click', () => {
 }));
 window.addEventListener('pagehide', () => { generation++; pending?.abort(); pending=null; loading=false; inspector?.dispose(); inspector=null; viewer?.dispose(); viewer = null; });
 window.addEventListener('pageshow', event => {
-  if (event.persisted) { resetAccessories();caseControls?.reset();loading = false; poster.hidden = false; button.hidden = false; button.disabled = false; button.textContent = 'Explore in 3D'; status.classList.remove('error'); status.textContent='Load the model to rotate and inspect components.'; controls.forEach(b => {b.disabled=true;b.setAttribute('aria-pressed',String(b.dataset.camera==='reset'));}); }
+  if (!event.persisted) return;
+  resetAccessories();
+  caseControls?.reset();
+  poster.hidden = false;
+  button.hidden = config.autoLoadModel === true;
+  button.disabled = false;
+  button.textContent = 'Explore in 3D';
+  status.classList.remove('error');
+  status.textContent = 'Load the model to rotate and inspect components.';
+  controls.forEach(b => {b.disabled=true;b.setAttribute('aria-pressed',String(b.dataset.camera==='reset'));});
+  if (config.autoLoadModel) load();
 });
-
+if (config.autoLoadModel) load();
 }

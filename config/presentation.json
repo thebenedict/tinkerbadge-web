@@ -41,7 +41,7 @@
       {
         "visual": "make",
         "title": "Make something new",
-        "description": "Flash custom firmware or connect add-ons through Qwiic or SAO.",
+        "description": "Flash custom firmware or connect add-ons through Qwiic or the GPIO header.",
         "wide": true
       }
     ]

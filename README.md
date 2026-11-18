@@ -68,7 +68,7 @@ Interface copy lives in `config/presentation.json` and applies only to its match
 
 Each variant and view has a static URL. Sheet links use the full native sheet-instance identity. Searching for a component on another sheet opens that sheet and focuses its symbol. A component's 3D details link to the matching PCB reference and schematic sheet.
 
-The model runtime, GLB, and component index load after **Explore in 3D**. Schematic and PCB drawings load on their own pages. All viewer assets use the same origin; no backend is required.
+The badge overview loads the 3D board and its component index on entry. Schematic and PCB drawings load on their own pages. All viewer assets use the same origin; no backend is required.
 
 ## Components and assembly accessories
 
@@ -124,7 +124,7 @@ See [publishing setup](docs/publishing.md) for release checks and deployment con
 
 ## Current limits
 
-- PCB revision 0.3 has zero open connections or error-severity ERC/DRC findings in the bound publication evidence. The enclosure is an A2 fit prototype; battery, display, RF and physical qualification remain open.
+- PCB revision 0.4 has zero open connections or error-severity ERC/DRC findings in the bound publication evidence. The enclosure is an A3 fit prototype; battery, display, RF and physical qualification remain open.
 - Component selection marks real model bodies; 2D reference markers mark symbol or footprint origins. Live cross-highlighting between separate open views is future work.
 - The maintained README is rendered from its source, with configured landing-page omissions. Links outside the snapshot allowlist appear as dotted text.
 - Arbitrary STEP assemblies, unusual nested model exports, and unsupported accessory meshes need adapter work and tests.
@@ -153,11 +153,11 @@ See `web_viewer.md` for the longer-term specification.
 
 ## Feature callouts
 
-The badge front page starts with Front, Components, and Back KiCad renders and labeled hardware features. Desktop shows all leader lines. On phones, every label stays visible and selecting one shows its leader line. Keyboard users can select a view and move through the labels. The 3D model still loads only after **Explore in 3D**.
+Below the interactive board, **Explore the board features** opens the Front, Components, and Back KiCad renders with labeled hardware features. Desktop shows all leader lines. On phones, every label stays visible and selecting one shows its leader line. Keyboard users can select a view and move through the labels.
 
 Feature copy and one representative reference per feature live in `config/features/badge.json`. Each label has a single leader. Anchors come from the snapshot’s native PCB coordinates, including the mirrored back view. `public/features/badge/renders.json` records the source snapshot, board hash, render hashes, and calibrated pixel transforms. A build refuses stale renders, missing or wrong-side references, unmarked board-only reservations, or changed image dimensions.
 
-The labels describe proposed interactions. The Components render hides the display to expose front electronics. The Back render includes the battery allowance and the routed rear NFC coil. The SAO socket is on the front. NFC tuning remains open. Accessory leaders use their native assembly positions. These presentation exports do not change the source board or interactive assembly.
+The labels describe proposed interactions. The Components render hides the display to expose front electronics. The Back render includes the battery allowance and the routed rear NFC coil. The ten unpopulated J503 holes are accessible through the front plate. NFC tuning remains open. Accessory leaders use their native assembly positions. These presentation exports do not change the source board or interactive assembly.
 
 To regenerate these three presentation images from the reviewed snapshot, run `python3 scripts/render_feature_views.py`, then `npm run check`. The render recipe is intentionally pinned to the reviewed badge source; review its snapshot and source-hash binding when replacing the hardware layout. Calibration uses six native mounting holes. An independent shoulder transparency check verifies front/back orientation; the full outline stays in frame.
 

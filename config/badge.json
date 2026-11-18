@@ -5,7 +5,7 @@
     "name": "Tinker Badge",
     "title": "Tinker Badge hardware viewer",
     "description": "Explore the assembled Tinker Badge, enclosure parts, PCB layers and schematic.",
-    "revision": "PCB 0.3 / enclosure A2",
+    "revision": "PCB 0.4 / enclosure A3",
     "status": "Development board with enclosure fit prototype",
     "readme": "README.md",
     "tagline": "An open hardware badge designed for professional networking and built for your experiments."
@@ -81,6 +81,8 @@
       "docs/pinouts.md",
       "docs/design/implementation_status.md",
       "docs/design/verification.md",
+      "docs/design/expansion_header.md",
+      "docs/design/review_expansion_header.md",
       "docs/design/outlined_blocks_review.md",
       "docs/AI_Tinkerers_Badge_Design_BOM_Draft_2026-11-09.md",
       "docs/design/pcb_placement.json",
@@ -115,14 +117,14 @@
       "LICENSE"
     ],
     "expectedHashes": {
-      "tinkerbadge.kicad_pcb": "2ab108d4ad09cb5538978bc369583472795cd0d11a55392cd0bc81e5c5f62757",
+      "tinkerbadge.kicad_pcb": "44f608c40e300433a0e9ac7ee12a7b88d5a3f78d628f41213fa0e5182326d3d4",
       "tinkerbadge.kicad_pro": "1799d888fa6ff526e7316237d923a7c363f62a13f8ea8af82f507af1cbc14715",
-      "docs/spec.md": "6a6bbdeab30f5c0da3a433ea519da60418233a89dcbf6f0c608137928e0d8b7f",
-      "docs/design/implementation_status.md": "9bc2eb26761435235f838134712060421f6598ced8a0743965b61e6a007df4ca",
-      "mechanical/enclosure/exports/manifest.json": "a0b0836fc633e85ddd8dd602423b32e308c96b74d62bb3738ead1cd0e7e587f6",
-      "mechanical/enclosure/parameters.json": "c0f5a0a3ef1924f6539c8af1a02892bbce799427afac40ebc79268e5564eee9e",
-      "exports/publication/manifest.json": "f6edb753be1ebd702c0bcf1f7f57669018d30842c5a1f051763f1b6bac73173e",
-      "production/jlcpcb/manifest.json": "6caa421d77b0a30b996bf286139b7ee9f5ae010349ea3a9841bb0e302b0b2a0e"
+      "docs/spec.md": "47429e6a3f36e66bba63d90167b7b813ecbf661c189048101139332977660d9b",
+      "docs/design/implementation_status.md": "1baa2f14ecf097c5949f857d00261213c3463bf1d2dd570e4985c22c53f66188",
+      "mechanical/enclosure/exports/manifest.json": "c6fb00499d429d8bd4ab072b9a8a4a5a995b2af2b1f386ab43d2f7b5a9df6c9e",
+      "mechanical/enclosure/parameters.json": "62df08e906219e9776b952af025cd571522816bb03433d5eb1f7fa77b41c0685",
+      "exports/publication/manifest.json": "58224de42f9fc979b16c949ba2cbc9790f938be5d504364f695316b8cde34487",
+      "production/jlcpcb/manifest.json": "da790528e20abb8a85b11d88237dfca155f10dd155cb2be17d6a7cb994076aef"
     },
     "requireSourceCommit": true
   }

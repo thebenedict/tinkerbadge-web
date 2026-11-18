@@ -35,7 +35,7 @@ test('current badge feature metadata covers requested hardware and verified rend
   const variant=manifest.variants.find(v=>v.id==='badge');if(!variant)return;
   const features=await loadFeatures({root,publicDir:path.join(root,'public'),manifest,variant});
   const labels=features.views.flatMap(v=>v.features);
-  assert.deepEqual(labels.map(f=>f.id),['processor-front','encounters','light','role','qwiic','affinity','processor','motion','nfc','sao','battery','nfc-antenna']);
+  assert.deepEqual(labels.map(f=>f.id),['processor-front','encounters','light','role','qwiic','affinity','processor','motion','nfc','gpio-header','battery','nfc-antenna']);
   assert.deepEqual(features.views.map(view=>[view.id,view.side]),[['front','front'],['components','front'],['back','back']]);
   assert.deepEqual(features.views.map(view=>view.features.length),[6,4,2]);
   for(const label of labels){assert.equal(label.anchors.length,1,label.id);assert.equal(label.anchors[0].references.length,1,label.id);}
@@ -43,7 +43,7 @@ test('current badge feature metadata covers requested hardware and verified rend
   assert.deepEqual(labels.find(f=>f.id==='encounters').anchors[0].references,['U504']);
   assert.deepEqual(labels.find(f=>f.id==='role').anchors[0].references,['D402']);
   assert.deepEqual(labels.find(f=>f.id==='affinity').anchors[0].references,['D406']);
-  assert.equal(labels.find(f=>f.id==='sao').description,'Fit a badge add-on above the display.');
+  assert.equal(labels.find(f=>f.id==='gpio-header').description,'Solder a 2×5 header or wires for three GPIOs, serial and I²C.');
   assert.match(labels.find(f=>f.id==='nfc').description,/Rear coil tuning is pending/);
   const html=featurePreview(features,url=>url);for(const view of features.views)assert.ok(html.includes(`${view.imageUrl}?v=${view.sha256.slice(0,16)}`));assert.match(html,/Unlocked ESP32-S3/);assert.match(html,/data-feature-view="back" hidden/);assert.match(html,/data-feature-view="components" hidden/);assert.match(html,/type="radio"/);assert.match(html,/<noscript><style>@layer base\{\.feature-diagram/);
   const stale=structuredClone(manifest);stale.snapshot.id='wrong';await assert.rejects(loadFeatures({root,publicDir:path.join(root,'public'),manifest:stale,variant}),/do not match/);

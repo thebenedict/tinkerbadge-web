@@ -1,6 +1,6 @@
 # Enclosure exploration
 
-The Overview opens in assembled mode. The Enclosure tab opens in exploded mode and includes construction notes and CAD downloads. Both use the same 3D viewer:
+The Overview opens with the interactive 3D board ready to rotate. The Enclosure tab opens in exploded mode and includes construction notes and CAD downloads. Both use the same 3D viewer:
 
 - **Assembled** shows the clear panels, printed frame, supports, display and battery allowance.
 - **Board** hides the case and accessories for component inspection. Selecting a component switches to this mode.

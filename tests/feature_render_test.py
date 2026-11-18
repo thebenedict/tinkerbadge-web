@@ -115,7 +115,7 @@ class RefreshedNativeGeometryTests(unittest.TestCase):
         electrical=[c for c in index['components'] if c['identityStatus']=='verified']
         self.assertEqual(sum(c['layer']=='F.Cu' for c in electrical),sum(c['layer']=='F.Cu' for c in pcb['components'] if c.get('schematicPath')))
         self.assertIn('J102',[c['reference'] for c in index['components'] if c['layer']=='B.Cu'])
-        self.assertIn('J502',[c['reference'] for c in index['components'] if c['layer']=='F.Cu'])
+        self.assertIn('J503',[c['reference'] for c in index['components'] if c['layer']=='F.Cu'])
         footprints={prop(f).get('Reference'):f for f in children(native,'footprint')}
         for ref,x in [('D401',160),('D402',180.5),('D403',201)]:
             self.assertEqual([float(n) for n in child(footprints[ref],'at')[1:3]],[x,103])

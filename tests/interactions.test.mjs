@@ -9,7 +9,7 @@ const section=presentation.exampleInteractions;
 test('homepage examples preserve the requested meetup flow and opt-in boundary',()=>{
   const html=interactionExamples(section);
   assert.equal(section.items.length,7);
-  for(const text of ['Example interactions','Proposed meetup flow','QR code','name and affiliation','AIT profile','speaker, sponsor, organizer or attendee','Affinity lights along the bottom','similar colors','Opt in to BLE and IR conversation detection','intentional badge tap','exchange contact details','end of the night to check out','buy your own for experiments','Speakers could receive one as a gift','Make something new','custom firmware','Qwiic or SAO'])assert.ok(html.includes(text),text);
+  for(const text of ['Example interactions','Proposed meetup flow','QR code','name and affiliation','AIT profile','speaker, sponsor, organizer or attendee','Affinity lights along the bottom','similar colors','Opt in to BLE and IR conversation detection','intentional badge tap','exchange contact details','end of the night to check out','buy your own for experiments','Speakers could receive one as a gift','Make something new','custom firmware','Qwiic or the GPIO header'])assert.ok(html.includes(text),text);
   assert.equal((html.match(/<li class="interaction-example(?: interaction-example-wide)?">/g)??[]).length,7);
   assert.equal(section.items.at(-1).title,'Make something new');
   assert.equal(section.items.at(-1).wide,true);
